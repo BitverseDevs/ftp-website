@@ -1,0 +1,63 @@
+.about-page--about-logo{
+
+
+}
+
+
+.about-page--section-about{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 120px;
+    // flex-flow: wrap;
+    .about-page--left-section{
+        .about-page--about-logo{
+            font-size: 80px;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            p{
+                color: rgb(0, 152, 255);
+            }
+            .about-page-logo--symbol{
+                font-size: 95px;
+                letter-spacing: -20px;
+            }
+        }
+        .about-page--main-header{
+            .about-page--main-header-title{
+                display: flex;
+                flex-direction: column;
+                h1{
+
+                }
+                p{
+
+                }
+            }
+            .about-picture{
+
+            }
+        }
+    }
+    .about-page--right-section{
+        .about-page--right-content{
+            .about-page--right-header-title{
+                h1{
+
+                }
+                p{
+
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .about-page--section-about{
+        flex-flow: wrap;
+    }
+}

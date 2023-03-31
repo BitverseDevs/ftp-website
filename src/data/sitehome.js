@@ -3,13 +3,80 @@ export const staticNavMsg = {
     msg1: 'Expand your universe. Expertise in Human Resources.',
 };
 
-export const upperNavData = {
-    nav1: 'ABOUT',
-    nav2: 'PRODUCTS',
-    nav3: 'PORTFOLIO',
-    nav4: 'BLOG',
-    button: 'BOOK A DEMO'
-};
+export const upperNavData = [
+    {
+        key: 'und01',
+        isButton: false,
+        navItem: 'ABOUT',
+        pathUrl: '/about',
+        hasList: false,
+        listNav: [],
+    },
+    {
+        key: 'und02',
+        isButton: false,
+        navItem: 'PRODUCTS',
+        pathUrl: '/',
+        hasList: true,
+        listNav: [
+            {
+                listKey: '',
+                listTitle: 'WAREHOUSE RECEIVING (WHSEAPP)',
+                listPathUrl: '',
+            },
+            {
+                listKey: '',
+                listTitle: 'BARANGGAY MANAGEMENT SYSTEM (BMS)',
+                listPathUrl: '',
+            },
+            {
+                listKey: '',
+                listTitle: 'KIOSK SOFTWARE (BIT-KIOSK)',
+                listPathUrl: '',
+            },
+            {
+                listKey: '',
+                listTitle: 'CONTACT TRACING',
+                listPathUrl: '',
+            },
+            {
+                listKey: '',
+                listTitle: 'PO TRACKING SYSTEM',
+                listPathUrl: '',
+            },
+            {
+                listKey: '',
+                listTitle: 'CARGO IMPORTING (BIT-CARGO)',
+                listPathUrl: '',
+            }
+        ], 
+    },
+    {
+        key: 'und03',
+        isButton: false,
+        navItem: 'PORTFOLIO',
+        pathUrl: '/',
+        hasList: false,
+        listNav: [],
+    },
+    {
+        key: 'und04',
+        isButton: false,
+        navItem: 'BLOG',
+        pathUrl: '/',
+        hasList: false,
+        listNav: [],
+    },
+    {
+        key: 'und05',
+        isButton: true,
+        navItem: 'BOOK A DEMO',
+        pathUrl: '/',
+        hasList: false,
+        listNav: [],
+    },
+];
+
 
 export const heroData = {
     left_title: 'Human Resource that works your way',
@@ -376,9 +443,7 @@ export const footerList = [
         'info@bit-verse.com',
         ] 
     },
-    
 ];
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     staticNavMsg,

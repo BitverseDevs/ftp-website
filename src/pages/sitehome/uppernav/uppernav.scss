@@ -1,13 +1,31 @@
 
 .uppernav-wrap{
-    background: lightblue;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, #1d3872 0%, #2342f5 100%);
+    border-bottom: 2px solid #fff;
+    box-shadow: 1px 1px 8px gray;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     height: 83px;
+    z-index: 999;
     .uppernav-logo{
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: #fff;
+        p{
+            color: rgb(0, 152, 255);
+        }
+        .uppernav-logo--symbol{
+            font-size: 45px;
+        }
+
         img{
+            display: none;
             max-height: 45px;
             max-width: 200px;
         }
@@ -18,17 +36,23 @@
         width: 540px;
         height: 24px;
     }
+    .uppernav-burger--wrap{
+        display: none;
+    }
 }
 
 
 @media only screen and (max-width: 991px) {
     .uppernav-wrap{
-        justify-content: flex-start;
+        justify-content: space-around;
         .uppernav-navItems{
             display: none;
         }
         .uppernav-button{
             display: none;
+        }
+        .uppernav-burger--wrap{
+            display: block;
         }
     }
 }
