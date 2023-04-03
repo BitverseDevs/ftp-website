@@ -440,7 +440,7 @@ export const footerList = [
         bullettedItems: [
         'Unit 06002 6th Flr FourEcom East Tower Bldg. Harbor Drive Pasay City, PHILIPPINES',
         'Tel. (02) 871-59435',
-        'info@bit-verse.com',
+        'sales01@bitverseph.com',
         ] 
     },
 ];
