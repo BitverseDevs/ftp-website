@@ -4,6 +4,21 @@
 }
 
 
+.about-page--wrap{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
 .about-page--section-about{
     width: 80%;
     margin-left: auto;
