@@ -1,0 +1,88 @@
+.contact-us--about-logo{
+
+
+}
+
+
+.contact-us--section-about{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 120px;
+    // flex-flow: wrap;
+    .contact-us--left-section{
+        // padding: 0 50px 0 0;
+        width: 100%;
+        .contact-us--about-logo{
+            font-size: 80px;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            p{
+                color: rgb(0, 152, 255);
+            }
+            .contact-us-logo--symbol{
+                font-size: 95px;
+                letter-spacing: -20px;
+            }
+        }
+        .contact-us--main-header{
+            .contact-us--main-header-title{
+                display: flex;
+                flex-direction: column;
+                h1{
+                    font-family: 'Poppins-SemiBold', sans-serif;
+                    font-size: 36px;
+                    color: #222;
+                    // outline: 1px solid red;
+                }
+                p{
+                    font-family: 'Poppins-Medium', sans-serif;
+                    font-size: 14px;
+                    color: #777;
+                    // padding: 0 16px 0 0;
+                    // outline: 1px solid red;
+                }
+            }
+            .about-picture{
+
+            }
+        }
+    }
+    .contact-us--right-section{
+        width: 80%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        .contact-us--right-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            .contact-us--right-header-title{
+                h1{
+                    font-family: 'Poppins-SemiBold', sans-serif;
+                    font-size: 36px;
+                    color: #222;
+                    text-align: center;
+                }
+                p{
+                    font-family: 'Poppins-Medium', sans-serif;
+                    font-size: 14px;
+                    color: #777;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .about-page--section-about{
+        flex-flow: wrap;
+    }
+}
