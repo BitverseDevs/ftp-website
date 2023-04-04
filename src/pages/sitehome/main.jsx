@@ -27,12 +27,12 @@ import './main.scss';
 export function Main() {
     return (
         <React.Fragment>
-            <summary className='main-site-home--page-wrap'>
+            <ParticleBg/>
+            <section className='main-site-home--page-wrap'>
                 {/* <StaticNavMsg/> */}
                 {/* <Uppernav navList={upperNavData}/> */}
                 <Sitehero/>
                 {/* <> */}
-                    <ParticleBg/>
                     <BrandArea brands={brandArea}/>
                     <FeaturedSpecs/>
                     <ProductCarousel/>
@@ -42,7 +42,7 @@ export function Main() {
                 {/* </> */}
                 <CallToAction data={callToActionTitle}/>
                 {/* <FooterV1 footerList={footerList} footerBg={footerBg}/> */}
-            </summary>
+            </section>
         </React.Fragment>
     );
 }
