@@ -243,7 +243,7 @@ export const productCarouselHome = [
         id: 'pch05',
         sectionTitle: {
             featMsg: 'Time-in/out easily. Biometrics, Management of Leaves, Overtime, Night differential, and Shifts',
-            title: 'Time-keeping',
+            title: 'Timekeeping',
             desc: 'Everything you need to easily track and manage your employees time and attendance using automated, efficient and customizable management tools that can be integrated to your biometric system.',
         },
         srcTitle: 'LEARN MORE',
