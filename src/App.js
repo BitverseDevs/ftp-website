@@ -6,7 +6,9 @@ import Uppernav from "pages/sitehome/uppernav/uppernav";
 import Main from "./pages/sitehome/main";
 import About from "pages/about/about";
 import FooterV1 from "pages/footer/footerv1";
+import ContactUs from "pages/contactus/contactus";
 import { BrowserRouter, Route, Link, Routes, Navigate } from "react-router-dom";
+import ScrollToTop from "hoc/scrolltotop";
 import 'fonts/fonts.scss';
 
 function App() {
@@ -14,11 +16,14 @@ function App() {
     <BrowserRouter>
         <StaticNavMsg/>
         <Uppernav navList={upperNavData}/>
-        <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/about' element={<About />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path='/' element={<Main />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact-us' element={<ContactUs />}/>
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </ScrollToTop>
         <FooterV1 footerList={footerList} footerBg={footerBg}/>
     </BrowserRouter>
 
