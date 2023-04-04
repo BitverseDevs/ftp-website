@@ -50,9 +50,11 @@ export function Uppernav(props) {
                     return;
                 } else {
                     return (
-                        <button className={'uppernav-button'} key={item.key}>
-                            {item.navItem}
-                        </button>
+                        <Link to={'/contact-us'}>
+                            <button className={'uppernav-button'} key={item.key}>
+                                {item.navItem}
+                            </button>
+                        </Link>
                     )
                 }
             })}
