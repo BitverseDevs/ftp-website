@@ -11,7 +11,7 @@ export const aboutPageData = [
         title: 'Our Mission',
         isMainAbout: false,
         picUrl: '',
-        desc: 'To ensure the success of our partners by providing continuing and professional IT support, using our expertiseto long-term, innovative and cost-effective solutions for our partners.',
+        desc: 'To ensure the success of our partners by providing continuing and professional IT support, using our expertise to long-term, innovative and cost-effective solutions for our partners.',
     },
     {
         key: 'apd03',
@@ -25,7 +25,7 @@ export const aboutPageData = [
         title: 'Our Focus',
         isMainAbout: false,
         picUrl: '',
-        desc: 'Forge strategic partnerships with progressive and pioneering organizations that are in the forefront of utilizing technology to deliver differentiation to their business. Transform organizations via innovative technological solutions. Enable partners to move to automated and digital systems.',
+        desc: 'Forge strategic partnerships with progressive and pioneering organizations that are in the forefront of utilizing technology to deliver differentiation to their business.',
     }
 ];
 
@@ -39,25 +39,25 @@ export const aboutPillarsList = [
 {
     id: 'apl01',
     productName: 'Expertise',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
+    productDesc: 'Our team\'s deep knowledge and experience in software development ensures that we deliver cutting-edge solutions that meet our clients\' needs.',
     srcLink: '#',
 },
 {
     id: 'apl02',
     productName: 'Quality and Consistency',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
+    productDesc: 'We are committed to delivering products and services of the highest quality, while maintaining consistency in everything we do.',
     srcLink: '#',
 },
 {
     id: 'apl03',
     productName: 'Cost Efficiency',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
+    productDesc: 'We understand the importance of balancing quality with cost, and strive to offer our clients the most cost-effective solutions without compromising on quality.',
     srcLink: '#',
 },
 {
     id: 'apl04',
     productName: 'Transparency',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
+    productDesc: 'We believe in open and honest communication with our clients, and are dedicated to providing full transparency throughout all stages of our projects.',
     srcLink: '#',
 },
 ];
