@@ -1,6 +1,6 @@
 
 export const staticNavMsg = {
-    msg1: 'Expand your universe. Expertise in Human Resources.',
+    msg1: 'Streamline your HR, elevate your business : with our HRIS platform',
 };
 
 export const upperNavData = [
@@ -230,13 +230,13 @@ export const productCarouselHome = [
     {
         id: 'pch04',
         sectionTitle: {
-            featMsg: 'Lorem Ipsum',
+            featMsg: 'GENERATE PAYROLL , PAYROLL SUMMARY,  AND PAYROLL MANAGEMENT',
             title: 'Payroll',
-            desc: 'Lorem Ipsum',
+            desc: 'Our HRIS system offers a comprehensive payroll solution for businesses of all sizes. Our system simplifies the payroll process, automating tasks such as calculating employee salaries and taxes, and generating reports ',
         },
         srcTitle: 'LEARN MORE',
         srcLink: '#',
-        img: '',
+        img: '/assets/prod-car04.png',
         imgAlt: 'product-illustration-#4',
     },
     {
@@ -324,20 +324,20 @@ export const serviceOfferingsHomeBg = {
 export const productSpecificationTitle = {
         featMsg: 'FLEXIBLE SOFTWARES THAT CAN FIT YOUR BUSINESS NEEDS',
         title: 'Our Products',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+        desc: 'Bitverse offers a range of management systems and services, including HRIS, Barangay Management System (BMS), Kiosk Software, contact tracing, and other management systems. Our team of experts works closely with clients to ensure that they get the most out of their systems, providing ongoing support and guidance as needed.'
 };
 
 export const productSpecificationList = [
     {
         id: 'psl01',
         productName: 'Warehouse Receiving (WHSEAPP)',
-        productDesc: '',
+        productDesc: 'Warehouse Receiving APP simplifies the process of receiving and tracking inventory',
         srcLink: '#',
     },
     {
         id: 'psl02',
         productName: 'Baranggay Management System (BMS)',
-        productDesc: 'The Barangay Management System aids the Barangay Employees in regards with their daily activities and transactions.',
+        productDesc: 'Barangay Management System (BMS) helps local government units manage their day-to-day operations more efficiently.',
         srcLink: '#',
     },
     {
@@ -355,20 +355,20 @@ export const productSpecificationList = [
     {
         id: 'psl05',
         productName: 'PO Tracking System',
-        productDesc: 'The PO Tracking System simply keeps track of orders made by users.',
+        productDesc: 'PO Tracking System helps businesses manage and tracks their purchase orders.',
         srcLink: '#',
     },
     {
         id: 'psl06',
         productName: 'Cargo Importing (BIT-Cargo)',
-        productDesc: 'An online logistics ordering and tracking system.',
+        productDesc: 'BIT Cargo system provides a reliable and efficient system for online logistics ordering and tracking system.',
         srcLink: '#',
     },
 ];
 
 export const websitePortfolioTitle = {
     title: 'Our Website Portfolio',
-    desc: 'There are many variations of passages of Lorem Ipsum available.'
+    desc: 'Our products have helped businesses and local government units streamline their processes and improve overall efficiency.'
 };
 
 export const websitePortfolioList = [
