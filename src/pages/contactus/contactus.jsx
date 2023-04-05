@@ -8,11 +8,16 @@ import ProductSpecs from 'pages/sitehome/productspecs/productspecs';
 export function ContactUs() {
     // console.log(window, 'meow')
     const [formValues, setFormValues] = useState({
+        from: "website@bitverseph.com",
+        to: "dev02@bitverseph.com",
+        subject: "Demo Request",
         fullName: '',
         email: '',
-        contactNumber: '',
         companyName: '',
-        numEmployees: ''
+        contactNumber: '',
+        numberOfEmployees: '',
+        datePreferences: '',
+        timePreferences: '',
     });
 
     // Handle input field changes
@@ -34,7 +39,9 @@ export function ContactUs() {
                 email: '',
                 contactNumber: '',
                 companyName: '',
-                numEmployees: ''
+                numberOfEmployees: '',
+                datePreferences: '',
+                timePreferences: '',
             });
         } catch (error) {
             console.error(error);
@@ -145,8 +152,28 @@ export function ContactUs() {
                         <label>Number of Employees:</label>
                         <input
                             type="number"
-                            name="numEmployees"
-                            value={formValues.numEmployees}
+                            name="numberOfEmployees"
+                            value={formValues.numberOfEmployees}
+                            onChange={handleChange}
+                            required
+                        />
+                        </div>
+                        <div>
+                        <label>Preferred Date:</label>
+                        <input
+                            type="date"
+                            name="datePreferences"
+                            value={formValues.datePreferences}
+                            onChange={handleChange}
+                            required
+                        />
+                        </div>
+                        <div>
+                        <label>Preferred Time:</label>
+                        <input
+                            type="time"
+                            name="timePreferences"
+                            value={formValues.timePreferences}
                             onChange={handleChange}
                             required
                         />
