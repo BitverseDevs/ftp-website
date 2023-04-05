@@ -1,10 +1,10 @@
 export const aboutPageData = [
     {
         key: 'apd01',
-        title: 'Bitverse Corporation',
+        title: 'Contact Us',
         isMainAbout: true,
         picUrl: '/assets/z-bv-about.png',
-        desc: 'We are an information system solutions provider with core expertise on corporate automation platforms and software development. Our collective experience creating and delivering robust IT solutions for local and global companies across various industries: Telecommunications I Government I Healthcare I Real Estate I Construction ITransportation I Food Retail I Education I Logistics',
+        desc: 'We understand that manual HR processes can be time-consuming and prone to errors. Our HRIS system offers a comprehensive solution to streamline your HR operations and ensure accurate and up-to-date data. Contact us to know more!',
     },
     {
         key: 'apd02',
@@ -63,7 +63,7 @@ export const aboutPillarsList = [
 ];
 
 export const aboutPageBanner = {
-    bannerSrc: '/assets/bv-footer-banner.png'
+    bannerSrc: '/assets/bv-contact-us.png'
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
