@@ -12,18 +12,31 @@ import WebsitePortfolio from "pages/portfolio/websiteportfolio";
 import { websitePortfolioList } from "data/sitehome";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "hoc/scrolltotop";
+import useScrollToRef from "custom-hooks/use-scroll-to-ref/use-scroll-to-ref";
 import 'fonts/fonts.scss';
 
 function App() {
-
+  const [section1Ref, scrollToSection1] = useScrollToRef(-90);
+  const scrollToSection = (sectionId, pathUrl, navigate) => {
+    navigate(pathUrl);
+    switch (sectionId) {
+      case "section1":
+        setTimeout(()=>{
+          scrollToSection1();
+        }, 0)
+        break;
+      default:
+        return;
+    }
+  };
   return (
       <BrowserRouter>
         <PageWrapper>
           <StaticNavMsg/>
-          <Uppernav navList={upperNavData}/>
+          <Uppernav navList={upperNavData} scrollToSection={scrollToSection}/>
           <ScrollToTop>
             <Routes>
-              <Route path='/' element={<Main />} />
+              <Route path='/' element={<Main scrollRefs={section1Ref}/>} />
               <Route path='/about' element={<About />} />
               <Route path='/contact-us' element={<ContactUs />}/>
               <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>

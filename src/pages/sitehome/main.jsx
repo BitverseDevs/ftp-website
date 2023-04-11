@@ -16,31 +16,26 @@ import FeaturedSpecs from './featuredspecs/featuredSpecs';
 import ProductCarousel from './productcarousel/productcarousel';
 import ServiceOfferings from './serviceofferings/serviceofferings';
 import ProductSpecs from './productspecs/productspecs';
-// import WebsitePortfolio from './websiteportfolio/websiteportfolio';
 import CallToAction from './calltoaction/calltoaction';
 import ParticleBg from '../ui/particlebg';
-// import FooterV1 from '../footer/footerv1';
+import useScrollToRef from 'custom-hooks/use-scroll-to-ref/use-scroll-to-ref';
 import './main.scss';
 
 
-export function Main() {
+export function Main(props) {
+    const { scrollRefs } = props;
+    // const [section1Ref, scrollToSection1] = useScrollToRef();
     return (
         <React.Fragment>
             <ParticleBg/>
             <section className='main-site-home--page-wrap'>
-                {/* <StaticNavMsg/> */}
-                {/* <Uppernav navList={upperNavData}/> */}
                 <Sitehero/>
-                {/* <> */}
                     <BrandArea brands={brandArea}/>
                     <FeaturedSpecs/>
                     <ProductCarousel/>
                     <ServiceOfferings/>
-                    <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
-                    {/* <WebsitePortfolio portfolios={websitePortfolioList}/> */}
-                {/* </> */}
+                    <ProductSpecs ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
                 <CallToAction data={callToActionTitle}/>
-                {/* <FooterV1 footerList={footerList} footerBg={footerBg}/> */}
             </section>
         </React.Fragment>
     );

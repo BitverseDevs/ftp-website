@@ -2,8 +2,10 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './uppernav.scss';
 import HamburgerIcon from './hamburgerIcon/hamburgerIcon';
+import { useNavigate } from "react-router-dom";
 
 export function Uppernav(props) {
+    const navigate = useNavigate();
     const navListArr = Object?.values(props?.navList);
     const [isFixed, setIsFixed] = useState(false);
     const handleScroll = () => {
@@ -36,6 +38,12 @@ export function Uppernav(props) {
                 {navListArr.map((item)=> {
                     if(item.isButton === true){
                         return;
+                    } else if (item.isButton !== true && item.navItem === 'PRODUCTS'){
+                        return (
+                            <li key={item.key} onClick={() => props.scrollToSection('section1', item.pathUrl, navigate)}>
+                                <Link to={item.pathUrl}>{item.navItem}</Link>
+                            </li>
+                        )
                     } else {
                         return (
                             <li key={item.key}>
@@ -59,7 +67,7 @@ export function Uppernav(props) {
                 }
             })}
             <div className='uppernav-burger--wrap'>
-                <HamburgerIcon navList={navListArr}/>
+                <HamburgerIcon navList={navListArr} scrollToSection={props.scrollToSection}/>
             </div>
         </div>
         </React.Fragment>
