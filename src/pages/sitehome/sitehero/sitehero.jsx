@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './sitehero.scss';
 import { heroData } from '../../../data/sitehome';
+import { Link } from 'react-router-dom';
 
 export function Sitehero() {
     const [selectedItem, setSelectedItem] = useState(false); 
@@ -20,7 +21,9 @@ export function Sitehero() {
                             {heroData.left_desc}
                         </div>
                         <div className='hero-left-content-action-items'>
+                            <Link to={'/contact-us'}>
                             <button className='hero-left-content-action-item-call'>{heroData.left_call}</button>
+                            </Link>
                             <div className='hero-left-content-action-item-play' onClick={handleClick}>
                                 <div className='play-wrap'>
                                     <button className='play-wrap-shape'>

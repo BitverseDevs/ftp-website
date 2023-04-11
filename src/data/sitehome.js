@@ -295,7 +295,7 @@ export const serviceOfferingsHome = [
         sectionTitle: {
             featMsg: 'Services We Offer',
             title: 'Custom Software Development',
-            desc: 'Want to have a specific web application based on your business flow? We can bujild it from scratch',
+            desc: 'Want to have a specific web application based on your business flow? We can build it from scratch',
         },
         srcTitle: 'LEARN MORE',
         srcLink: '#',

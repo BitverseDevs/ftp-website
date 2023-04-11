@@ -4,6 +4,7 @@ import './serviceofferings.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { serviceOfferingsHome } from '../../../data/sitehome';
 import SectionTitleV2 from 'components/sectiontitleV2/sectiontitlev2';
+import { Link } from 'react-router-dom';
 
 const renderDotsItem = (item) => {
     const isActive = item.isActive;
@@ -29,11 +30,13 @@ export const ServiceOfferings = () => {
             <section className='service-offerings--main-container' draggable='false'>
                 <figcaption className='service-offerings--container-caption'>
                     <SectionTitleV2 featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
+                    <Link to={'/contact-us'}>
                     <button className='hero-left-content-action-item-call'>
                         <a href={product.srcLink}>
                             {product.srcTitle}
                         </a>
                     </button>
+                    </Link>
                 </figcaption>
                 <figure className='service-offerings--container-img' data-value="2" style={{marginRight: '40px', paddingLeft: '5px'}}>
                     <img src={product.img} alt={product.imgAlt} draggable='false'>

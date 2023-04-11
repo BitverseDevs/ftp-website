@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './hamburgerIcon.scss';
+import { Link } from 'react-router-dom';
 
 export function HamburgerIcon(props) {
     const [isToggle, setIsToggle] = useState(false);
@@ -15,9 +16,11 @@ export function HamburgerIcon(props) {
             <ul className='hamburger-icon--nav-list'>
                 {navListArr.map((item)=>{
                     return(
-                        <li className='hamburger-icon--nav-item'>
-                            <p>{item.navItem}</p>
-                        </li>
+                        <Link to={item.pathUrl}>
+                            <li className='hamburger-icon--nav-item'>
+                                <p>{item.navItem}</p>
+                            </li>
+                        </Link>
                     )
                 })}
             </ul>

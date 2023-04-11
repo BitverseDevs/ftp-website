@@ -1,5 +1,6 @@
 import React from 'react';
 import './calltoaction.scss';
+import { Link } from 'react-router-dom';
 
 export function CallToAction(props) {
     // console.log(props.data, 'meow')
@@ -15,11 +16,13 @@ export function CallToAction(props) {
                 <p className='call-to-action--msg-pro'>
                     {proMsg}
                 </p>
-                <button className='call-to-action--msg-action'>
-                    <a href={'#'} target={'_blank'}>
-                    {actionMsg}
-                    </a>
-                </button>
+                <Link to={'/contact-us'}>
+                    <button className='call-to-action--msg-action'>
+                        <a href={'#'} target={'_blank'}>
+                        {actionMsg}
+                        </a>
+                    </button>
+                </Link>
             </div>
         </section>
     );

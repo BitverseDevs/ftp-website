@@ -9,6 +9,8 @@ import SectionTitleV2 from 'components/sectiontitleV2/sectiontitlev2';
 // import helpers from '@/helpers/helpers';
 import useWindowDimensions from 'custom-hooks/use-window-dimension/use-window-dimension';
 import helpers from 'helpers/helpers';
+import { Link } from 'react-router-dom';
+import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 
 
 
@@ -67,11 +69,14 @@ export const ProductCarousel = () => {
             <section className='product-carousel--main-container' draggable='false' style={{ flexDirection: !shouldRender ? 'column' : ''}}>
                 <figcaption className='product-carousel--container-caption'>
                     <SectionTitleV2 featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
-                    <button className='hero-left-content-action-item-call'>
-                        <a href={product.srcLink}>
-                            {product.srcTitle}
-                        </a>
-                    </button>
+                    <Link to={'/contact-us'}>
+                        <button className='hero-left-content-action-item-call'>
+                            <a>
+                                {product.srcTitle}
+                            </a>
+                        </button>
+                        {/* <ButtonStyleV1 label={product.srcTitle}/> */}
+                    </Link>
                 </figcaption>
                 { isRender ? 
                 <figure className='product-carousel--container-img' data-value="2" style={{marginRight: '40px', paddingLeft: '5px'}}>
