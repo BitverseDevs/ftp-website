@@ -15,13 +15,21 @@ export function HamburgerIcon(props) {
             </summary>
             <ul className='hamburger-icon--nav-list'>
                 {navListArr.map((item)=>{
-                    return(
-                        <Link to={item.pathUrl}>
-                            <li className='hamburger-icon--nav-item'>
-                                <p>{item.navItem}</p>
+                    if(item.navItem === 'PRODUCTS'){
+                        return(
+                            <li className='hamburger-icon--nav-item' onClick={() => props.scrollToSection('section1')}>
+                                <Link to={item.pathUrl}><p>{item.navItem}</p></Link>
                             </li>
-                        </Link>
-                    )
+                        )
+                    }else{
+                        return(
+                            <Link to={item.pathUrl}>
+                                <li className='hamburger-icon--nav-item'>
+                                    <p>{item.navItem}</p>
+                                </li>
+                            </Link>
+                        )
+                    }
                 })}
             </ul>
         </div>
