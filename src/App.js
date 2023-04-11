@@ -8,6 +8,8 @@ import About from "pages/about/about";
 import FooterV1 from "pages/footer/footerv1";
 import ContactUs from "pages/contactus/contactus";
 import PageWrapper from "hoc/pageWrapper/pageWrapper";
+import WebsitePortfolio from "pages/portfolio/websiteportfolio";
+import { websitePortfolioList } from "data/sitehome";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "hoc/scrolltotop";
 import 'fonts/fonts.scss';
@@ -24,6 +26,7 @@ function App() {
               <Route path='/' element={<Main />} />
               <Route path='/about' element={<About />} />
               <Route path='/contact-us' element={<ContactUs />}/>
+              <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </ScrollToTop>

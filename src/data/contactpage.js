@@ -4,7 +4,7 @@ export const contactPageData = [
         title: 'Contact Us',
         isMainAbout: true,
         picUrl: '/assets/z-bv-about.png',
-        desc: 'We understand that manual HR processes can be time-consuming and prone to errors. Our HRIS system offers a comprehensive solution to streamline your HR operations and ensure accurate and up-to-date data. Contact us to know more!',
+        desc: 'We understand that manual HR processes can be time-consuming and prone to errors. Our HRIS system offers a comprehensive solution to streamline your HR operations and ensure accurate and up-to-date data. Aside from this, we also cater in customizable solutions for your company and organization, ranging from profile websites, portfolio, dynamic contact pages, systems and more. Contact us to know more!',
     },
     {
         key: 'apd02',

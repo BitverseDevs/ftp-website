@@ -6,15 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
     margin-bottom: 120px;
-    // .website-portfolio--figure-caption{
-    //     .website-portfolio--section-title{
-    //         outline: 1px solid red;
-    //     }
-    //     .website-portfolio--section-desc{
-    //         outline: 1px solid #0076ff;
-    //     }
-    // }
+    opacity: 0;
+    animation: faded 1s ease-in-out forwards;
     .website-portfolio--figure-section{
         .website-portfolio--figure-wraps{
             position: relative;
@@ -22,7 +17,6 @@
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 1px 1px 14px rgba(0, 118, 255, 1);
-            // transition: all 0.5s ease-in-out;
             .website-portfolio--figure-desc{
                 height: 100%;
                 width: 100%;
@@ -42,7 +36,6 @@
                 .website-portfolio--figure-title,
                 .website-portfolio--figure-button{
                     transform: translate(650%, -1500%);
-                    // opacity: 0;
                     transition: transform 0.5s ease-in-out;
                 }
                 p, button{
@@ -62,8 +55,6 @@
                     margin-top: 120px;
                     background-color: transparent;
                     border: 2px solid #fff;
-                    // background: linear-gradient(to bottom right, black, white);
-                    // background-size: 200% 100%;
                     border-radius: 10px;
                     &:hover{
                         background: #fff;
@@ -84,12 +75,21 @@
                     .website-portfolio--figure-title,
                     .website-portfolio--figure-button{
                         transform: translate(0%, 0%);
-                        // opacity: 1;
                     }
                 }
             }
         }
     }
-
 }
+
+
+@keyframes faded {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 

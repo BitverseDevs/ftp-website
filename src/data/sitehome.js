@@ -55,7 +55,7 @@ export const upperNavData = [
         key: 'und03',
         isButton: false,
         navItem: 'PORTFOLIO',
-        pathUrl: '/',
+        pathUrl: '/portfolio',
         hasList: false,
         listNav: [],
     },

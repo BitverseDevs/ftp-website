@@ -53,7 +53,7 @@ export function ContactUs() {
     // console.log(contactPageFormList.map((item)=>{`${item.label}`}), "meow")
     return (
         <React.Fragment>
-            <ParticleBg/>
+            {/* <ParticleBg/> */}
             <section className='contact-us--section-hero'>
                 <img src={contactPageBanner.bannerSrc} alt={'contact-us--banner'}/>
             </section>

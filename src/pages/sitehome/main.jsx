@@ -3,7 +3,6 @@ import {
     brandArea, 
     productSpecificationTitle,
     productSpecificationList,
-    websitePortfolioList,
     callToActionTitle,
     // footerList,
     // upperNavData
@@ -17,7 +16,7 @@ import FeaturedSpecs from './featuredspecs/featuredSpecs';
 import ProductCarousel from './productcarousel/productcarousel';
 import ServiceOfferings from './serviceofferings/serviceofferings';
 import ProductSpecs from './productspecs/productspecs';
-import WebsitePortfolio from './websiteportfolio/websiteportfolio';
+// import WebsitePortfolio from './websiteportfolio/websiteportfolio';
 import CallToAction from './calltoaction/calltoaction';
 import ParticleBg from '../ui/particlebg';
 // import FooterV1 from '../footer/footerv1';
@@ -38,7 +37,7 @@ export function Main() {
                     <ProductCarousel/>
                     <ServiceOfferings/>
                     <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
-                    <WebsitePortfolio portfolios={websitePortfolioList}/>
+                    {/* <WebsitePortfolio portfolios={websitePortfolioList}/> */}
                 {/* </> */}
                 <CallToAction data={callToActionTitle}/>
                 {/* <FooterV1 footerList={footerList} footerBg={footerBg}/> */}
