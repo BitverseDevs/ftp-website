@@ -1,4 +1,4 @@
-export const aboutPageData = [
+export const contactPageData = [
     {
         key: 'apd01',
         title: 'Contact Us',
@@ -29,47 +29,98 @@ export const aboutPageData = [
     }
 ];
 
-export const aboutPillarsTitle = {
-    featMsg: 'WHY BITVERSE',
-    title: '4 Key Pillars',
-    desc: 'Consistent in every client engagement.'
-};
 
-export const aboutPillarsList = [
-{
-    id: 'apl01',
-    productName: 'Expertise',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
-    srcLink: '#',
-},
-{
-    id: 'apl02',
-    productName: 'Quality and Consistency',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
-    srcLink: '#',
-},
-{
-    id: 'apl03',
-    productName: 'Cost Efficiency',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
-    srcLink: '#',
-},
-{
-    id: 'apl04',
-    productName: 'Transparency',
-    productDesc: 'Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.',
-    srcLink: '#',
-},
-];
-
-export const aboutPageBanner = {
+export const contactPageBanner = {
     bannerSrc: '/assets/bv-contact-us.png'
 };
 
+export const contactPageFormList = [
+    {
+        key: 'cpfl01',
+        label: 'Full Name:',
+        labelFor: 'fullName',
+        type: 'text',
+        placeholder: 'Enter Full Name',
+        value: 'fullName',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl02',
+        label: 'Email Address:',
+        labelFor: 'email',
+        type: 'email',
+        placeholder: 'Enter Valid Email',
+        value: 'email',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl03',
+        label: 'Contact Number:',
+        labelFor: 'contactNumber',
+        type: 'tel',
+        placeholder: 'Cellphone Number',
+        value: 'contactNumber',
+        required: true,
+        pattern: '[0-9]{4}-[0-9]{3}-[0-9]{4}',
+    },
+    {
+        key: 'cpfl04',
+        label: 'Company Name:',
+        labelFor: 'companyName',
+        type: 'text',
+        placeholder: 'Business Name',
+        value: 'companyName',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl05',
+        label: 'Number of Employees:',
+        labelFor: 'numberOfEmployees',
+        type: 'number',
+        placeholder: 'Can Be Estimates',
+        value: 'numberOfEmployees',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl06',
+        label: 'Appointment Date:',
+        labelFor: 'datePreferences',
+        type: 'date',
+        placeholder: 'Preferred Date',
+        value: 'datePreferences',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl07',
+        label: 'Preferred Time:',
+        labelFor: 'timePreferences',
+        type: 'time',
+        placeholder: 'Preferred Time',
+        value: 'timePreferences',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl08',
+        label: 'Remarks:',
+        labelFor: 'remarks',
+        type: 'text',
+        placeholder: 'Any additional input (Optional)',
+        value: '',
+        required: false,
+        pattern: '',
+    }
+];
+
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    aboutPageData,
-    aboutPageBanner,
-    aboutPillarsTitle,
-    aboutPillarsList,
+    contactPageData,
+    contactPageBanner,
+    contactPageFormList
 }
