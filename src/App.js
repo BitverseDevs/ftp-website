@@ -16,7 +16,7 @@ import useScrollToRef from "custom-hooks/use-scroll-to-ref/use-scroll-to-ref";
 import 'fonts/fonts.scss';
 
 function App() {
-  const [section1Ref, scrollToSection1] = useScrollToRef(-90);
+  const [section1Ref, scrollToSection1] = useScrollToRef(-120);
   const scrollToSection = (sectionId, pathUrl, navigate) => {
     navigate(pathUrl);
     switch (sectionId) {

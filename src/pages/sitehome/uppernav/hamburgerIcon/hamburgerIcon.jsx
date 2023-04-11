@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './hamburgerIcon.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function HamburgerIcon(props) {
+    const navigate = useNavigate();
     const [isToggle, setIsToggle] = useState(false);
     const navListArr = Object.values(props?.navList);
     // console.log(props., 'meow131313')
@@ -17,7 +18,7 @@ export function HamburgerIcon(props) {
                 {navListArr.map((item)=>{
                     if(item.navItem === 'PRODUCTS'){
                         return(
-                            <li className='hamburger-icon--nav-item' onClick={() => props.scrollToSection('section1')}>
+                            <li className='hamburger-icon--nav-item' onClick={() => props.scrollToSection('section1', item.pathUrl, navigate)}>
                                 <Link to={item.pathUrl}><p>{item.navItem}</p></Link>
                             </li>
                         )
