@@ -17,10 +17,10 @@ export const useScrollToRef = (offsetY) => {
   };
 
   useEffect(() => {
-    if (offsetY && ref.current) {
-        setTimeout(()=>{
-            scrollToRef();
-        }, 100)
+    if (ref.current && offsetY) {
+        // setTimeout(()=>{
+        //     scrollToRef();
+        // }, 100)
         // scrollToRef();
     }
   }, [offsetY, ref.current]);
