@@ -71,7 +71,7 @@ export const upperNavData = [
         key: 'und05',
         isButton: true,
         navItem: 'BOOK A DEMO',
-        pathUrl: '/',
+        pathUrl: '/contact-us',
         hasList: false,
         listNav: [],
     },
