@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './contactus.scss'
-import ParticleBg from 'pages/ui/particlebg';
+// import ParticleBg from 'pages/ui/particlebg';
 import { contactPageData, contactPageBanner, contactPageFormList } from 'data/contactpage';
-import ProductSpecs from 'pages/sitehome/productspecs/productspecs';
+// import ProductSpecs from 'pages/sitehome/productspecs/productspecs';
 import ContactInput from './contactinput/contactinput';
 import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
+import ReCAPTCHA from 'react-google-recaptcha';
+
 
 export function ContactUs() {
     // console.log(window, 'meow')
@@ -21,6 +23,7 @@ export function ContactUs() {
         datePreferences: '',
         timePreferences: '',
         remarks: '',
+        recaptchaResponse: '',
     });
 
     // Handle input field changes
@@ -28,6 +31,11 @@ export function ContactUs() {
         const { name, value } = e.target;
         setFormValues({ ...formValues, [name]: value });
     };
+
+    const handleRecaptchaChange = (value) => {
+        setFormValues({ ...formValues, recaptchaResponse: value });
+    };
+
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -103,9 +111,10 @@ export function ContactUs() {
                             </div>
                             )
                         })}
-                        {/* <button type="submit">
-                            Submit
-                        </button> */}
+                        <ReCAPTCHA
+                        sitekey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"
+                        onChange={handleRecaptchaChange}
+                        />
                         <ButtonStyleV1 type={'submit'} label={'Submit'}/>
                     </form>
                 </div>
