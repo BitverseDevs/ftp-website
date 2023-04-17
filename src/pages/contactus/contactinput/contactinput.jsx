@@ -30,10 +30,10 @@ export function ContactInput(props) {
             placeholder={placeholder}
             type={type}
             value={value}
-            // {...required? required: ''}
-            // {...pattern? pattern: ''}
-            required={required}
-            pattern={pattern}
+            {...required? required: ''}
+            {...pattern? pattern: ''}
+            required={required? required: false}
+            pattern={pattern? pattern: null}
             onKeyDown={handleKeyDown}
             />
         </React.Fragment>
