@@ -12,7 +12,7 @@ export function ContactInput(props) {
         required,
         pattern
     } = props;
-    // console.log(props, "aaaaa")
+    // console.log(label, "aaaaa", Object.getPrototypeOf(label), typeof label)
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
           event.preventDefault();
@@ -30,8 +30,10 @@ export function ContactInput(props) {
             placeholder={placeholder}
             type={type}
             value={value}
-            {...required? required: ''}
-            {...pattern? pattern: ''}
+            // {...required? required: ''}
+            // {...pattern? pattern: ''}
+            required={required}
+            pattern={pattern}
             onKeyDown={handleKeyDown}
             />
         </React.Fragment>

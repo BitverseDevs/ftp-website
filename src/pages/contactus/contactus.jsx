@@ -7,7 +7,7 @@ import { contactPageData, contactPageBanner, contactPageFormList } from 'data/co
 import ContactInput from './contactinput/contactinput';
 import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
+// import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 
 
@@ -15,7 +15,7 @@ export function ContactUs() {
     // console.log(window, 'meow')
     const [formValues, setFormValues] = useState({
         from: "website@bitverseph.com",
-        to: "sales01@bitverseph.com",
+        to: "dev02@bitverseph.com",
         subject: "Demo Request",
         fullName: '',
         email: '',
@@ -27,6 +27,7 @@ export function ContactUs() {
         remarks: '',
         recaptchaResponse: '',
     });
+    // console.log(formValues, 'meooowwwww');
 
     // Handle input field changes
     const handleChange = (e) => {
@@ -38,6 +39,7 @@ export function ContactUs() {
         setFormValues({ ...formValues, recaptchaResponse: value });
     };
 
+    // console.log(formValues, 'meowtime');
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -63,7 +65,7 @@ export function ContactUs() {
     // console.log(contactPageFormList.map((item)=>{`${item.label}`}), "meow")
     return (
         <React.Fragment>
-            <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS">
+            {/* <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"> */}
                 <section className='contact-us--section-hero'>
                     <img src={contactPageBanner.bannerSrc} alt={'contact-us--banner'}/>
                 </section>
@@ -113,19 +115,19 @@ export function ContactUs() {
                                 </div>
                                 )
                             })}
-                            {/* <ReCAPTCHA
-                            sitekey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"
+                            <ReCAPTCHA
+                            sitekey="6LeUfIclAAAAAIZlhTZKK16UPbojYb6tssctyjhx"
                             onChange={handleRecaptchaChange}
-                            /> */}
-                            <GoogleReCaptcha
+                            />
+                            {/* <GoogleReCaptcha
                             action="contact_us_form"
                             onVerify={handleRecaptchaChange}
-                            />
+                            /> */}
                             <ButtonStyleV1 type={'submit'} label={'Submit'}/>
                         </form>
                     </div>
                 </section>
-            </GoogleReCaptchaProvider>
+            {/* </GoogleReCaptchaProvider> */}
         </React.Fragment>
         
     );
