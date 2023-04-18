@@ -33,7 +33,7 @@ export function ContactInput(props) {
             // {...required? required: ''}
             // {...pattern? pattern: ''}
             required={required? required: false}
-            pattern={pattern? pattern: null}
+            // pattern={pattern? pattern: null}
             onKeyDown={handleKeyDown}
             />
         </React.Fragment>

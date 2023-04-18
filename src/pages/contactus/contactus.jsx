@@ -15,7 +15,7 @@ export function ContactUs() {
     // console.log(window, 'meow')
     const [formValues, setFormValues] = useState({
         from: "website@bitverseph.com",
-        to: "dev02@bitverseph.com",
+        to: "sales01@bitverseph.com",
         subject: "Demo Request",
         fullName: '',
         email: '',
@@ -110,7 +110,7 @@ export function ContactUs() {
                                         placeholder={item.placeholder}
                                         value={formValues[`${item.formValues}`]}
                                         required={item.required}
-                                        pattern={item.pattern}
+                                        // pattern={item.pattern}
                                     />
                                 </div>
                                 )
