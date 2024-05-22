@@ -4,7 +4,7 @@ export const aboutPageData = [
         title: 'Bitverse Corporation',
         isMainAbout: true,
         picUrl: '/assets/z-bv-about.png',
-        desc: 'We are an information system solutions provider with core expertise qqqqqqqqqqqqqqqqqqqqqqqqqqqq on corporate automation platforms and software development. Our collective experience creating and delivering robust IT solutions for local and global companies across various industries: Telecommunications, Government, Healthcare, Real Estate, Construction, Transportation, Food Retail, Education, and Logistics',
+        desc: 'We are an information system solutions provider with core expertise on corporate automation platforms and software development. Our collective experience creating and delivering robust IT solutions for local and global companies across various industries: Telecommunications, Government, Healthcare, Real Estate, Construction, Transportation, Food Retail, Education, and Logistics',
     },
     {
         key: 'apd02',
