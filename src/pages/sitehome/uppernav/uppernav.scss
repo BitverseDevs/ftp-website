@@ -2,9 +2,9 @@
 .uppernav-wrap{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: black;
-    background: white;
-    border-bottom: 2px solid #000000;
+    color: #fff;
+    background: linear-gradient(90deg, #1d3872 0%, #2342f5 100%);
+    border-bottom: 2px solid #fff;
     box-shadow: 1px 1px 8px gray;
     display: flex;
     justify-content: space-around;
@@ -18,7 +18,7 @@
         font-size: 40px;
         color: #fff;
         p{
-            color: #974dff;
+            color: #0098ff;
         }
         .uppernav-logo--symbol{
             font-size: 45px;
