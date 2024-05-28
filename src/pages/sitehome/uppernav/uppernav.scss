@@ -2,9 +2,9 @@
 .uppernav-wrap{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background: linear-gradient(90deg, #1d3872 0%, #2342f5 100%);
-    border-bottom: 2px solid #fff;
+    color: black;
+    background: white;
+    border-bottom: 2px solid #000000;
     box-shadow: 1px 1px 8px gray;
     display: flex;
     justify-content: space-around;
@@ -14,18 +14,17 @@
     z-index: 999;
     .uppernav-logo{
         display: flex;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins-', sans-serif;
         font-size: 40px;
         color: #fff;
         p{
-            color: rgb(0, 152, 255);
+            color: #974dff;
         }
         .uppernav-logo--symbol{
             font-size: 45px;
         }
 
         img{
-            display: none;
             max-height: 45px;
             max-width: 200px;
         }
