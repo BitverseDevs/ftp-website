@@ -30,8 +30,8 @@ export function Uppernav(props) {
         <div className='uppernav-wrap' style={{position: `${isFixed? 'fixed': 'relative'}`, top: isFixed? '0px': '' }}>
             <Link to={'/'}>
                 <div className='uppernav-logo'>
-                    {/* <img src='/assets/bitverse-logo-darkblue-blue.png'/> */}
-                    {'b'}<p>it</p>{'verse'}<p className='uppernav-logo--symbol'>{'>>'}</p>
+                    <img src='/assets/bitverse-logo'/>
+                    {/* {'b'}<p>it</p>{'verse'}<p className='uppernav-logo--symbol'>{'>>'}</p> */}
                 </div>
             </Link>
             <ul className='uppernav-navItems'>
