@@ -25,7 +25,7 @@ export function NextButtonArrow(props) {
     };
 
     const adjustableBgStyles = {
-        background: bgColor ?? 'linear-gradient(90deg, #0076ff 0%, #00c4ff 100%)',
+        background: bgColor ?? '#9900ff',
         borderRadius: bgBorderRadius ?? '50px',
         marginTop: bgMarginTop ?? '0px',
         marginRight: bgMarginRight ?? '0px',

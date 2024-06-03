@@ -49,7 +49,7 @@ export const ProductCarousel = () => {
         const isActive = item.isActive;
         const labelStyle = {
           fontWeight: isActive ? 'bold' : 'normal',
-          color: isActive ? 'blue' : 'black',
+          color: isActive ? 'rgb(81 0 135)' : 'black',
           marginRight: '10px',
           cursor: 'pointer',
           fontSize: '20px', 

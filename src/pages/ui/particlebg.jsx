@@ -53,7 +53,7 @@ export const ParticleBg = () => {
                 },
                 particles: {
                     color: {
-                        value: "#0063FF",
+                        value: "#9900ff",
                         // value: "#FFFFFF",
                     },
                     links: {

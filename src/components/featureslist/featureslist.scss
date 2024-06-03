@@ -8,8 +8,18 @@
             padding: 30px 0;
             border-bottom: 1px solid #eee;
             &:hover{
-                background-color: #00c4ff;
+                background-color: #3b0063;
+                color: #fff;
+                stroke: #fff;
+                transition: all 0.5s ease;                            
+                    .features-list--data-svg{
+                       path{
+                        transition: all 0.5s ease;
+                           stroke: #FFFFFF;
+                       }
+                    }   
             }
+
             .features-list--h6-wrap{
                 .features-list--content-wrap{
                     display: block;
