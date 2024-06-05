@@ -9,9 +9,13 @@ import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 import ReCAPTCHA from 'react-google-recaptcha';
 // import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
+import emailjs from '@emailjs/browser';
+
+
 
 
 export function ContactUs() {
+
     // console.log(window, 'meow')
     const [formValues, setFormValues] = useState({
         from: "website@bitverseph.com",
@@ -45,10 +49,10 @@ export function ContactUs() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://bitverse-api.herokuapp.com/send-email', formValues);
+            const response = await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
             console.log(response.data);
             alert('Email sent successfully');
-            setFormValues({
+            setFormValues({ 
                 fullName: '',
                 email: '',
                 contactNumber: '',
@@ -56,10 +60,13 @@ export function ContactUs() {
                 numberOfEmployees: '',
                 datePreferences: '',
                 timePreferences: '',
+                /* test API_KEY = 're_oawxABua_NL3ffjCCVMTWTrqMytGKLgsA'*/
             });
         } catch (error) {
             console.error(error);
             alert('Error sending email');
+        } finally {
+            console.log('Contact us form submitted')
         }
     };
     // console.log(contactPageFormList.map((item)=>{`${item.label}`}), "meow")

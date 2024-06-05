@@ -3,6 +3,7 @@ import './sitehero.scss';
 import { heroData } from '../../../data/sitehome';
 import { Link } from 'react-router-dom';
 
+
 export function Sitehero() {
     const [selectedItem, setSelectedItem] = useState(false); 
     function handleClick() {
@@ -10,6 +11,7 @@ export function Sitehero() {
       }
     return (
         <React.Fragment>
+
         <section className='hero-wrap'>
             <div className='hero-container'>
                 <div className='hero-left-content'>
