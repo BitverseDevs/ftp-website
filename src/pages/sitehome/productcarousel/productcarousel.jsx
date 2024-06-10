@@ -71,9 +71,7 @@ export const ProductCarousel = () => {
                     <SectionTitleV2 featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
                     <Link to={'/contact-us'}>
                         <button className='hero-left-content-action-item-call'>
-                            <a>
                                 {product.srcTitle}
-                            </a>
                         </button>
                         {/* <ButtonStyleV1 label={product.srcTitle}/> */}
                     </Link>
