@@ -9,6 +9,7 @@ import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 import ReCAPTCHA from 'react-google-recaptcha';
 // import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
+import SEO from '../../components/seo/seo';
 import emailjs from '@emailjs/browser';
 
 
@@ -73,6 +74,11 @@ export function ContactUs() {
     return (
         <React.Fragment>
             {/* <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"> */}
+                <SEO title='Contact Us - Bitverse Corporation'
+                    description='Contact us for a demo of our products and services. We are here to help you streamline your processes and improve overall efficiency.'
+                    keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Contact Us, Bitverse Corporation Contact Us, Bitverse Contact Us Form, Bitverse Demo, Bitverse Book Demo'
+                    type='website'
+                    name='Bitverse Corporation'/>
                 <section className='contact-us--section-hero'>
                     <img src={contactPageBanner.bannerSrc} alt={'contact-us--banner'}/>
                 </section>
