@@ -4,6 +4,7 @@ import './team.scss';
 import SEO from '../../components/seo/seo';
 import {teamData} from '../../data/team';
 import { SocialIcon } from 'react-social-icons'
+import {Link }from 'react-router-dom';
 
 const Team = () => {
     return (
@@ -20,7 +21,7 @@ const Team = () => {
                 <div className="org-content">
                 {teamData.map((team, index) => {
                     return (
-
+                        <Link to={'/team-profile'}>
                             <div className="org-card">
                                 <div className="org-card-img">
                                     {/* <img src={team.img} alt="profile"/> */}
@@ -40,7 +41,9 @@ const Team = () => {
                                     <SocialIcon className="org-card-socialIcons" url={team.twitterURL} target="_blank"/>
                                     <SocialIcon className="org-card-socialIcons" url={team.linkedInURL} target="_blank"/>
                                 </div>
+
                             </div>
+                            </Link>
                     )
                 }
                 )}

@@ -1,0 +1,74 @@
+.team-profile--wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-profile--content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 300px;
+    max-height: 600px;
+    width: 80%;
+}
+
+.team-profile--img{
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    width: 33%;
+    margin: 0 20px;
+}
+
+.team-profile--img img{
+    border-radius: 50%;
+    height: 250px;
+    width: 280px;
+}
+
+.team-profile--aboutme{
+width: 66%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin: 0 40px;
+height: 100%;
+}
+
+.team-profile--aboutme-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-profile--aboutme-header h1{
+    font-family: 'Poppins-SemiBold', sans-serif; 
+    font-size: 2.5rem;
+    display: inline;
+}
+
+.team-profile--aboutme-header p{
+    font-size: 1rem;
+    color: #777;
+    display: inline;
+}
+
+.team-profile--aboutme-header h1,
+.team-profile--aboutme-header p {
+    margin: 0;
+    padding: 0; 
+}
+
+.team-profile--text p{
+    color: #777;
+}
+
+.team-profile--text h1{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 1.5rem;
+}

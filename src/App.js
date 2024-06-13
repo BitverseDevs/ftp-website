@@ -10,6 +10,7 @@ import ContactUs from "pages/contactus/contactus";
 import PageWrapper from "hoc/pageWrapper/pageWrapper";
 import WebsitePortfolio from "pages/portfolio/websiteportfolio";
 import Team from "pages/organization/team";
+import TeamProfile from "pages/organization/teamProfile/teamProfile";
 import { websitePortfolioList } from "data/sitehome";
 import { BrowserRouter, Route, Routes, Navigate, HashRouter } from "react-router-dom";
 import ScrollToTop from "hoc/scrolltotop";
@@ -42,6 +43,7 @@ function App() {
               <Route path='/contact-us' element={<ContactUs />}/>
               <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
               <Route path='/organization' element={<Team />}/>
+              <Route path='/team-profile' element={<TeamProfile />}/>
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </ScrollToTop>
