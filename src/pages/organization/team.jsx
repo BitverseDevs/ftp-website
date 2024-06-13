@@ -36,9 +36,9 @@ const Team = () => {
                                     <p className="team-position">{team.position}</p>
                                 </div>
                                 <div className="org-card-social">
-                                    <SocialIcon className="org-card-socialIcons" url={team.fbUrl} />
-                                    <SocialIcon className="org-card-socialIcons" url={team.twitterURL} />
-                                    <SocialIcon className="org-card-socialIcons" url={team.linkedInURL} />
+                                    <SocialIcon className="org-card-socialIcons" url={team.fbUrl} target="_blank"/>
+                                    <SocialIcon className="org-card-socialIcons" url={team.twitterURL} target="_blank"/>
+                                    <SocialIcon className="org-card-socialIcons" url={team.linkedInURL} target="_blank"/>
                                 </div>
                             </div>
                     )
