@@ -19,7 +19,7 @@ export function About() {
                 <section className='about-page--section-about'>
                     <div className='about-page--left-section'>
                         <div className='about-page--about-logo'>
-                            {'b'}<p>it</p>{'verse'}<p className='about-page-logo--symbol'>{'>>'}</p>
+                            <img src="/assets/bitverse-logo.png" alt="bitverse-logo"/>
                         </div>
                         <div className='about-page--main-header'>
                             {aboutPageData.map(({key, title, isMainAbout, picUrl, desc})=>{

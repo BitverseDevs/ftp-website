@@ -71,6 +71,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 50%;
     }
 }
 
@@ -98,11 +99,18 @@
     display: flex;
     justify-content: center;
     align-items: center;       
-    margin: 10px 0;         
+    margin: 10px 0;      
+
+}
+
+.org-card-social a:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
 }
 
 .org-card-social a{
     margin: 0 5px;
+    transition: all 0.3s ease-in-out;   
 }
 
 @media only screen and (max-width: 600px) {
