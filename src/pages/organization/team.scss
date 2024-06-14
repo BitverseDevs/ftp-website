@@ -76,6 +76,9 @@
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        background: rgb(77,28,145);
+        background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 50%, rgba(85,102,116,1) 100%) border-box;
+        border: 5px solid transparent;
     }
 }
 
