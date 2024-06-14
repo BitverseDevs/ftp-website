@@ -3,13 +3,14 @@
 }
 
 .team-profile--wrap{
-    background-image: url('../../../../public/assets/bv-header-banner.png');
+    background-image: url('../../../../public/assets/purple-banner.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
+    margin: 0 0 80px 0;
 }
 
 @keyframes fadeIn {
@@ -45,8 +46,8 @@ to {
 
 .team-profile--img img{
     border-radius: 50%;
-    height: 250px;
-    width: 260px;
+    height: 300px;
+    width: 300px;
 }
 
 .team-profile--aboutme{

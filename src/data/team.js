@@ -12,7 +12,7 @@ export const teamData = [
     {
         key: 'JhumerApus',
         fullName: 'Jhumer O. Apus',
-        content: 'I am a front-end developer with a passion for creating beautiful and responsive web applications. I have experience in developing web applications using React.js, Angular, and Vue.js. I am also proficient in HTML, CSS, and JavaScript.',
+        content: 'I am a front-end developer with a passion for creating beautiful and responsive web applications. I have experience in developing web applications using React.js, Angular, and Vue.js.',
         position: 'Front-End Developer',
         imgURL: '/assets/jhumer_pic.jpg',
         fbUrl: 'https://www.facebook.com/jhumer.apus.1/',
