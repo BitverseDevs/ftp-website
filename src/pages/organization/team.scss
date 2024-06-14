@@ -24,8 +24,10 @@
 .org-header h1{
     font-family: 'Poppins-SemiBold', sans-serif;
     font-size: 36px;
-    color: #222;
-
+    background: rgb(77,28,145);
+    background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .org-header h1 p{
@@ -35,10 +37,12 @@
 }
 
 .org-content{
+    position: relative;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
     gap: 1rem;
 }
 
@@ -75,6 +79,9 @@
     }
 }
 
+.org-card-content{
+    flex: 1;
+}
 
 
 .org-card-content .team-fullName{

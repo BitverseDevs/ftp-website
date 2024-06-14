@@ -21,7 +21,7 @@ const Team = () => {
                 <div className="org-content">
                 {teamData.map((team, index) => {
                     return (
-                        <Link to={'/team-profile'}>
+                        <Link key={index} to={`/team-profile/${team.key}`}>
                             <div className="org-card">
                                 <div className="org-card-img">
                                     {/* <img src={team.img} alt="profile"/> */}
@@ -33,17 +33,11 @@ const Team = () => {
                                 </div>
                                 <div className="org-card-content">
                                     <h2 className="team-fullName">{team.fullName}</h2>
-                                    <p className="team-content">{team.content}</p>
                                     <p className="team-position">{team.position}</p>
                                 </div>
-                                <div className="org-card-social">
-                                    <SocialIcon className="org-card-socialIcons" url={team.fbUrl} target="_blank"/>
-                                    <SocialIcon className="org-card-socialIcons" url={team.twitterURL} target="_blank"/>
-                                    <SocialIcon className="org-card-socialIcons" url={team.linkedInURL} target="_blank"/>
-                                </div>
-
+                
                             </div>
-                            </Link>
+                        </Link>
                     )
                 }
                 )}

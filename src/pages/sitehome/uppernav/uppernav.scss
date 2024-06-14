@@ -2,7 +2,7 @@
 .uppernav-wrap{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: #4d1c91;
     background: #fff;
     border-bottom: 2px solid black;
     box-shadow: 1px 1px 8px gray;
@@ -37,6 +37,15 @@
     }
     .uppernav-burger--wrap{
         display: none;
+    }
+    .uppernav-navItems a:hover, .uppernav-button:hover{
+        color: black;
+        font-size: 20px;
+        transition: font-size 0.3s ease-in;
+    }
+
+    .uppernav-navItems a, .uppernav-button{
+        transition: font-size 0.3s ease-in-out;
     }
 }
 
