@@ -1,6 +1,6 @@
 import react from 'react';
 import './teamProfile.scss';
-import {teamData} from '../../../data/team';
+import {teamData, internData} from '../../../data/team';
 import ParticleBg from 'pages/ui/particlebg';
 import { useParams } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ const TeamProfile = (props) => {
     const { id } = useParams();
     console.log(id);
 
-    const teamMember = teamData.find(member => member.key === id);
+    const teamMember = teamData.find(member => member.key === id) ? teamData.find(member => member.key === id) : internData.find(member => member.key === id);
 
     return (    
         <>

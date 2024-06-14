@@ -128,7 +128,6 @@ export const internData = [
         fullName: 'Fritzgerald L. Monzon',
         content: 'lorem ipsum',
         position: 'Front-End Developer Intern',
-        imgURL: '',
         imgURL: '/assets/fritz.jpg',
         fbUrl: 'https://www.facebook.com/',
         twitterURL: 'https://twitter.com/',
