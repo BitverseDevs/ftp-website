@@ -2,8 +2,9 @@ import React from 'react';
 import ParticleBg from 'pages/ui/particlebg';
 import './team.scss';
 import SEO from '../../components/seo/seo';
-import {teamData} from '../../data/team';
+import {teamData, internData} from '../../data/team';
 import { SocialIcon } from 'react-social-icons'
+import {Link }from 'react-router-dom';
 
 const Team = () => {
     return (
@@ -20,7 +21,7 @@ const Team = () => {
                 <div className="org-content">
                 {teamData.map((team, index) => {
                     return (
-
+                        <Link key={index} to={`/team-profile/${team.key}`}>
                             <div className="org-card">
                                 <div className="org-card-img">
                                     {/* <img src={team.img} alt="profile"/> */}
@@ -32,15 +33,38 @@ const Team = () => {
                                 </div>
                                 <div className="org-card-content">
                                     <h2 className="team-fullName">{team.fullName}</h2>
-                                    <p className="team-content">{team.content}</p>
                                     <p className="team-position">{team.position}</p>
                                 </div>
-                                <div className="org-card-social">
-                                    <SocialIcon className="org-card-socialIcons" url={team.fbUrl} target="_blank"/>
-                                    <SocialIcon className="org-card-socialIcons" url={team.twitterURL} target="_blank"/>
-                                    <SocialIcon className="org-card-socialIcons" url={team.linkedInURL} target="_blank"/>
-                                </div>
+                
                             </div>
+                        </Link>
+                    )
+                }
+                )}
+                </div>
+                <div className="org-header">
+                    <h1>Meet the <p>Interns</p></h1>
+                </div>
+                <div className="org-content">
+                {internData.map((team, index) => {
+                    return (
+                        <Link key={index} to={`/team-profile/${team.key}`}>
+                            <div className="org-card">
+                                <div className="org-card-img">
+                                    {/* <img src={team.img} alt="profile"/> */}
+                                    {team.imgURL === '' ?
+                                        <img src="/assets/blank-icon.png" alt="profile"/>
+                                        :
+                                        <img src={team.imgURL} alt="profile"/>
+                                    }
+                                </div>
+                                <div className="org-card-content">
+                                    <h2 className="team-fullName">{team.fullName}</h2>
+                                    <p className="team-position">{team.position}</p>
+                                </div>
+                
+                            </div>
+                        </Link>
                     )
                 }
                 )}
