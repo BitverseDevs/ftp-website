@@ -32,7 +32,7 @@ function App() {
     }
   };
   return (
-      <BrowserRouter>
+      <HashRouter>
         <PageWrapper>
           <StaticNavMsg/>
           <Uppernav navList={upperNavData} scrollToSection={scrollToSection}/>
@@ -49,7 +49,7 @@ function App() {
           </ScrollToTop>
           <FooterV1 footerList={footerList} footerBg={footerBg}/>
         </PageWrapper>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
