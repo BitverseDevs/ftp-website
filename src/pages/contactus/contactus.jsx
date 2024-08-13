@@ -53,7 +53,7 @@ export function ContactUs() {
             const response = await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
             console.log(response.data);
             alert('Email sent successfully');
-            setFormValues({ 
+            setFormValues(curr => ({ 
                 fullName: '',
                 email: '',
                 contactNumber: '',
@@ -62,7 +62,7 @@ export function ContactUs() {
                 datePreferences: '',
                 timePreferences: '',
                 /* test API_KEY = 're_oawxABua_NL3ffjCCVMTWTrqMytGKLgsA'*/
-            });
+            }));
         } catch (error) {
             console.error(error);
             alert('Error sending email');
@@ -129,8 +129,8 @@ export function ContactUs() {
                                 )
                             })}
                             <ReCAPTCHA
-                            sitekey="6LeUfIclAAAAAIZlhTZKK16UPbojYb6tssctyjhx"
-                            onChange={handleRecaptchaChange}
+                                sitekey="6LeUfIclAAAAAIZlhTZKK16UPbojYb6tssctyjhx"
+                                onChange={handleRecaptchaChange}
                             />
                             {/* <GoogleReCaptcha
                             action="contact_us_form"

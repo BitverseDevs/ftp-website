@@ -62,7 +62,7 @@ export const upperNavData = [
     {
         key: 'und04',
         isButton: false,
-        navItem: 'BLOG',
+        navItem: 'ORGANIZATION',
         pathUrl: '/organization',
         hasList: false,
         listNav: [],
