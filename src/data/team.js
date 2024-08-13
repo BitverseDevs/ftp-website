@@ -33,7 +33,7 @@ export const teamData = [
         key: 'MarcRovicBaja',
         fullName: 'Marc Rovic Baja',
         content: "As a Senior Back-End Engineer, he specializes in architecting and implementing robust, scalable, and secure server-side applications. With deep expertise in languages like Node.js and Python. along with extensive experience in databases such as PostgreSQL, MongoDB, and MySQL, he is proficient in building efficient APIs and cloud-based solutions. He has a strong background in system design, and performance optimization, including continuous integration and deployment (CI/CD). His experience includes working on high-traffic applications where reliability, security, and performance are critical. He thrives in collaborative environments, often taking the lead in technical decision-making, mentoring junior developers, and ensuring that projects meet both technical and business objectives",
-        position: 'Senior Backend-End Engineer',
+        position: 'Senior Back-End Engineer',
         imgURL: '/assets/marc.jfif',
         fbUrl: 'https://www.facebook.com/',
         twitterURL: 'https://twitter.com/',
