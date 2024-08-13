@@ -9,9 +9,14 @@ import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 import ReCAPTCHA from 'react-google-recaptcha';
 // import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
+import SEO from '../../components/seo/seo';
+import emailjs from '@emailjs/browser';
+
+
 
 
 export function ContactUs() {
+
     // console.log(window, 'meow')
     const [formValues, setFormValues] = useState({
         from: "website@bitverseph.com",
@@ -45,10 +50,10 @@ export function ContactUs() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://bitverse-api.herokuapp.com/send-email', formValues);
+            const response = await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
             console.log(response.data);
             alert('Email sent successfully');
-            setFormValues({
+            setFormValues(curr => ({ 
                 fullName: '',
                 email: '',
                 contactNumber: '',
@@ -56,16 +61,24 @@ export function ContactUs() {
                 numberOfEmployees: '',
                 datePreferences: '',
                 timePreferences: '',
-            });
+                /* test API_KEY = 're_oawxABua_NL3ffjCCVMTWTrqMytGKLgsA'*/
+            }));
         } catch (error) {
             console.error(error);
             alert('Error sending email');
+        } finally {
+            console.log('Contact us form submitted')
         }
     };
     // console.log(contactPageFormList.map((item)=>{`${item.label}`}), "meow")
     return (
         <React.Fragment>
             {/* <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"> */}
+                <SEO title='Contact Us - Bitverse Corporation'
+                    description='Contact us for a demo of our products and services. We are here to help you streamline your processes and improve overall efficiency.'
+                    keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Contact Us, Bitverse Corporation Contact Us, Bitverse Contact Us Form, Bitverse Demo, Bitverse Book Demo'
+                    type='website'
+                    name='Bitverse Corporation'/>
                 <section className='contact-us--section-hero'>
                     <img src={contactPageBanner.bannerSrc} alt={'contact-us--banner'}/>
                 </section>
@@ -116,8 +129,8 @@ export function ContactUs() {
                                 )
                             })}
                             <ReCAPTCHA
-                            sitekey="6LeUfIclAAAAAIZlhTZKK16UPbojYb6tssctyjhx"
-                            onChange={handleRecaptchaChange}
+                                sitekey="6LeUfIclAAAAAIZlhTZKK16UPbojYb6tssctyjhx"
+                                onChange={handleRecaptchaChange}
                             />
                             {/* <GoogleReCaptcha
                             action="contact_us_form"

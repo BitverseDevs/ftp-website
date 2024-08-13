@@ -49,7 +49,7 @@ export const ProductCarousel = () => {
         const isActive = item.isActive;
         const labelStyle = {
           fontWeight: isActive ? 'bold' : 'normal',
-          color: isActive ? 'blue' : 'black',
+          color: isActive ? 'rgb(81 0 135)' : 'black',
           marginRight: '10px',
           cursor: 'pointer',
           fontSize: '20px', 
@@ -71,9 +71,7 @@ export const ProductCarousel = () => {
                     <SectionTitleV2 featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
                     <Link to={'/contact-us'}>
                         <button className='hero-left-content-action-item-call'>
-                            <a>
                                 {product.srcTitle}
-                            </a>
                         </button>
                         {/* <ButtonStyleV1 label={product.srcTitle}/> */}
                     </Link>

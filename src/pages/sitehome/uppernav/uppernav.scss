@@ -2,9 +2,9 @@
 .uppernav-wrap{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background: linear-gradient(90deg, #1d3872 0%, #2342f5 100%);
-    border-bottom: 2px solid #fff;
+    color: #4d1c91;
+    background: #fff;
+    border-bottom: 2px solid black;
     box-shadow: 1px 1px 8px gray;
     display: flex;
     justify-content: space-around;
@@ -37,6 +37,15 @@
     }
     .uppernav-burger--wrap{
         display: none;
+    }
+    .uppernav-navItems a:hover, .uppernav-button:hover{
+        color: black;
+        font-size: 20px;
+        transition: font-size 0.3s ease-in;
+    }
+
+    .uppernav-navItems a, .uppernav-button{
+        transition: font-size 0.3s ease-in-out;
     }
 }
 

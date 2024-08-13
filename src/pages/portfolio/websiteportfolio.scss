@@ -16,7 +16,7 @@
             margin-top: 40px;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 1px 1px 14px rgba(0, 118, 255, 1);
+            box-shadow: 1px 1px 14px #490179;
             .website-portfolio--figure-desc{
                 height: 100%;
                 width: 100%;
@@ -25,7 +25,7 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                background: linear-gradient(to bottom right, #012d5f, #00c4ff);
+                background: linear-gradient(90deg, #490179 0%, #9900ff 100%);
                 opacity: 0.8;
                 background-size: 200% 100%;
                 background-position: left top;

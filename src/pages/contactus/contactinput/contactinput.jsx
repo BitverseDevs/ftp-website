@@ -23,18 +23,18 @@ export function ContactInput(props) {
         <React.Fragment>
             <label htmlFor={labelFor} className='contact-input--label'>{label}</label>
             <input
-            className='contact-input--input'
-            id={labelFor}
-            name={labelFor}
-            onChange={onChange}
-            placeholder={placeholder}
-            type={type}
-            value={value}
-            // {...required? required: ''}
-            // {...pattern? pattern: ''}
-            required={required? required: false}
-            // pattern={pattern? pattern: null}
-            onKeyDown={handleKeyDown}
+                className='contact-input--input'
+                id={labelFor}
+                name={labelFor}
+                onChange={onChange}
+                placeholder={placeholder}
+                type={type}
+                value={value}
+                // {...required? required: ''}
+                // {...pattern? pattern: ''}
+                required={required? required: false}
+                // pattern={pattern? pattern: null}
+                onKeyDown={handleKeyDown}
             />
         </React.Fragment>
     );

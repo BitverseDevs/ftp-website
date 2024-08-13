@@ -55,10 +55,10 @@ export function FooterV1(props) {
                                         <p className={'footer-section--item-first-desc'}>
                                             {firstDesc}
                                         </p>
-                                        <p className={'footer-section--item-second-desc'}>
+                                        <div className={'footer-section--item-second-desc'}>
                                             {secondDesc}
                                             <Input placeholder={inputPlaceholder}/>
-                                        </p>
+                                        </div>
                                     </div>
                                 </React.Fragment>
                             );

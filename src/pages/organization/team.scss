@@ -1,0 +1,143 @@
+.org--wrap{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin: 5vw;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.org-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.org-header h1{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 36px;
+    background: rgb(77,28,145);
+    background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.org-header h1 p{
+    font-family: 'Poppins-Bold', sans-serif;
+    display: inline;
+
+}
+
+.org-content{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.org-card{
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.org-card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+
+}
+
+.org-card, .org-card p, .org-card h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.org-card-img{
+    width: 200px;
+    height: 200px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        background: rgb(77,28,145);
+        background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 50%, rgba(85,102,116,1) 100%) border-box;
+        border: 5px solid transparent;
+    }
+}
+
+.org-card-content{
+    flex: 1;
+}
+
+
+.org-card-content .team-fullName{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+
+.org-card-content .team-content{
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 14px;
+    color: #777;
+}
+
+.org-card-content .team-position{
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 16px;
+    color: #222;    
+}
+
+.org-card-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    margin: 10px 0;      
+
+}
+
+.org-card-social a:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+}
+
+.org-card-social a{
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;   
+}
+
+@media only screen and (max-width: 600px) {
+    .org-content{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+}
+
+@media (min-width:601px) and (max-width: 900px) {
+    .org-content{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width:901px) and (max-width: 1200px) {
+    .org-content{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

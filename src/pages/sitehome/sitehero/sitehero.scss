@@ -1,7 +1,6 @@
 .hero-wrap{
     height: 731px;
-    background: url("../../../../public/assets/bv-header-banner.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     background-size: cover;
     background-position-x: 100%;
     background-position-y: 50%;
@@ -14,7 +13,7 @@
         align-items: center;
         .hero-left-content{
             font-family: 'Poppins', sans-serif;
-            color: #fff;
+            color: #222;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -38,13 +37,13 @@
             .hero-left-content-action-item-call{
                 height: 51px;
                 border-radius: 6px;
-                border: 2px solid #ffffff;
+                border: 2px solid #222;
                 font-size: 12px;
                 font-family: 'Poppins-Medium', sans-serif;
                 padding: 14px;
                 width: 169px;
                 background: rgba(255, 255, 255, 0.1);
-                color: #ffffff;
+                color: #222;
                 margin-right: 30px;
                 &:hover{
                     background-color: #ffffff;

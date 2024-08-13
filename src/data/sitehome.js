@@ -59,14 +59,14 @@ export const upperNavData = [
         hasList: false,
         listNav: [],
     },
-    // {
-    //     key: 'und04',
-    //     isButton: false,
-    //     navItem: 'BLOG',
-    //     pathUrl: '/',
-    //     hasList: false,
-    //     listNav: [],
-    // },
+    {
+        key: 'und04',
+        isButton: false,
+        navItem: 'ORGANIZATION',
+        pathUrl: '/organization',
+        hasList: false,
+        listNav: [],
+    },
     {
         key: 'und05',
         isButton: true,

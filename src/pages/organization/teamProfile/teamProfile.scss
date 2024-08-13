@@ -1,0 +1,134 @@
+.team-profile--wrap{
+    color: #fff;
+}
+
+.team-profile--wrap{
+    background-image: url('../../../../public/assets/purple-banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin: 0 0 80px 0;
+}
+
+@keyframes fadeIn {
+from{
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+
+}
+
+.team-profile--content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px 0;
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 300px;
+    max-height: 600px;
+    width: 80%;
+}
+
+.team-profile--img{
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    width: 33%;
+    margin: 0 20px;
+}
+
+.team-profile--img img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.team-profile--aboutme{
+width: 66%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin: 0 40px;
+height: 100%;
+}
+
+.team-profile--aboutme-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-profile--aboutme-header h1{
+    font-family: 'Poppins-SemiBold', sans-serif; 
+    font-size: 2.5rem;
+    display: inline;
+}
+
+.team-profile--aboutme-header p{
+    font-size: 1rem;
+    color: #fff;
+    display: inline;
+}
+
+.team-profile--aboutme-header h1,
+.team-profile--aboutme-header p {
+    margin: 0;
+    padding: 0; 
+}
+
+.team-profile--text{
+    margin-top: 50px;
+}
+
+.team-profile--text p{
+    color: #fff;
+}
+
+.team-profile--text h1{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-profile--content{
+        flex-direction: column;
+        padding: 20px 0;    
+    }
+
+    .team-profile--img img{
+        height: 150px;
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .team-profile--img{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .team-profile--aboutme{
+        margin-top: 25px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .team-profile--aboutme-header h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width:601px) and (max-width: 900px) {
+
+}
+
+@media (min-width:901px) {
+
+}

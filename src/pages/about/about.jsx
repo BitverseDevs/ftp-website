@@ -3,10 +3,15 @@ import './about.scss'
 import ParticleBg from 'pages/ui/particlebg';
 import { aboutPageData, aboutPageBanner, aboutPillarsTitle, aboutPillarsList } from 'data/aboutpage';
 import ProductSpecs from 'pages/sitehome/productspecs/productspecs';
+import SEO from '../../components/seo/seo';
 
 export function About() {
     return (
         <React.Fragment>
+            <SEO title='About Us - Bitverse Corporation' 
+                description='We are an information system solutions provider with core expertise on corporate automation platforms and software development. Our collective experience creating and delivering robust IT solutions for local and global companies across various industries: Telecommunications, Government, Healthcare, Real Estate, Construction, Transportation, Food Retail, Education, and Logistics' keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions' 
+                name='Bitverse Corporation' 
+                type='website'/>
             <div className='about-page--wrap'>
                 <section className='about-page--section-hero'>
                     <img src={aboutPageBanner.bannerSrc} alt={'about-page--banner'}/>
@@ -14,7 +19,7 @@ export function About() {
                 <section className='about-page--section-about'>
                     <div className='about-page--left-section'>
                         <div className='about-page--about-logo'>
-                            {'b'}<p>it</p>{'verse'}<p className='about-page-logo--symbol'>{'>>'}</p>
+                            <img src="/assets/bitverse-logo.png" alt="bitverse-logo"/>
                         </div>
                         <div className='about-page--main-header'>
                             {aboutPageData.map(({key, title, isMainAbout, picUrl, desc})=>{
