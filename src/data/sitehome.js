@@ -438,9 +438,9 @@ export const footerList = [
         secondDesc: '',
         isBullettedList: true,
         bullettedItems: [
-        'Unit 06002 6th Flr FourEcom East Tower Bldg. Harbor Drive Pasay City, PHILIPPINES',
-        'Tel. (02) 871-59435',
-        'sales01@bitverseph.com',
+        'Unit 1603, Pearlbank Centre, Salcedo Village, 146 Valero, Makati, 1200 Metro Manila',
+        'Phone: 09171187206',
+        'salesbitverse@gmail.com',
         ] 
     },
 ];
