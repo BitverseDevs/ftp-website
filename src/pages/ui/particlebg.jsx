@@ -74,7 +74,7 @@ export const ParticleBg = () => {
                         random: false,
                         speed: {min: 1, max: 2},
                         straight: false,
-                    },
+                        },
                     number: {
                         density: {
                             enable: true,
@@ -86,7 +86,7 @@ export const ParticleBg = () => {
                         value: 0.3,
                     },
                     shape: {
-                        type: "edge",
+                        type: "heart",
                     },
                     size: {
                         value: { min: 1, max: 6 },
