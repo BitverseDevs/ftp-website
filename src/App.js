@@ -44,7 +44,7 @@ function App() {
               <Route path='/contact-us' element={<ContactUs />}/>
               <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
               <Route path='/organization' element={<Team />}/>
-              <Route path='/team-profile/:id' element={<TeamProfile />}/>
+              <Route path='/team-profile/:id/:arr?' element={<TeamProfile />}/>
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </ScrollToTop>

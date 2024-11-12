@@ -76,7 +76,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #innerOneSectionTwo {
@@ -104,8 +104,9 @@
 }
 
 #innerOneSectionThree, #innerTwoSectionThree, #innerOneSectionFour, #innerTwoSectionFour {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
     gap: 40px;
@@ -170,6 +171,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding: 10px 0 10px 0;
 }
 
 .org-card-content .team-fullName{
@@ -209,29 +211,246 @@
     transition: all 0.3s ease-in-out;   
 }
 
-@media only screen and (max-width: 600px) {
-    .org-content{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+// new css team profile :)
+
+// remove after fixing layout
+#sectionTwoFirstInner, #newSectionThree, #newSectionThreeInnerCtn {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sectionThreeInnerCtnTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#sectionTwoSecondInner, #newInnerSectionThree {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#newInnerSectionThree {
+    margin-top: 70px;
+}
+
+#sectionTwoSecondInner {
+    padding-top: 30px;
+}
+
+.sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader { 
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 2.3rem;
+    background: rgb(77,28,145);
+    background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+    .org-header h1 {
+        font-size: 2.1rem;
+    }
+
+    #newSectionThree {
+        margin-top: 5px;
+    }
+
+    #sectionTwo {
+        flex-direction: column;
+    }
+
+    .orgCard, .org-card-content {
+        width: 160px;
+    }
+
+    .org-card-img {
+        width: 160px;
+        height: 210px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour {
+        gap: 15px !important;
+        flex-direction: column;
+    }
+
+    #innerTwoSectionThree {
+        flex-direction: column-reverse !important;
+    }
+
+    #innerTwoSectionFour {
+        flex-direction: row;
+    }
+
+    .team-fullName, .team-position {
+        font-size: 0.8rem !important;
+    }
+
+    .bookMarkIconOne {
+        left: 0px;
+    }
+
+    .bookMarkIconTwo { 
+        left: 25px;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 1.1rem;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 15px;
     }
 }
 
-@media (min-width:601px) and (max-width: 900px) {
+@media only screen and (min-width: 400px) and (max-width: 789px) {
+    .org-header h1 {
+        font-size: 2.5rem;
+    }
+
+    #newSectionThree {
+        margin-top: 5px;
+    }
+
+    #sectionTwo {
+        flex-direction: column;
+    }
+
+    .orgCard, .org-card-content {
+        width: 160px;
+    }
+
+    .org-card-img {
+        width: 160px;
+        height: 210px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour {
+        gap: 25px !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #innerTwoSectionThree {
+        flex-direction: column-reverse !important;
+    }
+
+    #innerTwoSectionFour {
+        flex-direction: row;
+    }
+
+    .team-fullName, .team-position {
+        font-size: 0.8rem !important;
+    }
+
+    .bookMarkIconOne {
+        left: 0px;
+    }
+
+    .bookMarkIconTwo { 
+        left: 25px;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 1.5rem;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 25px;
+    }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 900px) {
     .org-content{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    #sectionTwo {
+        flex-direction: column;
+    }
+
+    .orgCard, .org-card-content {
+        width: 180px;
+    }
+
+    .org-card-img {
+        width: 180px;
+        height: 230px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
+        gap: 15px !important;
+    }
+
+    .team-fullName, .team-position {
+        font-size: 0.8rem !important;
+    }
 }
 
-@media only screen and (min-width:901px) and (max-width: 1600px) {
+// @media only screen and (min-width: 1199px)
+
+@media only screen and (min-width: 901px) and (max-width: 1199px) {
+    #sectionTwo {
+        flex-direction: column;
+    }
+
+    #newSectionThree {
+        margin-top: 20px;
+    }
+
+    .orgCard, .org-card-content {
+        width: 200px;
+    }
+
+    .team-fullName, .team-position {
+        font-size: 0.9rem !important;
+    }
+
+    .org-card-img{
+        width: 200px;
+        height: 250px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
+        gap: 20px !important;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width: 1600px) {
     .org-content{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .orgCard, .org-card-content {
-        width: 220px;
+        width: 200px;
+    }
+
+    .team-fullName, .team-position {
+        font-size: 0.9rem !important;
     }
 
     .org-card-img{
-        width: 220px;
-        height: 270px;
+        width: 200px;
+        height: 250px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
+        gap: 20px !important;
     }
 }
