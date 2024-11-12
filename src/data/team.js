@@ -113,7 +113,7 @@ export const teamData = [
             // compile
             key: 'JMSalado',
             fullName: 'JM Salado',
-            content: "As a Business Development Officer, he plays a crucial role in fostering growth and expanding market presence through strategic planning and market analysis. He excels in identifying and capitalizing on new business opportunities, driving profitability and enhancing the company's competitive edge. His approach is data-driven, leveraging market research and competitive analysis to inform strategic decisions and optimize business development efforts. He effectively builds and nurtures relationships with clients, partners, and stakeholders, utilizing his negotiation and communication skills to close deals and secure valuable partnerships.",
+            content: "As a Social Media Marketing Associate, he plays a crucial role in fostering growth and expanding market presence through strategic planning and market analysis. He excels in identifying and capitalizing on new business opportunities, driving profitability and enhancing the company's competitive edge. His approach is data-driven, leveraging market research and competitive analysis to inform strategic decisions and optimize business development efforts. He effectively builds and nurtures relationships with clients, partners, and stakeholders, utilizing his negotiation and communication skills to close deals and secure valuable partnerships.",
             position: 'Social Media Marketing Associate',
             imgURL: '/assets/jm.jfif',
             fbUrl: 'https://www.facebook.com/',

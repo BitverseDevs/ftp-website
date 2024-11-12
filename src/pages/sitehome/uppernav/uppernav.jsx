@@ -40,7 +40,9 @@ export function Uppernav(props) {
                         return;
                     } else if (item.isButton !== true && item.navItem === 'PRODUCTS'){
                         return (
-                            <li key={item.key} onClick={() => props.scrollToSection('section1', item.pathUrl, navigate)}>
+                            <li key={item.key} onClick={() => (
+                                props.scrollToSection('section1', item.pathUrl, navigate
+                            ))}>
                                 <Link to={item.pathUrl}>{item.navItem}</Link>
                             </li>
                         )

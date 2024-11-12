@@ -47,7 +47,7 @@ const Team = () => {
                         <div id="sectionTwoFirstInner">
                             <div id="sectionTwoSecondInner">
                                 <div className="sectionTwoSecondInnerHeader">
-                                    <h1>Sales and Marketing Deparment</h1>
+                                    <h1>Business Development Team</h1>
                                 </div>  
                                 <Link to={`/team-profile/${teamData[1].key}`}>
                                     <div className="orgCard">
@@ -121,7 +121,7 @@ const Team = () => {
                         <div id="newSectionThree">
                             <div id="newInnerSectionThree">
                                 <div className="sectionThreeSecondInnerHeader">
-                                    <h1>Technical Deparment</h1>
+                                    <h1>Development Team</h1>
                                 </div>  
                                 <Link to={`/team-profile/${teamData[2].key}`}>
                                     <div className="orgCard">

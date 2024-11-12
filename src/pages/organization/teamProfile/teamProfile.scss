@@ -155,7 +155,29 @@ height: 100%;
 
 #linkedInLogo {
     height: 30px;
+    margin-left: 10px;
+}
+
+// icon container
+#iconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+// icons baby 
+.iconsbaby {
+    height: 40px;
     margin-top: 10px;
+}
+
+#upperProfileInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
@@ -190,6 +212,11 @@ height: 100%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 399px) {
+    #iconContainer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
     #teamProfileOuterContainer {
         height: auto;
         flex-direction: column-reverse;

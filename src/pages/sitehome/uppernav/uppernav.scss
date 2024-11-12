@@ -2,9 +2,9 @@
 .uppernav-wrap{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: #4d1c91;
+    color: black;
     // background: #fff;  
-    background-color: rgba($color: white, $alpha: 0.4);
+    // background-color: rgba($color: white, $alpha: 0.4);
     // border-bottom: 2px solid black;
     display: flex;
     justify-content: space-around;
@@ -40,7 +40,7 @@
         display: none;
     }
     .uppernav-navItems a:hover, .uppernav-button:hover{
-        color: black;
+        color: #4d1c91;
         // font-size: 20px;
         transition: all 0.2s ease-in;
     }

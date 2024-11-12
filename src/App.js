@@ -35,7 +35,7 @@ function App() {
       <HashRouter>
         <PageWrapper>
         
-          <StaticNavMsg/>
+          {/* <StaticNavMsg/> */}
           <Uppernav navList={upperNavData} scrollToSection={scrollToSection}/>
           <ScrollToTop>
             <Routes>
