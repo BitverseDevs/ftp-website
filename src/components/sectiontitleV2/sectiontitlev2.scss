@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 40%;
+    width: auto;
     font-family: 'Poppins-SemiBold', sans-serif;
     .section-title-v2-feat{
         position: relative;
@@ -36,7 +36,7 @@
         color: #777777;
         text-align: flex-start;
         font-size: 14px;
-        padding-left: 40px;
+        // padding-left: 40px;
         max-width: 518px;
         .section-title-v2-desc-listed-items{
             list-style-type: disc;

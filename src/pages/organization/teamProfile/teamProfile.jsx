@@ -3,15 +3,19 @@ import './teamProfile.scss';
 import {teamData, internData} from '../../../data/team';
 import ParticleBg from 'pages/ui/particlebg';
 import { useParams } from 'react-router-dom';
-import { sirRevTechStack, sirMarc, sirJhumer, jhioStack, osamaStack } from 'data/tech-stack';
+import { techStackData, sirMarc, sirJhumer, jhioStack, osamaStack } from 'data/tech-stack';
 
 const TeamProfile = (props) => {
     const { id, arr } = useParams();
 
     // :))))))))))))))))))))))
-    // const teamMember = teamData[arr]?.find(member => member.key === id);
     let teamMember; 
     arr !== undefined ? teamMember = teamData[arr].find(member => member.key === id) : teamMember = teamData.find(member => member.key === id);
+
+    let anotherArr = ['AlbertPagaduan', 'MarcRovicBaja', 'JhumerApus', 'JhonJhioDalagan', "OsamaVelasco", 'WilsonVargas', 'DeniaLeeAlgas', 'JMSalado'];
+
+    let iterator = anotherArr.indexOf(id);
+    let checker = anotherArr.includes(id);
 
     return (    
         <>
@@ -28,23 +32,17 @@ const TeamProfile = (props) => {
                                 <img id='linkedInLogo' src="/assets/linkedinLogo.png" alt="linkedin logo" />
                             </div>
                             <p>{teamMember.content}</p>
+                            {checker ?  
                             <div id='iconContainer'>
-                                {teamMember.fullName == 'Albert Pagaduan' ? sirRevTechStack.map((element, index) => (
-                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
-                                )) : ''}
-                                {teamMember.fullName == 'Marc Rovic Baja' ? sirMarc.map((element, index) => (
-                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
-                                )) : ''}
-                                {teamMember.fullName == 'Jhumer O. Apus' ? sirJhumer.map((element, index) => (
-                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
-                                )) : ''}
-                                {teamMember.fullName == 'Jhon Jhio Dalagan' ? jhioStack.map((element, index) => (
-                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
-                                )) : ''}
-                                {teamMember.fullName == "O'sama Velasco" ? osamaStack.map((element, index) => (
-                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
-                                )) : ''}
-                            </div>
+                                {techStackData[iterator].map(({section, items}, index) => (
+                                    <div className='techStackContainer'>
+                                        <div className='techSection'>{section}</div>
+                                        {items.map((item, index) => (
+                                            <img className='iconsbaby' src={`${item.iconName}`} alt="img" />
+                                        ))}
+                                    </div>
+                                ))}
+                            </div> : ''}
                         </div>
                     </div>
                 </div>

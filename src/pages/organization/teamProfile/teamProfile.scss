@@ -97,7 +97,7 @@ height: 100%;
 
 // hello :))))
 #teamProfileOuterContainer {
-    height: 70vh;
+    height: 650px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ height: 100%;
 
 #teamProfileInnerOneContainer {
     height: auto;
-    width: 40%;
+    width: 45%;
 }
 
 #teamProfileInnerTwoContainer {
@@ -118,17 +118,17 @@ height: 100%;
 }
 
 #teamImgUrl {
-    height: 80%;
+    height: 450px;
     background-size: contain;
     border-radius: 5%;
 }
 
 #teamProfileAbout { 
-    height: 100%;
+    height: auto;
     width: 100%;
     font-family: 'Poppins-SemiBold', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -162,16 +162,29 @@ height: 100%;
 #iconContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
+    padding-right: 50px;
+}
+
+.techStackContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // icons baby 
 .iconsbaby {
-    height: 40px;
-    margin-top: 10px;
+    height: 30px;
+    margin: 0 5px 0 5px;
+}
+
+.techSection {
+    margin-right: 15px;
+    color: grey;
 }
 
 #upperProfileInfo {
@@ -289,11 +302,22 @@ height: 100%;
     }
 
     #teamProfileInnerTwoContainer {
-        height: 450px;
+        height: auto;
         justify-content: center;
-        width: 80%;
+        width: auto;
         position: relative;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
+
+    #teamImgUrl {
+        height: 250px;
+    }
+
+    #iconContainer {
+        justify-content: flex-start;
+    }
+
 }
 
 @media only screen and (min-width: 790px) and (max-width: 900px) {
@@ -321,6 +345,10 @@ height: 100%;
     #teamProfileInfo p {
         font-size: 0.65rem;
         padding-right: 30px;
+    }
+
+    #teamImgUrl {
+        height: 250px;
     }
 }
 
@@ -352,6 +380,10 @@ height: 100%;
         font-size: 0.7rem;
         padding-right: 40px;
     }
+
+    #teamImgUrl {
+        height: 260px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -362,7 +394,6 @@ height: 100%;
 
     #teamProfileHeader h1 {
         font-size: 3.3rem;
-        padding-top: 50px;
     }
 
     #teamProfileHeader p {

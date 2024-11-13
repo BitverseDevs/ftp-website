@@ -8,9 +8,9 @@ import {Link }from 'react-router-dom';
 
 const Team = () => {
 
-    teamData[5].map((element) => {
-        console.log(element);
-    })
+    // teamData[5].map((element) => {
+        // console.log(element);
+    // })
 
     return (
         <React.Fragment>
@@ -46,30 +46,32 @@ const Team = () => {
                     <div id="sectionTwo">
                         <div id="sectionTwoFirstInner">
                             <div id="sectionTwoSecondInner">
-                                <div className="sectionTwoSecondInnerHeader">
-                                    <h1>Business Development Team</h1>
-                                </div>  
-                                <Link to={`/team-profile/${teamData[1].key}`}>
-                                    <div className="orgCard">
-                                        <img className='bookMarkIconOne' src="/assets/book-mark-purple.png" alt="marker"/>
-                                        <img className='bookMarkIconTwo' src="/assets/book-mark-greenish.png" alt="marker"/>
-                                        <div className="org-card-img">
-                                            {teamData[1].imgURL === '' ?
-                                                <img src="/assets/blank-icon.png" alt="profile"/>
-                                                :
-                                                <img src={teamData[1].imgURL} alt="profile"/>
-                                            }
-                                        </div>
-                                        <div className="org-card-content">
-                                            <h2 className="team-fullName">{teamData[1].fullName}</h2>
-                                            <p className="team-position">{teamData[1].position}</p>
-                                        </div>
-                                    </div> 
-                                </Link>
+                                <div className="businessDevTeamHeaderCtn">
+                                    <div className="sectionTwoSecondInnerHeader">
+                                        <h1>Business Development Team</h1>
+                                    </div>  
+                                    <Link to={`/team-profile/${teamData[1].key}`}>
+                                        <div className="orgCard">
+                                            <img className='bookMarkIconOne' src="/assets/book-mark-purple.png" alt="marker"/>
+                                            <img className='bookMarkIconTwo' src="/assets/book-mark-greenish.png" alt="marker"/>
+                                            <div className="org-card-img">
+                                                {teamData[1].imgURL === '' ?
+                                                    <img src="/assets/blank-icon.png" alt="profile"/>
+                                                    :
+                                                    <img src={teamData[1].imgURL} alt="profile"/>
+                                                }
+                                            </div>
+                                            <div className="org-card-content">
+                                                <h2 className="team-fullName">{teamData[1].fullName}</h2>
+                                                <p className="team-position">{teamData[1].position}</p>
+                                            </div>
+                                        </div> 
+                                    </Link>
+                                </div>
                                 <div id='innerOneSectionThree'>
                                     <div id='sectionTwoSecondInnerCtnOne'>
-                                        {teamData[5].map((element, index) => (
-                                            <Link to={`/team-profile/${element.key}/${5}`}>
+                                        {teamData[6].map((element, index) => (
+                                            <Link to={`/team-profile/${element.key}/${6}`}>
                                                 <div className="orgCard" key={index}>
                                                     {index === 0 ? 
                                                         <img className='bookMarkIconOne' src="/assets/book-mark-greenish.png" alt="marker"/>
@@ -95,8 +97,8 @@ const Team = () => {
                                         ))}
                                     </div>
                                     <div id='sectionTwoSecondInnerCtnTwo'>
-                                        {teamData[6].map((element, index) => (
-                                            <Link to={`/team-profile/${element.key}/${6}`}>
+                                        {teamData[7].map((element, index) => (
+                                            <Link to={`/team-profile/${element.key}/${7}`}>
                                                 <div className="orgCard">
                                                     <img className='bookMarkIconOne' src="/assets/book-mark-blue.png" alt="marker"/>
                                                     <div className="org-card-img">
@@ -120,91 +122,108 @@ const Team = () => {
 
                         <div id="newSectionThree">
                             <div id="newInnerSectionThree">
-                                <div className="sectionThreeSecondInnerHeader">
-                                    <h1>Development Team</h1>
-                                </div>  
-                                <Link to={`/team-profile/${teamData[2].key}`}>
-                                    <div className="orgCard">
-                                        <img className='bookMarkIconOne' src="/assets/book-mark-purple.png" alt="marker"/>
-                                        <img className='bookMarkIconTwo' src="/assets/book-mark-red.png" alt="marker"/>
-                                        <div className="org-card-img">
-                                            {teamData[2].imgURL === '' ?
-                                                <img src="/assets/blank-icon.png" alt="profile"/>
-                                                :
-                                                <img src={teamData[2].imgURL} alt="profile"/>
-                                            }
-                                        </div>
-                                        <div className="org-card-content">
-                                            <h2 className="team-fullName">{teamData[2].fullName}</h2>
-                                            <p className="team-position">{teamData[2].position}</p>
-                                        </div>
-                                    </div>   
-                                </Link>
+                                <div className='devTeamHeaderCtn'>
+                                    <div className="sectionThreeSecondInnerHeader">
+                                        <h1>Development Team</h1>
+                                    </div>  
+                                    <Link to={`/team-profile/${teamData[2][0].key}/${2}`}>
+                                        <div className="orgCard">
+                                            <img className='bookMarkIconOne' src="/assets/book-mark-purple.png" alt="marker"/>
+                                            <img className='bookMarkIconTwo' src="/assets/book-mark-red.png" alt="marker"/>
+                                            <div className="org-card-img">
+                                                {teamData[2].imgURL === '' ?
+                                                    <img src="/assets/blank-icon.png" alt="profile"/>
+                                                    :
+                                                    <img src={teamData[2][0].imgURL} alt="profile"/>
+                                                }
+                                            </div>
+                                            <div className="org-card-content">
+                                                <h2 className="team-fullName">{teamData[2][0].fullName}</h2>
+                                                <p className="team-position">{teamData[2][0].position}</p>
+                                            </div>
+                                        </div>   
+                                    </Link>
+                                </div>
                                 <div id='innerTwoSectionThree'>
                                     <div id='newSectionThreeInnerCtn'>
-                                        <div id='innerTwoSectionFour'>
-                                            {teamData[3].map((element, index) => (
-                                                <Link to={`/team-profile/${element.key}/${3}`}>
-                                                    <div className="orgCard">
-                                                        <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
-                                                        <img className='bookMarkIconTwo' src="/assets/book-mark-lightblue.png" alt="marker"/>
-                                                        <div className="org-card-img">
-                                                            {element.imgURL === '' ?
-                                                                <img src="/assets/blank-icon.png" alt="profile"/>
-                                                                :
-                                                                <img src={element.imgURL} alt="profile"/>
-                                                            }
-                                                        </div>
-                                                        <div className="org-card-content">
-                                                            <h2 className="team-fullName">{element.fullName}</h2>
-                                                            <p className="team-position">{element.position}</p>
-                                                        </div>
-                                                    </div> 
-                                                </Link>
-                                            ))}
-                                        </div>
-                                        
-                                        <div id='innerTwoSectionFour'>
-                                            {teamData[7].map((element, index) => (
-                                                <Link to={`/team-profile/${element.key}/${7}`}>
-                                                    <div className="orgCard">
-                                                        <img className='bookMarkIconOne' src="/assets/book-mark-lightblue.png" alt="marker"/>
-                                                        <div className="org-card-img">
-                                                            {element.imgURL === '' ?
-                                                                <img src="/assets/blank-icon.png" alt="profile"/>
-                                                                :
-                                                                <img src={element.imgURL} alt="profile"/>
-                                                            }
-                                                        </div>
-                                                        <div className="org-card-content">
-                                                            <h2 className="team-fullName">{element.fullName}</h2>
-                                                            <p className="team-position">{element.position}</p>
-                                                        </div>
-                                                    </div> 
-                                                </Link>
-                                            ))}
-                                        </div>     
-                                    </div>
-                                    
-                                    <div id='sectionThreeInnerCtnTwo'>
-                                        {teamData[4].map((element, index) => (
-                                            <Link to={`/team-profile/${element.key}/${4}`}>
-                                                <div className="orgCard">
-                                                    <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
-                                                    <div className="org-card-img">
-                                                        {element.imgURL === '' ?
-                                                            <img src="/assets/blank-icon.png" alt="profile"/>
-                                                            :
-                                                            <img src={element.imgURL} alt="profile"/>
-                                                        }
-                                                    </div>
-                                                    <div className="org-card-content">
-                                                        <h2 className="team-fullName">{element.fullName}</h2>
-                                                        <p className="team-position">{element.position}</p>
-                                                    </div>
+                                        <Link to={`/team-profile/${teamData[5][0].key}/${5}`}>
+                                            <div className="orgCard">
+                                                <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
+                                                <div className="org-card-img">
+                                                    {teamData[5][0].imgURL === '' ?
+                                                        <img src="/assets/blank-icon.png" alt="profile"/>
+                                                        :
+                                                        <img src={teamData[5][0].imgURL} alt="profile"/>
+                                                    }
                                                 </div>
-                                            </Link>
-                                        ))}
+                                                <div className="org-card-content">
+                                                    <h2 className="team-fullName">{teamData[5][0].fullName}</h2>
+                                                    <p className="team-position">{teamData[5][0].position}</p>
+                                                </div>
+                                            </div> 
+                                        </Link>
+
+                                        <div id='innerTwoSectionFourOuter'>
+                                            <div id='innerTwoSectionFour'>
+                                                {teamData[3].map((element, index) => (
+                                                    <Link to={`/team-profile/${element.key}/${3}`}>
+                                                        <div className="orgCard">
+                                                            <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
+                                                            <img className='bookMarkIconTwo' src="/assets/book-mark-lightblue.png" alt="marker"/>
+                                                            <div className="org-card-img">
+                                                                {element.imgURL === '' ?
+                                                                    <img src="/assets/blank-icon.png" alt="profile"/>
+                                                                    :
+                                                                    <img src={element.imgURL} alt="profile"/>
+                                                                }
+                                                            </div>
+                                                            <div className="org-card-content">
+                                                                <h2 className="team-fullName">{element.fullName}</h2>
+                                                                <p className="team-position">{element.position}</p>
+                                                            </div>
+                                                        </div> 
+                                                    </Link>
+                                                ))}
+                                            </div>
+
+                                            <div id='innerTwoSectionFour'>
+                                                {teamData[8].map((element, index) => (
+                                                    <Link to={`/team-profile/${element.key}/${8}`}>
+                                                        <div className="orgCard">
+                                                            <img className='bookMarkIconOne' src="/assets/book-mark-lightblue.png" alt="marker"/>
+                                                            <div className="org-card-img">
+                                                                {element.imgURL === '' ?
+                                                                    <img src="/assets/blank-icon.png" alt="profile"/>
+                                                                    :
+                                                                    <img src={element.imgURL} alt="profile"/>
+                                                                }
+                                                            </div>
+                                                            <div className="org-card-content">
+                                                                <h2 className="team-fullName">{element.fullName}</h2>
+                                                                <p className="team-position">{element.position}</p>
+                                                            </div>
+                                                        </div> 
+                                                    </Link>
+                                                ))}
+                                            </div>   
+                                        </div>
+
+                                        <Link to={`/team-profile/${teamData[4][0].key}/${4}`}>
+                                            <div className="orgCard">
+                                                <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
+                                                <div className="org-card-img">
+                                                    {teamData[4][0].imgURL === '' ?
+                                                        <img src="/assets/blank-icon.png" alt="profile"/>
+                                                        :
+                                                        <img src={teamData[4][0].imgURL} alt="profile"/>
+                                                    }
+                                                </div>
+                                                <div className="org-card-content">
+                                                    <h2 className="team-fullName">{teamData[4][0].fullName}</h2>
+                                                    <p className="team-position">{teamData[4][0].position}</p>
+                                                </div>
+                                            </div> 
+                                        </Link>
                                     </div>
                                 </div>  
                             </div>

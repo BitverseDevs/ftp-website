@@ -6,7 +6,9 @@
 .org--wrap{
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-    margin: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 @keyframes fadeIn {
@@ -23,12 +25,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .org-header h1{
     font-family: 'Poppins-SemiBold', sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     background: rgb(77,28,145);
     // background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
     -webkit-background-clip: text;
@@ -49,18 +51,11 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    width: 80%;
 }
 
 .org-card{
 }
-
-// .org-card:hover{
-//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-//     transform: scale(1.1);
-//     transition: all 0.3s ease-in;
-
-// }
-
 
 // SECTIONS
 #sectionOne {
@@ -76,7 +71,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #innerOneSectionTwo {
@@ -103,7 +98,22 @@
     margin-top: 40px;
 }
 
-#innerOneSectionThree, #innerTwoSectionThree, #innerOneSectionFour, #innerTwoSectionFour {
+#innerOneSectionThree {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#newSectionThreeInnerCtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#innerOneSectionFour, #innerTwoSectionFour {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -112,26 +122,36 @@
     gap: 40px;
 }
 
+#innerTwoSectionFourOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+    gap: 20px;
+}
+
 .orgCard {
     height: auto;
-    width: 250px;
+    width: 170px;
     border-radius: 5%;
     position: relative;
 }
 
 .bookMarkIconOne {
-    height: 25px;
-    width: 30px;
+    height: 15px;
+    width: 25px;
     position: absolute;
-    left: 25px;
+    top: 0;
+    left: 0;
 }
 
 .bookMarkIconTwo {
-    height: 25px;
-    width: 30px;
+    height: 15px;
+    width: 25px;
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 20px;
 }
 
 .org-card, .org-card p, .org-card h2{
@@ -141,8 +161,8 @@
 }
 
 .org-card-img{
-    width: 250px;
-    height: 300px;
+    width: 170px;
+    height: 200px;
     img{
         width: 100%;
         height: 100%;
@@ -157,7 +177,7 @@
 }
 
 .org-card-content{
-    width: 250px;
+    width: 170px;
     flex: 1;
     // background-color: black;
     background: rgba(255, 255, 255, 0.02);
@@ -176,7 +196,7 @@
 
 .org-card-content .team-fullName{
     font-family: 'Poppins-SemiBold', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: #222;
 }
 
@@ -188,8 +208,9 @@
 
 .org-card-content .team-position{
     font-family: 'Poppins-Medium', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     color: #222;
+    opacity: 0.5;
     // color: white;
 }
 
@@ -214,13 +235,12 @@
 // new css team profile :)
 
 // remove after fixing layout
-#sectionTwoFirstInner, #newSectionThree, #newSectionThreeInnerCtn {
-    height: auto;
+#sectionTwoFirstInner, #newSectionThree {
+    height: 100%;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
 }
 
@@ -231,7 +251,6 @@
 }
 
 #sectionTwoSecondInner, #newInnerSectionThree {
-    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,22 +258,22 @@
     gap: 50px;
 }
 
-#newInnerSectionThree {
-    margin-top: 70px;
-}
-
-#sectionTwoSecondInner {
-    padding-top: 30px;
+.devTeamHeaderCtn, .businessDevTeamHeaderCtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader { 
     font-family: 'Poppins-SemiBold', sans-serif;
-    font-size: 2.3rem;
+    font-size: 1.1rem;
     background: rgb(77,28,145);
     // background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo {
@@ -277,12 +296,12 @@
     }
 
     .orgCard, .org-card-content {
-        width: 160px;
+        width: 140px;
     }
 
     .org-card-img {
-        width: 160px;
-        height: 210px;
+        width: 140px;
+        height: 190px;
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour {
@@ -320,6 +339,10 @@
 }
 
 @media only screen and (min-width: 400px) and (max-width: 789px) {
+    .devTeamHeaderCtn {
+        margin-top: 50px;
+    }
+
     .org-header h1 {
         font-size: 2.5rem;
     }
@@ -333,12 +356,17 @@
     }
 
     .orgCard, .org-card-content {
-        width: 160px;
+        width: 140px;
     }
 
     .org-card-img {
-        width: 160px;
-        height: 210px;
+        width: 140px;
+        height: 190px;
+    }
+
+    #newSectionThreeInnerCtn {
+        flex-direction: column;
+        gap: 20px;
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour {
@@ -374,6 +402,11 @@
     #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
         gap: 25px;
     }
+
+    .org-card-img img {
+        border-top-left-radius: 8%;
+        border-top-right-radius: 8%;
+    }
 }
 
 @media only screen and (min-width: 790px) and (max-width: 900px) {
@@ -382,24 +415,33 @@
     }
 
     #sectionTwo {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .orgCard, .org-card-content {
-        width: 180px;
+        width: 90px;
     }
 
     .org-card-img {
-        width: 180px;
-        height: 230px;
+        width: 90px;
+        height: 100px;
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
         gap: 15px !important;
     }
 
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 15px;
+    }
+
     .team-fullName, .team-position {
-        font-size: 0.8rem !important;
+        font-size: 0.5rem !important;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 8%;
+        border-top-right-radius: 8%;
     }
 }
 
@@ -407,7 +449,7 @@
 
 @media only screen and (min-width: 901px) and (max-width: 1199px) {
     #sectionTwo {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #newSectionThree {
@@ -415,20 +457,29 @@
     }
 
     .orgCard, .org-card-content {
-        width: 200px;
+        width: 100px;
     }
 
     .team-fullName, .team-position {
-        font-size: 0.9rem !important;
+        font-size: 0.5rem !important;
     }
 
     .org-card-img{
-        width: 200px;
-        height: 250px;
+        width: 100px;
+        height: 130px;
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
         gap: 20px !important;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.8rem;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 8%;
+        border-top-right-radius: 8%;
     }
 }
 
@@ -438,19 +489,30 @@
     }
 
     .orgCard, .org-card-content {
-        width: 200px;
+        width: 120px;
+        border-bottom-left-radius: 8%;
+        border-bottom-right-radius: 8%;
     }
-
+    
     .team-fullName, .team-position {
-        font-size: 0.9rem !important;
+        font-size: 0.6rem !important;
+    }
+    
+    .org-card-img{
+        width: 120px;
+        height: 150px;
     }
 
-    .org-card-img{
-        width: 200px;
-        height: 250px;
+    .org-card-img img {
+        border-top-left-radius: 8%;
+        border-top-right-radius: 8%;
     }
 
     #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
         gap: 20px !important;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.9rem;
     }
 }

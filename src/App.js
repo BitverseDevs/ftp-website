@@ -40,6 +40,7 @@ function App() {
           <ScrollToTop>
             <Routes>
               <Route path='/' element={<Main scrollRefs={section1Ref}/>} />
+              <Route path='/products' element={<Main scrollRefs={section1Ref}/>} />
               <Route path='/about' element={<About />} />
               <Route path='/contact-us' element={<ContactUs />}/>
               <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>

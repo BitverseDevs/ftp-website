@@ -16,7 +16,7 @@ export const upperNavData = [
         key: 'und02',
         isButton: false,
         navItem: 'PRODUCTS',
-        pathUrl: '/',
+        pathUrl: '/products',
         hasList: true,
         listNav: [
             {
@@ -180,12 +180,14 @@ export const brandArea = [
 export const featuredSpecAssets = [
     {
         id: 'fsa01',
-        assetSrc: '/assets/xchart-03.png',
+        assetSrc: '/assets/img1.jpg',
+        // assetSrc: '/assets/xchart-03.png',
         alt: 'Featured-Specification-Image-01'
     },
     {
         id: 'fsa02',
-        assetSrc: '/assets/xchart-04.png',
+        // assetSrc: '/assets/xchart-04.png',
+        assetSrc: '/assets/img2.jpg',
         alt: 'Featured-Specification-Image-02'
     }
 ];

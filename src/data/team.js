@@ -21,7 +21,8 @@ export const teamData = [
         twitterURL: 'https://twitter.com/',
         linkedInURL: 'https://www.linkedin.com/',
         //  Her strong organizational skills and attention to detail enable her to effectively manage multiple HR tasks while maintaining a positive and productive work environment. She is also experienced in resolving employee relations issues, providing support to staff, and implementing HR policies and procedures that align with company objectives
-    }, {
+    }, 
+    [{
         // 2
         key: 'AlbertPagaduan',
         fullName: 'Albert Pagaduan',
@@ -31,7 +32,7 @@ export const teamData = [
         fbUrl: 'https://www.facebook.com/',
         twitterURL: 'https://twitter.com/',
         linkedInURL: 'https://www.linkedin.com/',
-    },
+    }],
     [
         {
             // 3
@@ -57,9 +58,10 @@ export const teamData = [
             linkedInURL: 'https://www.linkedin.com/',
         },
     ],
+    
     [
         {
-            // 5
+            // 4
             key: 'WilsonVargas',
             fullName: 'Wilson Vargas',
             content: "As a Senior QA Engineer, he is dedicated to ensuring the highest standards of software quality and reliability through both manual and automated testing. With extensive experience in various testing methodologies, including functional, regression, performance, and security testing, he excels at identifying defects and improving processes. He is proficient in using tools like Selenium, JIRA, and Jenkins to design and execute comprehensive test plans, and collaborates closely with development teams to resolve issues efficiently. His commitment to quality and continuous improvement keeps him updated with the latest testing tools and practices, ensuring every release meets the highest standards.",
@@ -68,9 +70,11 @@ export const teamData = [
             fbUrl: 'https://www.facebook.com/',
             twitterURL: 'https://twitter.com/',
             linkedInURL: 'https://www.linkedin.com/',
-        },
+        }
+    ],
+    [
         {
-            // 9
+            // 5
             key: 'DeniaLeeAlgas',
             fullName: 'Denia Lee Algas',
             content: "As a UI/UX Designer, my role involves creating intuitive and visually appealing digital products that enhance user experience. I gather and evaluate user requirements in collaboration with product managers and engineers, and illustrate design ideas using storyboards, process flows, and sitemaps. My responsibilities include designing graphic user interface elements such as menus, tabs, and widgets, as well as building navigation components and developing UI mockups and prototypes.",
@@ -79,7 +83,7 @@ export const teamData = [
             fbUrl: 'https://www.facebook.com/',
             twitterURL: 'https://twitter.com/',
             linkedInURL: 'https://www.linkedin.com/',
-        },
+        }
     ],
     [
         {

@@ -12,8 +12,6 @@ import helpers from 'helpers/helpers';
 import { Link } from 'react-router-dom';
 import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 
-
-
 export const ProductCarousel = () => {
     const {width} = useWindowDimensions();
     const [isRender, setIsRender] = useState(undefined);
@@ -87,7 +85,6 @@ export const ProductCarousel = () => {
             </section>
         );
     });
-
 
     return (
         <React.Fragment>
