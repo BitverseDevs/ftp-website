@@ -215,6 +215,7 @@ height: 100%;
     #iconContainer {
         width: 100%;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     #teamProfileOuterContainer {
@@ -255,17 +256,19 @@ height: 100%;
 }
 
 @media only screen and (min-width: 400px) and (max-width: 789px) {
+    #iconContainer {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     #teamProfileOuterContainer {
         height: auto;
         flex-direction: column-reverse;
     }
     
     #teamProfileInnerOneContainer {
-        width: 60%;
-    }
-
-    #teamProfileInnerTwoContainer {
-        height: 400px;
+        width: 80%;
     }
 
     #teamProfileHeader h1 {
@@ -286,13 +289,19 @@ height: 100%;
     }
 
     #teamProfileInnerTwoContainer {
+        height: 450px;
         justify-content: center;
-        width: 60%;
+        width: 80%;
         position: relative;
     }
 }
 
 @media only screen and (min-width: 790px) and (max-width: 900px) {
+    #iconContainer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
     #teamProfileInnerTwoContainer {
         height: 400px;
     }
@@ -316,6 +325,11 @@ height: 100%;
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1199px) {
+    #iconContainer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
     #teamProfileInnerTwoContainer {
         height: 70%;
         border-radius: 3%;
@@ -341,6 +355,11 @@ height: 100%;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    #iconContainer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
     #teamProfileHeader h1 {
         font-size: 3.3rem;
         padding-top: 50px;

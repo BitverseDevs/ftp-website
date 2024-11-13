@@ -3,7 +3,7 @@ import './teamProfile.scss';
 import {teamData, internData} from '../../../data/team';
 import ParticleBg from 'pages/ui/particlebg';
 import { useParams } from 'react-router-dom';
-import { sirRevTechStack, sirMarc, sirJhumer } from 'data/tech-stack';
+import { sirRevTechStack, sirMarc, sirJhumer, jhioStack, osamaStack } from 'data/tech-stack';
 
 const TeamProfile = (props) => {
     const { id, arr } = useParams();
@@ -36,6 +36,12 @@ const TeamProfile = (props) => {
                                     <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
                                 )) : ''}
                                 {teamMember.fullName == 'Jhumer O. Apus' ? sirJhumer.map((element, index) => (
+                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
+                                )) : ''}
+                                {teamMember.fullName == 'Jhon Jhio Dalagan' ? jhioStack.map((element, index) => (
+                                    <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
+                                )) : ''}
+                                {teamMember.fullName == "O'sama Velasco" ? osamaStack.map((element, index) => (
                                     <img className='iconsbaby' src={`${element.iconName}`} alt="img" />
                                 )) : ''}
                             </div>

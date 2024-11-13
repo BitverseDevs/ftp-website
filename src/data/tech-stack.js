@@ -76,6 +76,10 @@ export const sirMarc = [
 
 export const sirJhumer = [
   {
+    name: 'javascript',
+    iconName: '/assets/javascript.png'
+  },
+  {
     name: 'react',
     iconName: '/assets/react.png',
   },
@@ -110,9 +114,71 @@ export const sirJhumer = [
 ]
 
 export const jhioStack = [
-  
+  {
+    name: 'java',
+    iconName: '/assets/java.svg'
+  },
+  {
+    name: 'python',
+    iconName: '/assets/python.png'
+  },
+  {
+    name: 'php',
+    iconName: '/assets/php.png'
+  },
+  {
+    name: 'django',
+    iconName: '/assets/django.svg'
+  },
+  {
+    name: 'express',
+    iconName: '/assets/express.svg'
+  },
+  {
+    name: 'nodejs',
+    iconName: '/assets/nodejs.svg'
+  },
+  {
+    name: 'laravel',
+    iconName: '/assets/laravel.svg'
+  },
+  {
+    name: 'mongodb',
+    iconName: '/assets/mongo.svg'
+  },
+  {
+    name: 'mysql',
+    iconName: '/assets/mysql.svg'
+  },
+  {
+    name: 'mssql',
+    iconName: '/assets/mssql.svg'
+  },
+  {
+    name: 'postgresql',
+    iconName: '/assets/postgresql.svg'
+  },
 ];
 
 export const osamaStack = [
-  
+  {
+    name: 'javascript',
+    iconName: '/assets/javascript.png'
+  },
+  {
+    name: 'typescript',
+    iconName: '/assets/typescript.svg'
+  },
+  {
+    name: 'react',
+    iconName: '/assets/react.png'
+  },
+  {
+    name: 'html-5',
+    iconName: '/assets/html-5.png'
+  },
+  {
+    name: 'css-3',
+    iconName: '/assets/css-3.png'
+  },
 ];
