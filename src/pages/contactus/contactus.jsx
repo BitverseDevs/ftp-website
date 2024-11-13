@@ -51,7 +51,7 @@ export function ContactUs() {
 
         try {
             const response = await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
-            console.log(response.data);
+            // console.log(response.data);
             alert('Email sent successfully');
             setFormValues(curr => ({ 
                 fullName: '',

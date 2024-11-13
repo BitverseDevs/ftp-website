@@ -7,7 +7,6 @@ import { sirRevTechStack, sirMarc, sirJhumer } from 'data/tech-stack';
 
 const TeamProfile = (props) => {
     const { id, arr } = useParams();
-    console.log(arr);
 
     // :))))))))))))))))))))))
     // const teamMember = teamData[arr]?.find(member => member.key === id);

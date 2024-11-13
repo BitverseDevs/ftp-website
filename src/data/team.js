@@ -3,7 +3,7 @@ export const teamData = [
         // 0
         key: 'KristelMae',
         fullName: 'Kristel Mae Lin',
-        content: "As the President of a company, my role involves setting and implementing the organization's strategic direction and overseeing its daily operations. I am responsible for developing and executing short and long-term goals, managing budgets, and ensuring all departments align with the company's strategic plans. My duties include analyzing financial reports, maintaining relationships with key stakeholders such as customers, investors, and industry leaders, and ensuring the company complies with all legal and regulatory requirements. I also work closely with the Board of Directors and other executives to report on corporate activities and make informed decisions to drive the company's growth and profitability",
+        content: "As the President of a company, my role involves setting and implementing the organization's strategic direction and overseeing its daily operations. I am responsible for developing and executing short and long-term goals, managing budgets, and ensuring all departments align with the company's strategic plans. My duties include analyzing financial reports, maintaining relationships with key stakeholders such as customers, investors, and industry leaders, and ensuring the company complies with all legal and regulatory requirements. I also work closely with the Board of Directors and other executives to report on corporate activities and make informed decisions to drive the company's growth and profitability.",
         position: 'President',
         imgURL: '/assets/maamKristel.png',
         fbUrl: 'https://www.facebook.com/',

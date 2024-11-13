@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './uppernav.scss';
 import HamburgerIcon from './hamburgerIcon/hamburgerIcon';
 import { useNavigate } from "react-router-dom";
@@ -41,15 +41,18 @@ export function Uppernav(props) {
                     } else if (item.isButton !== true && item.navItem === 'PRODUCTS'){
                         return (
                             <li key={item.key} onClick={() => (
-                                props.scrollToSection('section1', item.pathUrl, navigate
-                            ))}>
-                                <Link to={item.pathUrl}>{item.navItem}</Link>
+                                props.scrollToSection('section1', item.pathUrl, navigate))}>
+                                <NavLink style={({ isActive }) => ({
+                                    color: isActive ? '#4d1c91' : 'black',
+                                })} to={item.pathUrl}>{item.navItem}</NavLink>
                             </li>
                         )
                     } else {
                         return (
                             <li key={item.key}>
-                                <Link to={item.pathUrl}>{item.navItem}</Link>
+                                <NavLink style={({ isActive }) => ({
+                                    color: isActive ? '#4d1c91' : 'black',
+                                })} to={item.pathUrl}>{item.navItem}</NavLink>
                             </li>
                         )
                     }

@@ -210,60 +210,7 @@ const Team = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* <div id="sectionFifth">
-                        <div className="orgCard">
-                            
-                        </div>                        
-                    </div> */}
-
-                    {/* {teamData.map((team, index) => {
-                        return (
-                            <Link key={index} to={`/team-profile/${team.key}`}>
-                                <div className="org-card">
-                                    <div className="org-card-img">
-                                        <img src={team.img} alt="profile"/>
-                                        {team.imgURL === '' ?
-                                            <img src="/assets/blank-icon.png" alt="profile"/>
-                                            :
-                                            <img src={team.imgURL} alt="profile"/>
-                                        }
-                                    </div>
-                                    <div className="org-card-content">
-                                        <h2 className="team-fullName">{team.fullName}</h2>
-                                        <p className="team-position">{team.position}</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        )
-                    })} */}
-                </div>
-                {/* <div className="org-header">
-                    <h1>Meet the <p>Interns</p></h1>
-                </div>
-                <div className="org-content">
-                    {internData.map((team, index) => {
-                        return (
-                            <Link key={index} to={`/team-profile/${team.key}`}>
-                                <div className="org-card">
-                                    <div className="org-card-img">
-                                        {team.imgURL === '' ?
-                                            <img src="/assets/blank-icon.png" alt="profile"/>
-                                            :
-                                            <img src={team.imgURL} alt="profile"/>
-                                        }
-                                    </div>
-                                    <div className="org-card-content">
-                                        <h2 className="team-fullName">{team.fullName}</h2>
-                                        <p className="team-position">{team.position}</p>
-                                    </div>
-                    
-                                </div>
-                            </Link>
-                        )
-                    }
-                    )}
-                </div> */}
+                </div> 
             </div>
             <ParticleBg/>
         </React.Fragment>

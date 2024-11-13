@@ -11,12 +11,10 @@ export const upperNavData = [
         pathUrl: '/about',
         hasList: false,
         listNav: [],
-        isActive: false,
     },
     {
         key: 'und02',
         isButton: false,
-        isActive: false,
         navItem: 'PRODUCTS',
         pathUrl: '/',
         hasList: true,
@@ -60,7 +58,6 @@ export const upperNavData = [
         pathUrl: '/portfolio',
         hasList: false,
         listNav: [],
-        isActive: false,
     },
     {
         key: 'und04',
@@ -69,7 +66,6 @@ export const upperNavData = [
         pathUrl: '/organization',
         hasList: false,
         listNav: [],
-        isActive: false,
     },
     {
         key: 'und05',
@@ -78,7 +74,6 @@ export const upperNavData = [
         pathUrl: '/contact-us',
         hasList: false,
         listNav: [],
-        isActive: false,
     },
 ];
 

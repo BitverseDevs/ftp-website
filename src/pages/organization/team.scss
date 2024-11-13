@@ -30,7 +30,7 @@
     font-family: 'Poppins-SemiBold', sans-serif;
     font-size: 4rem;
     background: rgb(77,28,145);
-    background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
+    // background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -251,7 +251,7 @@
     font-family: 'Poppins-SemiBold', sans-serif;
     font-size: 2.3rem;
     background: rgb(77,28,145);
-    background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
+    // background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 35%, rgba(85,102,116,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -260,7 +260,7 @@
 #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 50px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 399px) {
@@ -450,7 +450,7 @@
         height: 250px;
     }
 
-    #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #innerTwoSectionThree, #innerOneSectionThree, #innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
         gap: 20px !important;
     }
 }

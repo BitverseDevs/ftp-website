@@ -108,3 +108,11 @@ export const sirJhumer = [
     iconName: '/assets/ant-design.svg',
   },
 ]
+
+export const jhioStack = [
+  
+];
+
+export const osamaStack = [
+  
+];
