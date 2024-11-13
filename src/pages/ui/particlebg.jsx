@@ -86,10 +86,10 @@ export const ParticleBg = () => {
                         value: 0.3,
                     },
                     shape: {
-                        type: "heart",
+                        type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 6 },
+                        value: { min: 1, max: 3 },
                     },
                 },
                 detectRetina: true,
