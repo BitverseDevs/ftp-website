@@ -22,7 +22,7 @@ function FeaturesList(props) {
                                     <span className='features-list--svg-content'>
                                         {fromWhere === 'about' ? 
                                             <p className='features-list--svg-desc' href={srcLink}>
-                                                {productDesc} 
+                                                {productDesc}
                                             </p>
                                         : ''}
                                     </span>
