@@ -12,8 +12,6 @@ import helpers from 'helpers/helpers';
 import { featuredSpecAssets, sectionTitles } from "data/sitehome";
 import "./featuredSpecs.scss";
 
-
-
 export function FeaturedSpecs() {
     const {width} = useWindowDimensions();
     const [isRender, setIsRender] = useState(undefined);

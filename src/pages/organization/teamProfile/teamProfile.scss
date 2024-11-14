@@ -229,6 +229,8 @@ height: 100%;
         width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
+        padding-right: 0;
+        border: 1px solid red;
     }
 
     #teamProfileOuterContainer {
@@ -266,13 +268,24 @@ height: 100%;
         width: 60%;
         position: relative;
     }
+
+    #teamImgUrl {
+        height: 250px;
+    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 789px) {
     #iconContainer {
         width: 100%;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+
+    .techStackContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     #teamProfileOuterContainer {
@@ -313,11 +326,6 @@ height: 100%;
     #teamImgUrl {
         height: 250px;
     }
-
-    #iconContainer {
-        justify-content: flex-start;
-    }
-
 }
 
 @media only screen and (min-width: 790px) and (max-width: 900px) {

@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './websiteportfolio.scss';
 // import { websitePortfolioTitle } from '../../../data/sitehome';
-import { websitePortfolioTitle } from 'data/sitehome';
+import { responsivePortfolio, websitePortfolioTitle } from 'data/sitehome';
 import SectionTitle from 'components/sectionTitle/sectionTitle';
 import ParticleBg from 'pages/ui/particlebg';
 import SEO from '../../components/seo/seo';
+import AliceCarousel from 'react-alice-carousel';
 
 export function WebsitePortfolio(props) {
-    const portfolioArray = Object.values(props.portfolios);
+    let portfolioArray = Object.values(props.portfolios);
     const {title, desc} = websitePortfolioTitle;
+    const slides = useRef(null);
+    const handleDragStart = (e) => e.preventDefault();
+
     return (
         <React.Fragment>
             <SEO title='Website Portfolio - Bitverse Corporation' 
@@ -20,22 +24,32 @@ export function WebsitePortfolio(props) {
             <section className='website-portfolio--section-wrap'>
                 <SectionTitle title={title} desc={desc}/>
                 <ul className='website-portfolio--figure-section'>
-                    {portfolioArray.map(({id, src, alt, srcLink})=>{
-                        return (
-                            <li className='website-portfolio--figure-wraps' key={id}>
+                    {/* <AliceCarousel 
+                        infinite
+                        autoPlay
+                        autoPlayInterval={4500}
+                        animationDuration={1000}
+                        disableButtonsControls
+                        disableDotsControls
+                        items={portfolioArray}
+                        mouseTracking
+                        responsive={responsivePortfolio}
+                        ref={slides}
+                    /> */
+                        portfolioArray.map(({ id, src, alt, srcLink }) => (
+                            <li className='website-portfolio--figure-wraps' key={id} onDragStart={handleDragStart} role='presentation'>
                                 <div className='website-portfolio--figure-desc'>
-                                    <p className='website-portfolio--figure-title'>{alt}</p>
+                                <p className='website-portfolio--figure-title'>{alt}</p>
                                     <button className='website-portfolio--figure-button'>
                                         <a href={srcLink} target={'_blank'}>
-                                        {'Visit Website'}
+                                            {'Visit Website'}
                                         </a>
                                     </button>
                                 </div>
-                                <img className='website-portfolio--figure-items' src={src} alt={alt}>
-                                </img>
+                                <img className='website-portfolio--figure-items' src={src} alt={alt}></img>
                             </li>
-                        )
-                    })}
+                        ))
+                    }
                 </ul>
             </section>
         </React.Fragment>

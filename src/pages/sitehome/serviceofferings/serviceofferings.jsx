@@ -23,7 +23,7 @@ const renderDotsItem = (item) => {
     );
   };
 
-export const ServiceOfferings = () => {
+export const ServiceOfferings = ({ fromWhere }) => {
 
     const productItemsArray = serviceOfferingsHome.map((product)=> { 
         return (
@@ -49,7 +49,7 @@ export const ServiceOfferings = () => {
 
     return (
         <React.Fragment>
-            <div className='service-offerings--background'>
+            <div className={fromWhere === 'home' ? 'service-offerings--background service-offerings--backgroundImg' : 'service-offerings--background'}>
                 <section className='service-offerings--section'>
                     <AliceCarousel
                     animationType='fadeout'

@@ -92,7 +92,7 @@ const Team = () => {
                                                         <h2 className="team-fullName">{element.fullName}</h2>
                                                         <p className="team-position">{element.position}</p>
                                                     </div>
-                                                </div>                
+                                                </div>                 
                                             </Link>
                                         ))}
                                     </div>

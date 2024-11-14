@@ -33,8 +33,8 @@ export function Main(props) {
                     <BrandArea brands={brandArea}/>
                     <FeaturedSpecs/>
                     <ProductCarousel/>
-                    <ServiceOfferings/>
-                    <ProductSpecs ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
+                    <ServiceOfferings fromWhere='home'/>
+                    <ProductSpecs fromWhere='home' ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
                 <CallToAction data={callToActionTitle}/>
             </section>
         </React.Fragment>

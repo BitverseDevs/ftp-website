@@ -7,6 +7,8 @@ import SectionTitle from 'components/sectionTitle/sectionTitle';
 
 export function ProductSpecs(props, ref){ 
     const {featMsg, title, desc} = props?.productsTitle;
+    console.log(props);
+
     return(
         <React.Fragment>
             <section className='product-specs--section' ref={ref}>
@@ -14,8 +16,8 @@ export function ProductSpecs(props, ref){
                     <SectionTitle featMsg={featMsg} title={title} desc={desc}/>
                 </h2>
                 <summary className='product-specs--summary'>
-                    <FeaturesList products={props?.productsList}/>
-                </summary>
+                    <FeaturesList fromWhere={props.fromWhere} products={props?.productsList}/>
+                </summary> 
             </section>
         </React.Fragment>
     )

@@ -41,24 +41,28 @@ export const aboutPillarsList = [
     productName: 'Expertise',
     productDesc: 'Our team\'s deep knowledge and experience in software development ensures that we deliver cutting-edge solutions that meet our clients\' needs.',
     srcLink: '#',
+    iconName: '/assets/check.svg'
 },
 {
     id: 'apl02',
     productName: 'Quality and Consistency',
     productDesc: 'We are committed to delivering products and services of the highest quality, while maintaining consistency in everything we do.',
     srcLink: '#',
+    iconName: '/assets/check.svg'
 },
 {
     id: 'apl03',
     productName: 'Cost Efficiency',
     productDesc: 'We understand the importance of balancing quality with cost, and strive to offer our clients the most cost-effective solutions without compromising on quality.',
     srcLink: '#',
+    iconName: '/assets/check.svg'
 },
 {
     id: 'apl04',
     productName: 'Transparency',
     productDesc: 'We believe in open and honest communication with our clients, and are dedicated to providing full transparency throughout all stages of our projects.',
     srcLink: '#',
+    iconName: '/assets/check.svg'
 },
 ];
 

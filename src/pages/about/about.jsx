@@ -36,8 +36,8 @@ export function About() {
                                                     {desc}
                                                 </p>
                                             </div>
-                                            <img src={picUrl} alt={'about-picture'}>
-                                            </img>
+                                            {/* <img src={picUrl} alt={'about-picture'}>
+                                            </img> */}
                                         </React.Fragment>
 
                                     )
@@ -71,7 +71,7 @@ export function About() {
                         </div>
                     </div>
                 </section>
-                <ProductSpecs productsTitle={aboutPillarsTitle} productsList={aboutPillarsList}/>
+                <ProductSpecs fromWhere='about' productsTitle={aboutPillarsTitle} productsList={aboutPillarsList}/>
             </div>
             <ParticleBg/>
         </React.Fragment>

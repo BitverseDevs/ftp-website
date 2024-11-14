@@ -7,16 +7,24 @@ export const upperNavData = [
     {
         key: 'und01',
         isButton: false,
-        navItem: 'ABOUT',
-        pathUrl: '/about',
+        navItem: 'HOME',
+        pathUrl: '/',
         hasList: false,
         listNav: [],
     },
     {
         key: 'und02',
         isButton: false,
-        navItem: 'PRODUCTS',
-        pathUrl: '/products',
+        navItem: 'ABOUT',
+        pathUrl: '/about',
+        hasList: false,
+        listNav: [],
+    },
+    {
+        key: 'und03',
+        isButton: false,
+        navItem: 'PRODUCTS & SERVICES',
+        pathUrl: '/products&services',
         hasList: true,
         listNav: [
             {
@@ -52,7 +60,7 @@ export const upperNavData = [
         ], 
     },
     {
-        key: 'und03',
+        key: 'und04',
         isButton: false,
         navItem: 'PORTFOLIO',
         pathUrl: '/portfolio',
@@ -60,7 +68,7 @@ export const upperNavData = [
         listNav: [],
     },
     {
-        key: 'und04',
+        key: 'und05',
         isButton: false,
         navItem: 'ORGANIZATION',
         pathUrl: '/organization',
@@ -68,8 +76,8 @@ export const upperNavData = [
         listNav: [],
     },
     {
-        key: 'und05',
-        isButton: true,
+        key: 'und06',
+        isButton: false,
         navItem: 'BOOK A DEMO',
         pathUrl: '/contact-us',
         hasList: false,
@@ -131,6 +139,27 @@ export const responsiveBrands = {
     },
     1200:{
         items: 6,
+    }
+};
+
+export const responsivePortfolio = {
+    0: {
+        items: 1,
+    },
+    575:{
+        items: 1,
+    },
+    767:{
+        items: 3,
+    },
+    991:{
+        items: 3,
+    },
+    1200:{
+        items: 3,
+    },
+    1500: {
+        items: 3,
     }
 };
 
@@ -335,36 +364,42 @@ export const productSpecificationList = [
         productName: 'Warehouse Receiving (WHSEAPP)',
         productDesc: 'Warehouse Receiving APP simplifies the process of receiving and tracking inventory',
         srcLink: '#',
+        iconName: '/assets/warehouse.svg'
     },
     {
         id: 'psl02',
         productName: 'Baranggay Management System (BMS)',
         productDesc: 'Barangay Management System (BMS) helps local government units manage their day-to-day operations more efficiently.',
         srcLink: '#',
+        iconName: '/assets/baranggay.svg'
     },
     {
         id: 'psl03',
         productName: 'Kiosk Software (BIT-Kiosk)',
         productDesc: 'Provides small stalls an online point-of-sale with order, product, inventory managing.',
         srcLink: '#',
+        iconName: '/assets/kiosk.svg'
     },
     {
         id: 'psl04',
         productName: 'Contact Tracing',
         productDesc: 'A digital contact-tracing that logs and identify individuals who may have been in contact with an infected individual (COVID-19).',
         srcLink: '#',
+        iconName: '/assets/tracing.svg'
     },
     {
         id: 'psl05',
         productName: 'PO Tracking System',
         productDesc: 'PO Tracking System helps businesses manage and tracks their purchase orders.',
         srcLink: '#',
+        iconName: '/assets/tracking.svg'
     },
     {
         id: 'psl06',
         productName: 'Cargo Importing (BIT-Cargo)',
         productDesc: 'BIT Cargo system provides a reliable and efficient system for online logistics ordering and tracking system.',
         srcLink: '#',
+        iconName: '/assets/cargo.svg'
     },
 ];
 

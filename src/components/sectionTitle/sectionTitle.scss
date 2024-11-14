@@ -29,7 +29,7 @@
 }
 
 #sectionTitleContainer {
-    width: 50%;
+    width: 70%;
 }
 
 //Responsive Traits Screen
@@ -45,6 +45,9 @@
 @media only screen and (max-width: 767px) {
     .section-title-container{
         width: 80%;
+        #sectionTitleContainer {
+            width: 100%;
+        }
     }
 }
 
@@ -54,5 +57,20 @@
         .section-title-title{
             font-size: 25px;
         }
+        #sectionTitleContainer {
+            .section-title-desc {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    #sectionTitleContainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+    .section-title-container {
+        text-align: center;
     }
 }

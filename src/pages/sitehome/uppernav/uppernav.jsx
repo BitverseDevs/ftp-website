@@ -31,32 +31,18 @@ export function Uppernav(props) {
             <Link to={'/'}>
                 <div className='uppernav-logo'>
                     <img src='/assets/bitverse-logo.png' alt='logo'/>
-                    {/* <p>{'bit'}</p>{'verse'} */}
                 </div>
             </Link>
             <ul className='uppernav-navItems'>
-                {navListArr.map((item)=> {
-                    if(item.isButton === true){
-                        return;
-                    } else if (item.isButton !== true && item.navItem === 'PRODUCTS'){
-                        return (
-                            <li key={item.key} onClick={() => (
-                                props.scrollToSection('section1', item.pathUrl, navigate))}>
-                                <NavLink style={({ isActive }) => ({
-                                    color: isActive ? '#4d1c91' : 'black',
-                                })} to={item.pathUrl}>{item.navItem}</NavLink>
-                            </li>
-                        )
-                    } else {
-                        return (
-                            <li key={item.key}>
-                                <NavLink style={({ isActive }) => ({
-                                    color: isActive ? '#4d1c91' : 'black',
-                                })} to={item.pathUrl}>{item.navItem}</NavLink>
-                            </li>
-                        )
-                    }
-                })}
+                {navListArr.map((item)=> (
+                    <li key={item.key}>
+                        <NavLink style={({ isActive }) => ({
+                            color: isActive ? '#4d1c91' : 'black',
+                        })} 
+                        className={item.navItem === 'BOOK A DEMO' ? 'bookDemoNavItem' : ''}
+                        to={item.pathUrl}>{item.navItem}</NavLink>
+                    </li>
+                ))}
             </ul>
             {navListArr.map((item)=> {
                 if(item.isButton === false){

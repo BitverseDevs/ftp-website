@@ -90,13 +90,13 @@ export const ProductCarousel = () => {
         <React.Fragment>
             <section className='product-carousel--section'>
                 <AliceCarousel
-                infinite
-                animationDuration={800}
-                disableButtonsControls
-                items={productItemsArray}
-                mouseTracking
-                renderDotsItem={renderDotsItem}
-                paddingLeft={adjPadding(breakPoint)}
+                    infinite
+                    animationDuration={800}
+                    disableButtonsControls
+                    items={productItemsArray}
+                    mouseTracking
+                    renderDotsItem={renderDotsItem}
+                    paddingLeft={adjPadding(breakPoint)}
                 />
             </section>
         </React.Fragment>

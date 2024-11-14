@@ -32,9 +32,13 @@
     .uppernav-navItems{
         display: flex;
         justify-content: space-around;
-        width: 540px;
+        width: auto;
         height: 24px;
+        li {
+            padding: 0 15px 0 15px;
+        }
     }
+
     .uppernav-burger--wrap{
         display: none;
     }
@@ -47,6 +51,13 @@
     .uppernav-navItems a, .uppernav-button{
         transition: font-size 0.3s ease-in-out;
     }
+}
+
+.bookDemoNavItem {
+    background-color: #4d1c91;
+    color: white !important;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 

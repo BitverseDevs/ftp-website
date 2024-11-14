@@ -15,6 +15,7 @@ import { websitePortfolioList } from "data/sitehome";
 import { BrowserRouter, Route, Routes, Navigate, HashRouter } from "react-router-dom";
 import ScrollToTop from "hoc/scrolltotop";
 import useScrollToRef from "custom-hooks/use-scroll-to-ref/use-scroll-to-ref";
+import ProductsAndServices from "pages/products&services/ProductsAndServices";
 import 'fonts/fonts.scss';
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
           <ScrollToTop>
             <Routes>
               <Route path='/' element={<Main scrollRefs={section1Ref}/>} />
-              <Route path='/products' element={<Main scrollRefs={section1Ref}/>} />
+              <Route path='/products&services' element={<ProductsAndServices/>} />
               <Route path='/about' element={<About />} />
               <Route path='/contact-us' element={<ContactUs />}/>
               <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>

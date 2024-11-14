@@ -182,10 +182,6 @@ export const techStackData = [
       section: 'Backend', 
       items: [
         {
-          name: 'java',
-          iconName: '/assets/java.svg'
-        },
-        {
           name: 'python',
           iconName: '/assets/python.png'
         },
