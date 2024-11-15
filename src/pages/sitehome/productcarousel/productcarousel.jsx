@@ -75,12 +75,12 @@ export const ProductCarousel = () => {
                     </Link>
                 </figcaption>
                 { isRender ? 
-                <figure className='product-carousel--container-img' data-value="2" style={{marginRight: '40px', paddingLeft: '5px'}}>
-                    <img src={product.img} alt={product.imgAlt} draggable='false'>
-                    </img>
-                </figure>
+                    <figure className='product-carousel--container-img' data-value="2" style={{marginRight: '40px', paddingLeft: '5px'}}>
+                        <img src={product.img} alt={product.imgAlt} draggable='false'>
+                        </img>
+                    </figure>
                 :
-                null
+                    null
                 }
             </section>
         );

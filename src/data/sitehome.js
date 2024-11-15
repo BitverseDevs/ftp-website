@@ -353,7 +353,7 @@ export const serviceOfferingsHomeBg = {
 };
 
 export const productSpecificationTitle = {
-        featMsg: 'FLEXIBLE SOFTWARES THAT CAN FIT YOUR BUSINESS NEEDS',
+        featMsg: 'FLEXIBLE SOFTWARE THAT CAN FIT TO YOUR BUSINESS NEEDS',
         title: 'Our Products',
         desc: 'Bitverse offers a range of management systems and services, including HRIS, Barangay Management System (BMS), Kiosk Software, contact tracing, and other management systems. Our team of experts works closely with clients to ensure that they get the most out of their systems, providing ongoing support and guidance as needed.'
 };

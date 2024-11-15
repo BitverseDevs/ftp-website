@@ -1,8 +1,6 @@
 import React from "react";
 import "./sectiontitlev2.scss";
 
-
-
 export function SectionTitleV2(props) {
     const { 
         featMsg, 
@@ -18,14 +16,12 @@ export function SectionTitleV2(props) {
                 <h1 className='section-title-v2-title'>{title}</h1>
                 {isDescUnorderedListed === true && Array.isArray(desc) ? 
                 <ul className='section-title-v2-desc-listed'>
-                    {desc.map((item, index)=>
-                    {
+                    {desc.map((item, index)=> {
                         return(
-                        <li className='section-title-v2-desc-listed-items' key={`${index}_li`}>
-                        {item}
-                        </li>    
-                    )}
-                    )}
+                            <li className='section-title-v2-desc-listed-items' key={`${index}_li`}>
+                                {item}
+                            </li>    
+                    )})}
                 </ul>
                 : 
                 <p className='section-title-v2-desc'>{desc}</p>

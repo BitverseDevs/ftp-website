@@ -1,6 +1,6 @@
 
-.product-carousel--section{
-    width: 90%;
+.product-carousel--section {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,15 +8,27 @@
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
+
+    .alice-carousel {
+        .alice-carousel__dots {
+            li {
+                div {
+                    margin-right: 30px !important;
+                }
+            }
+        }
+    }
+
     .product-carousel--main-container{
         display: flex;
         .product-carousel--container-caption{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .section-title-v2-container{
-                width: 100%;
-            }
+            // .section-title-v2-container{
+            //     width: 100%;
+            // }
+
             .hero-left-content-action-item-call{
                 position: relative;
                 left: 2px;
@@ -25,14 +37,6 @@
                 font-family: 'Poppins-Medium', sans-serif;
                 padding: 14px;
                 width: 169px;
-                // background: 
-                //             radial-gradient(circle at 100% 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
-                //             radial-gradient(circle at 0 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
-                //             radial-gradient(circle at 100% 0, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
-                //             radial-gradient(circle at 0 0, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
-                //             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 16px) no-repeat,
-                //             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(95% - 6px) calc(103% - 8px) no-repeat,
-                //             linear-gradient(90deg, rgb(0,196,255) 0%, #48abe0 100%);
                 border: 3px solid #9900ff;
                 border-radius: 8px;
                 padding: 9px;
@@ -63,14 +67,13 @@
 //Responsive Traits Screen
 @media only screen and (min-width: 1200px) and (max-width: 3700px) {
     .product-carousel--section{
-        width: 70%;
     }
 }
 
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .product-carousel--section{
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -81,34 +84,40 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .product-carousel--section{
-        width: 92%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        .product-carousel--container-caption{
-            display: flex;
-            flex-direction: row !important;
-            margin-bottom: 30px;
-            .hero-left-content-action-item-call{
-                align-self: flex-end;
+    .product-carousel--section {
+        width: 70%;
+        .product-carousel--main-container {
+            .product-carousel--container-caption {
+                .hero-left-content-action-item-call {
+                    margin: 20px 0 20px 0;
+                }
             }
         }
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .product-carousel--section{
-        width: 90%;
-        margin-right: unset;
-        .product-carousel--container-caption{
-            margin-bottom: unset;
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .product-carousel--section {
+        width: 95%;
+        .alice-carousel {
+            .alice-carousel__dots {
+                li {
+                    div {
+                        font-size: 0.9rem !important;
+                        margin-right: 20px !important;
+                    }
+                }
+            }
+        }
+
+        .product-carousel--main-container {
+            .product-carousel--container-caption {
+                align-items: center;
+                width: 100%;
+                .hero-left-content-action-item-call {
+                    margin-top: 20px;
+                }
+            }
         }
     }
-}
-
-@media only screen and (max-width: 575px) {
 }

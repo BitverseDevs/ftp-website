@@ -7,11 +7,11 @@
     align-items: center;
     .features-list--list-ul{
         margin-top: 20px;
-        width: 70%;
+        width: 90%;
         .features-list--list-li{
             width: 100%;
             padding: 30px 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 2px solid #eee;
             &:hover{
                 background-color: #3b0063;
                 color: #fff;
@@ -122,6 +122,10 @@
                                 margin-bottom: 5px;
                             }
                         }
+
+                        .features-list--svg-title {
+                            font-weight: 600;
+                        }
                     }
                 }
             }
@@ -145,19 +149,19 @@
 
 @media only screen and (max-width: 991px) {
     .features-list--section-wrap{
-        width: 78%;
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .features-list--section-wrap{
-        width: 80%;
+        width: 85%;
     }
 }
 
 @media only screen and (max-width: 575px) {
     .features-list--section-wrap{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -165,20 +169,20 @@
     .features-list--content-wrap-UpperNav {
         .features-list--list-ul {
             .features-list--list-li {
-                height: 130px;
-                width: 180px;
+                height: 80px;
+                width: 100%;
                 .features-list--h6-wrap {
                     .features-list--content-wrap {
-                        border-radius: 15px;
-
+                        border-radius: 8px;
                         .features-list--icon-wrap {
-                            justify-content: center;
-
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-direction: row;
                             .features-list--svg-wrap {
                                 .features-list--data-svg {
-                                    height: 45px;
-                                    width: 45px;
-                                    margin-bottom: 5px;
+                                    height: 40px;
+                                    width: 40px;
+                                    margin-right: 10px;                                    
                                 }
                             }
                             .features-list--svg-title {
@@ -195,9 +199,16 @@
         .features-list--list-ul {
             width: 100%;
             .features-list--list-li {
+                padding: 25px 15px;
                 .features-list--h6-wrap {
                     .features-list--content-wrap {
                         width: 100%;
+                        .features-list--svg-title {
+                            font-size: 1.2rem;
+                        }
+                        .features-list--svg-content {
+                            font-size: 0.75rem;
+                        }
                     }
                 }
             }
@@ -209,24 +220,24 @@
     .features-list--content-wrap-UpperNav {
         .features-list--list-ul {
             .features-list--list-li {
-                height: 100px;
-                width: 150px;
+                height: 60px;
+                width: 100%;
                 .features-list--h6-wrap {
                     .features-list--content-wrap {
-                        border-radius: 15px;
-
+                        border-radius: 8px;
                         .features-list--icon-wrap {
-                            justify-content: center;
-
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-direction: row;
                             .features-list--svg-wrap {
                                 .features-list--data-svg {
                                     height: 25px;
                                     width: 25px;
-                                    margin-bottom: 5px;
+                                    margin-right: 10px;                                    
                                 }
                             }
                             .features-list--svg-title {
-                                font-size: 0.6rem;
+                                font-size: 0.7rem;
                             }
                         }
                     }
@@ -239,9 +250,16 @@
         .features-list--list-ul {
             width: 100%;
             .features-list--list-li {
+                padding: 20px 15px;
                 .features-list--h6-wrap {
                     .features-list--content-wrap {
                         width: 100%;
+                        .features-list--svg-title {
+                            font-size: 1.1rem;
+                        }
+                        .features-list--svg-content {
+                            font-size: 0.7rem;
+                        }
                     }
                 }
             }

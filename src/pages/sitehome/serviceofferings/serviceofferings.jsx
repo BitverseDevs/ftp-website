@@ -46,7 +46,6 @@ export const ServiceOfferings = ({ fromWhere }) => {
         );
     });
 
-
     return (
         <React.Fragment>
             <div className={fromWhere === 'home' ? 'service-offerings--background service-offerings--backgroundImg' : 'service-offerings--background'}>

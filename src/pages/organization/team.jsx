@@ -48,7 +48,7 @@ const Team = () => {
                             <div id="sectionTwoSecondInner">
                                 <div className="businessDevTeamHeaderCtn">
                                     <div className="sectionTwoSecondInnerHeader">
-                                        <h1>Business Development Team</h1>
+                                        <h1>Business Development Department</h1>
                                     </div>  
                                     <Link to={`/team-profile/${teamData[1].key}`}>
                                         <div className="orgCard">
@@ -124,7 +124,7 @@ const Team = () => {
                             <div id="newInnerSectionThree">
                                 <div className='devTeamHeaderCtn'>
                                     <div className="sectionThreeSecondInnerHeader">
-                                        <h1>Development Team</h1>
+                                        <h1>Software Engineering Department</h1>
                                     </div>  
                                     <Link to={`/team-profile/${teamData[2][0].key}/${2}`}>
                                         <div className="orgCard">
@@ -146,25 +146,8 @@ const Team = () => {
                                 </div>
                                 <div id='innerTwoSectionThree'>
                                     <div id='newSectionThreeInnerCtn'>
-                                        <Link to={`/team-profile/${teamData[5][0].key}/${5}`}>
-                                            <div className="orgCard">
-                                                <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
-                                                <div className="org-card-img">
-                                                    {teamData[5][0].imgURL === '' ?
-                                                        <img src="/assets/blank-icon.png" alt="profile"/>
-                                                        :
-                                                        <img src={teamData[5][0].imgURL} alt="profile"/>
-                                                    }
-                                                </div>
-                                                <div className="org-card-content">
-                                                    <h2 className="team-fullName">{teamData[5][0].fullName}</h2>
-                                                    <p className="team-position">{teamData[5][0].position}</p>
-                                                </div>
-                                            </div> 
-                                        </Link>
-
                                         <div id='innerTwoSectionFourOuter'>
-                                            <div id='innerTwoSectionFour'>
+                                            <div className='innerTwoSectionFour'>
                                                 {teamData[3].map((element, index) => (
                                                     <Link to={`/team-profile/${element.key}/${3}`}>
                                                         <div className="orgCard">
@@ -186,11 +169,11 @@ const Team = () => {
                                                 ))}
                                             </div>
 
-                                            <div id='innerTwoSectionFour'>
+                                            <div id='innerTwooSectionFour' className='innerTwoSectionFour'>
                                                 {teamData[8].map((element, index) => (
                                                     <Link to={`/team-profile/${element.key}/${8}`}>
                                                         <div className="orgCard">
-                                                            <img className='bookMarkIconOne' src="/assets/book-mark-lightblue.png" alt="marker"/>
+                                                            <img className='bookMarkIconOne' src={index == 0 || index == 3 ? '/assets/book-mark-red.png' : '/assets/book-mark-lightblue.png'} alt="marker"/>
                                                             <div className="org-card-img">
                                                                 {element.imgURL === '' ?
                                                                     <img src="/assets/blank-icon.png" alt="profile"/>
@@ -207,23 +190,6 @@ const Team = () => {
                                                 ))}
                                             </div>   
                                         </div>
-
-                                        <Link to={`/team-profile/${teamData[4][0].key}/${4}`}>
-                                            <div className="orgCard">
-                                                <img className='bookMarkIconOne' src="/assets/book-mark-red.png" alt="marker"/>
-                                                <div className="org-card-img">
-                                                    {teamData[4][0].imgURL === '' ?
-                                                        <img src="/assets/blank-icon.png" alt="profile"/>
-                                                        :
-                                                        <img src={teamData[4][0].imgURL} alt="profile"/>
-                                                    }
-                                                </div>
-                                                <div className="org-card-content">
-                                                    <h2 className="team-fullName">{teamData[4][0].fullName}</h2>
-                                                    <p className="team-position">{teamData[4][0].position}</p>
-                                                </div>
-                                            </div> 
-                                        </Link>
                                     </div>
                                 </div>  
                             </div>

@@ -6,8 +6,22 @@
     align-items: center;
     flex-direction: column;
 
+    .product-specs--h2 {
+        width: 80%;
+    }
+
     .product-specs--summary {
         width: 80%;
     }
 }
 
+@media only screen and (max-width: 575px) {
+    .product-specs--section {
+        .product-specs--h2 {
+            width: 90%;
+        }
+        .product-specs--summary {
+            width: 90%;
+        }
+    }
+}

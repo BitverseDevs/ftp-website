@@ -19,7 +19,7 @@
 }
 
 .about-page--section-about {
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -86,6 +86,11 @@
             gap: 25px;
             .about-page--right-header-title{
                 width: 400px;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+                backdrop-filter: blur(0px);
+                border-radius: 10px;
                 h1{
                     font-family: 'Poppins-SemiBold', sans-serif;
                     font-size: 36px;
@@ -106,33 +111,32 @@
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .about-page--section-about {
+        width: 85%;
         .about-page--left-section {
             .about-page--main-header {
                 .about-page--main-header-title {
                     h1 {
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         text-align: center;
                     }
                     p {
-                        font-size: 0.9rem;
-                        text-align: justify;
+                        font-size: 0.7rem;
+                        text-align: center;
                     }
                 }
             }
         }
 
         .about-page--right-section {
-            width: 300px;
             .about-page--right-content {
-                height: auto;
-                width: auto;
                 .about-page--right-header-title {
-                    width: auto;
+                    background: rgba(255, 255, 255, 0.4);
+                    width: 100%;
                     h1 {
-                        font-size: 1.5rem;
+                        font-size: 1.45rem;
                     }
                     p {
-                        font-size: 0.9rem;
+                        font-size: 0.65rem;
                     }
                 }
             }
@@ -140,15 +144,40 @@
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 799px) {
-    .about-page--right-section {
-        .about-page--right-content {
-            .about-page--right-header-title {
-                h1 {
-
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    .about-page--section-about {
+        width: 80%;
+        .about-page--right-section {
+            .about-page--right-content {
+                .about-page--right-header-title {
+                    width: 100%;
+                    padding: 20px;
+                    h1 {
+                        font-size: 1.4rem;
+                    }
+                    p {
+                        font-size: 0.65rem;
+                    }
                 }
-                p {
-                    font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .about-page--section-about {
+        width: 75%;
+        .about-page--right-section {
+            .about-page--right-content {
+                .about-page--right-header-title {
+                    width: 350px;
+                    padding: 15px;
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }
@@ -156,16 +185,47 @@
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
-
+    .about-page--section-about{
+        width: 68%;
+        .about-page--right-section{
+            .about-page--right-content{
+                .about-page--right-header-title{
+                    width: 250px;
+                    padding: 20px;
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .about-page--section-about{
-        flex-flow: wrap;
+        .about-page--right-section{
+            .about-page--right-content{
+                .about-page--right-header-title{
+                    width: 300px;
+                    padding: 20px;
+                }
+            }
+        }
     }
-    
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1600px) {
-
+    .about-page--section-about {
+        .about-page--right-section{
+            .about-page--right-content{
+                .about-page--right-header-title{
+                    width: 350px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
 }
