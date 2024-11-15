@@ -36,10 +36,13 @@ const TeamProfile = (props) => {
                             <div id='iconContainer'>
                                 {techStackData[iterator].map(({section, items}, index) => (
                                     <div className='techStackContainer'>
-                                        <div className='techSection'>{section}</div>
-                                        {items.map((item, index) => (
-                                            <img className='iconsbaby' src={`${item.iconName}`} alt="img" />
-                                        ))}
+                                        {/* <div className='techSection'>{section}</div> */}
+                                        <span className='techSection'>
+                                            <span>{section}</span>
+                                            {items.map((item, index) => (
+                                                <img key={index} className='iconsbaby' src={`${item.iconName}`} alt="img" />
+                                            ))}
+                                        </span>
                                     </div>
                                 ))}
                             </div> : ''}

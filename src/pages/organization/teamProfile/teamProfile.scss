@@ -183,8 +183,14 @@ height: 100%;
 }
 
 .techSection {
-    margin-right: 15px;
     color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.techSection span {
+    margin-right: 15px;
 }
 
 #upperProfileInfo {
