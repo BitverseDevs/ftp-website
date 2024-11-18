@@ -129,6 +129,18 @@
     .website-portfolio--figure-items{
         height: 180px !important;
     }
+
+    p, button {
+        font-size: 0.6rem !important;
+        a {
+            font-size: 0.6rem !important;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    .website-portfolio--figure-button {
+        width: 120px !important;
+    }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
