@@ -44,10 +44,10 @@ const Team = () => {
                     </div>
 
                     <div id="sectionTwo">
-                        <div id="sectionTwoFirstInner">
-                            <div id="sectionTwoSecondInner">
+                        <div id="sectionTwoLeftSection">
+                            <div id="sectionTwoLeftSectionFirstInner">
                                 <div className="businessDevTeamHeaderCtn">
-                                    <div className="sectionTwoSecondInnerHeader">
+                                    <div className="sectionTwoLeftSectionHeader">
                                         <h1>Business Development Department</h1>
                                     </div>  
                                     <Link to={`/team-profile/${teamData[1].key}`}>
@@ -68,8 +68,8 @@ const Team = () => {
                                         </div> 
                                     </Link>
                                 </div>
-                                <div id='innerOneSectionThree'>
-                                    <div id='sectionTwoSecondInnerCtnOne'>
+                                <div id='sectionTwoLeftSectionSecondInner'>
+                                    <div id='sectionTwoLeftSectionCtnOne'>
                                         {teamData[6].map((element, index) => (
                                             <Link to={`/team-profile/${element.key}/${6}`}>
                                                 <div className="orgCard" key={index}>
@@ -96,7 +96,7 @@ const Team = () => {
                                             </Link>
                                         ))}
                                     </div>
-                                    <div id='sectionTwoSecondInnerCtnTwo'>
+                                    <div id='sectionTwoLeftSectionCtnTwo'>
                                         {teamData[7].map((element, index) => (
                                             <Link to={`/team-profile/${element.key}/${7}`}>
                                                 <div className="orgCard">
@@ -120,10 +120,10 @@ const Team = () => {
                             </div>
                         </div>
 
-                        <div id="newSectionThree">
-                            <div id="newInnerSectionThree">
+                        <div id="sectionTwoRightSection">
+                            <div id="sectionTwoRightSectionOuterContainer">
                                 <div className='devTeamHeaderCtn'>
-                                    <div className="sectionThreeSecondInnerHeader">
+                                    <div className="sectionTwoRightSectionHeader">
                                         <h1>Software Engineering Department</h1>
                                     </div>  
                                     <Link to={`/team-profile/${teamData[2][0].key}/${2}`}>
@@ -144,10 +144,10 @@ const Team = () => {
                                         </div>   
                                     </Link>
                                 </div>
-                                <div id='innerTwoSectionThree'>
-                                    <div id='newSectionThreeInnerCtn'>
-                                        <div id='innerTwoSectionFourOuter'>
-                                            <div className='innerTwoSectionFour'>
+                                <div id='sectionTwoRightFirstInner'>
+                                    <div id='sectionTwoRightSecondInner'>
+                                        <div id='sectionTwoRightThirdInner'>
+                                            <div className='sectionTwoRightFourthInner'>
                                                 {teamData[3].map((element, index) => (
                                                     <Link to={`/team-profile/${element.key}/${3}`}>
                                                         <div className="orgCard">
@@ -169,7 +169,7 @@ const Team = () => {
                                                 ))}
                                             </div>
 
-                                            <div id='innerTwooSectionFour' className='innerTwoSectionFour'>
+                                            <div id='sectionTwoRightFourthInner' className='sectionTwoRightFourthInner'>
                                                 {teamData[8].map((element, index) => (
                                                     <Link to={`/team-profile/${element.key}/${8}`}>
                                                         <div className="orgCard">

@@ -2,6 +2,7 @@
 
 export const techStackData = [
   [
+    // sir rev stack
     {
       section: 'Frontend',
       items: [
@@ -89,6 +90,7 @@ export const techStackData = [
     },
   ],
   [
+    // sir marc stack
     {
       section: 'Backend',
       items: [
@@ -130,6 +132,7 @@ export const techStackData = [
     }
   ], 
   [
+    // sir jhumer stack
     {
       section: 'Frontend',
       items: [
@@ -178,6 +181,7 @@ export const techStackData = [
     }
   ],
   [
+    // jhio stack
     {
       section: 'Backend', 
       items: [
@@ -230,6 +234,7 @@ export const techStackData = [
     }
   ], 
   [
+    // osama stack
     {
       section: 'Frontend',
       items: [
@@ -257,6 +262,29 @@ export const techStackData = [
     }
   ],
   [
+    // sir wilson stack
+    {
+      section: 'Backend',
+      items: [
+        {
+          name: 'php', 
+          iconName: '/assets/php.png'
+        }, 
+        {
+          name: 'laravel',
+          iconName: '/assets/laravel.svg'  
+        }
+      ]
+    },
+    {
+      section: 'Database',
+      items: [
+        {
+          name: 'mysql',
+          iconName: '/assets/mysql.svg'
+        }
+      ]
+    },
     {
       section: 'Management',
       items: [
@@ -281,6 +309,7 @@ export const techStackData = [
     }
   ],
   [
+    // maam denia stack
     {
       section: 'Design',
       items: [
@@ -292,6 +321,7 @@ export const techStackData = [
     }
   ], 
   [
+    // sir jm stack
     {
       section: 'Design',
       items: [

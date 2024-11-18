@@ -7,7 +7,6 @@ import SectionTitle from 'components/sectionTitle/sectionTitle';
 
 export function ProductSpecs(props, ref){ 
     const {featMsg, title, desc} = props?.productsTitle;
-    console.log(props);
 
     return(
         <React.Fragment>
