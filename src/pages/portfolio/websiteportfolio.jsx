@@ -6,12 +6,27 @@ import SectionTitle from 'components/sectionTitle/sectionTitle';
 import ParticleBg from 'pages/ui/particlebg';
 import SEO from '../../components/seo/seo';
 import AliceCarousel from 'react-alice-carousel';
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
 
 export function WebsitePortfolio(props) {
     let portfolioArray = Object.values(props.portfolios);
     const {title, desc} = websitePortfolioTitle;
-    const slides = useRef(null);
-    const handleDragStart = (e) => e.preventDefault();
+
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 1,
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 1,
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1,
+        }
+      };
 
     return (
         <React.Fragment>
@@ -23,21 +38,19 @@ export function WebsitePortfolio(props) {
             <ParticleBg/>
             <section className='website-portfolio--section-wrap'>
                 <SectionTitle title={title} desc={desc}/>
+           
                 <ul className='website-portfolio--figure-section'>
-                    {/* <AliceCarousel 
-                        infinite
-                        autoPlay
-                        autoPlayInterval={4500}
-                        animationDuration={1000}
-                        disableButtonsControls
-                        disableDotsControls
-                        items={portfolioArray}
-                        mouseTracking
-                        responsive={responsivePortfolio}
-                        ref={slides}
-                    /> */
-                        portfolioArray.map(({ id, src, alt, srcLink }) => (
-                            <li className='website-portfolio--figure-wraps' key={id} onDragStart={handleDragStart} role='presentation'>
+                    <Carousel 
+                        responsive={responsive} 
+                        autoPlay={true}
+                        infinite={true}
+                        containerClass="carousel-container"
+                        centerMode='true'
+                        arrows={false}
+                        itemClass="item-class"
+                    >
+                        {portfolioArray.map(({ id, src, alt, srcLink }, index) => (
+                            <li className='website-portfolio--figure-wraps' key={id}>
                                 <div className='website-portfolio--figure-desc'>
                                 <p className='website-portfolio--figure-title'>{alt}</p>
                                     <button className='website-portfolio--figure-button'>
@@ -48,8 +61,8 @@ export function WebsitePortfolio(props) {
                                 </div>
                                 <img className='website-portfolio--figure-items' src={src} alt={alt}></img>
                             </li>
-                        ))
-                    }
+                        ))}
+                    </Carousel>
                 </ul>
             </section>
         </React.Fragment>
