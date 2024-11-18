@@ -137,7 +137,7 @@ const Team = () => {
                                                     <img src={teamData[2][0].imgURL} alt="profile"/>
                                                 }
                                             </div>
-                                            <div className="org-card-content">
+                                            <div className="org-card-content adjustedCardContent">
                                                 <h2 className="team-fullName">{teamData[2][0].fullName}</h2>
                                                 <p className="team-position">{teamData[2][0].position}</p>
                                             </div>

@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 @keyframes fadeIn {
@@ -50,8 +51,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    width: 80%;
+    width: 70%;
 }
 
 .org-card{
@@ -69,8 +69,8 @@
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
 }
 
@@ -140,19 +140,19 @@
 }
 
 .bookMarkIconOne {
-    height: 15px;
-    width: 25px;
+    height: 10px;
+    width: 15px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
 }
 
 .bookMarkIconTwo {
-    height: 15px;
-    width: 25px;
+    height: 10px;
+    width: 15px;
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 15px;
 }
 
 .org-card, .org-card p, .org-card h2{
@@ -172,10 +172,6 @@
         border-top-left-radius: 2%;
         border-top-right-radius: 2%;
         background-position: top;
-        // border-radius: 5%;
-        // background: rgb(77,28,145);
-        // background: linear-gradient(90deg, rgba(77,28,145,1) 0%, rgba(77,28,145,1) 50%, rgba(85,102,116,1) 100%) border-box;
-        // border: 5px solid transparent;
     }
 }
 
@@ -199,6 +195,10 @@
     flex-direction: column;
     text-align: center;
     padding: 10px 0 10px 0;
+}
+
+.adjustedCardContent .team-position {
+    font-size: 10px !important;
 }
 
 .org-card-content .team-fullName{
@@ -244,7 +244,7 @@
 // remove after fixing layout
 #sectionTwoFirstInner, #newSectionThree {
     height: 100%;
-    width: auto;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,16 +258,18 @@
 }
 
 #sectionTwoSecondInner, #newInnerSectionThree {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
 }
 
-.devTeamHeaderCtn, .businessDevTeamHeaderCtn{
+.devTeamHeaderCtn, .businessDevTeamHeaderCtn {
+    height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
@@ -286,105 +288,380 @@
 #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo {
     display: flex;
     flex-direction: row;
-    gap: 50px;  
+    gap: 20px;  
 }
 
-@media only screen and (min-width: 320px) and (max-width: 399px) {
-    .devTeamHeaderCtn, .businessDevTeamHeaderCtn {
-        margin-top: 30px;
-    }
-
-    .org-header h1 {
-        font-size: 1.6rem;
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+    #sectionTwoFirstInner {
+        width: 30%;
     }
 
     #newSectionThree {
-        margin-top: 5px;
+        width: 70%;
     }
 
-    #sectionTwo {
-        flex-direction: column;
+    .org-content {
+        width: 100%;
+    }
+
+    .org-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 110px;
+        margin-top: 10px;
     }
 
     .orgCard, .org-card-content {
-        width: 120px;
+        width: 45px;
+    }
+
+    .org-card-content {
+        padding: 3px !important;
     }
 
     .org-card-img {
-        width: 120px;
-        height: 120px;
+        width: 45px;
+        height: 40px;
     }
 
-    #innerTwoSectionThree, #innerOneSectionThree, #innerOneSectionFour {
-        gap: 15px !important;
+    #innerTwoSectionThree, .innerTwoSectionFour, #innerOneSectionFour {
+        gap: 10px !important;
         flex-direction: column;
     }
 
     .innerTwoSectionFour {
         flex-direction: row;
-        gap: 15px !important;
-        flex-wrap: wrap;
+        height: 80px;
     }
 
     #innerTwooSectionFour {
-        display: flex;
-        flex-direction: row;
+        margin-top: 5px;
+    }
+
+    .team-fullName {
+        font-size: 0.3rem !important;
+    }
+
+    .team-position {
+        font-size: 0.25rem !important;
+    }  
+
+    .adjustedCardContent .team-position {
+        font-size: 0.25rem !important;
+    }
+
+    .bookMarkIconOne {
+        height: 5px;
+        width: 7px;
+        left: 2px;
+    }
+
+    .bookMarkIconTwo {
+        height: 5px; 
+        width: 7px;
+        left: 8px;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.4em;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        column-gap: 10px;
+        margin-top: 2px;
+        height: 80px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 450px) {
+    #sectionTwoFirstInner {
+        width: 35% !important;
+    }
+
+    #newSectionThree {
+        width: 65% !important;
+    }
+
+    .org-content {
+        width: 100%;
+    }
+
+    .org-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    .orgCard, .org-card-content {
+        width: 45px;
+    }
+
+    .org-card-content {
+        padding: 3px !important;
+    }
+
+    .org-card-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour {
+        gap: 15px !important;
+        flex-direction: column;
     }
 
     #innerTwoSectionThree {
         flex-direction: column-reverse !important;
     }
 
+    .innerTwoSectionFour {
+        flex-direction: row;
+    }
+
     .team-fullName {
-        font-size: 0.6rem !important;
+        font-size: 0.3rem !important;
     }
 
     .team-position {
-        font-size: 0.5rem !important;
+        font-size: 0.25rem !important;
+    }  
+
+    .adjustedCardContent .team-position {
+        font-size: 0.25rem !important;
     }
 
     .bookMarkIconOne {
+        height: 7px;
+        width: 10px;
         left: 0px;
     }
 
-    .bookMarkIconTwo { 
-        left: 25px;
+    .bookMarkIconTwo {
+        height: 7px; 
+        width: 10px;
+        left: 12px;
     }
 
     .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
-        font-size: 0.9rem;
+        font-size: 0.4em;
     }
 
     #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
         gap: 15px;
     }
-}
 
-
-@media only screen and (min-width: 400px) and (max-width: 789px) {
-    .devTeamHeaderCtn {
-        margin-top: 50px;
+    .org-card-img img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
-    .org-header h1 {
-        font-size: 1.5rem;
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px) {
+    #sectionTwoFirstInner {
+        width: 35% !important;
     }
 
     #newSectionThree {
-        margin-top: 5px;
+        width: 65% !important;
     }
 
-    #sectionTwo {
-        flex-direction: column;
+    .org-content {
+        width: 100%;
+    }
+
+    .org-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 120px;
+        margin-top: 10px;
     }
 
     .orgCard, .org-card-content {
-        width: 90px;
+        width: 55px;
+    }
+
+    .org-card-content {
+        padding: 3px !important;
     }
 
     .org-card-img {
-        width: 90px;
-        height: 100px;
+        width: 55px;
+        height: 55px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour {
+        gap: 15px !important;
+        flex-direction: column;
+    }
+
+    #innerTwoSectionThree {
+        flex-direction: column-reverse !important;
+    }
+
+    .innerTwoSectionFour {
+        flex-direction: row;
+    }
+
+    .team-fullName {
+        font-size: 0.3rem !important;
+    }
+
+    .team-position {
+        font-size: 0.25rem !important;
+    }  
+
+    .adjustedCardContent .team-position {
+        font-size: 0.25rem !important;
+    }
+
+    .bookMarkIconOne {
+        height: 7px;
+        left: 0px;
+    }
+
+    .bookMarkIconTwo {
+        height: 7px; 
+        left: 12px;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.5em;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 15px;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 550px) {
+    .org-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 120px;
+    }
+
+    .orgCard, .org-card-content {
+        width: 55px;
+    }
+
+    .org-card-content {
+        padding: 3px !important;
+    }
+
+    .org-card-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour {
+        gap: 15px !important;
+        flex-direction: column;
+    }
+
+    #innerTwoSectionThree {
+        flex-direction: column-reverse !important;
+    }
+
+    .innerTwoSectionFour {
+        flex-direction: row;
+    }
+
+    .team-fullName {
+        font-size: 0.3rem !important;
+    }
+
+    .team-position {
+        font-size: 0.25rem !important;
+    }  
+
+    .adjustedCardContent .team-position {
+        font-size: 0.25rem !important;
+    }
+
+    .bookMarkIconOne {
+        height: 7px;
+        left: 0px;
+    }
+
+    .bookMarkIconTwo {
+        height: 7px; 
+        left: 12px;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.55rem;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 15px;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+    .org-content {
+        width: 80%;
+    }
+
+    .org-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 140px;
+    }
+
+    .orgCard, .org-card-content {
+        width: 60px;
+    }
+
+    .org-card-content {
+        padding: 3.5px !important;
+    }
+
+    .org-card-img {
+        width: 60px;
+        height: 60px;
     }
 
     #newSectionThreeInnerCtn {
@@ -392,9 +669,8 @@
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour {
-        gap: 25px !important;
+        gap: 15px !important;
         flex-direction: column;
-        align-items: center;
     }
 
     #innerTwoSectionThree {
@@ -406,23 +682,29 @@
     }
 
     .team-fullName {
-        font-size: 0.6rem !important;
+        font-size: 0.35rem !important;
     }
 
     .team-position {
-        font-size: 0.5rem !important;
+        font-size: 0.3rem !important;
     }  
 
+    .adjustedCardContent .team-position {
+        font-size: 0.3rem !important;
+    }
+
     .bookMarkIconOne {
+        height: 7px;
         left: 0px;
     }
 
-    .bookMarkIconTwo { 
-        left: 25px;
+    .bookMarkIconTwo {
+        height: 7px; 
+        left: 12px;
     }
 
     .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
-        font-size: 1rem;
+        font-size: 0.55rem;
     }
 
     #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
@@ -433,10 +715,23 @@
         border-top-left-radius: 8%;
         border-top-right-radius: 8%;
     }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        width: 85%;
+        justify-content: flex-end;
+    }
 }
 
 @media only screen and (min-width: 790px) and (max-width: 900px) {
-    .org-content{
+    .org-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 170px;
+    }
+
+    .org-content {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -445,12 +740,12 @@
     }
 
     .orgCard, .org-card-content {
-        width: 90px;
+        width: 75px;
     }
 
     .org-card-img {
-        width: 90px;
-        height: 100px;
+        width: 75px;
+        height: 70px;
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
@@ -459,31 +754,174 @@
 
     #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
         gap: 15px;
+        width: 80%;
+        justify-content: flex-end;
     }
 
     .team-fullName {
-        font-size: 0.7rem !important;
+        font-size: 0.4rem !important;
     }
 
     .team-position {
-        font-size: 0.6rem !important;
+        font-size: 0.38rem !important;
+    }
+
+    .adjustedCardContent .team-position {
+        font-size: 0.33rem !important;
     }
 
     .org-card-img img {
         border-top-left-radius: 8%;
         border-top-right-radius: 8%;
     }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.7rem;
+    }
 }
 
-// @media only screen and (min-width: 1199px)
 
-@media only screen and (min-width: 901px) and (max-width: 1199px) {
+@media only screen and (min-width: 650px) and (max-width: 790px) {
+    .org-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 150px;
+    }
+
+    .orgCard, .org-card-content {
+        width: 70px;
+    }
+
+    .org-card-content {
+        padding: 5px !important;
+    }
+
+    .org-card-img {
+        width: 70px;
+        height: 60px;
+    }
+
+    #newSectionThreeInnerCtn {
+        gap: 20px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour {
+        gap: 15px !important;
+        flex-direction: column;
+    }
+
+    #innerTwoSectionThree {
+        flex-direction: column-reverse !important;
+    }
+
+    .innerTwoSectionFour {
+        flex-direction: row;
+    }
+
+    .team-fullName {
+        font-size: 0.4rem !important;
+    }
+
+    .team-position {
+        font-size: 0.3rem !important;
+    }  
+
+    .adjustedCardContent .team-position {
+        font-size: 0.33rem !important;
+    }
+
+    .bookMarkIconOne {
+        height: 7px;
+        left: 0px;
+    }
+
+    .bookMarkIconTwo {
+        height: 7px; 
+        left: 12px;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.7rem;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 15px;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 8%;
+        border-top-right-radius: 8%;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        width: 90%;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 900px) {
+    .org-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .businessDevTeamHeaderCtn, .devTeamHeaderCtn {
+        height: 170px;
+    }
+
+    .org-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     #sectionTwo {
         flex-direction: row-reverse;
     }
 
-    #newSectionThree {
-        margin-top: 20px;
+    .orgCard, .org-card-content {
+        width: 75px;
+    }
+
+    .org-card-img {
+        width: 75px;
+        height: 70px;
+    }
+
+    #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
+        gap: 15px !important;
+    }
+
+    #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #sectionThreeInnerCtnTwo {
+        gap: 15px;
+        width: 80%;
+        justify-content: flex-end;
+    }
+
+    .team-fullName {
+        font-size: 0.4rem !important;
+    }
+
+    .team-position {
+        font-size: 0.38rem !important;
+    }
+
+    .adjustedCardContent .team-position {
+        font-size: 0.33rem !important;
+    }
+
+    .org-card-img img {
+        border-top-left-radius: 8%;
+        border-top-right-radius: 8%;
+    }
+
+    .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    #sectionTwo {
+        flex-direction: row-reverse;
     }
 
     .orgCard, .org-card-content {
@@ -491,16 +929,20 @@
     }
 
     .team-fullName {
-        font-size: 0.7rem !important;
+        font-size: 0.5rem !important;
     }
 
     .team-position {
-        font-size: 0.6rem !important;
+        font-size: 0.45rem !important;
+    }
+
+    .adjustedCardContent .team-position {
+        font-size: 0.45rem !important;
     }
 
     .org-card-img{
         width: 100px;
-        height: 90px;
+        height: 100px;
     }
 
     #sectionTwoSecondInnerCtnOne, #sectionTwoSecondInnerCtnTwo, #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
@@ -523,22 +965,26 @@
     }
 
     .orgCard, .org-card-content {
-        width: 140px;
+        width: 100px;
         border-bottom-left-radius: 8%;
         border-bottom-right-radius: 8%;
     }
     
     .team-fullName {
-        font-size: 0.7rem !important;
+        font-size: 0.5rem !important;
     }
 
     .team-position {
-        font-size: 0.6rem !important;
+        font-size: 0.45rem !important;
+    }
+
+    .adjustedCardContent .team-position {
+        font-size: 0.45rem !important;
     }
     
     .org-card-img{
-        width: 140px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .org-card-img img {
@@ -547,7 +993,7 @@
     }
 
     #innerTwoSectionThree, #innerOneSectionThree, .innerTwoSectionFour, #innerOneSectionFour, #sectionThreeInnerCtnTwo {
-        gap: 40px !important;
+        gap: 20px !important;
     }
 
     .sectionTwoSecondInnerHeader, .sectionThreeSecondInnerHeader {
