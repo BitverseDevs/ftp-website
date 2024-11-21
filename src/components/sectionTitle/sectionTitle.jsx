@@ -14,7 +14,7 @@ export function SectionTitle(props) {
                 <p className='section-title-feat'>{featMsg}</p>
                 <h1 className='section-title-title'>{title}</h1>
                 <div id="sectionTitleContainer">
-                    <p className='section-title-desc'>{desc}</p>
+                    {/* <div className='section-title-desc'>{desc}</div> */}
                 </div>
             </section>
         </React.Fragment>

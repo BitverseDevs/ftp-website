@@ -48,11 +48,10 @@ export const ProductCarousel = () => {
         const labelStyle = {
           fontWeight: isActive ? 'bold' : 'normal',
           color: isActive ? 'rgb(81 0 135)' : 'black',
-          marginRight: '10px',
+          marginRight: '30px',
           cursor: 'pointer',
-          fontSize: '20px', 
-          fontWeight: '900',
-          fontFamily: 'Poppins-SemiBold',
+          fontSize: '1.2rem', 
+          fontFamily: 'Poppins',
           marginTop: `${adjMargin(breakPoint)}`,
         };
         return (
@@ -66,7 +65,7 @@ export const ProductCarousel = () => {
         return (
             <section className='product-carousel--main-container' draggable='false' style={{ flexDirection: !shouldRender ? 'column' : ''}}>
                 <figcaption className='product-carousel--container-caption'>
-                    <SectionTitleV2 featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
+                    <SectionTitleV2 fromWhere='productCarousel' featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
                     <Link to={'/contact-us'}>
                         <button className='hero-left-content-action-item-call'>
                                 {product.srcTitle}

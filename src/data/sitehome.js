@@ -95,8 +95,8 @@ export const heroData = {
 
 export const sectionTitles = [
     {
-        featMsg: 'TRUSTED BY ESTABLISHED AND REKNOWN CLIENTS',
-        title: 'Solutions For Your Business',
+        featMsg: 'Solutions For Your Business',
+        title: 'TRUSTED BY CLIENTS',
         desc: 'Our technology solutions have covered a wide range of clients: real estate developers, food retail, marketing firms, school institutions, transportation, healthcare, construction companies, among others.'
     },
     {
@@ -108,19 +108,50 @@ export const sectionTitles = [
         featMsg: 'TAKE THE NEXT STEP',
         title: 'Why do I need an HRIS?',
         desc: [
-            'Faster data extraction and processing',
-            'Reduce duplication of effort, resulting in reduced costs',
-            'The availability of accurate and up-to-date human resources data',
-            'Better analysis leading to more effective decision-making',
-            'More meaningful career planning and advice at all levels',
-            'Better ability to react to environmental changes',
-            'Provides transparency in the system'
+            'Faster Data Extraction',
+            'Reduce Duplication',
+            'System Transparency',
+            'Environmental Adaptation',
+            'Accurate HR Data',
+            'Effective Decision-Making',
+            'Better Financial Management', 
+            'Enhanced Data Security',
+            'Increased Employee Engagement'
+            // 'Faster data extraction and processing',
+            // 'Reduce duplication of effort, resulting in reduced costs',
+            // 'Provides transparency in the system',
+            // 'Better ability to react to environmental changes',
+            // 'The availability of accurate and up-to-date human resources data',
+            // 'Better analysis leading to more effective decision-making',
+            // 'More meaningful career planning and advice at all levels',
         ]
     },
     {
         featMsg: 'CHOOSE INNOVATION',
-        title: 'Why Bitverse HRIS?',
-        desc: 'Bitverse\'s HRIS software has evolved to facilitate many HR activities such as time tracking, succession planning, and recruitment. Among other things, this can improve efficiency and save working time.'
+        title: 'Now. Why Bitverse HRIS?',
+        desc: [
+            {
+                iconName: '/assets/efficiency.svg',
+                title: 'Improved Efficiency in HR Activities',
+                desc: "Bitverse's HRIS software has evolved to facilitate various HR activities, including time tracking, succession planning, and recruitment, leading to significant improvements in efficiency."
+            },
+            {
+                iconName: '/assets/clock.svg',
+                title: 'Time Savings',
+                desc: 'This evolution in HRIS capabilities helps save working time by automating and streamlining these critical HR processes.'
+            },
+            {
+                iconName: '/assets/echanced.svg',
+                title: 'Enhanced Operational Benefits',
+                desc: "By handling tasks such as time tracking, succession planning, and recruitment, Bitverse's HRIS software enhances overall operational benefits, making HR management more effective and streamlined."
+            },
+        ]
+        // desc: 'Bitverse\'s HRIS software has evolved to facilitate many HR activities such as time tracking, succession planning, and recruitment. Among other things, this can improve efficiency and save working time.'
+    }, 
+    {
+        featMsg: 'YES. WE HAVE OTHER SERVICES',
+        title: 'OUR SERVICES',
+        desc: '',
     }
 ];
 
@@ -166,43 +197,43 @@ export const responsivePortfolio = {
 export const brandArea = [
     {
         id: 1001,
-        src: '/assets/comp-01-contis.png'
+        src: '/assets/comp-01-contiss.png'
     },
     {
         id: 1002,
-        src: '/assets/comp-02-htland.png'
+        src: '/assets/comp-02-htlandd.png'
     },
     {
         id: 1003,
-        src: '/assets/comp-03-dc.png'
+        src: '/assets/comp-03-dcc.png'
     },
     {
         id: 1004,
-        src: '/assets/comp-04-ht.png'
+        src: '/assets/comp-04-htt.png'
     },
     {
         id: 1005,
-        src: '/assets/comp-05-app.png'
+        src: '/assets/comp-05-appp.png'
     },
     {
         id: 1006,
-        src: '/assets/comp-06-cav.png'
+        src: '/assets/comp-06-cavv.png'
     },
     {
         id: 1007,
-        src: '/assets/comp-07-manda.png'
+        src: '/assets/comp-07-mandaa.png'
     },
     {
         id: 1008,
-        src: '/assets/comp-08-ddt.png'
+        src: '/assets/comp-08-ddtt.png'
     },
     {
         id: 1009,
-        src: '/assets/comp-09-dt.png'
+        src: '/assets/comp-09-dtt.png'
     },
     {
         id: 1010,
-        src: '/assets/comp-10-sv.png'
+        src: '/assets/comp-10-svv.png'
     }
 ];
 
@@ -448,39 +479,94 @@ export const callToActionTitle = {
     bgLink: '/bv-footer-banner.png',
 }
 
+
+// :)
+export const faqHeaderDetails = {
+    faqTitle: 'Everything You Need To Know About Bitverse HRIS',
+    faqFeatMsdg: 'Frequently Asked Question'
+};
+
+export const faqList = [
+    {
+        id: 'faq1',
+        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.'
+    }, 
+    {
+        id: 'faq2',
+        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
+    }, 
+    {
+        id: 'faq3',
+        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
+    }, 
+    {
+        id: 'faq4',
+        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
+    }, 
+    {
+        id: 'faq5',
+        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
+    }, 
+    {
+        id: 'faq6',
+        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
+    }, 
+]
+
 export const footerList = [
     {
-        title: 'About Bitverse',
-        isInputType: false,
-        inputPlaceholder: '',
-        firstDesc: 'We are an information system solutions provider with core expertise in corporate automation platforms and software development.',
-        secondDesc: 'Copyright ©2023 All rights reserved',
-        isBullettedList: false, 
-        bullettedItems: [],
+        title: '',
+        items: [
+            {
+                name: 'facebook',
+                iconName: '/assets/facebook-black.svg',
+                desc: '',
+                link: '',
+            },
+            {
+                name: 'linkedin',
+                iconName: '/assets/linkedin-black.svg',
+                desc: '',
+                link: '',
+            },
+            {
+                name: 'insta',
+                iconName: '/assets/insta-black.svg',
+                desc: '',
+                link: '',
+            },
+        ],
+        desc: 'Copyright ©2024 All rights reserved',
     },
     {
-        title: 'Newsletter',
-        isInputType: true,
-        inputPlaceholder: 'Enter Email Address',
-        firstDesc: 'Stay updated with our latest trends',
-        secondDesc: '',
-        isBullettedList: false,
-        bullettedItems: [],
-    },
-    {
-        title: 'Reach Us',
-        isInputType: false,
-        inputPlaceholder: '',
-        firstDesc: '',
-        secondDesc: '',
-        isBullettedList: true,
-        bullettedItems: [
-        'Unit 1603, Pearlbank Centre, Salcedo Village, 146 Valero, Makati, 1200 Metro Manila',
-        'Phone: 09171187206',
-        'salesbitverse@gmail.com',
-        ] 
+        title: '',
+        items: [
+            {
+              name: 'location',
+              iconName: '/assets/location.svg',
+              desc: 'Unit 1603, Pearlbank Centre, Salcedo Village, 146 Valero, Makati, 1200 Metro Manila' 
+            },
+            {
+                name: 'phone',
+                iconName: '/assets/telephone.svg',
+                desc: '09171187206' 
+            },
+            {
+                name: 'email',
+                iconName: '/assets/email.svg',
+                desc: 'salesbitverse@gmail.com', 
+            },
+        ],
+        desc: '',
     },
 ];
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     staticNavMsg,

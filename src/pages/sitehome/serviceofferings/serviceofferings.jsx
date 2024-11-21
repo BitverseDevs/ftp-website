@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import './serviceofferings.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { serviceOfferingsHome } from '../../../data/sitehome';
 import SectionTitleV2 from 'components/sectiontitleV2/sectiontitlev2';
+import SectionTitle from 'components/sectionTitle/sectionTitle';
+import { sectionTitles } from '../../../data/sitehome';
 import { Link } from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const renderDotsItem = (item) => {
     const isActive = item.isActive;
@@ -24,41 +27,47 @@ const renderDotsItem = (item) => {
   };
 
 export const ServiceOfferings = ({ fromWhere }) => {
+    const [animate, setAnimate] = useState(true);
+    const { featMsg: featMsg4, title: title4, } = sectionTitles[4];
 
-    const productItemsArray = serviceOfferingsHome.map((product)=> { 
-        return (
-            <section className='service-offerings--main-container' draggable='false'>
-                <figcaption className='service-offerings--container-caption'>
-                    <SectionTitleV2 featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
-                    <Link to={'/contact-us'}>
-                    <button className='hero-left-content-action-item-call'>
-                        <a href={product.srcLink}>
-                            {product.srcTitle}
-                        </a>
-                    </button>
-                    </Link>
-                </figcaption>
-                <figure className='service-offerings--container-img' data-value="2" style={{marginRight: '40px', paddingLeft: '5px'}}>
-                    <img src={product.img} alt={product.imgAlt} draggable='false'>
-                    </img>
-                </figure>
-            </section>
-        );
-    });
+    const handleScroll = () => {
+        setAnimate(true);
+        console.log('scrollingggg');
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
 
     return (
         <React.Fragment>
             <div className={fromWhere === 'home' ? 'service-offerings--background service-offerings--backgroundImg' : 'service-offerings--background'}>
                 <section className='service-offerings--section'>
-                    <AliceCarousel
-                    animationType='fadeout'
-                    infinite
-                    animationDuration={100}
-                    disableButtonsControls
-                    items={productItemsArray}
-                    mouseTracking
-                    renderDotsItem={renderDotsItem}
-                    />
+                    <SectionTitle featMsg={featMsg4} title={title4} marginBottom={'0'}/>
+
+                    <section className='service-offerings--main-container' draggable='false'>
+                        <section className='service-offerings--main-container-inner'>
+                        {serviceOfferingsHome.map((product)=> (
+                            <figcaption className='service-offerings--container-caption'>
+                                <SectionTitleV2 fromWhere='serviceOfferings' featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
+                                <Link to={'/contact-us'}>
+                                    <button className='hero-left-content-action-item-call'>
+                                        <a href={product.srcLink}>
+                                            {product.srcTitle}
+                                        </a>
+                                    </button>
+                                </Link>
+                            </figcaption>
+                        ))}
+                        </section>
+                        <ScrollAnimation className='service-offerings--container-img' duration={5} animateOnce={false} animateIn={animate ? 'swing' : ''}>
+                            {/* <figure className='service-offerings--container-img' data-value="2"> */}
+                                <img src='/assets/toool.png' draggable='false'></img>
+                            {/* </figure> */}
+                        </ScrollAnimation>
+                    </section>
+
                 </section>
             </div>
         </React.Fragment>

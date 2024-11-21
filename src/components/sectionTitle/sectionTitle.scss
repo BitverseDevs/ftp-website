@@ -7,30 +7,32 @@
     margin-right: auto;
     margin-left: auto;
     font-family: 'Poppins-SemiBold', sans-serif;
+    border: 1px solid red;
     .section-title-feat{
         text-transform: uppercase;
         color: #777777;
         font-size: 12px;
         letter-spacing: 2px;
         margin: 0 0 20px;
-        
     }
     .section-title-title{
+        width: 50%;
         color: #000;
-        font-size: 36px;
+        font-size: 3rem;
         margin: 0 0 15px;
         text-align: center;
     }
-    .section-title-desc{
-        color: #777777;
-        font-size: 14px;
-        text-align: center;
+
+    #sectionTitleContainer {
+        width: 30%;
+        .section-title-desc {
+            color: #777777;
+            font-size: 0.9rem;
+            text-align: center;
+        }
     }
 }
 
-#sectionTitleContainer {
-    width: 70%;
-}
 
 //Responsive Traits Screen
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

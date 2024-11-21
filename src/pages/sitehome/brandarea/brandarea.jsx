@@ -16,10 +16,10 @@ export function BrandArea(props) {
       <img className={'brand-area-item'} src={src} key={id} onDragStart={handleDragStart} role='presentation'/>
     ));
   return (
-    <React.Fragment>
+    <div id='brandAreaOuterContainer'>
         <SectionTitle featMsg={featMsg} title={title} desc={desc} marginBottom={'40'}/>
-        <div className='carousel-wrap'>
-            <AliceCarousel 
+        <div className='brand-container'>
+            {/* <AliceCarousel 
             mouseTracking
             autoPlay
             infinite
@@ -29,9 +29,13 @@ export function BrandArea(props) {
             disableButtonsControls 
             items={items2} 
             responsive={responsiveBrands}
-            />
+            /> */}
+          {brandArray.map(({id, src}, index) => (
+            <img className='brand-item' src={src} alt="Brand Image" draggable='false'/>
+          ))}
+
         </div>
-    </React.Fragment>
+    </div>
   );
 }
 

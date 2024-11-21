@@ -1,7 +1,7 @@
 export const contactPageData = [
     {
         key: 'apd01',
-        title: 'Contact Us',
+        title: "Glad you're here! Let's start by booking a demo",
         isMainAbout: true,
         picUrl: '/assets/z-bv-about.png',
         desc: 'We understand that manual HR processes can be time-consuming and prone to errors. Our HRIS system offers a comprehensive solution to streamline your HR operations and ensure accurate and up-to-date data. Aside from this, we also cater in customizable solutions for your company and organization, ranging from profile websites, portfolio, dynamic contact pages, systems and more. Contact us to know more!',
@@ -31,7 +31,7 @@ export const contactPageData = [
 
 
 export const contactPageBanner = {
-    bannerSrc: '/assets/bv-contact-us.png'
+    bannerSrc: '/assets/bv-contact-us.pngg'
 };
 
 export const contactPageFormList = [

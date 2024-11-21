@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    background-color: #f2f4f7;
+    padding: 130px 0;
     .featured-specs-cont{
         display: flex;
         justify-content: center;
@@ -12,6 +13,7 @@
         &.featured-specs-cont2{
             margin-top: 120px;
             height: 423px;
+            width: 100%;
             .featured-specs-cont-title-wrap{
                 width: 40%;
                 display: flex;

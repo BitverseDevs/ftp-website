@@ -3,6 +3,7 @@
     position: absolute;
     z-index: -1;
     opacity: 0.4;
+    // CLEAN THIS AFTER
     // width: 100vw;
     // height: 100vh;
     img{
@@ -13,20 +14,24 @@
 }
 
 .contact-us--section-about{
-    opacity: 0;
+    height: auto;
+    width: 40%;
     animation: faded 1s ease-in-out forwards;
-    margin-top: 120px;
-    width: 80%;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    gap: 50px;
-    margin-bottom: 120px;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
-    // flex-flow: wrap;
-    .contact-us--left-section{
-        // padding: 0 50px 0 0;
-        width: 50%;
+    border: 1px solid red;
+    background-color: white;
+    .contact-us--main-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 70px;
         .contact-us--about-logo{
             font-size: 80px;
             display: flex;
@@ -44,55 +49,42 @@
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 30px;
-                h1{
+                h1 {
                     font-family: 'Poppins-SemiBold', sans-serif;
-                    font-size: 36px;
+                    font-size: 1.9rem;
                     color: #222;
-                    // outline: 1px solid red;
                 }
-                p{
+                p {
                     font-family: 'Poppins-Medium', sans-serif;
-                    font-size: 14px;
+                    font-size: 1rem;
                     color: #777;
-                    // padding: 0 16px 0 0;
-                    // outline: 1px solid red;
                 }
             }
-            .about-picture{
-
-            }
-        }
-    }
-    .contact-us--right-section{
-        width: 50%;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .contact-us--right-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
         }
 
         .contact-us--form{
-            width: 100%;
+            // remove height after;
+            height: auto;
+            width: auto;
+            padding: 40px;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
+            background: rgba(255, 255, 255, 1);
+            backdrop-filter: blur(0px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+            border-radius: 5px;
             .contact-us--input-label-wrap{
+                width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
-                margin-bottom: 20px;
+                margin-bottom: 1rem;
             }
         }
-        
     }
 }
-
 
 @keyframes faded {
     from{

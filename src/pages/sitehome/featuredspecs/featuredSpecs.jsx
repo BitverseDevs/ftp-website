@@ -30,32 +30,10 @@ export function FeaturedSpecs() {
             <div className="featured-specs-wrap">
                 <SectionTitle featMsg={featMsg1} title={title1} desc={desc1} marginBottom={'75'}/>
                 <div className='featured-specs-cont' border-render={`${isRender}`}>
-                    { isRender ? 
-                        <figure className='featured-specs-img-wrap'>
-                            <img className='featured-specs-img1' src={firstAsset} alt={featuredSpecAssets[0]?.alt}/>
-                        </figure>
-                    : ''}
-                    
-                    {isRender ? <BorderLine/> : null}
-                    <SectionTitleV2 featMsg={featMsg2} title={title2} desc={desc2} isDescUnorderedListed={true}/>
+                    <SectionTitleV2 fromWhere='featuredSpecsOne' featMsg={featMsg2} title={title2} desc={desc2} isDescUnorderedListed={true}/>
                 </div>
                 <div className='featured-specs-cont featured-specs-cont2' border-render={`${isRender}`}>
-                    {isRender ?
-                    <>
-                        <div className='featured-specs-cont-title-wrap'>
-                            <SectionTitleV2 featMsg={featMsg3} title={title3} desc={desc3} isDescUnorderedListed={false}/>
-                        </div>
-                        <BorderLine/>
-                    </> 
-                    : 
-                        <SectionTitleV2 featMsg={featMsg3} title={title3} desc={desc3} isDescUnorderedListed={false}/>
-                    }
-
-                    {isRender ?  
-                        <figure className='featured-specs-img-wrap'>
-                            <img className='featured-specs-img2' src={secondAsset} alt={featuredSpecAssets[1]?.alt}/>
-                        </figure>
-                    : ''}
+                    <SectionTitleV2 fromWhere='featuredSpecsTwo' featMsg={featMsg3} title={title3} desc={desc3} isDescUnorderedListed={true}/>
                 </div>
             </div>
         </React.Fragment>

@@ -1,16 +1,29 @@
-.carousel-wrap{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    img{
-        width: 85%;
+#brandAreaOuterContainer {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f4f7;
+    .brand-container {
+        height: auto;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    
+        .brand-item {
+        }
+    
+        img{
+            height: 150px;
+        }
     }
 }
-
-.brand-area-item{
-    border-radius: 10px;
-}
-
 
 //Responsive Traits Screen
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

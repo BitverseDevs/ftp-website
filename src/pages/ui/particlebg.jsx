@@ -22,8 +22,8 @@ export const ParticleBg = () => {
             options={{
                 background: {
                     color: {
-                        value: "#eff9f3",
-                        // value: "#000",
+                        // value: "#eff9f3",
+                        value: "white",
                     },
                 },
                 fpsLimit: 1200,

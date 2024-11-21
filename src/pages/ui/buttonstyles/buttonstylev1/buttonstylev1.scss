@@ -9,6 +9,12 @@ $pipeline_width: $width+$stroke;
 $pipeline_height: $height+$stroke;
 $pipes : 4;
 
+.contactSubmitBtn {
+    font-size: 1.1rem !important;
+    background-color: #4d1c91 !important;
+    color: white !important;
+}
+
 @function border-pipeline ($transition_duration, $pipe) {
     @return $transition_duration*$pipe;
 }

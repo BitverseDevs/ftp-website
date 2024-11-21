@@ -7,17 +7,15 @@ import { contactPageData, contactPageBanner, contactPageFormList } from 'data/co
 import ContactInput from './contactinput/contactinput';
 import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 import ReCAPTCHA from 'react-google-recaptcha';
+import ParticleBg from 'pages/ui/particlebg';
 // import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { Modal } from '@mui/material';
 
 import SEO from '../../components/seo/seo';
 import emailjs from '@emailjs/browser';
 
+export function ContactUs({ open, onClose }) {
 
-
-
-export function ContactUs() {
-
-    // console.log(window, 'meow')
     const [formValues, setFormValues] = useState({
         from: "website@bitverseph.com",
         to: "sales01@bitverseph.com",
@@ -32,26 +30,26 @@ export function ContactUs() {
         remarks: '',
         recaptchaResponse: '',
     });
-    // console.log(formValues, 'meooowwwww');
 
     // Handle input field changes
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormValues({ ...formValues, [name]: value });
+        setFormValues({ 
+            ...formValues, 
+            [name]: value 
+        });
     };
 
     const handleRecaptchaChange = (value) => {
         setFormValues({ ...formValues, recaptchaResponse: value });
     };
 
-    // console.log(formValues, 'meowtime');
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const response = await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
-            // console.log(response.data);
+            await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
             alert('Email sent successfully');
             setFormValues(curr => ({ 
                 fullName: '',
@@ -70,51 +68,36 @@ export function ContactUs() {
             console.log('Contact us form submitted')
         }
     };
-    // console.log(contactPageFormList.map((item)=>{`${item.label}`}), "meow")
     return (
-        <React.Fragment>
-            {/* <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"> */}
+        <Modal
+            open={open}
+            onClose={onClose}
+        >
+            <>
                 <SEO title='Contact Us - Bitverse Corporation'
                     description='Contact us for a demo of our products and services. We are here to help you streamline your processes and improve overall efficiency.'
                     keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Contact Us, Bitverse Corporation Contact Us, Bitverse Contact Us Form, Bitverse Demo, Bitverse Book Demo'
                     type='website'
                     name='Bitverse Corporation'/>
-                <section className='contact-us--section-hero'>
-                    <img src={contactPageBanner.bannerSrc} alt={'contact-us--banner'}/>
-                </section>
                 <section className='contact-us--section-about'>
-                    <div className='contact-us--left-section'>
-                        {/* <div className='contact-us--about-logo'>
-                            {'b'}<p>it</p>{'verse'}<p className='contact-us-logo--symbol'>{'>>'}</p>
-                        </div> */}
+                    <div className='contact-us--main-section'>
                         <div className='contact-us--main-header'>
-                            {contactPageData.map(({key, title, isMainAbout, picUrl, desc})=>{
-                                if(isMainAbout === false){
-                                    return;
-                                } else {
-                                    return (
-                                        <React.Fragment>
-                                            <div className='contact-us--main-header-title'>
-                                                <h1 className='contact-us--main-header-header'>
-                                                    {title}
-                                                </h1>
-                                                <p className='contact-us--main-header-desc'>
-                                                    {desc}
-                                                </p>
-                                            </div>
-                                            <img src={picUrl} alt={'about-picture'}>
-                                            </img>
-                                        </React.Fragment>
-                                    )
-                                }
-                            })}
+                            {contactPageData.map(({key, title, isMainAbout, picUrl, desc}) => (
+                                isMainAbout === true ? 
+                                    <div className='contact-us--main-header-title'>
+                                        <h1 className='contact-us--main-header-header'>
+                                            {title}
+                                        </h1>
+                                        {/* <p className='contact-us--main-header-desc'>
+                                            {desc}
+                                        </p> */}
+                                    </div>
+                                : ''
+                            ))}
                         </div>
-                    </div>
-                    <div className='contact-us--right-section'>
-                        <form onSubmit={handleSubmit} className='contact-us--form'>
-                            {contactPageFormList.map((item)=>{
-                                return(
-                                    <div className='contact-us--input-label-wrap'>
+                        <form className='contact-us--form'>
+                            {contactPageFormList.map((item) => (
+                                <div className='contact-us--input-label-wrap'>
                                     <ContactInput 
                                         label={item.label}
                                         labelFor={item.labelFor}
@@ -126,23 +109,14 @@ export function ContactUs() {
                                         // pattern={item.pattern}
                                     />
                                 </div>
-                                )
-                            })}
-                            <ReCAPTCHA
-                                sitekey="6LeUfIclAAAAAIZlhTZKK16UPbojYb6tssctyjhx"
-                                onChange={handleRecaptchaChange}
-                            />
-                            {/* <GoogleReCaptcha
-                            action="contact_us_form"
-                            onVerify={handleRecaptchaChange}
-                            /> */}
-                            <ButtonStyleV1 type={'submit'} label={'Submit'}/>
+                            ))}
+                            <ButtonStyleV1 type={'submit'} label={'Book a demo'}/>
                         </form>
                     </div>
                 </section>
-            {/* </GoogleReCaptchaProvider> */}
-        </React.Fragment>
-        
+            </>
+            {/* <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"> */}
+        </Modal>
     );
 }
 

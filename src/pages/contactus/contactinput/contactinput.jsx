@@ -1,8 +1,10 @@
 import React from 'react';
 import './contactinput.scss';
+import { TextField } from '@mui/material';
 
 export function ContactInput(props) {
     const { 
+        variant,
         label,
         labelFor,
         type,
@@ -12,7 +14,6 @@ export function ContactInput(props) {
         required,
         pattern
     } = props;
-    // console.log(label, "aaaaa", Object.getPrototypeOf(label), typeof label)
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
           event.preventDefault();
@@ -21,8 +22,17 @@ export function ContactInput(props) {
 
     return (
         <React.Fragment>
-            <label htmlFor={labelFor} className='contact-input--label'>{label}</label>
-            <input
+            <TextField 
+                className='contact-input--input'
+                label={label}
+                onChange={onChange}
+                type={type}
+                value={value}
+                variant='outlined'
+                required={required ? required : false}
+                onKeyDown={handleKeyDown}
+            />
+            {/* <input
                 className='contact-input--input'
                 id={labelFor}
                 name={labelFor}
@@ -30,12 +40,9 @@ export function ContactInput(props) {
                 placeholder={placeholder}
                 type={type}
                 value={value}
-                // {...required? required: ''}
-                // {...pattern? pattern: ''}
-                required={required? required: false}
-                // pattern={pattern? pattern: null}
+                required={required ? required : false}
                 onKeyDown={handleKeyDown}
-            />
+            /> */}
         </React.Fragment>
     );
 }

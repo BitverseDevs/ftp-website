@@ -15,79 +15,27 @@ export function FooterV1(props) {
     // console.log(footerBg, 'meow')
     return (
         <React.Fragment>
-            <section className='footer-section--bg-overlay' style={footerBgStyle}>
-                <section className={'footer-section--wrap'}> 
-                    {footerList.map((item)=>{
-                        const {
-                            title,
-                            isInputType,
-                            inputPlaceholder,
-                            firstDesc,
-                            secondDesc, 
-                            isBullettedList,
-                            bullettedItems,
-                        } = item;
-                        if(isInputType === true && isBullettedList === true){
-                            return;
-                        } else if (isInputType === false && isBullettedList === false){
-                            return(
-                                <React.Fragment>
-                                    <div className={'footer-section--item-container'}>
-                                        <h2 className={'footer-section--item-header'}>
-                                            {title}
-                                        </h2>
-                                        <p className={'footer-section--item-first-desc'}>
-                                            {firstDesc}
-                                        </p>
-                                        <p className={'footer-section--item-second-desc'}>
-                                            {secondDesc}
-                                        </p>
-                                    </div>
-                                </React.Fragment>
-                            );
-                        } else if (isInputType === true && isBullettedList === false){
-                            return(
-                                <React.Fragment>
-                                    <div className={'footer-section--item-container'}>
-                                        <h2 className={'footer-section--item-header'}>
-                                            {title}
-                                        </h2>
-                                        <p className={'footer-section--item-first-desc'}>
-                                            {firstDesc}
-                                        </p>
-                                        <div className={'footer-section--item-second-desc'}>
-                                            {secondDesc}
-                                            <Input placeholder={inputPlaceholder}/>
+            <section className='footer-section--bg-overlay'>
+                <section className={'footer-section--wrap'}>
+                    {footerList.map(({title, items, desc}, index) => (
+                        <div className="footer-section--item-container">
+                            <div className="footer-section--item-header">
+                                {desc}
+                            </div>
+                            <div className={index == 0 ? 'footer-section--item-body-outerCtn' : 'footer-section--item-body-outerCtnn .footer-section--item-body-outerCtn'}>
+                                {items.map(({name, iconName, desc}, index) => (
+                                    <div className="footer-section--item-body">
+                                        <div className='footer-section--item-body-one'>
+                                            <img className='footer-section-img' src={iconName} alt="Footer image" />
+                                        </div>
+                                        <div className="footer-section--item-body-two">
+                                            {desc}
                                         </div>
                                     </div>
-                                </React.Fragment>
-                            );
-                        } else if (isInputType === false && isBullettedList === true){
-                            return(
-                                <React.Fragment>
-                                    <div className={'footer-section--item-container'}>
-                                        <h2 className={'footer-section--item-header'}>
-                                            {title}
-                                        </h2>
-                                        <ul className={'footer-section--unordered-list'}>
-                                            {bullettedItems.map((item)=> {
-                                                return (
-                                                <li className={'footer-section--list-item'}>
-                                                    {item}
-                                                </li>
-                                                )
-                                                
-                                            })}
-                                        </ul>
-                                    </div>
-                                </React.Fragment>
-                            );
-                        }
-                    })}
-
-                    <div className={'footer-section--container'}>
-
-                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </section>
             </section>
         </React.Fragment>
