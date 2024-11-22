@@ -13,6 +13,8 @@ export function Sitehero() {
         <React.Fragment>
 
         <section className='hero-wrap'>
+            <div id='blobOne'></div>
+            <div id='blobTwo'></div>
             <div className='hero-container'>
                 <div className='hero-left-content'>
                     <div className='hero-left-content-wrap'>
@@ -23,23 +25,17 @@ export function Sitehero() {
                             {heroData.left_desc}
                         </div>
                         <div className='hero-left-content-action-items'>
-                            <Link to={'/contact-us'}>
-                            <button className='hero-left-content-action-item-call'>{heroData.left_call}</button>
-                            </Link>
                             <div className='hero-left-content-action-item-play' onClick={handleClick}>
-                                <div className='play-wrap'>
-                                    <button className='play-wrap-shape'>
-                                    </button>
-                                </div>
+                                    <button className='hero-left-content-action-item-calll'>{heroData.right_call}</button>
                             </div>
-                            <div className='hero-left-content-action-item-watch'>
-                                {heroData.left_watch}
-                            </div>
+                            <Link to={'/contact-us'}>
+                                <button className='hero-left-content-action-item-call'>{heroData.left_call}</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div className='hero-right-content'>
-                    <img className='hero-right-content-img' src='/assets/bv-header-media.png'/>
+                    <img className='hero-right-content-img' src='/assets/world.svg' draggable='false'/>
                 </div>
             </div>
         </section>

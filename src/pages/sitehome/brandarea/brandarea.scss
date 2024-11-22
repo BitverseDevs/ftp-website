@@ -1,13 +1,14 @@
 #brandAreaOuterContainer {
-    height: 650px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #f2f4f7;
+    padding: 100px;
     .brand-container {
         height: auto;
-        width: 50%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -20,7 +21,7 @@
         }
     
         img{
-            height: 150px;
+            height: 200px;
         }
     }
 }

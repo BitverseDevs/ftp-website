@@ -1,7 +1,7 @@
 
 .service-offerings--backgroundImg {
     // background-image: url('../../../../public/assets/bv-services-bg.png');
-    padding: 290px 0;
+    padding: 100px 0;
     background-color: #f2f4f7;
 }
 
@@ -121,11 +121,11 @@
                         padding: 9px;
                         margin-top: 20px;
                         margin-right: 30px;
-                        background: linear-gradient(90deg, #9900ff 0%, #b75df3 100%);
+                        background: linear-gradient(90deg, #4A52F7 0%, #4a75f7 100%);
                         color: #fff;
                         &:hover {
                             background: white;
-                            border: 1px solid #9900ff;
+                            border: 1px solid #4A52F7;
                             color: #22195e;
                             transition: all 0.8s;
                         }

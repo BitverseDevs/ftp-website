@@ -21,6 +21,7 @@ import ParticleBg from '../ui/particlebg';
 import useScrollToRef from 'custom-hooks/use-scroll-to-ref/use-scroll-to-ref';
 import FAQ from './faq/FAQ';
 import SEO from '../../components/seo/seo';
+import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
 import './main.scss';
 
 const Main = (props) => {
@@ -32,10 +33,11 @@ const Main = (props) => {
             {/* <ParticleBg/> */}
             <section className='main-site-home--page-wrap'>
                 <Sitehero/>
-                    <BrandArea brands={brandArea}/>
                     <FeaturedSpecs/>
                     <ProductCarousel/>
                     <ServiceOfferings fromWhere='home'/>
+                    <ContactUsV2 />
+                    <BrandArea brands={brandArea}/>
                     <FAQ />
                     {/* <ProductSpecs fromWhere='home' ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/> */}
                 {/* <CallToAction data={callToActionTitle}/> */}

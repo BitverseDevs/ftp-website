@@ -87,16 +87,17 @@ export const upperNavData = [
 
 
 export const heroData = {
-    left_title: 'Human Resource that works your way',
-    left_desc: 'An HRIS that streamlines and simplifies every aspect of HR, from recruitment, applicant tracking and onboarding through core HR admin and compliance to holiday and absence management, performance reviews and check-ins, payroll, talent management and much more.',
-    left_call: 'BOOK A DEMO',
-    left_watch: 'WATCH THE VIDEO'
+    left_title: 'The Platform Where Affordability Meet HR Efficieny',
+    left_desc: 'An HRIS that streamlines and simplifies every aspect of HR, from recruitment, applicant tracking and onboarding through core HR admin and compliance to holiday and absence management.',
+    left_call: 'Get Started',
+    right_call: 'Watch Demo',
+    left_watch: 'Watch Demo'
 };
 
 export const sectionTitles = [
     {
         featMsg: 'Solutions For Your Business',
-        title: 'TRUSTED BY CLIENTS',
+        title: 'Trusted by Real Clients',
         desc: 'Our technology solutions have covered a wide range of clients: real estate developers, food retail, marketing firms, school institutions, transportation, healthcare, construction companies, among others.'
     },
     {
@@ -479,44 +480,56 @@ export const callToActionTitle = {
     bgLink: '/bv-footer-banner.png',
 }
 
+export const contactUsCTA = {
+    title: 'Ready to simplify your HR Process?',
+    featMsg: "Let's start from here.",
+    // choose which button is which and remove the other
+    buttonOne: 'Book a Demo',
+    buttonTwo: "Let's start from here"
+}
 
 // :)
 export const faqHeaderDetails = {
-    faqTitle: 'Everything You Need To Know About Bitverse HRIS',
-    faqFeatMsdg: 'Frequently Asked Question'
+    title: 'Everything You Need To Know About Bitverse HRIS',
+    featMsg: 'Frequently Asked Question'
 };
 
 export const faqList = [
     {
-        id: 'faq1',
-        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.'
-    }, 
+        id: 'faq01',
+        items: [
+            {
+                id: 'faq0101',
+                question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed. sit amet consectetur adipiscing elit sed.',
+                answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
+                icon: '/assets/arrowDown.svg',
+            }, 
+            {
+                id: 'faq0102',
+                question: 'Question 2',
+                answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+                icon: '/assets/arrowDown.svg',
+            }, 
+        ]
+    },
     {
-        id: 'faq2',
-        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
-    }, 
-    {
-        id: 'faq3',
-        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
-    }, 
-    {
-        id: 'faq4',
-        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
-    }, 
-    {
-        id: 'faq5',
-        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
-    }, 
-    {
-        id: 'faq6',
-        question: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed'
-    }, 
+        id: 'faq02',
+        items: [
+            {
+        
+                id: 'faq3',
+                question: 'Question 3',
+                answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+                icon: '/assets/arrowDown.svg',
+            }, 
+            {
+                id: 'faq4',
+                question: 'Question 4',
+                answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+                icon: '/assets/arrowDown.svg',
+            }, 
+        ]
+    }
 ]
 
 export const footerList = [

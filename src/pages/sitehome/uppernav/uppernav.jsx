@@ -34,9 +34,10 @@ export function Uppernav(props) {
         };
     }, [isFixed]);
 
+    const data = `rgba(white, 0.9)`;
     
     return (
-        <div id='uppernav-outer-wrap' style={{position: `${isFixed ? 'fixed' : 'relative'}`, top: isFixed ? '0px' : '' }}>
+        <div id='uppernav-outer-wrap' style={{position: `${isFixed ? 'fixed' : 'relative'}`, top: isFixed ? '0px' : ''}}>
             <ContactUs 
                 open={showModal}
                 onClose={modalClick}

@@ -1,77 +1,105 @@
 .hero-wrap{
-    height: 731px;
-    background-repeat: no-repeat;   
-    background-size: cover;
-    background-position-x: 100%;
-    background-position-y: 50%;
+    height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 120px 0 0 0;
+    position: relative;
+
+    // bubbles
+    #blobOne, #blobTwo {
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        animation-name: animationYehey;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        filter: blur(200px);
+    }
+
+    #blobOne { 
+        left: 0;
+        top: 0;
+        background-color: #9900FF;
+    }
+
+    #blobTwo { 
+        right: 0;
+        top: 0;
+        background-color: #4B52F7;
+    }
+
     .hero-container{
         width: 1140px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         .hero-left-content{
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins-Bold', sans-serif;
             color: #222;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             .hero-left-content-wrap{
-                width: 475px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
                 .hero-left-content-title{
+                    width: 90%;
+                    text-align: center;
                     font-size: 48px;
+                    margin-bottom: 15px;
+                    letter-spacing: 5px;
                 }
                 .hero-left-content-desc{
-                    height: 120px;
-                    margin-bottom: 20px;
+                    height: auto;
+                    margin-bottom: 15px;
+                    width: 50%;
                     font-family: 'Poppins-Medium', sans-serif;
                     font-size: 14px;
+                    text-align: center;
                 }
             }
         }
         .hero-left-content-action-items{
             display: flex;
+            justify-content: center;
             align-items: center;
+            margin: 30px;
+            gap: 20px;
             .hero-left-content-action-item-call{
-                height: 51px;
-                border-radius: 6px;
-                border: 2px solid #222;
-                font-size: 12px;
-                font-family: 'Poppins-Medium', sans-serif;
-                padding: 14px;
+                border-radius: 13px;
+                border: 2px solid #4A52F7;
+                font-size: 1.2rem;
+                font-family: 'Poppins-SemiBold', sans-serif;
+                padding: 15px 20px;
                 width: 169px;
                 background: rgba(255, 255, 255, 0.1);
-                color: #222;
-                margin-right: 30px;
+                color: #4A52F7;
                 &:hover{
-                    background-color: #ffffff;
-                    color: #222;
+                    background-color: #4A52F7;
+                    color: #fff;
                     transition: all 0.5s ease;
                 }
             }
             .hero-left-content-action-item-play{
-                .play-wrap{
-                    cursor: pointer;
-                    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
-                    border-radius: 50%;
-                    box-shadow: 0 0 0 0 linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
-                    margin: 10px;
-                    height: 60px;
-                    width: 60px;
-                    transform: scale(1);
-                    animation: pulse-linear 2.5s infinite;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .play-wrap-shape{
-                        // display: none;
-                        box-sizing: border-box;
-                        width: 16px;
-                        height: 16px;
-                        border-width: 8px 0px 8px 16px;
-                        border-color: transparent transparent transparent #ffffff;
+                .hero-left-content-action-item-calll {
+                    font-size: 1.2rem;
+                    padding: 15px 20px;
+                    background-color: #4A52F7;
+                    font-family: 'Poppins', sans-serif;
+                    border-radius: 13px;
+                    color: #fff;
+                    &:hover {
+                        border: 1px solid #4A52F7;
+                        background-color: #fff;
+                        color: #4A52F7;
+                        transition: all 0.5s ease;
                     }
                 }
             }
@@ -84,6 +112,32 @@
     }
 }
 
+
+// animation yehey
+@keyframes animationYehey {
+    0% {
+        top: 0;
+    }
+
+    30% {
+        top: 200px;
+
+    }
+
+    50% {
+        top: 400px;
+
+    }
+
+    70% {
+        top: 200px;
+
+    }
+
+    100% {
+        top: 0;
+    }
+}
 
 .iframe_inactive{
     position: absolute;

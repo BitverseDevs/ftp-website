@@ -49,7 +49,7 @@ export const ServiceOfferings = ({ fromWhere }) => {
                     <section className='service-offerings--main-container' draggable='false'>
                         <section className='service-offerings--main-container-inner'>
                         {serviceOfferingsHome.map((product)=> (
-                            <figcaption className='service-offerings--container-caption'>
+                            <ScrollAnimation className='service-offerings--container-caption' duration={1.5} animateOnce={true} animateIn='slideInUp'>
                                 <SectionTitleV2 fromWhere='serviceOfferings' featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
                                 <Link to={'/contact-us'}>
                                     <button className='hero-left-content-action-item-call'>
@@ -58,7 +58,7 @@ export const ServiceOfferings = ({ fromWhere }) => {
                                         </a>
                                     </button>
                                 </Link>
-                            </figcaption>
+                            </ScrollAnimation>
                         ))}
                         </section>
                         <ScrollAnimation className='service-offerings--container-img' duration={5} animateOnce={false} animateIn={animate ? 'swing' : ''}>
