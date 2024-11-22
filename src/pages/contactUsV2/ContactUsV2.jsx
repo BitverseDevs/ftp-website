@@ -3,9 +3,7 @@ import { contactUsCTA } from 'data/sitehome';
 import './contactUsV2.scss';
 
 const ContactUsV2 = () => {
-  
   const { title, featMsg, buttonOne, buttonTwo } = contactUsCTA;
-
 
   return (
     <div id='contactUsV2-outer-container'>

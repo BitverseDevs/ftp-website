@@ -1,0 +1,25 @@
+
+#demo {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  #city-scapes-bg {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    #city-scapes-img {
+      height: 400px;
+      width: 600px;
+      z-index: 999;
+      position: absolute;
+      bottom: -100px;
+    }
+  }
+}

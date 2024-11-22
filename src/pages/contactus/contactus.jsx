@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './contactus.scss'
 // import ParticleBg from 'pages/ui/particlebg';
@@ -9,10 +9,11 @@ import ButtonStyleV1 from 'pages/ui/buttonstyles/buttonstylev1/buttonstylev1';
 import ReCAPTCHA from 'react-google-recaptcha';
 import ParticleBg from 'pages/ui/particlebg';
 // import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
-import { Modal } from '@mui/material';
-
+import { Modal, Button } from '@mui/material';
+import { currentStats } from 'data/sitehome';
 import SEO from '../../components/seo/seo';
 import emailjs from '@emailjs/browser';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export function ContactUs({ open, onClose }) {
 
@@ -34,16 +35,31 @@ export function ContactUs({ open, onClose }) {
     // Handle input field changes
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormValues({ 
-            ...formValues, 
+        
+        console.log('handling changeeeee');
+        setFormValues((prevState) => ({ 
+            ...prevState, 
             [name]: value 
-        });
+        }));
+
     };
 
-    const handleRecaptchaChange = (value) => {
-        setFormValues({ ...formValues, recaptchaResponse: value });
-    };
+    const handleClose = () => {
+        onClose();
+        setFormValues((prevState) => ({
+            ...prevState,
 
+            fullName: '',
+            email: '',
+            contactNumber: '',
+            companyName: '',
+            numberOfEmployees: '',
+            datePreferences: '',
+            timePreferences: '',
+            remarks: '',
+        }));
+    }
+    
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -59,6 +75,7 @@ export function ContactUs({ open, onClose }) {
                 numberOfEmployees: '',
                 datePreferences: '',
                 timePreferences: '',
+                remarks: '',
                 /* test API_KEY = 're_oawxABua_NL3ffjCCVMTWTrqMytGKLgsA'*/
             }));
         } catch (error) {
@@ -68,10 +85,12 @@ export function ContactUs({ open, onClose }) {
             console.log('Contact us form submitted')
         }
     };
+
     return (
         <Modal
             open={open}
-            onClose={onClose}
+            onClose={handleClose}
+            className='modalDemo'
         >
             <>
                 <SEO title='Contact Us - Bitverse Corporation'
@@ -80,6 +99,7 @@ export function ContactUs({ open, onClose }) {
                     type='website'
                     name='Bitverse Corporation'/>
                 <section className='contact-us--section-about'>
+                    <img id='closeIcon' onClick={onClose} src="/assets/x-sign.svg" alt="x" />
                     <div className='contact-us--main-section'>
                         <div className='contact-us--main-header'>
                             {contactPageData.map(({key, title, isMainAbout, picUrl, desc}) => (
@@ -88,34 +108,44 @@ export function ContactUs({ open, onClose }) {
                                         <h1 className='contact-us--main-header-header'>
                                             {title}
                                         </h1>
-                                        {/* <p className='contact-us--main-header-desc'>
-                                            {desc}
-                                        </p> */}
+                                        <img id='waving-hand' src={picUrl} alt="waving hand" />
                                     </div>
                                 : ''
                             ))}
                         </div>
-                        <form className='contact-us--form'>
-                            {contactPageFormList.map((item) => (
-                                <div className='contact-us--input-label-wrap'>
+                        <form className='contact-us--form' onSubmit={handleSubmit}>
+                            <div className='contact-us--input-label-wrap'>
+                                {contactPageFormList.map((item) => (
                                     <ContactInput 
                                         label={item.label}
                                         labelFor={item.labelFor}
                                         type={item.type}
                                         onChange={handleChange}
-                                        placeholder={item.placeholder}
                                         value={formValues[`${item.formValues}`]}
                                         required={item.required}
-                                        // pattern={item.pattern}
+                                        formValuesSetter={setFormValues}
                                     />
+                                ))}
+                            </div>
+                            <input id='submitForm' type="submit" value='Submit'/>
+                        </form>
+                    </div>
+                    <div id="contact-us--footer-outer-section">
+                        <div id="contact-us-footer-inner-section">
+                            {currentStats.map(({id, title, number}, index) => (
+                                <div className="contact-us-stats-container" key={index}>
+                                    <div className="contact-us-stats-number">
+                                        {number}
+                                    </div>
+                                    <div className={id === 'stat1' ? 'contact-us-stats-header' : "contact-us-stats-title"}>
+                                        {title}
+                                    </div>
                                 </div>
                             ))}
-                            <ButtonStyleV1 type={'submit'} label={'Book a demo'}/>
-                        </form>
+                        </div>
                     </div>
                 </section>
             </>
-            {/* <GoogleReCaptchaProvider reCaptchaKey="6LdCPoMlAAAAANjuIe2ZT9c5PEYKwrePDJn-8thS"> */}
         </Modal>
     );
 }

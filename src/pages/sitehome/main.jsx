@@ -22,6 +22,7 @@ import useScrollToRef from 'custom-hooks/use-scroll-to-ref/use-scroll-to-ref';
 import FAQ from './faq/FAQ';
 import SEO from '../../components/seo/seo';
 import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
+import Highlights from 'pages/highlights/Highlights';
 import './main.scss';
 
 const Main = (props) => {
@@ -33,6 +34,7 @@ const Main = (props) => {
             {/* <ParticleBg/> */}
             <section className='main-site-home--page-wrap'>
                 <Sitehero/>
+                    <Highlights />
                     <FeaturedSpecs/>
                     <ProductCarousel/>
                     <ServiceOfferings fromWhere='home'/>

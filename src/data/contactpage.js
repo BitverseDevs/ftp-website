@@ -3,7 +3,7 @@ export const contactPageData = [
         key: 'apd01',
         title: "Glad you're here! Let's start by booking a demo",
         isMainAbout: true,
-        picUrl: '/assets/z-bv-about.png',
+        picUrl: '/assets/waving-hand.svg',
         desc: 'We understand that manual HR processes can be time-consuming and prone to errors. Our HRIS system offers a comprehensive solution to streamline your HR operations and ensure accurate and up-to-date data. Aside from this, we also cater in customizable solutions for your company and organization, ranging from profile websites, portfolio, dynamic contact pages, systems and more. Contact us to know more!',
     },
     {
@@ -37,7 +37,7 @@ export const contactPageBanner = {
 export const contactPageFormList = [
     {
         key: 'cpfl01',
-        label: 'Full Name:',
+        label: 'Full Name',
         labelFor: 'fullName',
         type: 'text',
         placeholder: 'Enter Full Name',
@@ -47,7 +47,7 @@ export const contactPageFormList = [
     },
     {
         key: 'cpfl02',
-        label: 'Email Address:',
+        label: 'Email Address',
         labelFor: 'email',
         type: 'email',
         placeholder: 'Enter Valid Email',
@@ -57,7 +57,7 @@ export const contactPageFormList = [
     },
     {
         key: 'cpfl03',
-        label: 'Contact Number:',
+        label: 'Contact Number',
         labelFor: 'contactNumber',
         type: 'tel',
         placeholder: 'Cellphone Number',
@@ -67,7 +67,7 @@ export const contactPageFormList = [
     },
     {
         key: 'cpfl04',
-        label: 'Company Name:',
+        label: 'Company Name',
         labelFor: 'companyName',
         type: 'text',
         placeholder: 'Business Name',
@@ -77,7 +77,7 @@ export const contactPageFormList = [
     },
     {
         key: 'cpfl05',
-        label: 'Number of Employees:',
+        label: 'Number of Employees',
         labelFor: 'numberOfEmployees',
         type: 'number',
         placeholder: 'Can Be Estimates',
@@ -87,7 +87,7 @@ export const contactPageFormList = [
     },
     {
         key: 'cpfl06',
-        label: 'Appointment Date:',
+        label: 'Appointment Date',
         labelFor: 'datePreferences',
         type: 'date',
         placeholder: 'Preferred Date',
@@ -97,7 +97,7 @@ export const contactPageFormList = [
     },
     {
         key: 'cpfl07',
-        label: 'Preferred Time:',
+        label: 'Preferred Time',
         labelFor: 'timePreferences',
         type: 'time',
         placeholder: 'Preferred Time',

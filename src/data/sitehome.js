@@ -340,6 +340,23 @@ export const productCarouselHome = [
     },
 ];
 
+export const highlightsItems = [
+    {
+        id: 'highlights1',
+        featMsg: 'BIT HR',
+        title: 'An employee portal with an easy-to-use, modern interface',
+        cta: 'Explore',
+        footerText: 'Lorem ipsum dolor sit amet, consectu',
+    }, 
+    {
+        id: 'highlights2',
+        featMsg: 'Payroll',
+        title: 'An employee portal with an easy-to-use, modern interface',
+        cta: 'Explore',
+        footerText: 'Lorem ipsum dolor sit amet, consectu',
+    }
+];
+
 export const serviceOfferingsHome = [
     {
         id: 'soh01',
@@ -530,6 +547,35 @@ export const faqList = [
             }, 
         ]
     }
+]
+
+// stats in contact us 
+export const currentStats = [
+    {
+        id: 'stat1',
+        title: 'By the Numbers',
+        // title: 'lorem ipsum the',
+        number: ''
+    },
+    {
+        id: 'stat2',
+        title: 'Years of Service',
+        // title: 'lorem ipsum the',
+        number: '14'
+    },
+    {
+        id: 'stat3',
+        title: 'Current Users',
+        // title: 'lorem ipsum the',
+
+        number: '3000+'
+    },
+    {
+        id: 'stat4',
+        title: 'Partners',
+        // title: 'lorem ipsum the',
+        number: '20'
+    },
 ]
 
 export const footerList = [

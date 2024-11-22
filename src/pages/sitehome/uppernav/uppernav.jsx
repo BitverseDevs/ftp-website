@@ -23,7 +23,7 @@ export function Uppernav(props) {
         }
     };
 
-    // Modal
+    // show modal
     const modalClick = () => setShowModal(!showModal);
 
     useEffect(() => {
@@ -34,8 +34,6 @@ export function Uppernav(props) {
         };
     }, [isFixed]);
 
-    const data = `rgba(white, 0.9)`;
-    
     return (
         <div id='uppernav-outer-wrap' style={{position: `${isFixed ? 'fixed' : 'relative'}`, top: isFixed ? '0px' : ''}}>
             <ContactUs 
