@@ -1,0 +1,85 @@
+#teamV2-outer-container {
+  height: auto;
+  width: 100%;
+  
+  #teamV2-inner-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+    #teamV2-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      #teamV2-header-container {
+        width: 700px;
+        text-align: center;
+
+        #teamV2-title {
+          font-size: 5rem;
+          font-family: 'Poppins-SemiBold', sans-serif;  
+        }
+        
+        #teamV2-featMsg {
+          font-size: 1.1rem;
+          font-family: 'Poppins', sans-serif;  
+        }
+      }
+
+      // remove after testing. and lipat sa carousel
+      #teamV2-carousel {
+        height: auto;
+        width: 80%;
+        margin-bottom: 100px;
+
+        .teamV2-carousel-container {
+          height: 400px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        .teamV2-carousel-items {
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .teamV2-carousel-item-container {
+          height: auto;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .teamV2-carousel-item-profile {
+            height: 190px;
+            width: auto;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+          }
+
+          .teamV2-carousel-item-fullName {
+            font-family: 'Poppins-SemiBold', sans-serif;
+            font-size: 1.2rem;
+          }
+  
+          .teamV2-carousel-item-position {
+            font-size: 0.8rem;
+            font-family: 'Poppins', sans-serif;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}

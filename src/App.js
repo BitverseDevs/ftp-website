@@ -16,8 +16,10 @@ import { BrowserRouter, Route, Routes, Navigate, HashRouter } from "react-router
 import ScrollToTop from "hoc/scrolltotop";
 import useScrollToRef from "custom-hooks/use-scroll-to-ref/use-scroll-to-ref";
 import ProductsAndServices from "pages/products&services/ProductsAndServices";
+import HighlightDetail from "pages/highlights details/HighlightDetail";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import TeamV2 from "pages/teamV2/TeamV2";
 import 'fonts/fonts.scss';
 
 function App() {
@@ -46,9 +48,10 @@ function App() {
                 <Route path='/' element={<Main scrollRefs={section1Ref}/>} />
                 <Route path='/products&services' element={<ProductsAndServices/>} />
                 <Route path='/about' element={<About />} />
+                <Route path='/highlight/:highlightId' element={<HighlightDetail />}/>
                 <Route path='/contact-us' element={<ContactUs />}/>
                 <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
-                <Route path='/organization' element={<Team />}/>
+                <Route path='/organization' element={<TeamV2 />}/>
                 <Route path='/team-profile/:id/:arr?' element={<TeamProfile />}/>
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>

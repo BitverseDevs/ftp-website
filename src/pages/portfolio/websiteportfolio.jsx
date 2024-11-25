@@ -26,7 +26,7 @@ export function WebsitePortfolio(props) {
           breakpoint: { max: 464, min: 0 },
           items: 1,
         }
-      };
+    };
 
     return (
         <React.Fragment>

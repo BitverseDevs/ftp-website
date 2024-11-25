@@ -1,0 +1,149 @@
+#featuredspecsV2-outer-container {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #featuredspecsV2-inner-container {
+
+    #featuredspecsV2-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+
+      #featuredspecsV2-left-section {
+        height: auto;
+        width: 500px;
+        border-radius: 30px;
+        font-family: 'Poppins', sans-serif;
+        // background: rgba(255, 255, 255, 0.7);
+        // backdrop-filter: blur(0px);
+        // box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 30px;
+
+        #featuredspecs-title {
+          color: #282828;
+          font-size: 3rem;
+          font-family: 'Poppins-SemiBold', sans-serif;
+        }
+      }
+
+      // bubble reasons why :)
+      #featuredspecsV2-right-sectionn {
+        height: auto;
+        width: auto;
+        position: relative;
+
+        // yep bubbles
+        #featuredspecsV2-bubble-one {
+          height: 200px;
+          width: 200px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 100%;
+          background-color: blue;
+          animation: bubbles 4s linear 0s infinite;
+        }
+
+        #featuredspecsV2-bubble-two {
+          
+        }
+
+        #featuredspecsV2-right-section {
+          height: auto;
+          width: 650px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 15px;
+  
+          .featuredspecsV2-item {
+              height: auto;
+              width: auto;
+              color: #282828;
+              font-size: 1.2rem;
+              list-style-type: none;
+              padding: 20px;
+              background: rgba(255, 255, 255, 0.4);
+              backdrop-filter: blur(0px);
+              box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
+              border-radius: 25px;
+              transition: all 0.9s;
+              font-family: 'Poppins', sans-serif;
+              &:hover {
+                  background-color: #4A52F7;
+                  color: white;
+                  cursor: pointer;
+              }
+          }
+          // E585D3 #BB2DA1
+        }
+      }
+    }
+  }
+}
+
+@keyframes bubbles {
+  0% {
+    top: 0px;
+  }
+
+  10% {
+    top: -20px;
+  }
+
+  20% {
+    top: 0px;
+    left: 50px;
+  }
+
+  30% {
+    top: 50px;
+    left: 50px;
+  }
+
+  40% {
+    top: 100px;
+    left: 50px;
+  }
+
+  50% {
+    top: 120px;
+    left: 50px;
+  }
+
+  60% {
+    top: 100px;
+    left: 40px;
+  }
+
+  70% {
+    top: 80px;
+    left: 30px;
+  }
+
+  80% {
+    top: 60px;
+    left: 20px;
+  }
+
+  90% {
+    top: 30px;
+    left: 10px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}

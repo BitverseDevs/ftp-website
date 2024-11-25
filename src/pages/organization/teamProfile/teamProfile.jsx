@@ -1,6 +1,7 @@
 import react from 'react';
 import './teamProfile.scss';
-import {teamData, internData} from '../../../data/team';
+// import {teamData, internData} from '../../../data/team';
+import { teamData } from 'data/teamV2';
 import ParticleBg from 'pages/ui/particlebg';
 import { useParams } from 'react-router-dom';
 import { techStackData, sirMarc, sirJhumer, jhioStack, osamaStack } from 'data/tech-stack';
@@ -53,7 +54,6 @@ const TeamProfile = (props) => {
                     <img id='teamImgUrl' src={teamMember.imgURL} alt="profile" />
                 </div>
             </div>
-            <ParticleBg/>
         </>
     );
 };

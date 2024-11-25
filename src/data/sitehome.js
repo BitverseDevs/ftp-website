@@ -342,18 +342,20 @@ export const productCarouselHome = [
 
 export const highlightsItems = [
     {
-        id: 'highlights1',
-        featMsg: 'BIT HR',
+        id: 'highlight-one',
         title: 'An employee portal with an easy-to-use, modern interface',
+        featMsg: 'BIT HR',
         cta: 'Explore',
-        footerText: 'Lorem ipsum dolor sit amet, consectu',
+        footerText: 'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+        imagePath: '/assets/chart.svg',
     }, 
     {
-        id: 'highlights2',
-        featMsg: 'Payroll',
+        id: 'highlight-two',
         title: 'An employee portal with an easy-to-use, modern interface',
+        featMsg: 'Payroll',
         cta: 'Explore',
-        footerText: 'Lorem ipsum dolor sit amet, consectu',
+        footerText: 'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+        imagePath: '/assets/payroll-img.svg',
     }
 ];
 

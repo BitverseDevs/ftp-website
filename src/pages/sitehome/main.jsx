@@ -23,6 +23,7 @@ import FAQ from './faq/FAQ';
 import SEO from '../../components/seo/seo';
 import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
 import Highlights from 'pages/highlights/Highlights';
+import FeaturedSpecsV2 from './featuredspecsV2/FeaturedSpecsV2';
 import './main.scss';
 
 const Main = (props) => {
@@ -35,6 +36,7 @@ const Main = (props) => {
             <section className='main-site-home--page-wrap'>
                 <Sitehero/>
                     <Highlights />
+                    <FeaturedSpecsV2 />
                     <FeaturedSpecs/>
                     <ProductCarousel/>
                     <ServiceOfferings fromWhere='home'/>

@@ -1,25 +1,245 @@
 
-#demo {
-  height: 600px;
+#highlights-outer-container {
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   
   #city-scapes-bg {
-    height: inherit;
-    width: 100%;
+    height: 400px;
+    width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-
-    #city-scapes-img {
+    position: absolute;
+    bottom: -150px;
+    z-index: -1;
+  
+  #city-scapes-img {
       height: 400px;
-      width: 600px;
-      z-index: 999;
-      position: absolute;
-      bottom: -100px;
+      width: 1000px;
     }
+  }
+
+  #highlights-inner-container {
+    width: 100%;
+    padding-top: 150px;
+
+    .highlights-container-style-two {
+      flex-direction: row-reverse !important;
+      gap: 200px !important;
+    }
+    
+    .highlights-container {
+      height: 700px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      gap: 150px;
+      z-index: 0;
+      position: relative;
+      
+      // remove if things does bad
+      .highlights-outer-left-sectionn {
+        height: auto;
+        width: auto;
+        position: relative;
+
+        // bubbles baby 
+        .highlights-bubble-one {
+          height: 120px;
+          width: 120px;
+          background-color: rgba(#9900FF, 1);
+          position: absolute;
+          border-radius: 100%;
+          z-index: -1;
+          top: -30px;
+          left: -60px;
+          transform: translateZ(-20px);
+          animation: bubbleBounce 3.5s linear 0s infinite;
+        }
+
+        .highlights-bubble-two {
+          height: 120px;
+          width: 120px;
+          background-color: rgba(#4A52F7, 0.3);
+          position: absolute;
+          border-radius: 100%;
+          z-index: -1;
+          top: -70px;
+          left: 40px;
+          animation: bubbleBouncee 3.5s linear 0s infinite;
+        }
+
+        .highlights-inner-left-section {
+          height: auto;
+          width: 500px;
+          border-radius: 30px;
+          font-family: 'Poppins', sans-serif;
+          background: rgba(255, 255, 255, 0.7);
+          backdrop-filter: blur(0px);
+          box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          padding: 30px;
+  
+          .highlights-featMsg {
+            font-size: 1.5rem;
+            color: #4750FF;
+            z-index: 3;
+          }
+      
+          .highlights-title {
+            font-family: 'Poppins-SemiBold', sans-serif;
+            font-size: 2.5rem;
+          }
+      
+          .highlights-cta {
+            height: auto;
+            width: 200px;
+            padding: 10px 0;
+            background-color: #4A52F7;
+            font-size: 1.4rem;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+          }
+      
+          .highlights-footerText {
+            
+          }
+        }
+      }
+
+      .highlights-right-section {
+        .highlights-img {
+          height: 300px;
+        }
+      }
+
+    }
+  }
+}
+
+// bounce bounce baby
+@keyframes bubbleBounce {
+  0% {
+    top: -20px;
+    left: -50px;
+  }
+
+  10% {
+    top: -10px;
+    left: -40px;
+  }
+
+  20% {
+    top: 10px;
+    left: -30px;
+  }
+
+  30% {
+    top: 20px;
+    left: -20px;
+  }
+
+  40% {
+    top: 30px;
+    left: -10px;
+  }
+
+  50% {
+    top: 40px;
+    left: 10px;
+  }
+
+  60% {
+    top: 30px;
+    left: -10px;
+  }
+
+  70% {
+    top: 20px;
+    left: -20px;
+  }
+
+  80% {
+    top: 10px;
+    left: -30px;
+  }
+
+  90% {
+    top: -10px;
+    left: -40px;
+  }
+
+  100% {
+    top: -20px;
+    left: -50px;
+  }
+}
+
+// bounce bounce baby
+@keyframes bubbleBouncee {
+  0% {
+    top: -60px;
+    left: 35px;
+  }
+
+  10% {
+    top: -40px;
+    left: 35px;
+  }
+
+  20% {
+    top: -30px;
+    left: 30px;
+  }
+
+  30% {
+    top: -20px;
+    left: 30px;
+  }
+
+  40% {
+    top: -10px;
+    left: 25px;
+  }
+
+  50% {
+    top: 10px;
+    left: 25px;
+  }
+
+  60% {
+    top: -10px;
+    left: 35px;
+  }
+
+  70% {
+    top: -20px;
+    left: 35px;
+  }
+
+  80% {
+    top: -30px;
+    left: 35px;
+  }
+
+  90% {
+    top: -40px;
+    left: 35px;
+  }
+
+  100% {
+    top: -60px;
+    left: 35px;
   }
 }
