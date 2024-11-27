@@ -29,61 +29,67 @@
 
     .highlights-container-style-two {
       flex-direction: row-reverse !important;
-      gap: 200px !important;
     }
     
     .highlights-container {
-      height: 700px;
+      height: auto;
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       margin-bottom: 100px;
-      gap: 150px;
       z-index: 0;
       position: relative;
       
       // remove if things does bad
+      .highlights-outer-left-sectionn-style-two {
+        justify-content: flex-start !important;
+      }
+
       .highlights-outer-left-sectionn {
         height: auto;
-        width: auto;
+        width: 900px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         position: relative;
 
         // bubbles baby 
         .highlights-bubble-one {
-          height: 120px;
-          width: 120px;
-          background-color: rgba(#9900FF, 1);
+          height: 70px;
+          width: 70px;
+          // background-color: rgba(#9900FF, 1);
+          background-color: rgba(74, 82, 247, 0.7);
           position: absolute;
           border-radius: 100%;
           z-index: -1;
           top: -30px;
-          left: -60px;
+          left: 150px;
           transform: translateZ(-20px);
-          animation: bubbleBounce 3.5s linear 0s infinite;
+          animation: bubbleBounce 8s linear 0s infinite;
         }
 
         .highlights-bubble-two {
-          height: 120px;
-          width: 120px;
-          background-color: rgba(#4A52F7, 0.3);
-          position: absolute;
-          border-radius: 100%;
-          z-index: -1;
-          top: -70px;
-          left: 40px;
-          animation: bubbleBouncee 3.5s linear 0s infinite;
+          // height: 120px;
+          // width: 120px;
+          // background-color: rgba(#4A52F7, 0.3);
+          // position: absolute;
+          // border-radius: 100%;
+          // z-index: -1;
+          // top: -70px;
+          // left: 40px;
+          // animation: bubbleBouncee 7s linear 0s infinite;
         }
 
         .highlights-inner-left-section {
           height: auto;
-          width: 500px;
+          width: 700px;
           border-radius: 30px;
           font-family: 'Poppins', sans-serif;
           background: rgba(255, 255, 255, 0.7);
           backdrop-filter: blur(0px);
-          box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
+          box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -103,13 +109,14 @@
       
           .highlights-cta {
             height: auto;
-            width: 200px;
+            width: 250px;
             padding: 10px 0;
             background-color: #4A52F7;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: white;
             border-radius: 20px;
             text-align: center;
+            margin-bottom: 10px;
           }
       
           .highlights-footerText {
@@ -119,8 +126,9 @@
       }
 
       .highlights-right-section {
+        
         .highlights-img {
-          height: 300px;
+          height: 600px !important;
         }
       }
 
@@ -131,115 +139,29 @@
 // bounce bounce baby
 @keyframes bubbleBounce {
   0% {
-    top: -20px;
-    left: -50px;
-  }
-
-  10% {
-    top: -10px;
-    left: -40px;
-  }
-
-  20% {
-    top: 10px;
-    left: -30px;
-  }
-
-  30% {
-    top: 20px;
-    left: -20px;
-  }
-
-  40% {
-    top: 30px;
-    left: -10px;
+    transform: translate(150px);
   }
 
   50% {
-    top: 40px;
-    left: 10px;
-  }
-
-  60% {
-    top: 30px;
-    left: -10px;
-  }
-
-  70% {
-    top: 20px;
-    left: -20px;
-  }
-
-  80% {
-    top: 10px;
-    left: -30px;
-  }
-
-  90% {
-    top: -10px;
-    left: -40px;
+    transform: translate(200px);
   }
 
   100% {
-    top: -20px;
-    left: -50px;
+    transform: translate(150px);
   }
 }
 
 // bounce bounce baby
 @keyframes bubbleBouncee {
   0% {
-    top: -60px;
-    left: 35px;
-  }
-
-  10% {
-    top: -40px;
-    left: 35px;
-  }
-
-  20% {
-    top: -30px;
-    left: 30px;
-  }
-
-  30% {
-    top: -20px;
-    left: 30px;
-  }
-
-  40% {
-    top: -10px;
-    left: 25px;
+    transform: translate(10px, -20px);
   }
 
   50% {
-    top: 10px;
-    left: 25px;
-  }
-
-  60% {
-    top: -10px;
-    left: 35px;
-  }
-
-  70% {
-    top: -20px;
-    left: 35px;
-  }
-
-  80% {
-    top: -30px;
-    left: 35px;
-  }
-
-  90% {
-    top: -40px;
-    left: 35px;
+    transform: translate(10px, 5px);
   }
 
   100% {
-    top: -60px;
-    left: 35px;
+    transform: translate(10px, -20px);
   }
 }

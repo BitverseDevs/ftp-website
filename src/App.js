@@ -20,6 +20,7 @@ import HighlightDetail from "pages/highlights details/HighlightDetail";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import TeamV2 from "pages/teamV2/TeamV2";
+import RealContactUs from "pages/realContactUs/RealContactUs";
 import 'fonts/fonts.scss';
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
                 <Route path='/highlight/:highlightId' element={<HighlightDetail />}/>
                 <Route path='/contact-us' element={<ContactUs />}/>
                 <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
+                <Route path='/real-contact-us' element={<RealContactUs />}/>
                 <Route path='/organization' element={<TeamV2 />}/>
                 <Route path='/team-profile/:id/:arr?' element={<TeamProfile />}/>
                 <Route path="*" element={<Navigate to="/" replace />} />

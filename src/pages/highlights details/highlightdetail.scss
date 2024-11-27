@@ -3,11 +3,12 @@
 
   #highlightDetail-inner-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    #highlightDetail-container {
-      height: 600px;
+    #highlightDetail-hero-container {
+      height: 400px;
       width: 70%;
       font-family: 'Poppins', sans-serif;
       display: flex;
@@ -15,16 +16,266 @@
       align-items: center;
       justify-content: flex-start;
       text-align: center;
-      padding: 50px 0 0 0;
-
-      #highlightDetail-featMsg {
-        font-size: 1.5rem;
-      }
+      padding: 100px 0 0 0;
 
       #highlightDetail-title {
-        font-size: 3rem;
-        font-family: 'Poppins-SemiBold', sans-serif;
+        width: 60%;
+        font-size: 3.5rem;
+        font-family: 'Poppins-semibold', sans-serif;
+        color: #282828;
+        margin-bottom: 20px;
+        line-height: 60px;
+      }
+
+      #highlightDetail-footerText {
+        width: 60%;
+        font-size: 1.1rem;
+        font-family: 'Poppins', sans-serif;
+        color: #282828;
       }
     }
+
+    #highlightDetail-sample-img-container {
+      height: auto;
+      width: 100%;
+      position: relative;
+      padding: 50px;
+      background-color: rgba(#4750FF, 0.1);
+
+      #highlightDetail-vector-one-container {
+        position: absolute;
+        top: 0;
+
+        #highlightDetail-vector-one-item {
+          width: 100%;
+        }
+      }
+
+      #highlightDetail-img-one {
+        width: 100%;
+        z-index: 999;
+      }
+    }
+
+    #highlightDetail-more-info-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+
+      #highlightDetail-more-info-header {
+        height: auto;
+        width: 60%;
+        padding: 50px;  
+        text-align: center;
+        margin-top: 150px;
+
+        #highlightDetail-more-info-title {
+          font-family: 'poppins-semibold', sans-serif;
+          font-size: 2.5rem;
+          color: #282828;
+          margin-bottom: 20px;
+        }
+
+        #highlightDetail-more-info-featMsg {
+          font-family: 'poppins', sans-serif;
+          font-size: 1.2rem;
+          color: #282828;
+        }
+      }
+
+      #highlightDetail-more-info-section-outer-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: #282828;
+
+        .highlightDetail-more-info-section-inner-container-style-two {
+          flex-direction: row-reverse !important;
+        }
+
+        .highlightDetail-more-info-section-inner-container {
+          height: auto;
+          width: 70%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: flex-start;
+
+          .highlightDetail-more-info-section-img-container-style-two {
+            height: 450px !important;
+            padding: 40px 20px 20px 20px !important;
+          }
+
+          .highlightDetail-more-info-section-img-container-style-three {
+            height: auto !important;
+            padding: 20px !important;
+          }
+
+          .highlightDetail-more-info-section-img-container {
+            height: auto;
+            width: 700px;
+            padding: 100px 20px 20px 20px;
+            backdrop-filter: blur(0px);
+            box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
+            border-radius: 25px;
+            position: relative;
+
+            // highlight HR detail container and items
+            #highlightHRDetailCtn {
+              height: auto;
+              width: 400px;
+              position: absolute;
+              left: -50px;
+              top: 0px;
+              display: flex;
+              flex-direction: column;
+              gap: 70px;
+              
+              .highlightHRDetailItem {
+                height: auto;
+                width: 100%;
+                border-radius: 20px;
+                background-color: #F2F4F7;
+                box-shadow: 2px 2px 2px 2px rgba(black, 0.2);
+                position: relative;
+
+                .highlightHRDetailIcon {
+                  position: absolute;
+                  top: -20px;
+                  left: 20px;
+                }
+
+                .highlightHRDetailHeader {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  color: #282828;
+                  padding: 15px;
+
+                  .highlightHRDetailTitle {
+                    font-family: 'poppins', sans-serif;
+                    opacity: 60%;
+                  }
+
+                  .highlightHRDetailAbbre {
+                    font-family: 'Poppins-semibold', sans-serif;
+                    font-size: 1.2rem;
+                  }
+                }
+
+                .highlightHRDetailFooter {
+                  font-family: 'poppins', sans-serif;
+                  font-size: 0.9rem;
+                  padding: 15px;
+                  opacity: 60%;
+                  border-top: 1px solid rgba(gray, 0.5);
+                }
+              
+              }
+            }
+
+            // add new images here
+            .highlightDetail-more-info-section-img-one {
+              position: absolute;
+              right: 20px;
+              top: 40px;
+            }
+
+            .highlightDetail-more-info-section-img-one-style-two {
+              position: absolute;
+              right: -70px;
+              top: 10px;
+            }
+
+            .highlightDetail-more-info-section-img-one-style-three {
+              height: 350px;
+              position: absolute;
+              right: -50px;
+              top: -70px;
+            }
+
+            .highlightDetail-more-info-section-img-two {
+
+            }
+            
+            .highlightDetail-more-info-section-img-three {
+              position: absolute;
+              right: 20px;
+              bottom: 20px;
+            }
+
+            .highlightDetail-more-info-section-img-four {
+              position: absolute;
+              left: 30px;
+              bottom: 100px;
+            }
+
+            .highlightDetail-more-info-section-img-five {
+            
+            }
+
+            .highlightDetail-more-info-section-img-six {
+              position: absolute;
+              right: 10px;
+              top: 0;
+            }
+          }
+
+          .highlightDetail-more-info-section-header {
+            height: auto;
+            width: auto;
+
+            .highlightDetail-more-info-section-title {
+              font-size: 3rem;
+              font-family: 'Poppins-semibold', sans-serif;
+              padding: 0 15px;
+            }
+  
+            .highlightDetail-more-info-section-featMsg {
+              height: auto;
+              width: 300px;
+              padding: 15px;
+              font-family: 'Poppins', sans-serif;
+            }
+          }
+        }
+
+        
+        .highlightDetail-more-info-divider-s-one {
+          height: 300px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .highlightDetail-more-info-divider-img {
+            
+          }
+        }
+
+        .highlightDetail-more-info-divider-s-two {
+          height: 300px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .highlightDetail-more-info-divider-img {
+            
+          }
+        }
+        
+      }
+    }
+
   }
 }

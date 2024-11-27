@@ -70,13 +70,21 @@ export const upperNavData = [
     {
         key: 'und05',
         isButton: false,
+        navItem: 'CONTACT',
+        pathUrl: '/real-contact-us',
+        hasList: false,
+        listNav: [],
+    },
+    {
+        key: 'und06',
+        isButton: false,
         navItem: 'ORGANIZATION',
         pathUrl: '/organization',
         hasList: false,
         listNav: [],
     },
     {
-        key: 'und06',
+        key: 'und07',
         isButton: false,
         navItem: 'BOOK A DEMO',
         pathUrl: '/contact-us',
@@ -340,24 +348,122 @@ export const productCarouselHome = [
     },
 ];
 
+export const mainCTAV2Info = {
+    title: "Lorem ipsum dolor sit amet, consectu. Lorem ipsum.",
+    ctaContent: "Let's start from here",
+} 
+
 export const highlightsItems = [
     {
-        id: 'highlight-one',
-        title: 'An employee portal with an easy-to-use, modern interface',
+        highlight_id: 'highlight-one',
+        title: 'The best digital HR platform, trusted by many business',
         featMsg: 'BIT HR',
         cta: 'Explore',
-        footerText: 'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
-        imagePath: '/assets/chart.svg',
+        footerText: 'Streamline HR tasks, boost productivity, and manage employee data easily for sustainable growth',
+        imagePath: '/assets/hrDetailsImgHome.svg',
+        heroImage: '/assets/hrDetailsImg.svg',
+        imageOne: '/assets/highlight-one-vector-two.svg',
+        imageTwo: '/assets/highlight-one-vector-one.svg',
+        imageThree: '/assets/highlight-one-vector-five.svg',
+        imageFour: '/assets/highlight-one-vector-four.svg',
+        imageFive: '/assets/highlight-one-vector-three.svg',
+        moreInfo: [
+            {
+                id: 'more-info-one',
+                title: 'Header One',
+                featMsg: [
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                ]
+            },
+            {
+                id: 'more-info-two',
+                title: 'Header Two',
+                featMsg: [
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                ]
+            },
+            {
+                id: 'more-info-three',
+                title: 'Header Three',
+                featMsg: [
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                ]
+            }
+        ],
+
+        // Content for ContactUsV2
+        contactV2Info: {
+            title: 'Ready To Simplify HR Processes?',
+            ctaContent: "Let's start from here",
+        }
     }, 
     {
-        id: 'highlight-two',
-        title: 'An employee portal with an easy-to-use, modern interface',
+        highlight_id: 'highlight-two',
+        title: 'Payroll solution that brings you advantages',
         featMsg: 'Payroll',
         cta: 'Explore',
-        footerText: 'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
-        imagePath: '/assets/payroll-img.svg',
+        footerText: 'Our HRIS and payroll software streamlines processes from gross to net calculations and tax computations, ensuring adherence to strict regulatory standards for smooth business operations.',
+        alt: 'Payroll sample vector',
+        imagePath: '/assets/payrollDetailsImgHome.svg',
+        heroImage: '/assets/payrollDetailsImg.png',
+        vectorBg: '/assets/highlightDetailVectorBg.png',
+        imageOne: '/assets/highlight-two-vector-one.png',
+        imageTwo: '/assets/highlight-two-vector-two.png',
+        imageThree: '/assets/highlight-two-vector-three.svg',
+        imageFour: '/assets/highlight-two-vector-four.png',
+        imageFive: '/assets/highlight-two-vector-five.png',
+        imageSix: '/assets/highlight-two-vector-six.svg',
+        moreInfo: [
+            {
+                id: 'more-info-one',
+                title: 'Header',
+                featMsg: [
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                ]
+            }, 
+            {
+                id: 'more-info-two',
+                title: 'Header',
+                featMsg: [
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                ]
+            }
+        ],
+         // Content for ContactUsV2
+        contactV2Info: {
+            title: 'Process Payroll In Just A Click',
+            ctaContent: 'Automate Payroll',
+        }
     }
 ];
+
+export const highlightHRDetail = [
+    {
+        id: 'HR_Detail_One',
+        title: 'Categories Management',
+        abbreviation: 'CM',
+        footer: 'Manage Divions, Ranks etc.',
+        iconName: '/assets/highlightHRDetail-one.svg',
+    },
+    {
+        id: 'HR_Detail_Two',
+        title: 'User Account Management',
+        abbreviation: 'UAM',
+        footer: 'Manage Divions, Ranks etc.',
+        iconName: '/assets/highlightHRDetail-two.svg',
+    },
+    {
+        id: 'HR_Detail_Three',
+        title: 'Payroll Variables',
+        abbreviation: 'PVM',
+        footer: 'Manage Divions, Ranks etc.',
+        iconName: '/assets/highlightHRDetail-three.svg',
+    }
+]
 
 export const serviceOfferingsHome = [
     {

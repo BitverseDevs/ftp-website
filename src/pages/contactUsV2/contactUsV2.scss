@@ -1,11 +1,44 @@
 #contactUsV2-outer-container {
-  height: 600px;
+  height: 450px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: #4750FF;
+  
   #contactUsV2-inner-container {
+    height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #contactUsV2-title {
+      width: 60%;
+      color: #FFF5EA;
+      font-size: 3rem;
+      margin: 0 0 15px;
+      text-align: center;
+      font-family: 'Poppins-semibold', sans-serif;
+    }
+
+    #contactUsV2-CTA {
+      height: 70px;
+      width: 350px;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+      color: #4750FF;
+      border-radius: 12px;
+      background-color: #FFF5EA;
+      // background: linear-gradient(90deg, #4A52F7 0%, #4a75f7 100%);
+      &:hover {
+          cursor: pointer;
+      }
+    }
   }
 }

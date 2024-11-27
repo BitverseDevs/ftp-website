@@ -3,17 +3,26 @@
   width: 100%;
   background-color: #f2f4f7;
   padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   #faq-inner-container {
-    width: 100%;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(0px);
+    box-shadow: 2px 2px 2px 1px rgba(75, 82, 247, 0.2);
+    border-radius: 25px;
+    padding: 50px;
 
     #accordion-section {
       height: auto;
-      width: 70%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

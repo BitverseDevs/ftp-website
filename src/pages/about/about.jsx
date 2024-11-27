@@ -1,9 +1,8 @@
 import React from 'react';
-import './about.scss'
-import ParticleBg from 'pages/ui/particlebg';
 import { aboutPageData, aboutPageBanner, aboutPillarsTitle, aboutPillarsList } from 'data/aboutpage';
 import ProductSpecs from 'pages/sitehome/productspecs/productspecs';
 import SEO from '../../components/seo/seo';
+import './about.scss'
 
 export function About() {
     return (
@@ -73,7 +72,6 @@ export function About() {
                 </section>
                 <ProductSpecs fromWhere='about' productsTitle={aboutPillarsTitle} productsList={aboutPillarsList}/>
             </div>
-            <ParticleBg/>
         </React.Fragment>
         
     );

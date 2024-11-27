@@ -24,6 +24,7 @@ import SEO from '../../components/seo/seo';
 import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
 import Highlights from 'pages/highlights/Highlights';
 import FeaturedSpecsV2 from './featuredspecsV2/FeaturedSpecsV2';
+import { mainCTAV2Info } from 'data/sitehome';
 import './main.scss';
 
 const Main = (props) => {
@@ -37,10 +38,10 @@ const Main = (props) => {
                 <Sitehero/>
                     <Highlights />
                     <FeaturedSpecsV2 />
-                    <FeaturedSpecs/>
+                    {/* <FeaturedSpecs/> */}
                     <ProductCarousel/>
                     <ServiceOfferings fromWhere='home'/>
-                    <ContactUsV2 />
+                    <ContactUsV2 contactV2Info={mainCTAV2Info} />
                     <BrandArea brands={brandArea}/>
                     <FAQ />
                     {/* <ProductSpecs fromWhere='home' ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/> */}

@@ -16,10 +16,11 @@ const Highlights = () => {
       </div>
 
       <div id="highlights-inner-container">
-          {highlightsItems.map(({id, title, featMsg, cta, footerText, imagePath}, index) => (
-            <div className={id === 'highlight-one' ? 'highlights-container' : 'highlights-container highlights-container-style-two'}>
+          {highlightsItems.map(({highlight_id, title, featMsg, cta, footerText, imagePath}, index) => (
+            <div className={highlight_id === 'highlight-one' ? 'highlights-container' : 'highlights-container highlights-container-style-two'}>
+
               <ScrollAnimation duration={1.2} animateOnce={true} animateIn='slideInUp'>
-                <div className="highlights-outer-left-sectionn">
+                <div className={highlight_id === 'highlight-one' ? 'highlights-outer-left-sectionn' : 'highlights-outer-left-sectionn highlights-outer-left-sectionn-style-two'}>
                   <div className="highlights-bubble-one"></div>
                   <div className="highlights-bubble-two"></div>
 
@@ -29,7 +30,6 @@ const Highlights = () => {
                     <div className='highlights-title'>{title}</div>
 
                     <NavLink className='highlights-cta' to={`/highlight/${index}`}>{cta}</NavLink>
-                    {/* <div className='highlights-cta'>{cta}</div> */}
                     <div className='highlights-footerText'>{footerText}</div>
 
                   </div>

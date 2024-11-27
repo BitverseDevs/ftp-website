@@ -1,92 +1,180 @@
 #featuredspecsV2-outer-container {
-  height: 900px;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 150px;
 
   #featuredspecsV2-inner-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
 
-    #featuredspecsV2-container {
+    #featuredspecsV2-container-one {
+      height: auto;
+      width: 90%;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
       gap: 50px;
-
-      #featuredspecsV2-left-section {
-        height: auto;
-        width: 500px;
-        border-radius: 30px;
-        font-family: 'Poppins', sans-serif;
-        // background: rgba(255, 255, 255, 0.7);
-        // backdrop-filter: blur(0px);
-        // box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 30px;
-
-        #featuredspecs-title {
-          color: #282828;
-          font-size: 3rem;
-          font-family: 'Poppins-SemiBold', sans-serif;
-        }
-      }
-
+      
       // bubble reasons why :)
-      #featuredspecsV2-right-sectionn {
+      #featuredspecsV2-left-sectionn {
         height: auto;
         width: auto;
         position: relative;
 
         // yep bubbles
         #featuredspecsV2-bubble-one {
-          height: 200px;
-          width: 200px;
+          height: 100px;
+          width: 100px;
           position: absolute;
-          top: 0;
-          left: 0;
           border-radius: 100%;
-          background-color: blue;
-          animation: bubbles 4s linear 0s infinite;
+          background-color: rgba(74, 82, 247, 0.7);
+          animation: bubbles 5s linear 0s infinite;
         }
 
-        #featuredspecsV2-bubble-two {
-          
-        }
-
-        #featuredspecsV2-right-section {
+        #featuredspecsV2-left-section {
           height: auto;
-          width: 650px;
+          width: 450px;
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+  
+          #featuredspecs-featmsg {
+            font-size: 1.5rem;
+            color: #4750ff;
+          }
+  
+          #featuredspecs-title {
+            color: #282828;
+            font-size: 3rem;
+            font-family: 'Poppins-SemiBold', sans-serif;
+            line-height: 60px;
+          }
+        }
+      }
+
+      #featuredspecsV2-right-section {
+        height: auto;
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+
+        .featuredspecsV2-item {
+            height: auto;
+            width: auto;
+            color: #282828;
+            font-size: 1.2rem;
+            list-style-type: none;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(0px);
+            box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
+            border-radius: 25px;
+            transition: all 0.9s;
+            font-family: 'Poppins', sans-serif;
+            &:hover {
+                background-color: #4A52F7;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        // E585D3 #BB2DA1
+      }
+    }
+
+    .featuredspecsV2-container-two-outer {
+      height: auto;
+      width: auto;
+      position: relative;
+
+      #featuredspecsV2-bubble-two {
+        height: 75px;
+        width: 75px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: bubblesAgain 3s linear 0s infinite;
+      }
+      
+      #featuredspecsV2-container-two {
+        height: auto;
+        width: 100%;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(0px);
+        box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
+        border-radius: 25px;
+  
+        #featuredspecsV2-left-sectionn {
+  
+          #featuredspecsV2-titlee {
+            color: #282828;
+            font-size: 3rem;
+            font-family: 'Poppins-Medium', sans-serif;
+            margin-bottom: 15px;
+            padding-left: 50px;
+          }
+        }
+  
+        #featuredspecsV2-right-sectionn {
+          height: auto;
+          width: 100%;
           display: flex;
           flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: center;
-          gap: 15px;
+          gap: 50px;
+          
+          .featuredspecsV2-itemm-container {
+            height: 340px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 20px 20px 20px;
+            backdrop-filter: blur(0px);
+            box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
+            border-radius: 25px;
   
-          .featuredspecsV2-item {
-              height: auto;
-              width: auto;
-              color: #282828;
-              font-size: 1.2rem;
-              list-style-type: none;
-              padding: 20px;
-              background: rgba(255, 255, 255, 0.4);
-              backdrop-filter: blur(0px);
-              box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
-              border-radius: 25px;
-              transition: all 0.9s;
-              font-family: 'Poppins', sans-serif;
-              &:hover {
-                  background-color: #4A52F7;
-                  color: white;
-                  cursor: pointer;
+            .featuredspecsV2-itemm-icon-container {
+              .featuredspecsV2-itemm-icon {
+                height: 40px;
               }
-          }
-          // E585D3 #BB2DA1
+            }
+  
+            .featuredspecsV2-itemm-title {
+              color: #282828;
+              font-family: 'poppins-semibold', sans-serif;
+              font-size: 1.5rem;
+              text-align: center;
+              margin-bottom: 15px;
+            }
+  
+            .featuredspecsV2-itemm-desc {
+              color: gray;
+              font-family: 'poppins', sans-serif;
+              font-size: 0.9rem;
+              text-align: center;
+            }
+          } 
         }
       }
     }
@@ -95,55 +183,41 @@
 
 @keyframes bubbles {
   0% {
-    top: 0px;
-  }
-
-  10% {
-    top: -20px;
-  }
-
-  20% {
-    top: 0px;
-    left: 50px;
-  }
-
-  30% {
-    top: 50px;
-    left: 50px;
-  }
-
-  40% {
-    top: 100px;
-    left: 50px;
+    transform: translate(0px, 170px);
   }
 
   50% {
+    transform: translate(20px, 170px);
+  }
+
+  100% {
+    transform: translate(0px, 170px);
+  }
+}
+
+@keyframes bubblesAgain {
+  0% {
+    top: 0px;
+    left: -40px;
+  }
+
+  25% {
     top: 120px;
+    left: 25px;
+  }
+
+  50% {
+    top: 150px;
     left: 50px;
   }
 
-  60% {
+  75% {
     top: 100px;
-    left: 40px;
-  }
-
-  70% {
-    top: 80px;
-    left: 30px;
-  }
-
-  80% {
-    top: 60px;
-    left: 20px;
-  }
-
-  90% {
-    top: 30px;
-    left: 10px;
+    left: 25px;
   }
 
   100% {
     top: 0px;
-    left: 0px;
+    left: -40px;
   }
 }
