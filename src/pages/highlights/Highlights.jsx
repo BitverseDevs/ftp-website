@@ -16,31 +16,31 @@ const Highlights = () => {
       </div>
 
       <div id="highlights-inner-container">
-          {highlightsItems.map(({highlight_id, title, featMsg, cta, footerText, imagePath}, index) => (
-            <div className={highlight_id === 'highlight-one' ? 'highlights-container' : 'highlights-container highlights-container-style-two'}>
+        {highlightsItems.map(({highlight_id, title, featMsg, cta, footerText, imagePath}, index) => (
+          <div className={highlight_id === 'highlight-one' ? 'highlights-container' : 'highlights-container highlights-container-style-two'}>
 
-              <ScrollAnimation duration={1.2} animateOnce={true} animateIn='slideInUp'>
-                <div className={highlight_id === 'highlight-one' ? 'highlights-outer-left-sectionn' : 'highlights-outer-left-sectionn highlights-outer-left-sectionn-style-two'}>
-                  <div className="highlights-bubble-one"></div>
-                  <div className="highlights-bubble-two"></div>
+            <ScrollAnimation duration={1.2} animateOnce={true} animateIn='slideInUp'>
+              <div className={highlight_id === 'highlight-one' ? 'highlights-outer-left-sectionn' : 'highlights-outer-left-sectionn highlights-outer-left-sectionn-style-two'}>
+                <div className="highlights-bubble-one"></div>
+                <div className="highlights-bubble-two"></div>
 
-                  <div className='highlights-inner-left-section'>
+                <div className='highlights-inner-left-section'>
 
-                    <div className='highlights-featMsg'>{featMsg}</div>
-                    <div className='highlights-title'>{title}</div>
+                  <div className='highlights-featMsg'>{featMsg}</div>
+                  <div className='highlights-title'>{title}</div>
 
-                    <NavLink className='highlights-cta' to={`/highlight/${index}`}>{cta}</NavLink>
-                    <div className='highlights-footerText'>{footerText}</div>
+                  <NavLink className='highlights-cta' to={`/highlight/${index}`}>{cta}</NavLink>
+                  <div className='highlights-footerText'>{footerText}</div>
 
-                  </div>
                 </div>
-              </ScrollAnimation>
-
-              <div className="highlights-right-section">
-                <img className='highlights-img' src={imagePath} alt="image" draggable={false}/>
               </div>
+            </ScrollAnimation>
+
+            <div className="highlights-right-section">
+              <img className='highlights-img' src={imagePath} alt="image" draggable={false}/>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
     </div>
   );

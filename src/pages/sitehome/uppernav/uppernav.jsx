@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import HamburgerIcon from './hamburgerIcon/hamburgerIcon';
 import { useNavigate } from "react-router-dom";
-import { Modal } from '@mui/material';
 import ContactUs from 'pages/contactus/contactus';
+import { Menu, MenuItem, Button } from '@mui/material';
 import './uppernav.scss';
 
 export function Uppernav(props) {
@@ -11,9 +11,11 @@ export function Uppernav(props) {
     const navListArr = Object?.values(props?.navList);
     const [isFixed, setIsFixed] = useState(false);
     const [showModal, setShowModal] = useState(false);
+    const [anchorEle, setAnchorEle] = useState(null);
+    const open = Boolean(anchorEle);
 
     const handleScroll = () => {
-        const scrollThreshold = 600; // Adjust this value to your desired scroll amount
+        const scrollThreshold = 300; // Adjust this value to your desired scroll amount
         const currentScrollY = window.scrollY;
     
         if (currentScrollY >= scrollThreshold && !isFixed) {
@@ -32,30 +34,58 @@ export function Uppernav(props) {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+
     }, [isFixed]);
 
+    // handle anchor
+    const handleClick = (e) => {
+      setAnchorEle(e.currentTarget);
+    }
+    
+    const handleClose = (e) => {
+      navigate(`/${e.target.id}`, { replace: true });
+      setAnchorEle(null);
+    }
+
     return (
-        <div id='uppernav-outer-wrap' style={{position: `${isFixed ? 'fixed' : 'relative'}`, top: isFixed ? '0px' : ''}}>
+        // <div id='uppernav-outer-wrap' style={{position: `${isFixed ? 'fixed' : 'relative'}`, top: isFixed ? '0px' : ''}}>
+        
+        <div id='uppernav-outer-wrap' style={{ position: isFixed ? 'sticky' : 'absolute', top: isFixed ? '0' : '0' }}>
             <ContactUs 
                 open={showModal}
                 onClose={modalClick}
             />
-            <div className={isFixed ? 'uppernav-wrap upperNav-wrap-style-two' : 'uppernav-wrap'}>
+            <div className='uppernav-wrap'>
                 <Link to={'/'}>
                     <div className='uppernav-logo'>
                         <img src='/assets/bitverse-logo.png' alt='logo'/>
                     </div>
                 </Link>
                 <ul className='uppernav-navItems'>
+                    <>
+                      {/* <div onClick={handleClick}>About</div> */}
+                      <Menu
+                        id="basic-menu"
+                        anchorEl={anchorEle}
+                        open={open}
+                        onClose={handleClose}
+                      >
+                        <MenuItem id='community' onClick={handleClose}>Community</MenuItem>
+                        <MenuItem id='about' onClick={handleClose}>About Bitverse</MenuItem>
+                        <MenuItem id='organization' onClick={handleClose}>Organization</MenuItem>
+                      </Menu>
+                    </>
                     {navListArr.map((item)=> (
                         <li key={item.key}>
-                            {item.navItem == 'BOOK A DEMO' ? 
-                                <div className='bookDemoNavItem' onClick={modalClick}>
-                                    {item.navItem}
-                                </div>
-                            : 
+                            {item.key == 'und07' ? 
+                              <div className='bookDemoNavItem' onClick={modalClick}>
+                                {item.navItem}
+                              </div>
+                            :  item.key == 'und02' ? 
+                                <div id='aboutCTA' onClick={handleClick}>About</div>
+                              : 
                                 <NavLink style={({ isActive }) => ({
-                                    color: isActive ? '#4d1c91' : 'black',
+                                  color: isActive ? '#4d1c91' : 'black',
                                 })} 
                                 to={item.pathUrl}>{item.navItem}</NavLink>
                             }
@@ -76,7 +106,7 @@ export function Uppernav(props) {
                     }
                 })}
                 <div className='uppernav-burger--wrap'>
-                    <HamburgerIcon navList={navListArr} scrollToSection={props.scrollToSection}/>
+                  <HamburgerIcon navList={navListArr} scrollToSection={props.scrollToSection}/>
                 </div>
             </div>
         </div>

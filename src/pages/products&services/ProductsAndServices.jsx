@@ -11,7 +11,6 @@ const ProductsAndServices = () => {
     <div>
       <ServiceOfferings fromWhere='upperNav' />
       <ProductSpecs fromWhere='upperNav' productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
-      <ParticleBg />
     </div>
   );
 }

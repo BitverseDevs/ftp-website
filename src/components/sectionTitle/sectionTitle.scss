@@ -66,6 +66,10 @@
 @media only screen and (max-width: 767px) {
     .section-title-container{
         width: 80%;
+        .section-title-title{
+            font-size: 1.6rem;
+            color: #282828;
+        }
         #sectionTitleContainer {
             width: 100%;
         }
@@ -76,8 +80,13 @@
     .section-title-container{
         width: 90%;
         .section-title-title{
-            font-size: 25px;
+            font-size: 1.5rem;
         }
+
+        .section-title-feat {
+            
+        }
+
         #sectionTitleContainer {
             .section-title-desc {
                 font-size: 0.7rem;

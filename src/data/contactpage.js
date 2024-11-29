@@ -117,6 +117,66 @@ export const contactPageFormList = [
     }
 ];
 
+// real contact us info
+export const realContactUsInfo = [
+    {
+        id: 'info-one',
+        title: 'Contact Us',
+        featMsgOne: 'Call us: +639171187206',
+        featMsgTwo: 'Email: sales@bitverseph.com',
+        iconName: '/assets/realContactUs-Icon.svg',
+    },
+    {
+        id: 'info-two',
+        title: 'Office Hours',
+        featMsgOne: 'Mon - Friday',
+        featMsgTwo: '8:00 am - 5:00 pm',
+        iconName: '/assets/realOfficeHours-Icon.svg',
+    },
+    {
+        id: 'info-three',
+        title: 'Address',
+        featMsgOne: 'Unit 1603, Pearlbank Centre, Salcedo Village, 146 Valero, Makati, Metro Manila',
+        featMsgTwo: '',
+        iconName: '/assets/realAddress-Icon.svg',
+    }
+]
+
+// real contact us form
+export const contactFormInfo = [
+    {
+        id: 'field-one',
+        name: 'fullName',
+        label: 'Fullname',
+        type: 'text',
+        // value: '',
+        required: 'true'
+    },
+    {
+        id: 'field-two',
+        name: 'emailAddress',
+        label: 'Email Address',
+        type: 'text',
+        // value: '',
+        required: 'true'
+    },
+    {
+        id: 'field-three',
+        name: 'companyName',
+        label: 'Company Name',
+        type: 'text',
+        // value: '',
+        required: 'true'
+    },
+    {
+        id: 'field-four',
+        name: 'remarksQuestion',
+        label: 'Remarks / Questions',
+        type: 'text',
+        // value: '',
+        required: 'true'
+    }
+]
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {

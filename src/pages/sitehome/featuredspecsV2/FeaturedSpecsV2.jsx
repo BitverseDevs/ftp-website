@@ -28,7 +28,7 @@ const FeaturedSpecsV2 = () => {
           </div>
         </div>
 
-        <ScrollAnimation className='featuredspecsV2-container-two-outer' duration={1.2} animateOnce={true} animateIn='slideInUp'>
+        {/* <ScrollAnimation className='featuredspecsV2-container-two-outer' duration={1.2} animateOnce={true} animateIn='slideInUp'>
           <div id="featuredspecsV2-bubble-two"></div>
 
           <div id="featuredspecsV2-container-two">
@@ -48,7 +48,7 @@ const FeaturedSpecsV2 = () => {
               ))} 
             </div>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </div>
     </div>
   )  

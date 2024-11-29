@@ -9,16 +9,21 @@
     margin-left: auto;
     margin-right: auto;
 
-    // to access the dots manually
-    // .alice-carousel {
-    //     .alice-carousel__dots {
-    //         li {
-    //             div {
-    //                 margin-right: 30px !important;
-    //             }
-    //         }
-    //     }
-    // }
+    .alice-carousel {
+        .alice-carousel__wrapper {
+            height: auto;
+        }
+
+        .alice-carousel__dots {
+            margin: 30px 0 30px 0;
+            li {
+                div {
+                    font-size: 1.1rem !important;
+                    margin-right: 15px !important;
+                }
+            }
+        }
+    }
 
     .product-carousel--main-container{
         display: flex;
@@ -30,7 +35,6 @@
             //     width: 100%;
             // }
             width: 35%;
-
             .hero-left-content-action-item-call{
                 position: relative;
                 left: 2px;
@@ -39,18 +43,19 @@
                 font-family: 'Poppins-Medium', sans-serif;
                 padding: 14px;
                 width: 169px;
-                border: 3px solid #9900ff;
                 border-radius: 8px;
                 padding: 9px;
                 // box-sizing: border-box;
                 color: #22195e;
                 margin-right: 30px;
-                &:hover{
-                    background: linear-gradient(90deg, #9900ff 0%, #b75df3 100%);
-                    color: #fff;
-                    transition: all 0.5s ease;
-                    border: transparent;
-                }
+                background-color: #4750FF;
+                color: white;
+                // &:hover{
+                //     background: linear-gradient(90deg, #9900ff 0%, #b75df3 100%);
+                //     color: #fff;
+                //     transition: all 0.5s ease;
+                //     border: transparent;
+                // }
             }
         }
         .product-carousel--container-img{
@@ -71,52 +76,57 @@
 
 
 //Responsive Traits Screen
-@media only screen and (min-width: 1200px) and (max-width: 3700px) {
-    .product-carousel--section{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+// @media only screen and (min-width: 1200px) and (max-width: 3700px) {
+//     .product-carousel--section{
+//         width: 60%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .product-carousel--section{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+// @media only screen and (min-width: 992px) and (max-width: 1200px) {
+//     .product-carousel--section{
+//         width: 80%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
 
-@media only screen and (max-width: 991px) {
-    .product-carousel--section {
-        width: 70%;
-        .product-carousel--main-container {
-            .product-carousel--container-caption {
-                .hero-left-content-action-item-call {
-                    margin: 20px 0 20px 0;
-                }
-            }
-        }
-    }
-}
+// @media only screen and (max-width: 991px) {
+//     .product-carousel--section {
+//         width: 70%;
+//         .product-carousel--main-container {
+//             .product-carousel--container-caption {
+//                 .hero-left-content-action-item-call {
+//                     margin: 20px 0 20px 0;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
     .product-carousel--section {
         width: 95%;
         .alice-carousel {
+            .alice-carousel__wrapper {
+                height: 250px;
+            }
+
             .alice-carousel__dots {
+                margin-top: 2px;
                 li {
                     div {
-                        font-size: 0.9rem !important;
+                        font-size: 0.7rem !important;
                         margin-right: 20px !important;
                     }
                 }
@@ -129,6 +139,129 @@
                 width: 100%;
                 .hero-left-content-action-item-call {
                     margin-top: 20px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 0.8rem;
+                    align-items: center;
+                    background-color: #4750FF;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    .product-carousel--section {
+        width: 95%;
+        .alice-carousel {
+            .alice-carousel__wrapper {
+                height: 300px;
+            }
+
+            .alice-carousel__dots {
+                margin: 0 0 30px 0;
+                li {
+                    div {
+                        font-size: 0.7rem !important;
+                        margin-right: 15px !important;
+                    }
+                }
+            }
+        }
+
+        .product-carousel--main-container {
+            .product-carousel--container-caption {
+                align-items: center;
+                width: 100%;
+                .hero-left-content-action-item-call {
+                    margin-top: 20px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 0.9rem;
+                    align-items: center;
+                    background-color: #4750FF;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+    .product-carousel--section {
+        width: 95%;
+        .alice-carousel {
+            .alice-carousel__wrapper {
+                height: auto;
+            }
+
+            .alice-carousel__dots {
+                margin: 0 0 30px 0;
+                li {
+                    div {
+                        font-size: 0.9rem !important;
+                        margin-right: 15px !important;
+                    }
+                }
+            }
+        }
+
+        .product-carousel--main-container {
+            .product-carousel--container-caption {
+                align-items: center;
+                width: 100%;
+                .hero-left-content-action-item-call {
+                    margin-top: 20px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 0.9rem;
+                    align-items: center;
+                    background-color: #4750FF;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .product-carousel--section {
+        width: 95%;
+        .alice-carousel {
+            .alice-carousel__wrapper {
+                height: auto;
+            }
+
+            .alice-carousel__dots {
+                margin: 0 0 30px 0;
+                li {
+                    div {
+                        font-size: 0.9rem !important;
+                        margin-right: 15px !important;
+                    }
+                }
+            }
+        }
+
+        .product-carousel--main-container {
+            .product-carousel--container-caption {
+                align-items: center;
+                width: 100%;
+                .hero-left-content-action-item-call {
+                    margin-top: 20px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 0.9rem;
+                    align-items: center;
+                    background-color: #4750FF;
+                    color: white;
+                    margin-bottom: 15px;
                 }
             }
         }

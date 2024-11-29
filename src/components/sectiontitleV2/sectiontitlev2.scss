@@ -130,7 +130,7 @@
 
 .section-title-v2-container-styleTwo {
     height: auto;
-    width: 100;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start !important;
@@ -179,40 +179,158 @@
 }
 
 //Responsive Traits Screen
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-}
+// @media only screen and (min-width: 992px) and (max-width: 1200px) {
+// }
 
-@media only screen and (max-width: 991px) {
-    .section-title-v2-container{
-        width: 78%;
-    }
-}
+// @media only screen and (max-width: 991px) {
+//     .section-title-v2-container{
+//         width: 78%;
+//     }
+// }
 
-@media only screen and (max-width: 767px) {
-    .section-title-v2-container{
-        width: 80%;
-    }
-}
+// @media only screen and (max-width: 767px) {
+//     .section-title-v2-container{
+//         width: 80%;
+//     }
+// }
 
-@media only screen and (max-width: 575px) {
-    .section-title-v2-container{
-        width: 90%;
-        .section-title-v2-title{
-            font-size: 25px;
-        }
-    }
-}
+// @media only screen and (max-width: 575px) {
+//     .section-title-v2-container{
+//         width: 90%;
+//         .section-title-v2-title{
+//             font-size: 25px;
+//         }
+//     }
+
+//     .section-title-v2-container-styleTwo {
+//         padding: 15px;
+     
+//         .section-title-v2-feat {
+      
+//         }
+//         .section-title-v2-title{
+//             font-size: 1.3rem;
+//             margin: 0;
+//         }
+    
+//         .section-title-v2-desc{
+//         }
+//     }
+// }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
     .section-title-v2-container {
         width: 80%;
         .section-title-v2-title {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
         .section-title-v2-desc-listed,
         .section-title-v2-desc {
             font-size: 0.8rem;
         }
     }
+
+    .section-title-v2-container-styleTwo {
+        padding: 15px;
+     
+        .section-title-v2-feat {
+      
+        }
+        .section-title-v2-title{
+            font-size: 1rem;
+            margin: 0;
+        }
     
+        .section-title-v2-desc{
+          
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    .section-title-v2-container {
+        width: 80%;
+        .section-title-v2-title {
+            font-size: 1.2rem;
+        }
+        .section-title-v2-desc-listed,
+        .section-title-v2-desc {
+            font-size: 0.8rem;
+        }
+    }
+
+    .section-title-v2-container-styleTwo {
+        padding: 15px;
+     
+        .section-title-v2-feat {
+      
+        }
+        .section-title-v2-title{
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    
+        .section-title-v2-desc{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+    .section-title-v2-container {
+        width: 80%;
+        .section-title-v2-title {
+            font-size: 1.2rem;
+        }
+        .section-title-v2-desc-listed,
+        .section-title-v2-desc {
+            font-size: 0.8rem;
+        }
+    }
+
+    .section-title-v2-container-styleTwo {
+        padding: 20px;
+     
+        .section-title-v2-feat {
+      
+        }
+        .section-title-v2-title{
+            font-size: 1.7rem;
+            margin: 0;
+        }
+    
+        .section-title-v2-desc{
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1600px) {
+    .section-title-v2-container {
+        width: 80%;
+        .section-title-v2-title {
+            font-size: 1.2rem;
+        }
+        .section-title-v2-desc-listed,
+        .section-title-v2-desc {
+            font-size: 0.8rem;
+        }   
+    }
+
+    .section-title-v2-container-styleTwo {
+        padding: 15px;
+        width: 100%;
+
+        .section-title-v2-feat {
+      
+        }
+        .section-title-v2-title{
+            font-size: 1.7rem;
+            margin: 0;
+        }
+    
+        .section-title-v2-desc{
+            
+        }
+    }
 }

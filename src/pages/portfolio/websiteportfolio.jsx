@@ -35,7 +35,6 @@ export function WebsitePortfolio(props) {
                 keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Website Portfolio, Bitverse Products, Bitverse Corporation Products'
                 type='website'
                 name='Bitverse Corporation'/>
-            <ParticleBg/>
             <section className='website-portfolio--section-wrap'>
                 <SectionTitle title={title} desc={desc}/>
            
