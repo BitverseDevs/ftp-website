@@ -378,21 +378,21 @@ export const highlightsItems = [
         moreInfo: [
             {
                 id: 'more-info-one',
-                title: 'Header One',
+                title: 'Header',
                 featMsg: [
                     'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
                 ]
             },
             {
                 id: 'more-info-two',
-                title: 'Header Two',
+                title: 'Header',
                 featMsg: [
                     'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
                 ]
             },
             {
                 id: 'more-info-three',
-                title: 'Header Three',
+                title: 'Header',
                 featMsg: [
                     'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
                 ]
@@ -426,18 +426,14 @@ export const highlightsItems = [
                 id: 'more-info-one',
                 title: 'Header',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
                 ]
             }, 
             {
                 id: 'more-info-two',
                 title: 'Header',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu.',
+                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
                 ]
             }
         ],

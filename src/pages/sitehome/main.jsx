@@ -36,8 +36,8 @@ const Main = (props) => {
             {/* <ParticleBg/> */}
             <section className='main-site-home--page-wrap'>
                 <Sitehero/>
-                    <Highlights />
                     <FeaturedSpecsV2 />
+                    <Highlights />
                     {/* <FeaturedSpecs/> */}
                     <ProductCarousel/>
                     <ServiceOfferings fromWhere='home'/>

@@ -42,3 +42,88 @@
     }
   }
 }
+
+// lets gooooooo media queries
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  #contactUsV2-outer-container {
+    height: 220px;
+
+    #contactUsV2-inner-container {
+      #contactUsV2-title {
+        width: 90%;
+        font-size: 1.2rem;
+      }
+
+      #contactUsV2-CTA {
+        height: 50px;
+        width: auto;
+        padding: 8px 30px;
+        margin-top: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 750px) {
+  #contactUsV2-outer-container {
+    height: 260px;
+
+    #contactUsV2-inner-container {
+      #contactUsV2-title {
+        width: 80%;
+        font-size: 1.5rem;
+      }
+
+      #contactUsV2-CTA {
+        height: 55px; 
+        width: auto;
+        padding: 8px 35px;
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 900px) {
+  #contactUsV2-outer-container {
+    height: 300px;
+
+    #contactUsV2-inner-container {
+      #contactUsV2-title {
+        width: 80%;
+        font-size: 2rem;
+      }
+
+      #contactUsV2-CTA {
+        height: 55px; 
+        width: auto;
+        padding: 10px 40px;
+        margin-top: 10px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  #contactUsV2-outer-container {
+    height: 350px;
+
+    #contactUsV2-inner-container {
+      #contactUsV2-title {
+        width: 70%;
+        font-size: 2.3rem;
+      }
+
+      #contactUsV2-CTA {
+        height: 60px; 
+        width: auto;
+        padding: 12px 50px;
+        margin-top: 15px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
