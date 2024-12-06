@@ -51,7 +51,7 @@ export const ServiceOfferings = ({ fromWhere }) => {
                         {serviceOfferingsHome.map((product)=> (
                             <ScrollAnimation className='service-offerings--container-caption' duration={1.5} animateOnce={true} animateIn='slideInUp'>
                                 <SectionTitleV2 fromWhere='serviceOfferings' featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
-                                <Link to={'/contact-us'}>
+                                <Link to={product.srcLink}>
                                     <button className='hero-left-content-action-item-call'>
                                         <a href={product.srcLink}>
                                             {product.srcTitle}

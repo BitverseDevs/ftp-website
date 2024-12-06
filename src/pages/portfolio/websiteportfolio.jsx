@@ -2,11 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import './websiteportfolio.scss';
 // import { websitePortfolioTitle } from '../../../data/sitehome';
 import { responsivePortfolio, websitePortfolioTitle } from 'data/sitehome';
-import SectionTitle from 'components/sectionTitle/sectionTitle';
-import ParticleBg from 'pages/ui/particlebg';
 import SEO from '../../components/seo/seo';
-import AliceCarousel from 'react-alice-carousel';
-import Carousel from 'react-multi-carousel';
+import FAQ from 'pages/sitehome/faq/FAQ';
+import { clientCTAV2Info } from 'data/sitehome';
+import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
 import "react-multi-carousel/lib/styles.css";
 
 export function WebsitePortfolio(props) {
@@ -36,34 +35,31 @@ export function WebsitePortfolio(props) {
                 type='website'
                 name='Bitverse Corporation'/>
             <section className='website-portfolio--section-wrap'>
-                <SectionTitle title={title} desc={desc}/>
-           
+                {/* <SectionTitle title={title} desc={desc}/> */}
+                <div id="website-portfolio--header-section">
+                    <div id="website-portfolio-featMsg">Trusted by real Clients</div>
+                    <div id="website-portfolio-title">Our Most <span>Valuable Clients</span></div>
+                    {/* <div id="website-portfolio-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam neque quaerat iure.</div> */}
+                </div>   
+
                 <ul className='website-portfolio--figure-section'>
-                    <Carousel 
-                        responsive={responsive} 
-                        autoPlay={true}
-                        infinite={true}
-                        containerClass="carousel-container"
-                        centerMode='true'
-                        arrows={false}
-                        itemClass="item-class"
-                    >
-                        {portfolioArray.map(({ id, src, alt, srcLink }, index) => (
-                            <li className='website-portfolio--figure-wraps' key={id}>
-                                <div className='website-portfolio--figure-desc'>
-                                <p className='website-portfolio--figure-title'>{alt}</p>
-                                    <button className='website-portfolio--figure-button'>
-                                        <a href={srcLink} target={'_blank'}>
-                                            {'Visit Website'}
-                                        </a>
-                                    </button>
-                                </div>
-                                <img className='website-portfolio--figure-items' src={src} alt={alt}></img>
-                            </li>
-                        ))}
-                    </Carousel>
+                    {portfolioArray.map(({ id, src, alt, srcLink }, index) => (
+                        <li className='website-portfolio--figure-wraps' key={id}>
+                            <div className='website-portfolio--figure-desc'>
+                            <p className='website-portfolio--figure-title'>{alt}</p>
+                                <button className='website-portfolio--figure-button'>
+                                    <a href={srcLink} target={'_blank'}>
+                                        {'Visit Website'}
+                                    </a>
+                                </button>
+                            </div>
+                            <img className='website-portfolio--figure-items' src={src} alt={alt}></img>
+                        </li>
+                    ))}
                 </ul>
             </section>
+            <ContactUsV2 contactV2Info={clientCTAV2Info} />
+            <FAQ />
         </React.Fragment>
     );
 }

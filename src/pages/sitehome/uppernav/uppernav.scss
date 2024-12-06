@@ -7,7 +7,7 @@
     z-index: 999;
 
     .uppernav-wrap{
-        width: 70%;
+        width: 90%;
         font-family: 'Poppins', sans-serif;
         color: black;
         display: flex;
@@ -19,8 +19,10 @@
         padding: 10px 20px;
         border-radius: 20px;
         background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(0px);
-        box-shadow: 2px 2px 2px 1px rgba(75, 82, 247, 0.2);
+        backdrop-filter: blur(8px);
+        // box-shadow: 2px 2px 2px 1px rgba(75, 82, 247, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+
 
         .uppernav-logo{
             display: flex;

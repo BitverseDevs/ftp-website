@@ -70,7 +70,7 @@ export function Uppernav(props) {
                         open={open}
                         onClose={handleClose}
                       >
-                        <MenuItem id='community' onClick={handleClose}>Community</MenuItem>
+                        <MenuItem id='clients' onClick={handleClose}>Clients</MenuItem>
                         <MenuItem id='about' onClick={handleClose}>About Bitverse</MenuItem>
                         <MenuItem id='organization' onClick={handleClose}>Organization</MenuItem>
                       </Menu>

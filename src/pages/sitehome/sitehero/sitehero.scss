@@ -58,9 +58,9 @@
                 .hero-left-content-title{
                     width: 100%;
                     text-align: center;
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                     margin-bottom: 15px;
-                    letter-spacing: 3px;
+                    line-height: 60px;
 
                     span {
                         background: linear-gradient(to right, #4A52F7, #3A0F74);
@@ -681,7 +681,6 @@
         .hero-container {
             .hero-right-content {
                 #hero-right-img-container {
-                    
                     .hero-small-CTA {
                         padding: 2px 15px;
                         font-size: 0.4rem;
@@ -757,7 +756,8 @@
                 #hero-right-img-container {
                     width: 100%;
                     #blobTwo {
-
+                        height: 500px;
+                        width: 100%;
                     }
 
                     #hero-img-one {
@@ -810,7 +810,8 @@
                 #hero-right-img-container {
                     width: 100%;
                     #blobTwo {
-
+                        height: 300px;
+                        width: 100%;
                     }
 
                     #hero-img-one {
@@ -863,7 +864,8 @@
                 #hero-right-img-container {
                     width: 100%;
                     #blobTwo {
-
+                        height: 300px;
+                        width: 100%;
                     }
 
                     #hero-img-one {

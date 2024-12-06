@@ -9,22 +9,55 @@
     margin-bottom: 120px;
     opacity: 0;
     animation: faded 1s ease-in-out forwards;
-    padding-top: 100px;
+    padding-top: 170px;
+
+    #website-portfolio--header-section {
+        height: auto;
+        width: 90%;
+        color: #282828;
+        text-align: center;
+        margin-bottom: 50px;
+        #website-portfolio-featMsg {
+            font-family: 'poppins', sans-serif;
+            font-size: 1.5rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        #website-portfolio-title {
+            font-family: 'poppins-semibold', sans-serif;
+            font-size: 3rem;
+            span {
+                color: #4DA4FC;
+            }
+        }
+
+        #website-portfolio-desc {
+            font-family: 'poppins', sans-serif;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+    }
 
     .website-portfolio--figure-section{
         height: auto;
         width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
         .website-portfolio--figure-wraps{
             position: relative;
-            width: 600px;
-            margin-top: 40px;
+            width: 500px;
+            margin-top: 10px;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 1px 1px 5px #490179;
+            // background: rgba(255, 255, 255, 0.1);
+            // backdrop-filter: blur(0px);
+            // box-shadow: 2px 2px 2px 2px rgba(31, 38, 135, 0.1);
+        
             .website-portfolio--figure-desc{
                 height: 100%;
                 width: 100%;
@@ -33,7 +66,7 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                background: linear-gradient(90deg, #490179 0%, #9900ff 100%);
+                background: linear-gradient(90deg, #4DA4FC 0%, #CD65E3 100%);
                 opacity: 0.8;
                 background-size: 200% 100%;
                 background-position: left top;
@@ -75,7 +108,7 @@
                 height: 400px;
                 width: 100%;
             }
-            &:hover{
+            &:hover { 
                 .website-portfolio--figure-items{
                     transform: scale(1.12);
                 }
@@ -122,53 +155,204 @@
 
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
-    .carousel-container {
-        height: 300px;
-        width: 100%;
-    }
-   
-    .website-portfolio--figure-items{
-        height: 180px !important;
-    }
+    .website-portfolio--section-wrap {
+        padding-top: 130px;
 
-    p, button {
-        font-size: 0.6rem !important;
-        a {
-            font-size: 0.6rem !important;
-            font-family: 'Poppins', sans-serif;
+        #website-portfolio--header-section {
+            width: 80%;
+            margin-bottom: 0;
+            #website-portfolio-featMsg {
+                font-size: 0.8rem;
+            }
+
+            #website-portfolio-title {
+                font-size: 1.2rem;
+            }
+
+            #website-portfolio-desc {
+
+            }
+
         }
-    }
 
-    .website-portfolio--figure-button {
-        width: 120px !important;
+        .website-portfolio--figure-section {
+            gap: 0;
+            .website-portfolio--figure-wraps {
+                height: 200px;
+                width: 90%;
+                .website-portfolio--figure-desc {
+                    .website-portfolio--figure-title, .website-portfolio--figure-button {
+
+                    }
+                    
+                    p, button {
+                        font-size: 0.6rem;
+                        a {
+                            font-size: 0.6rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                    .website-portfolio--figure-button {
+                        width: 120px;
+                    }
+                }
+                .website-portfolio--figure-items {
+                    height: 100%;
+                }
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
-    .carousel-container {
-        height: 400px;
-        width: 100%;
-    }
-   
-    .website-portfolio--figure-items{
-        height: 250px !important;
+    .website-portfolio--section-wrap {
+        padding-top: 140px;
+
+        #website-portfolio--header-section {
+            width: 100%;
+            #website-portfolio-featMsg {
+                font-size: 1rem;
+            }
+
+            #website-portfolio-title {
+                font-size: 1.5rem;
+            }
+
+            #website-portfolio-desc {
+
+            }
+        }
+
+        .website-portfolio--figure-section {
+            .website-portfolio--figure-wraps {
+                height: 230px;
+                width: 70%;
+                .website-portfolio--figure-desc {
+                    .website-portfolio--figure-title, .website-portfolio--figure-button {
+
+                    }
+                    
+                    p, button {
+                        font-size: 0.7rem;
+                        a {
+                            font-size: 0.7rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                    .website-portfolio--figure-button {
+                        width: 120px;
+                    }
+                }
+                .website-portfolio--figure-items {
+                    height: 100%;
+                }
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1199px) {
-    .carousel-container {
-        height: 450px;
-        width: 100%;
-    }
-   
-    .website-portfolio--figure-items{
-        height: 300px !important;
+    .website-portfolio--section-wrap {
+        padding-top: 170px;
+
+        #website-portfolio--header-section {
+            width: 100%;
+            margin-bottom: 20px;
+            #website-portfolio-featMsg {
+                font-size: 1.2rem;
+            }
+
+            #website-portfolio-title {
+                font-size: 1.9rem;
+            }
+
+            #website-portfolio-desc {
+
+            }
+        }
+
+        .website-portfolio--figure-section {
+            height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            .website-portfolio--figure-wraps {
+                height: auto;
+                width: 300px;
+                margin-top: 10px;
+                .website-portfolio--figure-desc {
+                    .website-portfolio--figure-title, .website-portfolio--figure-button {
+
+                    }
+                    
+                    p, button {
+                        font-size: 0.7rem;
+                        a {
+                            font-size: 0.7rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                    .website-portfolio--figure-button {
+                        width: 120px;
+                    }
+                }
+                .website-portfolio--figure-items {
+                    height: 100%;
+                }
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-    .carousel-container {
-        height: 600px;
-        width: 100%;
+    .website-portfolio--section-wrap {
+        padding-top: 150px;
+
+        #website-portfolio--header-section {
+            width: 100%;
+            margin-bottom: 20px;
+            #website-portfolio-featMsg {
+                font-size: 1.2rem;
+            }
+
+            #website-portfolio-title {
+                font-size: 2.2rem;
+            }
+
+            #website-portfolio-desc {
+
+            }
+        }
+
+        .website-portfolio--figure-section {
+            height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            .website-portfolio--figure-wraps {
+                height: auto;
+                width: 330px;
+                margin-top: 10px;
+                .website-portfolio--figure-desc {
+                    .website-portfolio--figure-title, .website-portfolio--figure-button {
+
+                    }
+                    
+                    p, button {
+                        font-size: 0.9rem;
+                        a {
+                            font-size: 0.9rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                    .website-portfolio--figure-button {
+                        width: 120px;
+                    }
+                }
+                .website-portfolio--figure-items {
+                    height: 100%;
+                }
+            }
+        }
     }
 }

@@ -4,30 +4,32 @@ import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/
 import { faqList } from 'data/sitehome';
 import './faq.scss';
 
-const FAQ = () => {
+const FAQ = ({fromWhere, list}) => {
 
   const {  title, featMsg } = faqHeaderDetails;
 
   return (
     <div id='faq-outer-container'>
       <div id="faq-inner-container">
-        <SectionTitle title={title} featMsg={featMsg} marginBottom={'75'}/>
         <div id="accordion-section">
-          {faqList.map(({id, items}, index) => (
-            <div>
+          <SectionTitle title={title} featMsg={featMsg} marginBottom={'75'}/>
+          {faqList.map(({id, items}) => (
+            <div key={id} className='accordion-inner-section'>
                 {items.map(({id, question, answer, icon}, index) => (
                   <Accordion className='accordion-container'>
                     <AccordionSummary 
                       className='accordion-summary'
                       expandIcon={ <img className='expandIcon' src={icon} alt='expand icon' /> }
                     >
-                      <Typography variant='h6'>
+                      <Typography className='accordion-question' variant='h6'>
                         {question}
                       </Typography>
                     </AccordionSummary>
 
                     <AccordionDetails className='accordion-details'>
-                      {answer}
+                      <Typography className='accordion-answer' variant='h6'>
+                        {answer}
+                      </Typography>
                     </AccordionDetails>
                   </Accordion>
               ))}

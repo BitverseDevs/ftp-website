@@ -114,7 +114,8 @@
                     align-items: flex-start;
                     background: rgba(255, 255, 255, 0.4);
                     backdrop-filter: blur(0px);
-                    box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
+                    // box-shadow: 2px 2px 2px 3px rgba(75, 82, 247, 0.2);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
                     border-radius: 25px;
                     transition: all 0.9s;
                     .hero-left-content-action-item-call{
@@ -324,8 +325,6 @@
 
                             a {
                                 font-size: 0.6rem !important;
-                                border: 1px solid red;
-                                
                             }
                         }
 
@@ -363,8 +362,8 @@
 
                     .service-offerings--container-caption {
                         // sective title v2
-                        padding: 10px;
-                        margin-bottom: 200px;
+                        padding: 20px 40px;
+                        margin-bottom: 230px;
                         border-radius: 10px;
                         box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
 

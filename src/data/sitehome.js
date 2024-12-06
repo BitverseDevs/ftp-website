@@ -357,9 +357,14 @@ export const productCarouselHome = [
 ];
 
 export const mainCTAV2Info = {
-    title: "Lorem ipsum dolor sit amet, consectu. Lorem ipsum.",
-    ctaContent: "Let's start from here",
+    title: "Let's starting working together!",
+    ctaContent: "Start here",
 } 
+
+export const clientCTAV2Info = {
+    title: 'Ready to transition Digitally?',
+    ctaContent: 'Do it with us',
+}
 
 export const highlightsItems = [
     {
@@ -478,7 +483,7 @@ export const serviceOfferingsHome = [
             desc: 'We offer multiple products that are fully customizable.',
         },
         srcTitle: 'LEARN MORE',
-        srcLink: '#',
+        srcLink: '/hris-service',
         img: '/assets/xchart-01.png',
         imgAlt: 'services-illustration-#1',
     },
@@ -490,7 +495,7 @@ export const serviceOfferingsHome = [
             desc: 'Want to have a specific web application based on your business flow? We can build it from scratch',
         },
         srcTitle: 'LEARN MORE',
-        srcLink: '#',
+        srcLink: '/software-dev-service',
         img: '/assets/xchart-01.png',
         imgAlt: 'services-illustration-#2',
     },
@@ -572,33 +577,51 @@ export const websitePortfolioTitle = {
 export const websitePortfolioList = [
     {
         id: 'wpl01',
-        src: '/assets/carou-bot01.png',
+        src: '/assets/ddt.jpg',
         alt: 'DDT Konstract, Inc.',
         srcLink: 'https://ddtkonstract.com/',
     },
     {
         id: 'wpl02',
-        src: '/assets/carou-bot02.png',
+        src: '/assets/contis.jpg',
         alt: 'Conti\'s Bakeshop & Resto',
         srcLink: 'https://contis.ph/',
     },
     {
         id: 'wpl03',
-        src: '/assets/carou-bot03.png',
+        src: '/assets/s&r.jpg',
         alt: 'S&R Membership Shopping',
         srcLink: 'https://www.snrshopping.com/',
     },
     {
         id: 'wpl04',
-        src: '/assets/carou-bot04.png',
+        src: '/assets/unihealth.jpg',
         alt: 'Unihealth-Southwoods Hospital & Medical Center',
         srcLink: 'https://unihealthsouthwoodshospital.com/',
     },
     {
         id: 'wpl05',
-        src: '/assets/carou-bot05.png',
+        src: '/assets/global.jpg',
         alt: 'Global Care Medical Center of Bay',
         srcLink: 'https://bay.globalcarehospitals.com/',
+    },
+    {
+        id: 'wpl06',
+        src: '/assets/siliconvalley.jpg',
+        alt: 'Silicon Valley',
+        srcLink: 'https://bay.globalcarehospitals.com/',
+    },
+    {
+        id: 'wpl07',
+        src: '/assets/appelectric.jpg',
+        alt: 'App Electric',
+        srcLink: 'https://appelectric.com.ph/',
+    },
+    {
+        id: 'wpl08',
+        src: '/assets/mandanibay.jpg',
+        alt: 'Mandani Bay',
+        srcLink: 'https://www.mandanibay.com/',
     },
 ];
 
@@ -737,6 +760,52 @@ export const footerList = [
         desc: '',
     },
 ];
+
+
+// LFG
+
+export const highlightFAQ = [
+    {
+      id: 'hFAQ01',
+      title: 'Everything You Need To Know About Bitverse HRIS',
+      featMsg: 'Frequently Asked Question',
+      items: [
+          {
+              id: 'hFAQ0101',
+              question: 'Highlight One (1)',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
+              icon: '/assets/arrowDown.svg',
+          }, 
+          {
+              id: 'hFAQ0102',
+              question: 'Highlight One (2)',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              icon: '/assets/arrowDown.svg',
+          }, 
+      ]
+    },
+  
+    {
+      id: 'hFAQ02',
+      title: 'Everything You Need To Know About Bitverse HRIS',
+      featMsg: 'Frequently Asked Question',
+      items: [
+          {
+              id: 'hFAQ0201',
+              question: 'Highlight Two (1)',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
+              icon: '/assets/arrowDown.svg',
+          }, 
+          {
+              id: 'hFAQ0202',
+              question: 'Highlight Two (2)',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              icon: '/assets/arrowDown.svg',
+          }, 
+      ]
+    },
+  ]
+  
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {

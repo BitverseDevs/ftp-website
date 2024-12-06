@@ -24,6 +24,7 @@ import SEO from '../../components/seo/seo';
 import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
 import Highlights from 'pages/highlights/Highlights';
 import FeaturedSpecsV2 from './featuredspecsV2/FeaturedSpecsV2';
+import WhyUs from './whyUs/WhyUs';
 import { mainCTAV2Info } from 'data/sitehome';
 import './main.scss';
 
@@ -41,6 +42,7 @@ const Main = (props) => {
                     {/* <FeaturedSpecs/> */}
                     <ProductCarousel/>
                     <ServiceOfferings fromWhere='home'/>
+                    <WhyUs />
                     <ContactUsV2 contactV2Info={mainCTAV2Info} />
                     <BrandArea brands={brandArea}/>
                     <FAQ />

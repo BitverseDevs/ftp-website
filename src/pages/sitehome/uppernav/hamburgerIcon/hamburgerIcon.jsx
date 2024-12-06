@@ -16,7 +16,7 @@ export function HamburgerIcon(props) {
     // show modal
     const modalClick = () => setShowModal(!showModal);
 
- // handle anchor
+    // handle anchor
     const handleClick = (e) => {
         setAnchorEle(e.currentTarget);
     }
@@ -38,9 +38,9 @@ export function HamburgerIcon(props) {
                 open={open}
                 onClose={handleClose}
             >
-                <MenuItem id='community' onClick={handleClose}>Community</MenuItem>
-                <MenuItem id='about' onClick={handleClose}>About Bitverse</MenuItem>
+                <MenuItem id='clients' onClick={handleClose}>Clients</MenuItem>
                 <MenuItem id='organization' onClick={handleClose}>Organization</MenuItem>
+                <MenuItem id='about' onClick={handleClose}>About Bitverse</MenuItem>
             </Menu>
             <summary className='hamburger-icon--container'>
                 <div className='hamburger-icon--bar1'></div>
@@ -64,24 +64,6 @@ export function HamburgerIcon(props) {
                         }
                     </li>
                 ))}
-
-                {/* {navListArr.map((item)=>{
-                    if(item.navItem === 'PRODUCTS'){
-                        return(
-                            <li className='hamburger-icon--nav-item' onClick={() => props.scrollToSection('section1', item.pathUrl, navigate)}>
-                                <Link to={item.pathUrl}><p>{item.navItem}</p></Link>
-                            </li>
-                        )
-                    }else{
-                        return(
-                            <Link to={item.pathUrl}>
-                                <li className='hamburger-icon--nav-item'>
-                                    <p>{item.navItem}</p>
-                                </li>
-                            </Link>
-                        )
-                    }
-                })} */}
             </ul>
         </div>
     );

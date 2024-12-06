@@ -1,0 +1,239 @@
+#softwaredev-service-outer-container {
+  height: auto;
+  width: 100%;
+  padding-top: 150px;
+
+  #softwaredev-service-inner-container {
+    height: auto;
+    width: 100%;
+    
+    #softwaredev-header-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      
+      #softwaredev-header {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #282828;
+        
+        #section-one-featMsg {
+          font-size: 1.4rem;
+          font-family: 'poppins', sans-serif;
+          opacity: 0.8;
+        }
+  
+        #section-one-title {
+          width: 70%;
+          font-size: 3.1rem;
+          font-family: 'poppins-semibold', sans-serif;
+          line-height: 50px ;
+          text-align: center;
+        }
+  
+        #section-one-desc {
+          font-size: 1.2rem;
+          font-family: 'poppins', sans-serif;
+          opacity: 0.8;
+        }
+      }
+
+    } 
+
+    #softwaredev-outer-bg {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      #softwaredev-inner-bg {
+        background: linear-gradient(to right, #4DA4FC, #CD65E3);
+        border-radius: 25px;
+        width: 90%;
+        margin-bottom: 50px;
+
+        #section-one {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 150px;
+    
+    
+          #section-one-container-two {
+            height: 400px;
+            width: 95%;
+            
+            position: relative;
+    
+            #section-one-inner-container-two {
+              height: 400px;
+              width: 100%;
+              position: absolute;
+              top: -70px;
+              left: 50%;
+              transform: translate(-50%);
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 20px;
+    
+              #item-one {
+                height: 100%;
+              }
+    
+              #item-two {
+                height: auto;
+                width: 250px;
+                padding: 70px 30px 50px 30px;
+                background: rgba(255, 255, 255, 0.02);
+                backdrop-filter: blur(8px);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                #item-two-number {
+                  font-family: 'poppins-semibold', sans-serif;
+                  font-size: 3rem;
+                }
+    
+                #item-two-text {
+                  font-family: 'poppins', sans-serif;
+                  font-size: 1.1rem;
+                  text-align: start;
+                }
+              }
+    
+              #item-three {
+                height: 100%;
+              }
+    
+              #item-four {
+                height: auto;
+                width: 250px;
+                padding: 80px 30px 70px 30px;
+                background: rgba(255, 255, 255, 0.02);
+                backdrop-filter: blur(8px);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+    
+                #item-four-img {
+                  height: 70px;
+                  width: 70px;
+                }
+    
+                #item-four-number {
+                  font-family: 'poppins-semibold', sans-serif;
+                  font-size: 3rem;
+                }
+    
+                #item-four-text {
+                  font-family: 'poppins', sans-serif;
+                  font-size: 1.1rem;
+                  text-align: start;
+                }
+              }
+            }
+         }
+        }
+    
+        #section-two {
+          padding-top: 70px;
+          color: #282828;
+          padding-bottom: 50px;
+          #section-two-container-one {
+            height: auto;
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            #section-two-header-container {
+              width: 60%;
+              text-align: center;
+              #section-two-header-title {
+                font-family: 'poppins-semibold', sans-serif;
+                font-size: 3rem;
+                line-height: 50px;
+                margin-bottom: 15px;
+              }
+    
+              #section-two-header-desc {
+                font-family: 'poppins', sans-serif;
+                font-size: 1.1rem;
+                opacity: 0.8;
+              }
+            }
+          }
+    
+          #section-two-container-two {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+    
+            .section-two-container-two-item {
+              height: 400px;
+              width: 350px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              color: #282828;
+              text-align: center;
+              padding: 50px 20px;
+              gap: 15px;
+              background: rgba(255, 255, 255, 0.2);
+              backdrop-filter: blur(8px);
+              box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+              border-radius: 25px;
+              cursor: pointer;
+              // color: #f7f7f7;
+    
+              .softwareDev-item-img {
+                height: 100px;
+              }
+    
+              .softwareDev-item-title {
+                font-family: 'poppins-semibold', sans-serif;
+                font-size: 1.8rem;
+              }
+    
+              .softwareDev-item-desc {
+                font-family: 'poppins', sans-serif;
+                font-size: 1rem;
+                opacity: 0.8;
+              }
+            }
+    
+          }
+        }
+      }
+    }
+
+
+    #section-three {
+
+    }
+  }
+}
