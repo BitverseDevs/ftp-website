@@ -21,8 +21,9 @@ import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import TeamV2 from "pages/teamV2/TeamV2";
 import RealContactUs from "pages/realContactUs/RealContactUs";
-import HRISServices from "pages/hrisServices/HRISServices";
-import SoftwareDevService from "pages/softwareDevService/SoftwareDevService";
+import HRISServices from "pages/services/hrisServices/HRISServices";
+import SoftwareDevService from "pages/services/softwareDevService/SoftwareDevService";
+import WebDevService from "pages/services/webDevService/WebDevService";
 import 'fonts/fonts.scss';
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
                 <Route path='/contact-us' element={<ContactUs />}/>
                 <Route path='/hris-service' element={<HRISServices />}/>
                 <Route path='/software-dev-service' element={<SoftwareDevService />}/>
+                <Route path='/web-dev-service' element={<WebDevService portfolio={websitePortfolioList} />}/>
                 <Route path='/clients' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
                 <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
                 <Route path='/real-contact-us' element={<RealContactUs />}/>

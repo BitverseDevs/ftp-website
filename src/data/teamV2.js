@@ -26,8 +26,8 @@ export const teamData = [
     // 2
     key: 'AlbertPagaduan',
     fullName: 'Albert Pagaduan',
-    content: "As a Lead Software Engineer and Project Manager, he excels in steering complex projects from conception through to delivery while ensuring the highest standards of software development. His dual expertise in software engineering and project management allows him to effectively bridge the gap between technical teams and project objectives. He brings extensive experience in leading development teams, designing and implementing scalable software solutions, and managing project timelines and budgets. His proficiency in modern technologies and methodologies, such as Agile and Scrum, enables him to drive projects efficiently and adapt to evolving requirements. He is skilled in coordinating with stakeholders, defining project scopes, and managing risks to ensure that deliverables meet quality standards and align with business goals. His leadership and communication skills help foster collaboration, motivate team members, and resolve issues, ensuring that projects are completed on time and within scope.",
-    position: 'Lead Developer / Project Manager',
+    content: "As a Project Manager, he excels in steering complex projects from conception to delivery, ensuring the highest standards of software development. His dual expertise in software engineering and project management allows him to bridge the gap between technical teams and project objectives. He is proficient in modern technologies and methodologies like Agile and Scrum, and is skilled in coordinating with stakeholders, defining project scopes, and managing risks to meet quality standards and business goals. His strong leadership and communication skills foster collaboration, motivate team members, and ensure projects are completed on time and within scope.",
+    position: 'Project Manager',
     imgURL: '/assets/rev.jfif',
     fbUrl: 'https://www.facebook.com/',
     twitterURL: 'https://twitter.com/',

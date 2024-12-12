@@ -16,7 +16,7 @@ export function FooterV1(props) {
     return (
         <React.Fragment>
             <section className='footer-section--bg-overlay'>
-                <section className={'footer-section--wrap'}>
+                <section className='footer-section--wrap'>
                     {footerList.map(({title, items, desc}, index) => (
                         <div className="footer-section--item-container">
                             <div className="footer-section--item-header">

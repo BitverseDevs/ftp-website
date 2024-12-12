@@ -17,23 +17,23 @@ const ServicesFeatures = ({header, list}) => {
           <div id="accordion-outer-container">
             {list.map(({id, items}) => (
               <div key={id} className='accordion-inner-container'>
-                  {items.map(({id, question, answer, icon}) => (
-                    <Accordion key={id} className='accordion-container'>
-                      <AccordionSummary 
-                        className='accordion-summary'
-                        expandIcon={ <img className='expandIcon' src={icon} alt='expand icon' /> }
-                      >
-                        <Typography className='accordion-question' variant='h6'>
-                          {question}
-                        </Typography>
-                      </AccordionSummary>
+                {items.map(({id, question, answer, icon}) => (
+                  <Accordion key={id} className='accordion-container'>
+                    <AccordionSummary 
+                      className='accordion-summary'
+                      expandIcon={ <img className='expandIcon' src={icon} alt='expand icon' /> }
+                    >
+                      <Typography className='accordion-question' variant='h6'>
+                        {question}
+                      </Typography>
+                    </AccordionSummary>
 
-                      <AccordionDetails className='accordion-details'>
-                        <Typography className='accordion-answer' variant='h6'>
-                          {answer}
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
+                    <AccordionDetails className='accordion-details'>
+                      <Typography className='accordion-answer' variant='h6'>
+                        {answer}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
                 ))}
               </div>
             ))}
