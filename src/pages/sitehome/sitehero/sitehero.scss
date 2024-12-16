@@ -30,7 +30,7 @@
         align-items: center;
 
         .hero-left-content{
-            width: 60%;
+            width: 80%;
             font-family: 'Poppins-Bold', sans-serif;
             color: #282828;
             height: 100%;
@@ -266,6 +266,7 @@
         padding-top: 170px;
         .hero-container {
             .hero-left-content {
+                width: 70%;
                 .hero-left-content-wrap {
                     .hero-left-content-title {
                         font-size: 3.2rem;
@@ -356,8 +357,10 @@
                 width: 70%;
                 .hero-left-content-wrap {
                     .hero-left-content-title {
-                        font-size: 2.2rem;
+                        width: 90%;
+                        font-size: 2.5rem;
                         letter-spacing: 0;
+                        line-height: 40px;
                     }
                     .hero-left-content-desc {
                         width: 80%;
@@ -453,8 +456,10 @@
                 width: 80%;
                 .hero-left-content-wrap {
                     .hero-left-content-title {
+                        width: 90%;
                         font-size: 2.1rem;
                         letter-spacing: 0;
+                        line-height: 40px;
                     }
                     .hero-left-content-desc {
                         width: 75%;
@@ -732,6 +737,7 @@
                 .hero-left-content-wrap {
                     .hero-left-content-title {
                         font-size: 1.9rem;
+                        line-height: 40px;
                     }
                     .hero-left-content-desc {
                         width: 90%;
@@ -741,12 +747,13 @@
             }
 
             .hero-right-content {
-                height: 400px;
-                margin-top: 70px;
+                height: auto;
+                margin-top: 20px;
+                padding-top: 50px;
                 #hero-right-img-container {
                     width: 100%;
                     #blobTwo {
-                        height: 500px;
+                        height: 100%;
                         width: 100%;
                     }
 
@@ -799,11 +806,6 @@
                 margin-top: 20px;
                 #hero-right-img-container {
                     width: 100%;
-                    #blobTwo {
-                        height: 300px;
-                        width: 100%;
-                    }
-
                     #hero-img-one {
 
                     }

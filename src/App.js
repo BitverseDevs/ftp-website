@@ -15,6 +15,7 @@ import { websitePortfolioList } from "data/sitehome";
 import { BrowserRouter, Route, Routes, Navigate, HashRouter } from "react-router-dom";
 import ScrollToTop from "hoc/scrolltotop";
 import useScrollToRef from "custom-hooks/use-scroll-to-ref/use-scroll-to-ref";
+import ServiceOffering from "pages/serviceOffering/ServiceOffering";
 import ProductsAndServices from "pages/products&services/ProductsAndServices";
 import HighlightDetail from "pages/highlights details/HighlightDetail";
 import { LocalizationProvider } from "@mui/x-date-pickers";
@@ -50,7 +51,7 @@ function App() {
             <ScrollToTop>
               <Routes>
                 <Route path='/' element={<Main scrollRefs={section1Ref}/>} />
-                <Route path='/products&services' element={<ProductsAndServices/>} />
+                <Route path='/services' element={<ServiceOffering />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/highlight/:highlightId' element={<HighlightDetail />}/>
                 <Route path='/contact-us' element={<ContactUs />}/>

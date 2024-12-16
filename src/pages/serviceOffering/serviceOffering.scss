@@ -1,0 +1,421 @@
+#serviceOffering-outer-container {
+  height: auto;
+  padding-top: 120px;
+  animation: faded 1s ease-in-out forwards;
+
+  #serviceOffering-inner-container {
+    #section-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      #section-header {
+        height: 200px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #featMsg {
+          font-family: 'poppins', sans-serif;
+          font-size: 1.2rem;
+          opacity: 0.8;
+        }
+
+        #title {
+          font-family: 'poppins-semibold', sans-serif;
+          font-size: 3.5rem;
+          letter-spacing: 2px;
+        }
+      }
+
+      #section-body {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+
+        #floater {
+          height: 200px;
+          width: 95%;
+          background: linear-gradient(to right, #4DA4FC, #CD65E3);
+          opacity: 0.4;
+          position: absolute;
+          bottom: -150px;
+          border-radius: 25px;
+        }
+
+        .item-container {
+          height: 450px;
+          width: 400px;
+          font-family: 'poppins', sans-serif;
+          background: rgba(255, 255, 255, 0.02);
+          backdrop-filter: blur(8px);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          border-radius: 25px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          padding: 0 30px;
+          transition: all 1s linear;
+
+          .item-icon {
+            height: 60px;
+          }
+
+          &:hover {
+            background: rgba(255, 255, 255, 1);
+          }
+
+          .item-title {
+            font-size: 2.2rem;
+            line-height: 40px;
+          }
+
+          .item-desc {
+            font-size: 1.1rem;
+          } 
+
+          .item-CTA {
+            height: 50px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4DA4FC;
+            // background: linear-gradient(to right, #4DA4FC, #CD65E3);
+            border-radius: 25px;
+            color: #F7F7F7;
+            cursor: pointer;
+
+            &:hover {
+              
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes faded {
+  from{
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+// LFG
+@media only screen and (min-width: 320px) and (max-width: 460px) {
+  #serviceOffering-outer-container {
+    padding-top: 100px;
+
+    #serviceOffering-inner-container {
+      #section-one {
+        margin-bottom: 50px;
+        #section-header {
+          height: 150px;
+          #featMsg {
+            font-size: 0.7rem;
+          }
+  
+          #title {
+            font-size: 1.5rem;
+          }
+        }
+  
+        #section-body {
+          gap: 15px;
+          flex-direction: column;
+
+          #floater {
+            display: none;
+          }
+  
+          .item-container {
+            height: auto;
+            width: 90%;
+            padding: 20px;
+            gap: 10px;
+
+            .item-icon {
+              height: 30px;
+            }
+
+            .item-title {
+              font-size: 1.2rem;
+              line-height: 30px;
+            }
+  
+            .item-desc {
+              font-size: 0.7rem;
+            } 
+  
+            .item-CTA {
+              height: 35px;
+              width: 150px;
+              border-radius: 15px;
+              font-size: 0.8rem;
+              &:hover {
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 650px) {
+  #serviceOffering-outer-container {
+    padding-top: 100px;
+
+    #serviceOffering-inner-container {
+      #section-one {
+        margin-bottom: 50px;
+        #section-header {
+          height: 150px;
+          #featMsg {
+            font-size: 0.8rem;
+          }
+  
+          #title {
+            font-size: 2rem;
+          }
+        }
+  
+        #section-body {
+          gap: 20px;
+          flex-direction: column;
+
+          #floater {
+            display: none;
+          }
+  
+          .item-container {
+            height: auto;
+            width: 90%;
+            padding: 20px;
+            gap: 10px;
+
+            .item-icon {
+              height: 35px;
+            }
+
+            .item-title {
+              font-size: 1.5rem;
+              line-height: 35px;
+            }
+  
+            .item-desc {
+              font-size: 0.7rem;
+            } 
+  
+            .item-CTA {
+              height: 40px;
+              width: 160px;
+              border-radius: 25px;
+              font-size: 0.9rem;
+              &:hover {
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  #serviceOffering-outer-container {
+    padding-top: 120px;
+
+    #serviceOffering-inner-container {
+      #section-one {
+        margin-bottom: 50px;
+        #section-header {
+          #featMsg {
+            font-size: 0.9rem;
+          }
+  
+          #title {
+            font-size: 2.2rem;
+          }
+        }
+  
+        #section-body {
+          gap: 12px;
+          
+          #floater {
+            height: 160px;
+            width: 100%;
+            bottom: -130px;
+            border-radius: 0;
+          }
+  
+          .item-container {
+            height: 330px;
+            width: 200px;
+            padding: 0 20px;
+
+            .item-icon {
+              height: 40px;
+            }
+
+            .item-title {
+              font-size: 1.5rem;
+              line-height: 35px;
+            }
+  
+            .item-desc {
+              font-size: 0.7rem;
+            } 
+  
+            .item-CTA {
+              height: 40px;
+              width: 160px;
+              border-radius: 25px;
+              font-size: 0.9rem;
+              &:hover {
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  #serviceOffering-outer-container {
+    padding-top: 120px;
+
+    #serviceOffering-inner-container {
+      #section-one {
+        margin-bottom: 50px;
+        #section-header {
+          #featMsg {
+            font-size: 1rem;
+          }
+  
+          #title {
+            font-size: 3rem;
+          }
+        }
+  
+        #section-body {
+          gap: 20px;
+          
+          #floater {
+            height: 180px;
+            bottom: -130px;
+          }
+  
+          .item-container {
+            height: 320px;
+            width: 280px;
+            padding: 0 20px;
+
+            .item-icon {
+              height: 45px;
+            }
+
+            .item-title {
+              font-size: 1.7rem;
+              line-height: 35px;
+            }
+  
+            .item-desc {
+              font-size: 0.8rem;
+            } 
+  
+            .item-CTA {
+              height: 50px;
+              width: 200px;
+              border-radius: 25px;
+              font-size: 1.1rem;
+              &:hover {
+                
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  #serviceOffering-outer-container {
+    padding-top: 120px;
+
+    #serviceOffering-inner-container {
+      #section-one {
+        margin-bottom: 50px;
+        #section-header {
+          #featMsg {
+            font-size: 1.2rem;
+          }
+  
+          #title {
+            font-size: 3.3rem;
+          }
+        }
+  
+        #section-body {
+          gap: 40px;
+          
+          #floater {
+            height: 180px;
+            bottom: -130px;
+          }
+  
+          .item-container {
+            height: 400px;
+            width: 350px;
+            padding: 0 30px;
+
+            .item-icon {
+              height: 50px;
+            }
+
+            .item-title {
+              font-size: 2rem;
+              line-height: 40px;
+            }
+  
+            .item-desc {
+              font-size: 1rem;
+            } 
+  
+            .item-CTA {
+              height: 50px;
+              width: 200px;
+              border-radius: 25px;
+              font-size: 1.1rem;
+              &:hover {
+                
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

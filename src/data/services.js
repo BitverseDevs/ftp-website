@@ -94,19 +94,19 @@ export const softwareDevItems = [
     id: 'item-one',
     title: 'Lorem ipsum Dolor',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo animi aut!',
-    iconName: '/assets/construction.png',
+    iconName: '/assets/software-dev-img-one.png',
   },
   {
     id: 'item-two',
     title: 'Lorem ipsum Dolor',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo animi aut!',
-    iconName: '/assets/construction.png',
+    iconName: '/assets/software-dev-img--two.png',
   },
   {
     id: 'item-three',
     title: 'Lorem ipsum Dolor',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo animi aut!',
-    iconName: '/assets/construction.png',
+    iconName: '/assets/software-dev-img-three.png',
   },
 ]
 

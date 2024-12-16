@@ -24,40 +24,8 @@ export const upperNavData = [
         key: 'und03',
         isButton: false,
         navItem: 'Services',
-        pathUrl: '/products&services',
+        pathUrl: '/services',
         hasList: true,
-        listNav: [
-            {
-                listKey: '',
-                listTitle: 'WAREHOUSE RECEIVING (WHSEAPP)',
-                listPathUrl: '',
-            },
-            {
-                listKey: '',
-                listTitle: 'BARANGGAY MANAGEMENT SYSTEM (BMS)',
-                listPathUrl: '',
-            },
-            {
-                listKey: '',
-                listTitle: 'KIOSK SOFTWARE (BIT-KIOSK)',
-                listPathUrl: '',
-            },
-            {
-                listKey: '',
-                listTitle: 'CONTACT TRACING',
-                listPathUrl: '',
-            },
-            {
-                listKey: '',
-                listTitle: 'PO TRACKING SYSTEM',
-                listPathUrl: '',
-            },
-            {
-                listKey: '',
-                listTitle: 'CARGO IMPORTING (BIT-CARGO)',
-                listPathUrl: '',
-            }
-        ], 
     },
     // {
     //     key: 'und04',

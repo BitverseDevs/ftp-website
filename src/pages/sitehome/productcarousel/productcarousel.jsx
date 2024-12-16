@@ -67,9 +67,9 @@ export const ProductCarousel = () => {
                 <figcaption className='product-carousel--container-caption'>
                     <SectionTitleV2 fromWhere='productCarousel' featMsg={product.sectionTitle.featMsg} title={product.sectionTitle.title} desc={product.sectionTitle.desc}/>
                     <Link to={'/contact-us'}>
-                        <button className='hero-left-content-action-item-call'>
+                        {/* <button className='hero-left-content-action-item-call'>
                                 {product.srcTitle}
-                        </button>
+                        </button> */}
                         {/* <ButtonStyleV1 label={product.srcTitle}/> */}
                     </Link>
                 </figcaption>

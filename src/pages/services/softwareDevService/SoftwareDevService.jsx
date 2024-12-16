@@ -10,13 +10,14 @@ const SoftwareDevService = () => {
       <div id="softwaredev-service-inner-container">
         <div id="softwaredev-header-container">
           <div id="softwaredev-header">
-            <div id="section-one-featMsg">Our Services</div>
-            <div id="section-one-title">Tailored Software Solutions for Your Business Needs</div>
-            <div id="section-one-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ea qui accusantium.</div>
+            <div id="header-featMsg">Our Services</div>
+            <div id="header-title">Tailored Software Solutions for Your Business Needs</div>
+            <div id="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ea qui accusantium.</div>
           </div>
         </div>
 
         <div id="softwaredev-outer-bg">
+          <div id="floater"></div>
           <div id="softwaredev-inner-bg">
             <div id="section-one">
               <div id="section-one-container-two">
@@ -55,7 +56,6 @@ const SoftwareDevService = () => {
             </div>
           </div>
         </div>
-        <div id="section-three"></div>
       </div>
       <ServicesFeatures header={softwareDevTexts} list={softwareDevFeatureList} />
       <ContactUsV2 contactV2Info={softwareDevCTAV2Info} />

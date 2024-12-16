@@ -26,21 +26,21 @@
         gap: 10px;
         color: #282828;
         
-        #section-one-featMsg {
+        #header-featMsg {
           font-size: 1.4rem;
           font-family: 'poppins', sans-serif;
           opacity: 0.8;
         }
   
-        #section-one-title {
+        #header-title {
           width: 70%;
-          font-size: 3.1rem;
+          font-size: 3.5rem;
           font-family: 'poppins-semibold', sans-serif;
-          line-height: 50px ;
+          line-height: 50px;
           text-align: center;
         }
   
-        #section-one-desc {
+        #header-desc {
           font-size: 1.2rem;
           font-family: 'poppins', sans-serif;
           opacity: 0.8;
@@ -55,6 +55,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+
+      #floater {
+        height: 250px;
+        width: 90%;
+        display: none;
+        position: absolute;
+        background: linear-gradient(to right, #4DA4FC, #CD65E3);
+        border-radius: 20px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+      }
       
       #softwaredev-inner-bg {
         background: linear-gradient(to right, #4DA4FC, #CD65E3);
@@ -70,11 +83,9 @@
           text-align: center;
           gap: 150px;
     
-    
           #section-one-container-two {
             height: 400px;
             width: 95%;
-            
             position: relative;
     
             #section-one-inner-container-two {
@@ -171,8 +182,8 @@
               text-align: center;
               #section-two-header-title {
                 font-family: 'poppins-semibold', sans-serif;
-                font-size: 3rem;
-                line-height: 50px;
+                font-size: 3.5rem;
+                line-height: 60px;
                 margin-bottom: 15px;
               }
     
@@ -208,7 +219,6 @@
               box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
               border-radius: 25px;
               cursor: pointer;
-              // color: #f7f7f7;
     
               .softwareDev-item-img {
                 height: 100px;
@@ -234,6 +244,575 @@
 
     #section-three {
 
+    }
+  }
+}
+
+// LFG
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  #softwaredev-service-outer-container {
+    #softwaredev-service-inner-container {
+
+      #softwaredev-header-container {
+        #softwaredev-header {
+          #header-featMsg {
+            font-size: 0.7rem;
+          }
+
+          #header-title {
+            width: 85%;
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+
+          #header-desc {
+            text-align: center;
+            width: 70%;
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      #softwaredev-outer-bg {
+        #floater {
+          height: 250px;
+          width: 100%;
+          border-radius: 0;
+          display: block;
+        }
+
+        #softwaredev-inner-bg {
+          background: none;
+          #section-one {
+            #section-one-container-two {
+              height: 250px;
+              #section-one-inner-container-two {
+                gap: 10px;
+                #item-one {
+                  display: none;
+                }
+                #item-two {
+                  padding: 30px 15px 25px 15px;
+                  #item-two-number {
+                    font-size: 1.3rem;
+                  }
+
+                  #item-two-text {
+                    font-size: 0.8rem;
+                  }
+                }
+
+                #item-three {
+                  display: none;
+                }
+
+                #item-four {
+                  padding: 70px 15px 30px 15px;
+                  #item-four-img {
+                    height: 25px;
+                    width: 25px;
+                  }
+
+                  #item-four-number {
+                    font-size: 1.3rem;
+                  }
+
+                  #item-four-text {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+
+          #section-two {
+            padding-top: 60px;
+            #section-two-container-one {
+              padding: 0;
+              #section-two-header-container {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                #section-two-header-title {
+                  font-size: 1.5rem;
+                  line-height: 30px;
+                }
+
+                #section-two-header-desc {
+                  font-size: 0.7rem;
+                  width: 80%;
+                }
+              }
+            }
+
+            #section-two-container-two {
+              gap: 15px;
+              padding: 15px;
+              flex-direction: column;
+              .section-two-container-two-item {
+                height: 200px;
+                width: 300px;
+                padding: 30px 50px;
+                gap: 10px;
+                .softwareDev-item-img {
+                  height: 50px;
+                } 
+
+                .softwareDev-item-title {
+                  font-size: 1.1rem;
+                }
+
+                .softwareDev-item-desc {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 650px) {
+  #softwaredev-service-outer-container {
+    #softwaredev-service-inner-container {
+
+      #softwaredev-header-container {
+        #softwaredev-header {
+          #header-featMsg {
+            font-size: 0.8rem;
+          }
+
+          #header-title {
+            width: 90%;
+            font-size: 2rem;
+            line-height: 40px;
+          }
+
+          #header-desc {
+            text-align: center;
+            width: 70%;
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      #softwaredev-outer-bg {
+        #floater {
+          display: block;
+          height: 250px;
+          width: 100%;
+          border-radius: 0;
+        }
+
+        #softwaredev-inner-bg {
+          background: none;
+          #section-one {
+            #section-one-container-two {
+              height: 250px;
+              #section-one-inner-container-two {
+                gap: 10px;
+                #item-one {
+                  display: none;
+                }
+                #item-two {
+                  padding: 30px 15px 25px 15px;
+                  #item-two-number {
+                    font-size: 2.1rem;
+                  }
+
+                  #item-two-text {
+                    font-size: 0.9rem;
+                  }
+                }
+
+                #item-three {
+                  display: none;
+                }
+
+                #item-four {
+                  padding: 70px 15px 30px 15px;
+                  #item-four-img {
+                    height: 50px;
+                    width: 50px;
+                  }
+
+                  #item-four-number {
+                    font-size: 2.1rem;
+                  }
+
+                  #item-four-text {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+
+          #section-two {
+            padding-top: 60px;
+            #section-two-container-one {
+              padding: 0;
+              #section-two-header-container {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                #section-two-header-title {
+                  font-size: 2rem;
+                  line-height: 40px;
+                }
+
+                #section-two-header-desc {
+                  font-size: 0.7rem;
+                  width: 80%;
+                }
+              }
+            }
+
+            #section-two-container-two {
+              gap: 15px;
+              padding: 15px;
+              flex-direction: column;
+              .section-two-container-two-item {
+                height: 200px;
+                width: 400px;
+                padding: 30px 50px;
+                .softwareDev-item-img {
+                  height: 50px;
+                } 
+
+                .softwareDev-item-title {
+                  font-size: 1.1rem;
+                }
+
+                .softwareDev-item-desc {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 950px) {
+  #softwaredev-service-outer-container {
+    #softwaredev-service-inner-container {
+
+      #softwaredev-header-container {
+        #softwaredev-header {
+          #header-featMsg {
+            font-size: 0.9rem;
+          }
+
+          #header-title {
+            font-size: 2.2rem;
+            line-height: 45px;
+          }
+
+          #header-desc {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      #softwaredev-outer-bg {
+        #softwaredev-inner-bg {
+          #section-one {
+            #section-one-container-two {
+              height: 280px;
+              #section-one-inner-container-two {
+                gap: 10px;
+                #item-one {
+                  display: none;
+                }
+                #item-two {
+                  padding: 50px 20px 35px 20px;
+                  #item-two-number {
+                    font-size: 2.1rem;
+                  }
+
+                  #item-two-text {
+                    font-size: 0.9rem;
+                  }
+                }
+
+                #item-three {
+                  height: 50%;
+                }
+
+                #item-four {
+                  padding: 60px 20px 50px 20px;
+                  #item-four-img {
+                    height: 50px;
+                    width: 50px;
+                  }
+
+                  #item-four-number {
+                    font-size: 2.1rem;
+                  }
+
+                  #item-four-text {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+
+          #section-two {
+            padding-top: 0px;
+            #section-two-container-one {
+              #section-two-header-container {
+                width: 80%;
+                #section-two-header-title {
+                  font-size: 2.2rem;
+                  line-height: 45px;
+                }
+
+                #section-two-header-desc {
+                  font-size: 0.7rem;
+                }
+              }
+            }
+
+            #section-two-container-two {
+              gap: 15px;
+              padding: 15px;
+              .section-two-container-two-item {
+                height: 230px;
+                width: 200px;
+                padding: 30px 5px;
+                .softwareDev-item-img {
+                  height: 50px;
+                } 
+
+                .softwareDev-item-title {
+                  font-size: 1.1rem;
+                }
+
+                .softwareDev-item-desc {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1200px) {
+  #softwaredev-service-outer-container {
+    #softwaredev-service-inner-container {
+
+      #softwaredev-header-container {
+        #softwaredev-header {
+          #header-featMsg {
+            font-size: 1.1rem;
+          }
+
+          #header-title {
+            font-size: 3rem;
+          }
+
+          #header-desc {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      #softwaredev-outer-bg {
+        #softwaredev-inner-bg {
+          #section-one {
+            #section-one-container-two {
+              height: 320px;
+              #section-one-inner-container-two {
+                gap: 10px;
+                #item-one {
+                  height: 70%;
+                }
+                #item-two {
+                  padding: 60px 25px 40px 25px;
+                  #item-two-number {
+                    font-size: 2.2rem;
+                  }
+
+                  #item-two-text {
+                    font-size: 1rem;
+                  }
+                }
+
+                #item-three {
+                  height: 60%;
+                }
+
+                #item-four {
+                  padding: 70px 25px 60px 25px;
+                  #item-four-img {
+                    height: 50px;
+                    width: 50px;
+                  }
+
+                  #item-four-number {
+                    font-size: 2.2rem;
+                  }
+
+                  #item-four-text {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+
+          #section-two {
+            padding-top: 40px;
+            #section-two-container-one {
+              #section-two-header-container {
+                width: 70%;
+                #section-two-header-title {
+                  font-size: 3rem;
+                }
+
+                #section-two-header-desc {
+                  font-size: 1rem;
+                }
+              }
+            }
+
+            #section-two-container-two {
+              gap: 30px;
+              .section-two-container-two-item {
+                height: 300px;
+                width: 280px;
+                padding: 40px 20px;
+                .softwareDev-item-img {
+                  height: 70px;
+                } 
+
+                .softwareDev-item-title {
+                  font-size: 1.4rem;
+                }
+
+                .softwareDev-item-desc {
+                  font-size: 0.9rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  #softwaredev-service-outer-container {
+    #softwaredev-service-inner-container {
+
+      #softwaredev-header-container {
+        #softwaredev-header {
+          #header-featMsg {
+            font-size: 1.2rem;
+          }
+
+          #header-title {
+            font-size: 3.3rem;
+          }
+
+          #header-desc {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      #softwaredev-outer-bg {
+        #softwaredev-inner-bg {
+          #section-one {
+            #section-one-container-two {
+              height: 350px;
+              #section-one-inner-container-two {
+                #item-one {
+                  height: 80%;
+                }
+                #item-two {
+                  padding: 60px 25px 40px 25px;
+                  #item-two-number {
+                    font-size: 2.5rem;
+                  }
+
+                  #item-two-text {
+                    font-size: 1rem;
+                  }
+                }
+
+                #item-three {
+                  height: 80%;
+                }
+
+                #item-four {
+                  padding: 70px 25px 60px 25px;
+                  #item-four-img {
+                    height: 55px;
+                    width: 55px;
+                  }
+
+                  #item-four-number {
+                    font-size: 2.5rem;
+                  }
+
+                  #item-four-text {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+
+          #section-two {
+            padding-top: 50px;
+            #section-two-container-one {
+              #section-two-header-container {
+                #section-two-header-title {
+                  font-size: 3.3rem;
+                }
+
+                #section-two-header-desc {
+                  font-size: 1rem;
+                }
+              }
+            }
+
+            #section-two-container-two {
+              gap: 50px;
+              .section-two-container-two-item {
+                height: 320px;
+                width: 300px;
+                padding: 40px 20px;
+                .softwareDev-item-img {
+                  height: 80px;
+                } 
+
+                .softwareDev-item-title {
+                  font-size: 1.6rem;
+                }
+
+                .softwareDev-item-desc {
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

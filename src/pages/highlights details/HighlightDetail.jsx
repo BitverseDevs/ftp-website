@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { highlightsItems, highlightHRDetail } from "data/sitehome";
 import FAQ from "pages/sitehome/faq/FAQ";
 import ContactUsV2 from "pages/contactUsV2/ContactUsV2";
+import ScrollAnimation from "react-animate-on-scroll";
 import './highlightdetail.scss';
 
 const HighlightDetail = () => {
@@ -44,6 +45,8 @@ const HighlightDetail = () => {
                 }>
                   
                   {/* IMAGE CONTAINERRRR */}
+                  <ScrollAnimation duration={1} animateOnce={true} animateIn='slideInUp'>
+                    
                   <div 
                     className={id === 'more-info-one' ? 
                       'highlightDetail-more-info-section-img-container' 
@@ -53,7 +56,6 @@ const HighlightDetail = () => {
                       : 
                         'highlightDetail-more-info-section-img-container highlightDetail-more-info-section-img-container-style-two'
                   }>
-
                     {id == 'more-info-one' ?
                       <>
                           <img className="highlightDetail-more-info-section-img-six" src={imageSix} alt={alt} draggable={false} />
@@ -112,6 +114,7 @@ const HighlightDetail = () => {
                     : ''}
 
                   </div>
+                  </ScrollAnimation>
 
                   <div key={id} className="highlightDetail-more-info-section-header">
                     <div className="highlightDetail-more-info-section-title">
@@ -121,6 +124,7 @@ const HighlightDetail = () => {
                       <div key={index} className="highlightDetail-more-info-section-featMsg">{msg}</div>
                     ))}
                   </div>
+
                 </div>
 
                 {id === 'more-info-one' || highlight_id === 'highlight-one' && id == 'more-info-two' ? 

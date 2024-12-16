@@ -333,6 +333,7 @@
           background: linear-gradient(to right, #4DA4FC, #CD65E3);
           position: absolute;
           bottom: -200px;
+          opacity: 40%;
         }
 
         .section-two-container-two-item {
@@ -558,6 +559,7 @@
           }
 
           #section-one-title {
+            width: 90%;
             font-size: 2rem;
             line-height: 40px;
           }
@@ -661,7 +663,7 @@
         #section-two-container-one {
           padding: 20px;
           #section-two-header-container {
-            width: 80%;
+            width: 95%;
             #section-two-header-title {
               font-size: 2rem;
               line-height: 40px;

@@ -48,7 +48,7 @@ const WebDevService = ({ portfolio }) => {
               {portfolio.map(({ id, src, alt, srcLink }) => (
                 <li className='website-portfolio--figure-wraps' key={id}>
                   <div className='website-portfolio--figure-desc'>
-                  <p className='website-portfolio--figure-title'>{alt}</p>
+                    <p className='website-portfolio--figure-title'>{alt}</p>
                     <button className='website-portfolio--figure-button'>
                       <a href={srcLink} target={'_blank'}>
                         {'Visit Website'}
@@ -102,10 +102,6 @@ const WebDevService = ({ portfolio }) => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div id="section-four">
-
         </div>
 
         <ContactUsV2 contactV2Info={webDevServiceCTAInfo} />

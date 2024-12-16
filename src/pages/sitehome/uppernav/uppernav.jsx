@@ -59,6 +59,7 @@ export function Uppernav(props) {
                 <Link to={'/'}>
                     <div className='uppernav-logo'>
                         <img src='/assets/bitverse-logo.png' alt='logo'/>
+                        <img id='bitverseLogoHamburger' src='/assets/bitverse-hamburger.jpg' alt='logo'/>
                     </div>
                 </Link>
                 <ul className='uppernav-navItems'>

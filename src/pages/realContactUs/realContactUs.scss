@@ -2,6 +2,7 @@
   height: auto;
   width: 100%;
   padding: 100px 0 0 0;
+  animation: faded 1s ease-in-out forwards;
 
   #contact-us-inner-container {
     height: auto;
@@ -168,5 +169,14 @@
     }
 
   
+  }
+}
+
+@keyframes faded {
+  from{
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
   }
 }

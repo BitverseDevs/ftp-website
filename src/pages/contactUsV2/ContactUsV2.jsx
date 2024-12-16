@@ -19,7 +19,7 @@ const ContactUsV2 = ({ contactV2Info }) => {
       />
       <div id="contactUsV2-inner-container">
         <div id="contactUsV2-title">{title}</div>
-        <div id='contactUsV2-CTA'onClick={modalClick} >{ctaContent}</div>
+        <div id='contactUsV2-CTA'onClick={modalClick}>{ctaContent}</div>
       </div>
     </div>
   )

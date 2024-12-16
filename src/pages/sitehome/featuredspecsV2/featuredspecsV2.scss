@@ -190,49 +190,7 @@
       #featuredspecsV2-container-one {
         flex-direction: column;
         gap: 10px;
-        
-        #featuredspecsV2-left-sectionn {
-          #featuredspecsV2-bubble-one {
-            height: 25px;
-            width: 25px;
-          }
-
-          #featuredspecsV2-left-section {
-            justify-content: center;
-            width: 100%;
-            #featuredspecs-featmsg {
-              font-size: 0.5rem;
-            }
-
-            #featuredspecs-title {
-              font-size: 0.7rem;
-              line-height: normal;
-            }
-          }
-        }
-
-        #featuredspecsV2-right-section {
-          width: 100%;
-          gap: 5px;
-          .featuredspecsV2-item {
-            box-shadow: 2px 2px 2px 1px rgba(75, 82, 247, 0.2);
-            font-size: 0.5rem;
-            padding: 5px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 450px) {
-  #featuredspecsV2-outer-container {
-    padding: 0;
-    margin-top: 20px;
-    #featuredspecsV2-inner-container {
-      #featuredspecsV2-container-one {
-        flex-direction: column;
-        gap: 10px;
+        margin-top: 20px;
         
         #featuredspecsV2-left-sectionn {
           #featuredspecsV2-bubble-one {
@@ -279,6 +237,7 @@
         width: 90%;
         padding: 0 0 0 5px;
         justify-content: center;
+        margin-top: 20px;
 
         #featuredspecsV2-left-sectionn {
           #featuredspecsV2-bubble-one {

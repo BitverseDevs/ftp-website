@@ -6,7 +6,9 @@ import './faq.scss';
 
 const FAQ = ({fromWhere, list}) => {
 
-  const {  title, featMsg } = faqHeaderDetails;
+  console.log(list);
+  
+  const { title, featMsg } = faqHeaderDetails;
 
   return (
     <div id='faq-outer-container'>
@@ -15,8 +17,8 @@ const FAQ = ({fromWhere, list}) => {
           <SectionTitle title={title} featMsg={featMsg} marginBottom={'75'}/>
           {faqList.map(({id, items}) => (
             <div key={id} className='accordion-inner-section'>
-                {items.map(({id, question, answer, icon}, index) => (
-                  <Accordion className='accordion-container'>
+                {items.map(({id, question, answer, icon}) => (
+                  <Accordion key={id} className='accordion-container'>
                     <AccordionSummary 
                       className='accordion-summary'
                       expandIcon={ <img className='expandIcon' src={icon} alt='expand icon' /> }
