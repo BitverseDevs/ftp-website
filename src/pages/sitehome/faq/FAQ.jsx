@@ -4,18 +4,16 @@ import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/
 import { faqList } from 'data/sitehome';
 import './faq.scss';
 
-const FAQ = ({fromWhere, list}) => {
+const FAQ = ({list, title, featMsg}) => {
 
-  console.log(list);
-  
-  const { title, featMsg } = faqHeaderDetails;
+  // const { title, featMsg } = faqHeaderDetails;
 
   return (
     <div id='faq-outer-container'>
       <div id="faq-inner-container">
         <div id="accordion-section">
           <SectionTitle title={title} featMsg={featMsg} marginBottom={'75'}/>
-          {faqList.map(({id, items}) => (
+          {list.map(({id, items}) => (
             <div key={id} className='accordion-inner-section'>
                 {items.map(({id, question, answer, icon}) => (
                   <Accordion key={id} className='accordion-container'>

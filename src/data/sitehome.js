@@ -442,6 +442,113 @@ export const highlightHRDetail = [
     }
 ]
 
+export const hrHighlightFAQTitle = {
+    featMsg: 'Frequently Asked Questions',
+    title: 'Everything You Need To Know About Bitverse HRIS'
+}
+
+export const hrHighlightQA = [
+    [
+        {
+            id: 'faq01',
+            items: [
+                {
+                    id: 'faq0101',
+                    question: 'Is it a free demo?',
+                    answer: 'Yes, Bitverse offers a free demo. We can do an online and on-site product demo. To get started, book a demo now.',
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0102',
+                    question: ' How is BIT-HR software different from other HR solutions?',
+                    answer: "Bitverse integrates many HR-related duties to improve and expedite human resource management. We maximize the system's capacity for providing solutions while integrating system upgrades and customization. Our software is adaptable and simple to use for managing a range of HR functions",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0103',
+                    question: 'How does Bitverse host their BIT-HR system?',
+                    answer: "The BIT HR system may be used on-premise or in cloud, depending on your company’s preference.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+            ]
+        },
+        {
+            id: 'faq02',
+            items: [
+                {
+            
+                    id: 'faq0201',
+                    question: 'Companies of what size can use BIT-HR software?',
+                    answer: "Bitverse HR software is suitable for companies of all sizes, from small businesses to large enterprises. It is designed to adapt to your company's needs and can scale to accommodate any changes or growth.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0202',
+                    question: 'Who has access to the system?',
+                    answer: "All employees and staff of a company have access to the system and can use it with their own account. Depending on their status or position, their level of access could differ. The lower a person's position, the fewer features they can utilize.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0203',
+                    question: 'How does the BIT HR implementation work?',
+                    answer: "The implementation of the BIT-HR system involves several steps: requirement gathering, system selection, customization, data migration, and training. Customization ensures the system meets specific business needs, integrates smoothly, and improves HR operational efficiency.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0204',
+                    question: 'Does BIT-HR have a mobile app and is it mobile compatible? ',
+                    answer: "BIT-HR does not have a dedicated mobile app, but the system is fully mobile-compatible and can be easily accessed through a web browser on mobile devices.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+            ]
+        }
+    ], 
+    [
+        {
+            id: 'faq01',
+            items: [
+                {
+                    id: 'faq0101',
+                    question: 'How does the BIT-HR payroll system work?',
+                    answer: "BIT-HR automatically generates payroll computations, including calculations for lateness, undertime, company deductions, and monthly payroll variables. This automation simplifies the payroll process and ensures accuracy.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0102',
+                    question: 'How do I process payroll in BIT-HR?',
+                    answer: "Processing payroll in BIT-HR is quick and easy with just three simple steps: Select the appropriate cutoff period, as coordinated with your company. Choose the employees to be included in the payroll. Apply any payroll deductions. Once these steps are completed, the system will automatically generate pay slips, which can be viewed or printed directly from within the system.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0103',
+                    question: 'Can employees access their own payroll information?',
+                    answer: "Yes, BIT-HR includes a feature that allows each employee to view their own pay slip and payroll details securely.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+            ]
+        },
+        {
+            id: 'faq02',
+            items: [
+                {
+            
+                    id: 'faq0201',
+                    question: 'Can I view the entire payroll history of an employee?',
+                    answer: "Yes, BIT-HR makes it easy to track the entire payroll history of an employee. Simply search by the employee's name, and all relevant payroll information, including past pay slips, will be displayed.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+                {
+                    id: 'faq0202',
+                    question: 'Can we customize the BIT-HR pay slip?',
+                    answer: "Yes, the BIT-HR pay slip is fully customizable. You can modify the pay slip layout, add additional content, and tailor it to meet your company’s specific needs, ensuring the payroll process is both effective and convenient.",
+                    icon: '/assets/arrowDown.svg',
+                }, 
+            ]
+        }
+
+    ]
+]
+
 export const serviceOfferingsHome = [
     {
         id: 'soh01',

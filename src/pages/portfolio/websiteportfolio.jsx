@@ -59,7 +59,7 @@ export function WebsitePortfolio(props) {
                 </ul>
             </section>
             <ContactUsV2 contactV2Info={clientCTAV2Info} />
-            <FAQ />
+            {/* <FAQ /> */}
         </React.Fragment>
     );
 }

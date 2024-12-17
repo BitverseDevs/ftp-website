@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { highlightsItems, highlightHRDetail } from "data/sitehome";
+import { highlightsItems, highlightHRDetail, hrHighlightFAQTitle, hrHighlightQA } from "data/sitehome";
 import FAQ from "pages/sitehome/faq/FAQ";
 import ContactUsV2 from "pages/contactUsV2/ContactUsV2";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -139,7 +139,7 @@ const HighlightDetail = () => {
 
         <ContactUsV2 contactV2Info={contactV2Info} />
       </div>
-      <FAQ />
+      <FAQ list={hrHighlightQA[highlightId]} title={hrHighlightFAQTitle.title} featMsg={hrHighlightFAQTitle.featMsg} />
     </div>
   )
 }

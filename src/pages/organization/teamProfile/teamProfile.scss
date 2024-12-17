@@ -136,7 +136,9 @@ height: 100%;
 
 #teamProfileHeader h1 {
     font-size: 3.5rem;
-    color: rgb(77,28,145);
+    background: linear-gradient(to right, #4A52F7, #4DA4FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #teamProfileHeader p {

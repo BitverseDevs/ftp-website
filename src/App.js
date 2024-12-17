@@ -25,6 +25,8 @@ import RealContactUs from "pages/realContactUs/RealContactUs";
 import HRISServices from "pages/services/hrisServices/HRISServices";
 import SoftwareDevService from "pages/services/softwareDevService/SoftwareDevService";
 import WebDevService from "pages/services/webDevService/WebDevService";
+import AboutV2 from "pages/aboutV2/AboutV2";
+import TeamV3 from "pages/teamV3/TeamV3";
 import 'fonts/fonts.scss';
 
 function App() {
@@ -52,7 +54,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<Main scrollRefs={section1Ref}/>} />
                 <Route path='/services' element={<ServiceOffering />} />
-                <Route path='/about' element={<About />} />
+                <Route path='/about' element={<AboutV2 />} />
                 <Route path='/highlight/:highlightId' element={<HighlightDetail />}/>
                 <Route path='/contact-us' element={<ContactUs />}/>
                 <Route path='/hris-service' element={<HRISServices />}/>
@@ -61,7 +63,7 @@ function App() {
                 <Route path='/clients' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
                 <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
                 <Route path='/real-contact-us' element={<RealContactUs />}/>
-                <Route path='/organization' element={<TeamV2 />}/>
+                <Route path='/organization' element={<TeamV3  fromWhere='redirect' />}/>
                 <Route path='/team-profile/:id/:arr?' element={<TeamProfile />}/>
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>

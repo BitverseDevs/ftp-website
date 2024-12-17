@@ -45,7 +45,7 @@ const Main = (props) => {
                     <WhyUs />
                     <ContactUsV2 contactV2Info={mainCTAV2Info} />
                     <BrandArea brands={brandArea}/>
-                    <FAQ />
+                    {/* <FAQ /> */}
                     {/* <ProductSpecs fromWhere='home' ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/> */}
                 {/* <CallToAction data={callToActionTitle}/> */}
             </section>
