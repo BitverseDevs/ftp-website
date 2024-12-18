@@ -30,9 +30,9 @@ const HighlightDetail = () => {
             <div id="highlightDetail-more-info-title">
               Upgrade your HR and payroll systems today and lead the way in modern HR management
             </div>
-            <div id="highlightDetail-more-info-featMsg">
+            {/* <div id="highlightDetail-more-info-featMsg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cum.
-            </div>
+            </div> */}
           </div>
 
           <div id="highlightDetail-more-info-section-outer-container">
@@ -134,12 +134,12 @@ const HighlightDetail = () => {
                 : ''}
               </>
             ))}
-          </div>
+          </div>  
         </div>
 
         <ContactUsV2 contactV2Info={contactV2Info} />
       </div>
-      <FAQ list={hrHighlightQA[highlightId]} title={hrHighlightFAQTitle.title} featMsg={hrHighlightFAQTitle.featMsg} />
+      <FAQ list={hrHighlightQA[highlightId]} title={hrHighlightFAQTitle[highlightId].title} featMsg={hrHighlightFAQTitle.featMsg} />
     </div>
   )
 }

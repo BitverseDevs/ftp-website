@@ -1,0 +1,610 @@
+
+.contact-us--section-hero{
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  // CLEAN THIS AFTER
+  // width: 100vw;
+  // height: 100vh;
+  img{
+      width: 100%;
+      height: 100%;
+      display: none;
+  }
+}
+
+.modalDemo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+  overflow: auto;
+}
+
+.contact-us--section-about{
+  height: auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+
+  #closeIcon {
+      height: 30px;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      cursor: pointer;
+  }
+
+  .contact-us--main-section{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 40px;
+      gap: 50px;
+
+      .contact-us--main-header{
+        width: 90%;
+        text-align: center;
+        .contact-us--main-header-title {
+          font-size: 2rem;
+          font-family: 'poppins-semibold', sans-serif;
+        }
+
+        .contact-us--main-desc {
+          font-size: 1.1rem;
+        }
+      }
+
+      #contact-us--main-section-one {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        #contact-us--main-item-container {
+          height: auto;
+          .contact-us--main-item {
+            height: 150px;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .contact-us-icon {
+              height: 60px;
+              width: 60px;
+            }
+
+            .contact-us-texts {
+              .contact-us-title {
+                font-family: 'poppins-semibold', sans-serif;
+                font-size: 2rem;
+                color: #4A52F7;
+              }
+  
+              .contact-us-desc {
+                font-family: 'poppins', sans-serif;
+                font-size: 1.1rem;
+                opacity: 0.8;
+                color: #282828;
+              }
+            }
+          }
+        }
+
+        .contact-us--web-form {
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            background: transparent;
+            border-radius: 5px;
+  
+            .contact-us--input-label-wrap {
+              width: auto;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              padding: 20px;
+              gap: 20px;
+  
+              .MuiFormLabel-root {
+                font-family: 'Poppins', sans-serif;
+                width: 250px;
+              }
+  
+              .MuiFormControl-root {
+                  width: 300px;
+              }
+  
+              .MuiOutlinedInput-input {
+                font-family: 'Poppins', sans-serif;
+                background: rgba(#f2f4f7, 0.3);
+                padding: 1rem 24px;
+              }
+  
+              .hekhok {
+                width: 500px;
+              } 
+            }
+            
+            #submitForm {
+                width: 85%;
+                font-size: 1.3rem;
+                font-family: 'Poppins', sans-serif;
+                background-color: #4A52F7;
+                border: 1px solid #4A52F7;
+                letter-spacing: 3px;
+                color: #fff;
+                padding: 15px;
+                border-radius: 40px;
+                transition: all 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    border: 1px solid #4A52F7;
+                    background-color: white;
+                    color: #4A52F7;
+                }
+            }
+        }
+      }
+
+  }
+
+  #contact-us--footer-outer-section {
+      height: 130px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #f2f4f7;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      
+      #contact-us-footer-inner-section {
+          height: inherit;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          font-family: 'Poppins', sans-serif;
+
+          .contact-us-stats-container {
+              padding: 15px 50px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .contact-us-stats-number {
+                  font-family: 'Poppins-SemiBold', sans-serif;
+                  font-size: 2.6rem;
+              }
+
+              .contact-us-stats-header {
+                  font-size: 1.8rem;
+                  font-family: 'Poppins-SemiBold', sans-serif;
+              }
+
+              .contact-us-stats-title {
+                  font-size: 1rem;
+                  text-align: center;
+              }
+          }
+
+      }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  .contact-us--section-about {
+      width: 90%;
+      flex-direction: column;
+
+      #closeIcon {
+          height: 22px;
+          top: 18px;
+          right: 15px;
+      }
+
+      .contact-us--main-section {
+          flex-direction: column;
+          justify-content: center;
+          padding: 0;
+          gap: 10px;
+
+          .contact-us--main-header {
+              width: 50%;
+              .contact-us--main-header-title {
+                font-size: 1.2rem;
+              }
+
+              .contact-us--main-desc {
+                font-size: 0.75rem;
+              }
+          }
+  
+          #contact-us--main-section-one {
+            gap: 10px;
+            flex-direction: column;
+            padding: 20px 0;
+            #contact-us--main-item-container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              flex-direction: row;
+              gap: 25px;
+
+              .contact-us--main-item {
+                height: auto;
+                width: 100%;
+                padding: 0 25px;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 15px;
+                .contact-us-icon {
+                  height: 35px;
+                  width: 29px;
+                }
+  
+                .contact-us-texts {
+                  .contact-us-title {
+                    font-size: 1.1rem;
+                  }
+  
+                  .contact-us-desc {
+                    font-size: 0.75rem;
+                  }
+                }
+              }
+            }
+  
+            .contact-us--web-form {
+                .contact-us--input-label-wrap {
+                  width: 100%;
+
+                  .hekhok {
+                    width: 300px;
+                  } 
+                }
+    
+                #submitForm {
+                  font-size: 1.1rem;
+                  width: 90%;
+                }   
+            }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 750px) {
+  .contact-us--section-about {
+      width: 90%;
+      flex-direction: column;
+
+      #closeIcon {
+          height: 22px;
+          top: 18px;
+          right: 15px;
+      }
+
+      .contact-us--main-section {
+          flex-direction: column;
+          justify-content: center;
+          padding: 0;
+          gap: 20px;
+
+          .contact-us--main-header {
+              width: 80%;
+              .contact-us--main-header-title {
+                font-size: 1.4rem;
+                padding-top: 30px;
+              }
+
+              .contact-us--main-desc {
+                font-size: 0.8rem;
+              }
+          }
+  
+          #contact-us--main-section-one {
+            gap: 30px;
+            flex-direction: column;
+            padding: 25px 0;
+            #contact-us--main-item-container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              flex-direction: row;
+              gap: 25px;
+
+              .contact-us--main-item {
+                height: auto;
+                width: auto;
+                padding: 0 25px;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 5px;
+                .contact-us-icon {
+                  height: 40px;
+                  width: 33px;
+                }
+  
+                .contact-us-texts {
+                  .contact-us-title {
+                    font-size: 1.3rem;
+                  }
+  
+                  .contact-us-desc {
+                    font-size: 0.8rem;
+                  }
+                }
+              }
+            }
+  
+            .contact-us--web-form {
+                .contact-us--input-label-wrap {
+                  width: 100%;
+
+                  .hekhok {
+                    width: 400px;
+                  } 
+                }
+    
+                #submitForm {
+                    width: 90%;
+                }   
+            }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1099px) {
+  .contact-us--section-about {
+      width: 95%;
+
+      #closeIcon {
+          height: 22px;
+          top: 18px;
+          right: 15px;
+      }
+
+      .contact-us--main-section {
+          justify-content: center;
+          .contact-us--main-header {
+              width: 100%;
+              .contact-us--main-header-title {
+                font-size: 1.8rem;
+              }
+          }
+  
+          #contact-us--main-section-one {
+            gap: 30px;
+            #contact-us--main-item-container {
+              .contact-us--main-item {
+                padding: 0 25px;
+  
+                .contact-us-icon {
+                  height: 50px;
+                  width: 50px;
+                }
+  
+                .contact-us-texts {
+                  .contact-us-title {
+                    font-size: 1.6rem;
+                  }
+  
+                  .contact-us-desc {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+  
+            .contact-us--web-form {
+                .contact-us--input-label-wrap {
+                  width: 100%;
+
+                  .hekhok {
+                    width: 420px;
+                  } 
+                }
+    
+                #submitForm {
+                    width: 100%;
+                }   
+            }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+  .contact-us--section-about {
+      width: 90%;
+
+      .contact-us--main-section {
+          padding: 30px 20px;
+          justify-content: center;
+          .contact-us--main-header {
+              .contact-us--main-header-title {
+
+                  h1 {
+                      font-size: 1.6rem;
+                  }
+  
+                  #waving-hand {
+  
+                  }
+              }
+          }
+  
+          .contact-us--web-form {
+              width: 60%;
+              .contact-us--input-label-wrap {
+  
+              }
+  
+              #submitForm {
+                  width: 75%;
+              }   
+          }
+      }
+
+      #contact-us--footer-outer-section {
+          height: 120px;
+          #contact-us-footer-inner-section {
+              .contact-us-stats-container {
+                  .contact-us-stats-number {
+                      font-size: 1.9rem;
+                  }
+                  
+                  .contact-us-stats-header {
+                      font-size: 1.5rem;
+                  }
+
+                  .contact-us-stats-title {
+                      font-size: 0.8rem;
+                  }
+              }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+  .contact-us--section-about {
+    width: 90%;
+    padding: 20px;
+
+    .contact-us--main-section {
+        padding: 25px 25px;
+        justify-content: center;
+        .contact-us--main-header {
+          .contact-us--main-header-title {
+
+            h1 {
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        #contact-us--main-section-one {
+          gap: 30px;
+          #contact-us--main-item-container {
+            .contact-us--main-item {
+              padding: 0 25px;
+
+              .contact-us-icon {
+
+              }
+
+              .contact-us-texts {
+                .contact-us-title {
+
+                }
+
+                .contact-us-desc {
+
+                }
+              }
+            }
+          }
+
+          .contact-us--web-form {
+              .contact-us--input-label-wrap {
+                
+              }
+  
+              #submitForm {
+                  width: 100%;
+              }   
+          }
+        }
+
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media only screen and (max-width: 1200px) {
+//     .contact-us--section-about{
+//         flex-flow: wrap;
+//         .contact-us--left-section{
+//             width: 100%;
+//         }
+//         .contact-us--right-section{
+//             width: 100%;
+//         }
+//     }
+// }

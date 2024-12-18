@@ -2,15 +2,43 @@ import FAQ from 'pages/sitehome/faq/FAQ';
 import { realContactUsInfo, contactFormInfo } from 'data/contactpage';
 import { TextField } from '@mui/material';
 import { useState } from 'react';
+import SEO from 'components/seo/seo';
+import emailjs from '@emailjs/browser';
 import './realContactUs.scss';
 
 const RealContactUs = () => {
   const [formValues, setFormValues] = useState({
+    subject: 'Get In Touch With Us',
     fullName: '',
     emailAddress: '',
+    contactNumber: '',
     companyName: '',
     remarksQuestion: '',
   })
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log(formValues);
+
+    try {
+        await emailjs.send('service_snkruzb', 'template_a0lam49', formValues, 'KmfIkls146Qc_43jM');
+        alert('Email sent successfully');
+        setFormValues((prevState) => ({
+            ...prevState, 
+            fullName: '',
+            emailAddress: '',
+            contactNumber: '',
+            companyName: '',
+            remarksQuestion: '',
+        }));
+    } catch (error) {
+        console.error(error);
+        alert('Error sending email');
+    } finally {
+        console.log('Contact us form submitted');
+    }
+};
 
   const handleChange = (e) => {
     let { name, value } = e.target;
@@ -22,10 +50,14 @@ const RealContactUs = () => {
     }));
   }
 
-  console.log(formValues);
-
   return (
     <div id="contact-us-outer-container">
+      <SEO title='Website Contact - Bitverse Corporation' 
+        description='Our products have helped businesses and local government units streamline their processes and improve overall efficiency.'
+        keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Website Portfolio, Bitverse Products, Bitverse Corporation Products'
+        type='website'
+        name='Bitverse Corporation'/>
+
       <div id="contact-us-inner-container">
         <div id="contact-us-body-section">
           <div id="contact-us-body-section-one">
@@ -34,7 +66,7 @@ const RealContactUs = () => {
 
           <div id="contact-us-body-section-two">
 
-            <form id='contact-us-form'>
+            <form id='contact-us-form' onSubmit={handleSubmit}>
               <div id="contact-us-title">
                 <h1>Get In Touch With Us</h1>
                 <h2>Kindly Fill Up To Contact Expert</h2>

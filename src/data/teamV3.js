@@ -27,7 +27,7 @@ export const teamData = [
       // 2
       id: 'AlbertPagaduan',
       fullName: 'Albert Pagaduan',
-      content: "As a Lead Software Engineer and Project Manager, he excels in steering complex projects from conception through to delivery while ensuring the highest standards of software development. His dual expertise in software engineering and project management allows him to effectively bridge the gap between technical teams and project objectives. He brings extensive experience in leading development teams, designing and implementing scalable software solutions, and managing project timelines and budgets. His proficiency in modern technologies and methodologies, such as Agile and Scrum, enables him to drive projects efficiently and adapt to evolving requirements. He is skilled in coordinating with stakeholders, defining project scopes, and managing risks to ensure that deliverables meet quality standards and align with business goals. His leadership and communication skills help foster collaboration, motivate team members, and resolve issues, ensuring that projects are completed on time and within scope.",
+      content: "As a Project Manager with dual expertise in project management and former experience in software engineering, he excels in steering complex projects from conception to delivery. He effectively manages project timelines, budgets, and risks, ensuring deliverables meet quality standards and align with business goals. Proficient in Agile and Scrum methodologies, he drives projects efficiently and adapts to evolving requirements. His strong leadership and communication skills foster collaboration, motivate team members, and facilitate issue resolution, ensuring projects are completed on time and within scope. He is skilled in coordinating with stakeholders and defining project scopes to achieve project objectives.",
       position: 'Project Manager',
       imgURL: '/assets/rev.jfif',
       fbUrl: 'https://www.facebook.com/',
@@ -57,16 +57,6 @@ export const teamData = [
       linkedInURL: 'https://www.linkedin.com/',
     },
     {
-      id: 'JhumerApus',
-      fullName: 'Jhumer O. Apus',
-      content: `As a Senior Front-End Engineer with extensive experience in crafting high-performance, user-centric web applications, Jhumer have a deep understanding of modern web technologies and frameworks. His expertise lies in React, Next.js, Vue, Nuxtjs, Ant Design, and MuiCore, where he excel at creating scalable, maintainable, and accessible codebases. He have a strong foundation in JavaScript, TypeScript, HTML, and CSS, and he is skilled in optimizing applications for performance and responsiveness. Throughout his career, He'd successfully led the development of complex projects, collaborating closely with cross-functional teams to deliver seamless user experiences. His passion for staying updated with the latest industry trends and best practices ensures that he bring innovative solutions to the table, continuously enhancing the quality and efficiency of the applications he work on.`,
-      position: 'Senior Front-End Developer',
-      imgURL: '/assets/jhumer.png',
-      fbUrl: 'https://www.facebook.com/jhumer.apus.1/',
-      twitterURL: 'https://twitter.com/',
-      linkedInURL: 'https://www.linkedin.com/in/jhumer-apus-10b32a1ab/',
-    },
-    {
       id: 'MarcRovicBaja',
       fullName: 'Marc Rovic Baja',
       content: "As a Senior Back-End Engineer, he specializes in architecting and implementing robust, scalable, and secure server-side applications. With deep expertise in languages like Node.js, Python, and Java, along with extensive experience in databases such as PostgreSQL, MongoDB, and MySQL, he is proficient in building efficient APIs, microservices, and cloud-based solutions. He has a strong background in system design, performance optimization, and DevOps practices, including continuous integration and deployment (CI/CD), containerization with Docker, and orchestration with Kubernetes. His experience includes working on high-traffic applications where reliability, security, and performance are critical. He thrives in collaborative environments, often taking the lead in technical decision-making, mentoring junior developers, and ensuring that projects meet both technical and business objectives",
@@ -75,6 +65,16 @@ export const teamData = [
       fbUrl: 'https://www.facebook.com/',
       twitterURL: 'https://twitter.com/',
       linkedInURL: 'https://www.linkedin.com/',
+    },
+    {
+      id: 'JhumerApus',
+      fullName: 'Jhumer O. Apus',
+      content: `As a Senior Front-End Engineer with extensive experience in crafting high-performance, user-centric web applications, Jhumer have a deep understanding of modern web technologies and frameworks. His expertise lies in React, Next.js, Vue, Nuxtjs, Ant Design, and MuiCore, where he excel at creating scalable, maintainable, and accessible codebases. He have a strong foundation in JavaScript, TypeScript, HTML, and CSS, and he is skilled in optimizing applications for performance and responsiveness. Throughout his career, He'd successfully led the development of complex projects, collaborating closely with cross-functional teams to deliver seamless user experiences. His passion for staying updated with the latest industry trends and best practices ensures that he bring innovative solutions to the table, continuously enhancing the quality and efficiency of the applications he work on.`,
+      position: 'Senior Front-End Developer',
+      imgURL: '/assets/jhumer.png',
+      fbUrl: 'https://www.facebook.com/jhumer.apus.1/',
+      twitterURL: 'https://twitter.com/',
+      linkedInURL: 'https://www.linkedin.com/in/jhumer-apus-10b32a1ab/',
     },
     {
       id: 'JMSalado',

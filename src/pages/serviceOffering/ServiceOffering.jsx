@@ -2,12 +2,18 @@ import { serviceOfferingItems, serviceOfferingTexts, serviceOfferingList, servic
 import { Link } from 'react-router-dom';
 import ServicesFeatures from 'pages/servicesFeatures/ServicesFeatures';
 import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
+import SEO from 'components/seo/seo';
 import './serviceOffering.scss';
 
 const ServiceOffering = () => {
 
   return (
     <>
+      <SEO title='Website Services - Bitverse Corporation' 
+        description='Our products have helped businesses and local government units streamline their processes and improve overall efficiency.'
+        keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Website Portfolio, Bitverse Products, Bitverse Corporation Products'
+        type='website'
+        name='Bitverse Corporation'/>
       <div id="serviceOffering-outer-container">
         <div id="serviceOffering-inner-container">
           <div id="section-one">

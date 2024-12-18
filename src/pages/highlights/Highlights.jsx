@@ -5,10 +5,6 @@ import './highlights.scss';
 
 const Highlights = () => {
 
-  window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-  });
-
   return (
     <div id="highlights-outer-container">
       <div id='city-scapes-bg'>
@@ -30,7 +26,6 @@ const Highlights = () => {
                   <div className='highlights-title'>{title}</div>
 
                   <NavLink className='highlights-cta' to={`/highlight/${index}`}>{cta}</NavLink>
-                  <div className='highlights-footerText'>{footerText}</div>
 
                 </div>
               </div>

@@ -1,7 +1,9 @@
 import Carousel from 'react-multi-carousel';
 import { webDevSpecs, webDevProcess, webDevServiceCTAInfo } from './webDevServiceData';
 import FAQ from 'pages/sitehome/faq/FAQ';
+import { webDevTexts, webDevFeatureList } from 'data/services';
 import ContactUsV2 from 'pages/contactUsV2/ContactUsV2';
+import ServicesFeatures from 'pages/servicesFeatures/ServicesFeatures';
 import 'react-multi-carousel/lib/styles.css';
 import './webDevService.scss';
 
@@ -104,8 +106,9 @@ const WebDevService = ({ portfolio }) => {
           </div>
         </div>
 
-        <ContactUsV2 contactV2Info={webDevServiceCTAInfo} />
-        <FAQ />
+        <ServicesFeatures header={webDevTexts} list={webDevFeatureList} />
+        <ContactUsV2 fromWhere='webDevService' contactV2Info={webDevServiceCTAInfo} />
+        {/* <FAQ /> */}
       </div>
     </div>
   )

@@ -61,7 +61,7 @@ function App() {
                 <Route path='/software-dev-service' element={<SoftwareDevService />}/>
                 <Route path='/web-dev-service' element={<WebDevService portfolio={websitePortfolioList} />}/>
                 <Route path='/clients' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
-                <Route path='/portfolio' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
+                <Route path='/partners' element={<WebsitePortfolio portfolios={websitePortfolioList}/>}/>
                 <Route path='/real-contact-us' element={<RealContactUs />}/>
                 <Route path='/organization' element={<TeamV3  fromWhere='redirect' />}/>
                 <Route path='/team-profile/:id/:arr?' element={<TeamProfile />}/>

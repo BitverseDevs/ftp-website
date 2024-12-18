@@ -13,14 +13,11 @@ import { Modal, Button } from '@mui/material';
 import { currentStats } from 'data/sitehome';
 import SEO from '../../components/seo/seo';
 import emailjs from '@emailjs/browser';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 export function ContactUs({ open, onClose }) {
 
     const [formValues, setFormValues] = useState({
-        from: "website@bitverseph.com",
-        to: "sales01@bitverseph.com",
-        subject: "Demo Request",
+        subject: "HRIS Demo Request",
         fullName: '',
         email: '',
         companyName: '',
@@ -36,7 +33,6 @@ export function ContactUs({ open, onClose }) {
     const handleChange = (e) => {
         const { name, value } = e.target;
         
-        console.log('handling changeeeee');
         setFormValues((prevState) => ({ 
             ...prevState, 
             [name]: value 
@@ -48,7 +44,6 @@ export function ContactUs({ open, onClose }) {
         onClose();
         setFormValues((prevState) => ({
             ...prevState,
-
             fullName: '',
             email: '',
             contactNumber: '',
@@ -60,12 +55,13 @@ export function ContactUs({ open, onClose }) {
         }));
     }
     
-    // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        console.log(formValues);
+
         try {
-            await emailjs.send('service_6ybivda', 'template_ixowxar', formValues, 'wJDHZPr9N4cJdGevV');
+            await emailjs.send('service_snkruzb', 'template_shsdwwk', formValues, 'KmfIkls146Qc_43jM');
             alert('Email sent successfully');
             setFormValues(curr => ({ 
                 fullName: '',
@@ -76,13 +72,12 @@ export function ContactUs({ open, onClose }) {
                 datePreferences: '',
                 timePreferences: '',
                 remarks: '',
-                /* test API_KEY = 're_oawxABua_NL3ffjCCVMTWTrqMytGKLgsA'*/
             }));
         } catch (error) {
             console.error(error);
             alert('Error sending email');
         } finally {
-            console.log('Contact us form submitted')
+            console.log('Contact us form submitted');
         }
     };
 
@@ -98,13 +93,13 @@ export function ContactUs({ open, onClose }) {
                     keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Contact Us, Bitverse Corporation Contact Us, Bitverse Contact Us Form, Bitverse Demo, Bitverse Book Demo'
                     type='website'
                     name='Bitverse Corporation'/>
-                <section className='contact-us--section-about'>
+                <section className='contact-us--section-aboutt'>
                     <img id='closeIcon' onClick={onClose} src="/assets/x-sign.svg" alt="x" />
                     <div className='contact-us--main-section'>
                         <div className='contact-us--main-header'>
                             {contactPageData.map(({key, title, isMainAbout, picUrl, desc}) => (
                                 isMainAbout === true ? 
-                                    <div className='contact-us--main-header-title'>
+                                    <div key={key} className='contact-us--main-header-title'>
                                         <h1 className='contact-us--main-header-header'>
                                             {title}
                                         </h1>
@@ -121,7 +116,7 @@ export function ContactUs({ open, onClose }) {
                                         labelFor={item.labelFor}
                                         type={item.type}
                                         onChange={handleChange}
-                                        value={formValues[`${item.formValues}`]}
+                                        value={formValues[`${item.value}`]}
                                         required={item.required}
                                         formValuesSetter={setFormValues}
                                     />
@@ -130,7 +125,7 @@ export function ContactUs({ open, onClose }) {
                             <input id='submitForm' type="submit" value='Submit'/>
                         </form>
                     </div>
-                    <div id="contact-us--footer-outer-section">
+                    {/* <div id="contact-us--footer-outer-section">
                         <div id="contact-us-footer-inner-section">
                             {currentStats.map(({id, title, number}, index) => (
                                 <div className="contact-us-stats-container" key={index}>
@@ -143,7 +138,7 @@ export function ContactUs({ open, onClose }) {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                 </section>
             </>
         </Modal>

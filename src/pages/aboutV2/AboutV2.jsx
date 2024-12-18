@@ -4,12 +4,18 @@ import { brandArea } from 'data/sitehome';
 import BrandArea from 'pages/sitehome/brandarea/brandarea';
 import FAQ from 'pages/sitehome/faq/FAQ';
 import TeamV3 from 'pages/teamV3/TeamV3';
+import SEO from 'components/seo/seo';
 import './aboutV2.scss';
 
 const AboutV2 = () => {
   
   return (
     <div id="about-outer-container">
+      <SEO title='Website About - Bitverse Corporation' 
+        description='Our products have helped businesses and local government units streamline their processes and improve overall efficiency.'
+        keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Website Portfolio, Bitverse Products, Bitverse Corporation Products'
+        type='website'
+        name='Bitverse Corporation'/>
       <div id="about-inner-container">
         <div id="section-one">
           <div id="header-container">

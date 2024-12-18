@@ -1,7 +1,7 @@
 export const contactPageData = [
     {
         key: 'apd01',
-        title: "Glad you're here! Let's start by booking a demo",
+        title: "Glad you're here! Let's start by booking a HRIS demo",
         isMainAbout: true,
         picUrl: '/assets/waving-hand.svg',
         desc: 'We understand that manual HR processes can be time-consuming and prone to errors. Our HRIS system offers a comprehensive solution to streamline your HR operations and ensure accurate and up-to-date data. Aside from this, we also cater in customizable solutions for your company and organization, ranging from profile websites, portfolio, dynamic contact pages, systems and more. Contact us to know more!',
@@ -29,10 +29,30 @@ export const contactPageData = [
     }
 ];
 
-
 export const contactPageBanner = {
     bannerSrc: '/assets/bv-contact-us.pngg'
 };
+
+export const webDevContactItem = [
+    {
+        id: 'itemOne',
+        title: 'Fast',
+        desc: 'Increase Speed To Market',
+        iconName: '/assets/webDevContact-img-one.png',
+    },
+    {
+        id: 'itemTwo',
+        title: 'Reliable',
+        desc: 'Get High-Quality Software',
+        iconName: '/assets/webDevContact-img-two.png',
+    },
+    {
+        id: 'itemThree',
+        title: 'Scalable',
+        desc: 'Reduce Development Cost',
+        iconName: '/assets/webDevContact-img-three.png',
+    },
+]
 
 export const contactPageFormList = [
     {
@@ -111,7 +131,60 @@ export const contactPageFormList = [
         labelFor: 'remarks',
         type: 'text',
         placeholder: 'Any additional input (Optional)',
-        value: '',
+        value: 'remarks',
+        required: false,
+        pattern: '',
+    }
+];
+
+export const webDevContactPageFormList = [
+    {
+        key: 'cpfl01',
+        label: 'Full Name',
+        labelFor: 'fullName',
+        type: 'text',
+        placeholder: 'Enter Full Name',
+        value: 'fullName',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl02',
+        label: 'Email Address',
+        labelFor: 'emailAddress',
+        type: 'email',
+        placeholder: 'Enter Valid Email',
+        value: 'emailAddress',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl03',
+        label: 'Contact Number',
+        labelFor: 'contactNumber',
+        type: 'tel',
+        placeholder: 'Cellphone Number',
+        value: 'contactNumber',
+        required: true,
+        pattern: '[0-9]{4}-[0-9]{3}-[0-9]{4}',
+    },
+    {
+        key: 'cpfl04',
+        label: 'Company Name',
+        labelFor: 'companyName',
+        type: 'text',
+        placeholder: 'Business Name',
+        value: 'companyName',
+        required: true,
+        pattern: '',
+    },
+    {
+        key: 'cpfl08',
+        label: 'Remarks:',
+        labelFor: 'remarks',
+        type: 'text',
+        placeholder: 'Any additional input (Optional)',
+        value: 'remarks',
         required: false,
         pattern: '',
     }
@@ -162,6 +235,14 @@ export const contactFormInfo = [
     },
     {
         id: 'field-three',
+        name: 'contactNumber',
+        label: 'Contact Number',
+        type: 'number',
+        // value: '',
+        required: 'true'
+    },
+    {
+        id: 'field-four',
         name: 'companyName',
         label: 'Company Name',
         type: 'text',
@@ -169,7 +250,7 @@ export const contactFormInfo = [
         required: 'true'
     },
     {
-        id: 'field-four',
+        id: 'field-five',
         name: 'remarksQuestion',
         label: 'Remarks / Questions',
         type: 'text',

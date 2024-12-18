@@ -21,7 +21,7 @@
     overflow: auto;
 }
 
-.contact-us--section-about{
+.contact-us--section-aboutt {
     height: auto;
     width: 75%;
     display: flex;
@@ -195,7 +195,7 @@
 
 
 @media only screen and (min-width: 320px) and (max-width: 450px) {
-    .contact-us--section-about {
+    .contact-us--section-aboutt {
         width: 90%;
         flex-direction: column;
 
@@ -266,7 +266,7 @@
 }
 
 @media only screen and (min-width: 450px) and (max-width: 750px) {
-    .contact-us--section-about {
+    .contact-us--section-aboutt {
         width: 90%;
         flex-direction: column;
 
@@ -337,7 +337,7 @@
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1099px) {
-    .contact-us--section-about {
+    .contact-us--section-aboutt {
         width: 95%;
 
         #closeIcon {
@@ -400,7 +400,7 @@
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1300px) {
-    .contact-us--section-about {
+    .contact-us--section-aboutt {
         width: 90%;
 
         .contact-us--main-section {
@@ -453,7 +453,7 @@
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
-    .contact-us--section-about {
+    .contact-us--section-aboutt {
         .contact-us--main-header {
             
             .contact-us--main-header-title {
@@ -552,7 +552,7 @@
 
 
 // @media only screen and (max-width: 1200px) {
-//     .contact-us--section-about{
+//     .contact-us--section-aboutt{
 //         flex-flow: wrap;
 //         .contact-us--left-section{
 //             width: 100%;

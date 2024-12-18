@@ -39,7 +39,7 @@ export const upperNavData = [
         key: 'und05',
         isButton: false,
         navItem: 'Partners',
-        pathUrl: '/portfolio',
+        pathUrl: '/partners',
         hasList: false,
         listNav: [],
     },
@@ -71,8 +71,8 @@ export const upperNavData = [
 
 
 export const heroData = {
-    left_title: 'The Platform Where Affordability Meet HR Efficieny',
-    left_desc: 'An HRIS that streamlines and simplifies every aspect of HR, from recruitment, applicant tracking and onboarding through core HR admin and compliance to holiday and absence management.',
+    left_title: 'The Platform Where Affordability Meet Efficieny',
+    left_desc: 'Stop settling for outdated processes. With Bitverse, you gain access to cutting-edge solutions that streamline your workflow, boost efficiency, and drive innovation. Upgrade today and experience the future of business success.',
     left_call: 'Get Started',
     right_call: 'Watch Demo',
     left_watch: 'Watch Demo'
@@ -442,10 +442,17 @@ export const highlightHRDetail = [
     }
 ]
 
-export const hrHighlightFAQTitle = {
-    featMsg: 'Frequently Asked Questions',
-    title: 'Everything You Need To Know About Bitverse HRIS'
-}
+export const hrHighlightFAQTitle = [
+    {
+        featMsg: 'Frequently Asked Questions',
+        title: 'Everything You Need To Know About Bitverse HRIS'
+    },
+
+    {
+        featMsg: 'Frequently Asked Questions',
+        title: 'Everything You Need To Know About Bitverse HRIS Payroll'
+    },
+]
 
 export const hrHighlightQA = [
     [
@@ -554,8 +561,8 @@ export const serviceOfferingsHome = [
         id: 'soh01',
         sectionTitle: {
             featMsg: 'Services We Offer',
-            title: 'Business & Productivity Ready Software',
-            desc: 'We offer multiple products that are fully customizable.',
+            title: 'Human Resource Information System',
+            desc: 'We offer a fully customizable HRIS tailored to meet the unique needs of your business.',
         },
         srcTitle: 'LEARN MORE',
         srcLink: '/hris-service',
@@ -566,8 +573,8 @@ export const serviceOfferingsHome = [
         id: 'soh02',
         sectionTitle: {
             featMsg: 'Services We Offer',
-            title: 'Custom Software Development',
-            desc: 'Want to have a specific web application based on your business flow? We can build it from scratch',
+            title: 'Software Development',
+            desc: "Unlock your business's potential with our custom software development services.",
         },
         srcTitle: 'LEARN MORE',
         srcLink: '/software-dev-service',
@@ -578,8 +585,8 @@ export const serviceOfferingsHome = [
         id: 'soh03',
         sectionTitle: {
             featMsg: 'Services We Offer',
-            title: 'CMS Website Design',
-            desc: 'Website designing, development and maintenance for SMEs, service-oriented business, product-based business and other complex businesses',
+            title: 'Website Development',
+            desc: 'Enhance your online presence with responsive, user-friendly websites that drive results.',
         },
         srcTitle: 'LEARN MORE',
         srcLink: '/web-dev-service',

@@ -16,8 +16,8 @@
       width: 80%;
       #whyUs-featMsg {
         font-family: 'poppins', sans-serif;
-        font-size: 1.1rem;
-        opacity: 0.7;
+        font-size: 1rem;
+        opacity: 0.8;
       }
       #whyUs-title {
         font-family: 'poppins-semibold', sans-serif;
@@ -26,8 +26,8 @@
       #whyUs-desc {
         font-family: 'poppins', sans-serif;
         width: 700px;
-        font-size: 1.1rem;
-        opacity: 0.7;
+        font-size: 0.9rem;
+        opacity: 0.8;
       }
     }
 
@@ -40,26 +40,26 @@
       align-items: center;
       gap: 50px;
       .item-container {
-        height: auto;
-        width: auto;
+        height: 300px;
+        width: 400px;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         color: #282828;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        border-radius: 25px;
+        padding: 30px 40px;
+        cursor: pointer;
+        
         .item-icon-container {
-          height: 250px;
-          width: 300px;
-          padding: 20px 50px;
+          height: 75px;
+          width: 75px;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 25px;
-          background: rgba(255, 255, 255, 0.4);
-          backdrop-filter: blur(0px);
-          // box-shadow: 2px 2px 2px 2px rgba(75, 82, 247, 0.2);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
 
           .item-icon {
             width: 100%;
@@ -67,17 +67,16 @@
         }
 
         .item-title {
-          text-align: center;
           font-family: 'poppins-semibold', sans-serif;
-          font-size: 1.6rem;
-          margin-top: 20px;
+          font-size: 1.4rem;
+          margin-top: 10px;
           margin-bottom: 10px;
         }
 
         .item-desc {
           text-align: center;
           font-family: 'poppins', sans-serif;
-          font-size: 1.1rem;
+          font-size: 0.9rem;
           opacity: 0.8;
         }
       }
@@ -108,13 +107,16 @@
 
       #whyUs-section-two {
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
         .item-container {
+          height: auto;
+          width: auto;
           margin-top: 15px;
+          padding: 20px;
+          align-items: flex-start;
           .item-icon-container {
-            height: auto;
-            width: 120px;
-            padding: 5px 15px;
+            height: 60px;
+            width: 60px;
             .item-icon {
               height: 100px;
             }
@@ -125,6 +127,7 @@
           }
 
           .item-desc {
+            text-align: start;
             font-size: 0.7rem;
           }
         }
@@ -137,7 +140,7 @@
   #whyUs-outer-container {
     padding: 30px;
     #whyUs-inner-container {
-      width: 100%;
+      width: 95%;
       #whyUs-section-one {
         #whyUs-featMsg {
           font-size: 0.9rem;
@@ -157,11 +160,14 @@
         flex-direction: column;
         gap: 0;
         .item-container {
-          margin-top: 40px;
+          height: auto;
+          width: 90%;
+          margin-top: 20px;
+          padding: 25px 30px;
+          align-items: flex-start;
           .item-icon-container {
-            height: auto;
-            width: 200px;
-            padding: 25px 30px;
+            height: 60px;
+            width: 60px;
             .item-icon {
               width: 100%;
             }
@@ -172,7 +178,8 @@
           }
 
           .item-desc {
-            width: 70%;
+            text-align: start;
+            width: 100%;
             font-size: 0.9rem;
           }
         }
@@ -203,13 +210,15 @@
 
       #whyUs-section-two {
         flex-direction: row;
-        gap: 0;
+        gap: 20px;
         .item-container {
+          height: 300px;
+          width: 290px;
           margin-top: 30px;
+          padding: 20px 20px;
           .item-icon-container {
-            height: 150px;
-            width: 150px;
-            padding: 15px 20px;
+            height: 70px;
+            width: 70px;
             .item-icon {
               width: 100%;
             }
@@ -220,7 +229,7 @@
           }
 
           .item-desc {
-            width: 90%;
+            width: 100%;
             font-size: 0.8rem;
           }
         }
@@ -236,16 +245,16 @@
       width: 85%;
       #whyUs-section-one {
         #whyUs-featMsg {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
 
         #whyUs-title {
-          font-size: 2rem;
+          font-size: 2.2rem;
         }
 
         #whyUs-desc {
           width: 100%;
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
       }
 
@@ -253,11 +262,13 @@
         flex-direction: row;
         gap: 30px;
         .item-container {
-          margin-top: 50px;
+          height: 270px;
+          width: 300px;
+          margin-top: 40px;
+          padding: 20px 20px;
           .item-icon-container {
-            height: 200px;
-            width: 240px;
-            padding: 20px 40px;
+            height: 75px;
+            width: 75px;
             .item-icon {
               width: 100%;
             }
@@ -268,7 +279,7 @@
           }
 
           .item-desc {
-            width: 90%;
+            width: 100%;
             font-size: 0.8rem;
           }
         }

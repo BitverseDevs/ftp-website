@@ -26,6 +26,7 @@ import Highlights from 'pages/highlights/Highlights';
 import FeaturedSpecsV2 from './featuredspecsV2/FeaturedSpecsV2';
 import WhyUs from './whyUs/WhyUs';
 import { mainCTAV2Info } from 'data/sitehome';
+import { hrHighlightFAQTitle, hrHighlightQA } from 'data/sitehome';
 import './main.scss';
 
 const Main = (props) => {
@@ -45,7 +46,7 @@ const Main = (props) => {
                     <WhyUs />
                     <ContactUsV2 contactV2Info={mainCTAV2Info} />
                     <BrandArea brands={brandArea}/>
-                    {/* <FAQ /> */}
+                    <FAQ list={hrHighlightQA[0]} title={hrHighlightFAQTitle[0].title} featMsg={hrHighlightFAQTitle[0].featMsg} />
                     {/* <ProductSpecs fromWhere='home' ref={scrollRefs} productsTitle={productSpecificationTitle} productsList={productSpecificationList}/> */}
                 {/* <CallToAction data={callToActionTitle}/> */}
             </section>

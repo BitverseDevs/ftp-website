@@ -159,3 +159,47 @@ export const softwareDevFeatureList = [
       ]
   }
 ]
+
+export const webDevTexts = {
+  title: 'Web Service that focuses on you.',
+  desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed. Lorem ipsum dolor sit amet.'
+}
+
+
+export const webDevFeatureList = [
+  {
+      id: 'sdF01',
+      items: [
+          {
+              id: 'sdF0101',
+              question: 'Software Dev Feature 1',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
+              icon: '/assets/arrowDown.svg',
+          }, 
+          {
+              id: 'sdF0102',
+              question: 'Software Dev Feature 2',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              icon: '/assets/arrowDown.svg',
+          }, 
+      ]
+  },
+  {
+      id: 'sdF02',
+      items: [
+          {
+      
+              id: 'sdF0201',
+              question: 'Software Dev Feature 3',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              icon: '/assets/arrowDown.svg',
+          }, 
+          {
+              id: 'sdF0202',
+              question: 'Software Dev Feature 4',
+              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              icon: '/assets/arrowDown.svg',
+          }, 
+      ]
+  }
+]

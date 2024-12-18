@@ -3,24 +3,23 @@ import './whyUs.scss';
 const items = [
   {
     id: 'item-one',
-    title: 'Customizable, Affordable, Scalable',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex possimus soluta adipisci odio quia vel.',
+    title: 'Customizable',
+    desc: 'We offer solutions that can be tailored to meet your unique needs, flexibility to adjust and personalize it according to your specific preferences, ensuring that you get exactly what you need.',
     iconName: '/assets/whyUs-img1.svg',
   },
   {
     id: 'item-one',
-    title: 'Customizable, Affordable, Scalable',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex possimus soluta adipisci odio quia vel.',
+    title: 'Affordable',
+    desc: 'Our services  are competitively priced, providing excellent value for your money without compromising on quality.',
     iconName: '/assets/whyUs-img2.svg',
   },
   {
     id: 'item-one',
-    title: 'Customizable, Affordable, Scalable',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex possimus soluta adipisci odio quia vel.',
+    title: 'Scalable',
+    desc: 'Our solutions are designed to scale efficiently, you can start small and expand without worrying about outgrowing the system.',
     iconName: '/assets/whyUs-img3.svg',
   },
 ]
-
 
 const WhyUs = () => {
   return (

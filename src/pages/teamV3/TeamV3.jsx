@@ -1,11 +1,17 @@
 import { teamData } from 'data/teamV3';
 import { Link } from 'react-router-dom';
+import SEO from 'components/seo/seo';
 import './teamV3.scss';
 
 const TeamV3 = ({ fromWhere }) => {
 
   return (
     <div id="teamV3-outer-container">
+      <SEO title='Website Organization - Bitverse Corporation' 
+        description='Our products have helped businesses and local government units streamline their processes and improve overall efficiency.'
+        keyword='Bitverse, bitverse, Bitverse Corportion, bitverse corporation, bitverse it, Bitverse it, Bitverse IT Solutions, Bitverse Website Portfolio, Bitverse Products, Bitverse Corporation Products'
+        type='website'
+        name='Bitverse Corporation'/>
       <div id="teamV3-inner-container">
         <div id="header-container">
           <div id="title">Meet Our Team</div>
@@ -49,43 +55,6 @@ const TeamV3 = ({ fromWhere }) => {
               </div>
           }
 
-          {/* {fromWhere == 'about' ? 
-              <Link to='/organization'>
-                <div id='seeAllTeam'>See All Team</div> 
-              </Link>
-            : 
-              <>
-                <div id="section-three">
-                  {teamData[2].map(({ id, fullName, position, imgURL }) => (
-                    <div key={id} className="item-container">
-                      <img className='item-img' src={imgURL} alt="Team Profile Image" />
-                      <Link to={`/team-profile/${id}/2`}> 
-                        <div className="item-details">
-                          <div className="name">{fullName}</div>
-                          <div className="position">{position}</div>
-                          <img src='/assets/arrow.png' alt="Arrow hehe" />
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-
-                <div id="section-four">
-                  {teamData[3].map(({ id, fullName, position, imgURL }) => (
-                    <div key={id} className="item-container">
-                      <img className='item-img' src={imgURL} alt="Team Profile Image" />
-                      <Link to={`/team-profile/${id}/3`}> 
-                        <div className="item-details">
-                          <div className="name">{fullName}</div>
-                          <div className="position">{position}</div>
-                          <img src='/assets/arrow.png' alt="Arrow hehe" />
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </>
-          } */}
         </div>
       </div>
     </div>
