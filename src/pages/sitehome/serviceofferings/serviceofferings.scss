@@ -351,15 +351,19 @@
             .service-offerings--main-container {
                 .service-offerings--main-container-inner {
                     height: auto;
-                    width: 450px;
+                    width: auto;
                     gap: 20px;
+                    padding: 50px 20px;
                     margin-top: 50px;
 
                     .service-offerings--container-caption {
                         // sective title v2
-                        padding: 20px 40px;
+                        height: 270px;
+                        width: 470px;
+                        padding: 30px 40px;
                         margin-bottom: 230px;
-                        border-radius: 10px;
+                        border-radius: 25px;
+                        gap: 20px;
 
                         .hero-left-content-action-item-call {
                             margin: 0 0 10px 10px;

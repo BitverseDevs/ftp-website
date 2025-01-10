@@ -22,7 +22,7 @@ const RealContactUs = () => {
     console.log(formValues);
 
     try {
-        await emailjs.send('service_snkruzb', 'template_a0lam49', formValues, 'KmfIkls146Qc_43jM');
+        await emailjs.send('service_sm3in13', 'template_a0lam49', formValues, 'KmfIkls146Qc_43jM');
         alert('Email sent successfully');
         setFormValues((prevState) => ({
             ...prevState, 

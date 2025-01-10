@@ -61,7 +61,7 @@ export function ContactUs({ open, onClose }) {
         console.log(formValues);
 
         try {
-            await emailjs.send('service_snkruzb', 'template_shsdwwk', formValues, 'KmfIkls146Qc_43jM');
+            await emailjs.send('service_sm3in13', 'template_shsdwwk', formValues, 'KmfIkls146Qc_43jM');
             alert('Email sent successfully');
             setFormValues(curr => ({ 
                 fullName: '',

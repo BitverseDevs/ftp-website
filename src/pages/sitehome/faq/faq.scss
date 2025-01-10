@@ -184,18 +184,17 @@
         width: 100%;
 
         .accordion-inner-section {
-          width: 100%;
           .accordion-container {
-            width: 85%;
+            width: 500px;
             .accordion-summary {
               .accordion-question {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
               }
             }
   
             .accordion-details {
               .accordion-answer {
-                font-size: 1.2rem;
+                font-size: 1rem;
               }
             }
           }

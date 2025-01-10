@@ -49,7 +49,7 @@ export const webDevProcess = [
     id: 'p1',
     step: '01',
     title: 'Data Gathering',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, soluta consequuntur laboriosam perferendis fugit architecto!',
+    desc: 'Collecting essential information and understanding user needs to shape the website’s purpose and functionality.',
     iconName: '/assets/process-icon-one.png',
   },
 
@@ -57,7 +57,7 @@ export const webDevProcess = [
     id: 'p2',
     step: '02',
     title: 'UI/UX Designing',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, soluta consequuntur laboriosam perferendis fugit architecto!',
+    desc: 'Creating intuitive and visually appealing designs that enhance user experience and engagement.',
     iconName: '/assets/process-icon-two.png',
   },
 
@@ -65,7 +65,7 @@ export const webDevProcess = [
     id: 'p3',
     step: '03',
     title: 'Development',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, soluta consequuntur laboriosam perferendis fugit architecto!',
+    desc: 'Building the website with clean code, ensuring functionality, responsiveness, and scalability.',
     iconName: '/assets/process-icon-three.png',
   },
 
@@ -73,7 +73,7 @@ export const webDevProcess = [
     id: 'p4',
     step: '04',
     title: 'Testing & Deploymet',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, soluta consequuntur laboriosam perferendis fugit architecto!',
+    desc: 'Thoroughly testing the website for performance, bugs, and user experience before launching it live.',
     iconName: '/assets/process-icon-four.png',
   },
 
@@ -81,7 +81,7 @@ export const webDevProcess = [
     id: 'p5',
     step: '05',
     title: 'Maintenance & Support',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, soluta consequuntur laboriosam perferendis fugit architecto!',
+    desc: 'Providing ongoing updates, troubleshooting, and improvements to ensure the website stays current and functional.',
     iconName: '/assets/process-icon-five.png',
   },
 ]

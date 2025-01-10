@@ -52,7 +52,7 @@ const AboutV2 = () => {
           ))}
         </div>
 
-        <div id="section-three">
+        {/* <div id="section-three">
           {aboutGallery.map(({id, title, desc, iconName}) => (
             <div className='galleryItem'>
               <img key={id} src='/assets/about-hero-img-one.png' alt="About Gallery" />
@@ -62,7 +62,7 @@ const AboutV2 = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <TeamV3 fromWhere='about'/>
       <BrandArea brands={brandArea}/>

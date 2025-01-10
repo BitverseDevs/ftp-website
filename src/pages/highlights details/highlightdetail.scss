@@ -233,16 +233,18 @@
           .highlightDetail-more-info-section-header {
             height: auto;
             width: auto;
+            margin: 0 100px;
 
             .highlightDetail-more-info-section-title {
               font-size: 3rem;
               font-family: 'Poppins-semibold', sans-serif;
               padding: 0 15px;
+              line-height: 50px;
             }
   
             .highlightDetail-more-info-section-featMsg {
               height: auto;
-              width: 300px;
+              width: 100%;
               padding: 15px;
               font-family: 'Poppins', sans-serif;
             }

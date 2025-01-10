@@ -106,9 +106,10 @@ const WebDevService = ({ portfolio }) => {
           </div>
         </div>
 
-        <ServicesFeatures header={webDevTexts} list={webDevFeatureList} />
+        {/* <ServicesFeatures header={webDevTexts} list={webDevFeatureList} /> */}
         <ContactUsV2 fromWhere='webDevService' contactV2Info={webDevServiceCTAInfo} />
-        {/* <FAQ /> */}
+        <FAQ list={webDevFeatureList} title={'Things You Need To Know'} featMsg={'Frequently Asked Questions'} />
+        
       </div>
     </div>
   )

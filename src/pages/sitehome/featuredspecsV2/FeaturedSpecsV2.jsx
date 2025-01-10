@@ -13,7 +13,7 @@ const FeaturedSpecsV2 = () => {
 
             <div id="featuredspecsV2-left-section">
               <div id="featuredspecs-featmsg">Human Resource Information System</div>
-              <div id="featuredspecs-title">These are just the few reasons why we need HRIS</div>
+              <div id="featuredspecs-title">Discover just a few reasons why BIT-HRIS is a must-have for you</div>
             </div>
           </div> 
           

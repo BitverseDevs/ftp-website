@@ -44,7 +44,8 @@ const SoftwareDevService = () => {
                   <div id="section-two-header-desc">Save time and resources with our personalized and AI-powered recruitment services</div>
                 </div>
               </div>
-              <div id="section-two-container-two">
+              {/* Uncomment if there's already content for this section */}
+              {/* <div id="section-two-container-two">
                 {softwareDevItems.map(({id, title, desc, iconName}) => (
                   <div key={id} className="section-two-container-two-item">
                     <img className='softwareDev-item-img' src={iconName} alt="" />
@@ -52,7 +53,7 @@ const SoftwareDevService = () => {
                     <div className="softwareDev-item-desc">{desc}</div>                  
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

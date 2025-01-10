@@ -351,23 +351,23 @@ export const highlightsItems = [
         moreInfo: [
             {
                 id: 'more-info-one',
-                title: 'Header',
+                title: 'Centralize your employee data effortlessly',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                    'BIT-HR reduces paperwork, minimizes errors, and provides real-time access to HR data, streamlining processes and ensuring accurate employee records',
                 ]
             },
             {
                 id: 'more-info-two',
-                title: 'Header',
+                title: 'Seamless Access for Every Employee',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                    "BIT-HR organizes employees by roles, enables easy communication through personalized accounts, and streamlines form filing for efficient HR management.",
                 ]
             },
             {
                 id: 'more-info-three',
-                title: 'Header',
+                title: 'Bridge the gap and connect with your employees',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                    'Instant notifications for pending approvals keep management informed, ensuring smooth communication and timely document handling.',
                 ]
             }
         ],
@@ -397,16 +397,16 @@ export const highlightsItems = [
         moreInfo: [
             {
                 id: 'more-info-one',
-                title: 'Header',
+                title: 'Streamline Your Payroll Process with Ease',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                    'Experience the power of auto-fast payroll generation, designed to simplify the entire payroll process and preparation. It accurately computes work hours, lateness, undertime, and apply government deductions, ensuring complete accuracy every time. With just a single click, all your payroll calculations are done, saving you valuable time and effort.',
                 ]
             }, 
             {
                 id: 'more-info-two',
-                title: 'Header',
+                title: 'Instant Access to Your Pay Slip, Anytime, Anywhere',
                 featMsg: [
-                    'Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu. Lorem ipsum dolor sit amet, consectu',
+                   "We offer the convenience of digital pay slips that are accessible anytime, anywhere, and can be easily printed whenever needed. Our platform allows for full customization, enabling you to tailor the design to match your company's branding and pay slip format. Switch from paper systems to an efficient, eco-friendly solution that provides employees instant access to their pay details, with a professional, customized look."
                 ]
             }
         ],

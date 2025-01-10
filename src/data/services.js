@@ -22,19 +22,19 @@ export const hrisItems = [
   {
     id: 'item-one',
     title: 'Time and Attendance',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo animi aut!',
+    desc: 'Records real-time DTR logs for employee check-ins and check-outs, ensuring accurate data integration and management. Also responsible for monitoring employees remaining leave balances and scheduling.',
     iconName: '/assets/hris-img-one.png',
   },
   {
     id: 'item-two',
     title: 'Payroll Disbursement',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo animi aut!',
+    desc: 'Transform your payroll with automated salary calculations, precise benefits and deductions processing, and customizable pay slip designs.',
     iconName: '/assets/hris-img-two.png',
   },
   {
     id: 'item-three',
     title: 'Reports',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo animi aut!',
+    desc: 'Quickly convert recorded data into clear, accurate reports, summarizing key information from any period for easy analysis and decision-making.',
     iconName: '/assets/hris-img-three.png',
   },
 ]
@@ -48,7 +48,7 @@ export const hrisServceCTAV2Info = {
 
 export const hrisFeatureTexts = {
   title: 'HRIS Features That May Help Your Business',
-  desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed. Lorem ipsum dolor sit amet.'
+  desc: 'Features you need to know about.'
 }
 
 export const hrisFeatureList = [
@@ -56,35 +56,53 @@ export const hrisFeatureList = [
       id: 'hrisF01',
       items: [
           {
-              id: 'hrisF0101',
-              question: 'Feature 1',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
-              icon: '/assets/arrowDown.svg',
+            id: 'hrisF0101',
+            question: 'Automation of Payroll and Benefits',
+            answer: 'Automate tax calculations, deductions, and benefits for accuracy and compliance.',
+            icon: '/assets/arrowDown.svg',
           }, 
           {
-              id: 'hrisF0101',
-              question: 'Feature 2',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
-              icon: '/assets/arrowDown.svg',
+            id: 'hrisF0102',
+            question: 'Integrated Timekeeping',
+            answer: 'Track employee schedules and biometric logs in a seamless system.',
+            icon: '/assets/arrowDown.svg',
+          }, 
+          {
+            id: 'hrisF0103',
+            question: 'Centralized Employee Data ',
+            answer: 'Store all HR information in one secure, accessible hub.',
+            icon: '/assets/arrowDown.svg',
+          }, 
+          {
+            id: 'hrisF0104',
+            question: 'Optimized Talent Acquisition',
+            answer: 'Attract top talent with an easy-to-use job portal and efficient recruitment.',
+            icon: '/assets/arrowDown.svg',
           }, 
       ]
   },
   {
-      id: 'hrisF01',
+      id: 'hrisF02',
       items: [
           {
       
-              id: 'faq3',
-              question: 'Feature 3',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              id: 'hrisF0201',
+              question: 'Transparent Employment Records',
+              answer: 'Provide easy access to pay stubs, benefits, and leave requests.',
               icon: '/assets/arrowDown.svg',
           }, 
           {
-              id: 'faq4',
-              question: 'Feature 4',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              id: 'hrisF0202',
+              question: 'KPI Performance Management',
+              answer: 'Set goals, track progress, and offer continuous feedback.',
               icon: '/assets/arrowDown.svg',
           }, 
+          {
+            id: 'hrisF0203',
+            question: 'Free Customization',
+            answer: 'Get custom features at no extra cost for easy implementation and training.',
+            icon: '/assets/arrowDown.svg',
+        }, 
       ]
   }
 ]
@@ -118,7 +136,7 @@ export const softwareDevCTAV2Info = {
 
 export const softwareDevTexts = {
   title: 'Explore Our Services to Enhance Your Business',
-  desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed. Lorem ipsum dolor sit amet.'
+  desc: 'Features you need to know about'
 }
 
 
@@ -128,16 +146,22 @@ export const softwareDevFeatureList = [
       items: [
           {
               id: 'sdF0101',
-              question: 'Software Dev Feature 1',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
+              question: 'Custom Software Development',
+              answer: 'Create tailored software solutions to meet unique business needs and enhance operational efficiency.',
               icon: '/assets/arrowDown.svg',
           }, 
           {
               id: 'sdF0102',
-              question: 'Software Dev Feature 2',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              question: 'Scalable Architecture',
+              answer: 'Build applications with scalable architecture that grows with your business demands.',
               icon: '/assets/arrowDown.svg',
           }, 
+          {
+            id: 'sdF0103',
+            question: 'Agile Development',
+            answer: 'Adopt agile methodologies for faster iterations, better collaboration, and quicker time-to-market.',
+            icon: '/assets/arrowDown.svg',
+        }, 
       ]
   },
   {
@@ -146,16 +170,22 @@ export const softwareDevFeatureList = [
           {
       
               id: 'sdF0201',
-              question: 'Software Dev Feature 3',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              question: 'Data Security',
+              answer: 'Implement robust security protocols to protect sensitive data and ensure compliance.',
               icon: '/assets/arrowDown.svg',
           }, 
           {
               id: 'sdF0202',
-              question: 'Software Dev Feature 4',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              question: 'Cross-platform Compatibility',
+              answer: 'Develop applications that work smoothly across different platforms and devices.',
               icon: '/assets/arrowDown.svg',
           }, 
+          {
+            id: 'sdF0203',
+            question: 'Continuous Support & Maintenance',
+            answer: 'Ensure long-term success with ongoing updates, troubleshooting, and system enhancements.',
+            icon: '/assets/arrowDown.svg',
+        }, 
       ]
   }
 ]
@@ -172,16 +202,22 @@ export const webDevFeatureList = [
       items: [
           {
               id: 'sdF0101',
-              question: 'Software Dev Feature 1',
+              question: 'How long will it take to develop a new website?',
               answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed.',
               icon: '/assets/arrowDown.svg',
           }, 
           {
               id: 'sdF0102',
-              question: 'Software Dev Feature 2',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              question: 'Is the new website responsive or mobile-friendly?',
+              answer: 'Yes, the new website will be responsive and mobile-friendly. This means it will automatically adjust its layout and content based on the screen size of the device being used, providing an optimal viewing experience across desktop, tablet, and mobile devices.',
               icon: '/assets/arrowDown.svg',
           }, 
+          {
+            id: 'sdF0103',
+            question: 'What web development services does Bitverse provide?',
+            answer: 'Bitverse offers a range of web development services, including:\n Custom website design and development: Tailored solutions for businesses or individuals.\n Responsive web design: Ensuring the website looks great on any device.\n Web applications: Building functional, interactive web apps.\n Website maintenance and updates: Ongoing support to keep your site running smoothly.',
+            icon: '/assets/arrowDown.svg',
+        }, 
       ]
   },
   {
@@ -190,14 +226,14 @@ export const webDevFeatureList = [
           {
       
               id: 'sdF0201',
-              question: 'Software Dev Feature 3',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              question: 'Does Bitverse offer a free consultation for web development?',
+              answer: 'Yes, Bitverse offers a free consultation for web development. This allows potential clients to discuss their needs and goals, explore the best solutions, and get an understanding of the scope and cost of their web development project without any obligation.',
               icon: '/assets/arrowDown.svg',
           }, 
           {
               id: 'sdF0202',
-              question: 'Software Dev Feature 4',
-              answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed',
+              question: 'Why should you hire Bitverse as your web development firm?',
+              answer: 'Bitverse is an ideal choice for web development, offering custom solutions tailored to your business needs. Our skilled team creates mobile-friendly, responsive websites and provides ongoing support and maintenance. With a free consultation and a proven track record of success, we ensure your project meets expectations and stays secure and up-to-date.',
               icon: '/assets/arrowDown.svg',
           }, 
       ]
