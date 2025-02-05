@@ -826,7 +826,7 @@ export const footerList = [
             {
               name: 'location',
               iconName: '/assets/location.svg',
-              desc: 'Unit 1603, Pearlbank Centre, Salcedo Village, 146 Valero, Makati, 1200 Metro Manila' 
+              desc: 'Unit 19B 2nd Floor Aseana Powerstation Building Pres Macapagal Blvd, corner Bradco Ave, Parañaque, 1700 Metro Manila' 
             },
             {
                 name: 'phone',

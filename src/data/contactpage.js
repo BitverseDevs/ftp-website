@@ -209,7 +209,7 @@ export const realContactUsInfo = [
     {
         id: 'info-three',
         title: 'Address',
-        featMsgOne: 'Unit 1603, Pearlbank Centre, Salcedo Village, 146 Valero, Makati, Metro Manila',
+        featMsgOne: 'Unit 19B 2nd Floor Aseana Powerstation Building Pres Macapagal Blvd, corner Bradco Ave, Parañaque, 1700 Metro Manila',
         featMsgTwo: '',
         iconName: '/assets/realAddress-Icon.svg',
     }
