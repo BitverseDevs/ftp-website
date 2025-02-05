@@ -18,7 +18,7 @@ export function ContactInput(props) {
                 type === 'date' ? 
                 <DatePicker label='Appointment Date' onChange={(value) => formValuesSetter((prevState) => ({
                     ...prevState, 
-                    datePreferences: dayjs(value).format('DD/MM/YYYY'),
+                    datePreferences: dayjs(value).format('MM/DD/YYYY'),
                 }))} required /> 
                 : 
                 <TimePicker label='Preferred Time' onChange={(value) => formValuesSetter((prevState) => ({
